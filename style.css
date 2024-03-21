@@ -35,6 +35,9 @@ body {
     width: 250px;
     height: auto;
 }
+.links ul .logo_dark {
+    display: none;
+}
 .links ul li {
     list-style: none;
     margin: 35px auto;
@@ -43,7 +46,7 @@ body {
 }
 .links ul li a {
     text-decoration: none;
-    color: var(--clr-white);
+    color: var(--clr-blk);
     text-transform: capitalize;
     letter-spacing: 1px;
     transition: 150ms ease-in all;
@@ -160,7 +163,7 @@ body {
         display: block;
         position: fixed;
         inset: 0;
-        background-color: rgba(0, 0, 0, .9);
+        background-color: rgba(0, 0, 0, 1);
         opacity: 0;
         pointer-events: none;
         transition: 300ms;
@@ -174,6 +177,12 @@ body {
         left: 50%;
         transform: translate(-50%);
         top: 1.1rem;
+    }
+    .mobile_logo .logo_light img {
+        display: block;
+    }
+    .mobile_logo .logo_dark img {
+        display: none;
     }
 }
 @media screen and (orientation: landscape) and (max-width: 934px) {
@@ -196,12 +205,26 @@ body {
     }
 }
 /*DARK MODE MEDIA QUERY*/
+@media screen and (max-width: 1024px) and (prefers-color-scheme: dark) {
+    .mobile_logo .logo_light img {
+        display: none;
+    }
+    .mobile_logo .logo_dark img {
+        display: block;
+    }
+}
 @media screen and (prefers-color-scheme: dark) {
     body {
         color: var(--clr-white);
         background-color: var(--clr-blk);
     }
+    .links ul li a {
+        color: var(--clr-white);
+    }
     .links ul .logo_light {
+        display: none;
+    }
+    .links ul .logo_dark {
         display: none;
     }
     .bars::before,
