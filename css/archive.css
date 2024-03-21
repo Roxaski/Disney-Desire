@@ -225,7 +225,7 @@ body {
         display: none;
     }
     .links ul .logo_dark {
-        display: none;
+        display: block;
     }
     .bars::before,
     .bars::after {
