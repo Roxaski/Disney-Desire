@@ -8,6 +8,7 @@
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#212121">
     <meta name="description" content="Disney Desire | Created this website as a ways to showcase mine and my fiancé's love for everything Disney">
     <title>Disney Desire | Fan Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -17,38 +18,291 @@
     <script defer src="./script.js"></script>
 </head>
 <body>
-    <!--NAVIGATION-->
     <nav>
         <header>
             <!--LINKS-->
             <div class="links">
                 <ul>
-                    <li><a id="red_highlight" href="./pages/news.html">news</a></li>
-                    <li><a id="violet_highlight" href="./pages/upcoming.html">upcoming</a></li>
-                    <li><a id="blue_highlight" href="./pages/archive.html">archive</a></li>
+                    <li><a href="./pages/news.html">news</a></li>
+                    <li><a href="./pages/movies.html">movies</a></li>
+                    <li><a href="./pages/archive.html">archive</a></li>
                     <div class="logo">
-                        <a href="./index.html"><img class="logo_light" src="./assets/logo/logo_light.webp" alt="logo"></a>
-                        <a href="./index.html"><img class="logo_dark" src="./assets/logo/logo_dark.webp" alt="logo"></a>
+                        <a href="./index.html"><img draggable="false" class="logo_dark" src="./assets/logo/logo_dark.webp" alt="logo"></a>
                     </div>
-                    <li><a id="green_highlight" href="./pages/history.html">history</a></li>
-                    <li><a id="indigo_highlight" href="./pages/gallery.html">gallery</a></li>
-                    <li><a id="orange_highlight" href="./pages/parks.html">parks</a></li>
+                    <li><a href="./pages/history.html">history</a></li>
+                    <li><a href="./pages/gallery.html">gallery</a></li>
+                    <li><a href="./pages/parks.html">parks</a></li>
                 </ul>
             </div>
             <!--HAMBURGER MENU-->
-            <div role="button" class="hamburger_menu">
+            <div aria-label="opens the links menu" role="button" class="hamburger_menu">
                 <div class="bars"></div>
             </div>
             <div class="overlay"></div>
             <!--MOBILE LOGO-->
             <div class="mobile_logo">
-                <a href="./index.html"><img class="logo_light" src="./assets/logo/logo_light.webp" alt="logo"></a>
-                <a href="./index.html"><img class="logo_dark" src="./assets/logo/logo_dark.webp" alt="logo"></a>
+                <a href="./index.html"><img draggable="false" class="logo_light" src="./assets/logo/logo_light.webp" alt="logo"></a>
+                <a href="./index.html"><img draggable="false" class="logo_dark" src="./assets/logo/logo_dark.webp" alt="logo"></a>
             </div>
         </header>
     </nav>
     <main>
-
+        <div class="wrapper">
+            <!--HERO GRID ARTICLES-->
+            <section aria-label="highlight of various articles">
+                <div class="hero-grid">
+                    <div class="article one">
+                        <div class="content">
+                            <a href="./pages/articles/news/frozen_3.html">
+                                <img draggable="false" src="./assets/preview/preview_1.webp" alt="the cast of frozen 2">
+                                <p>Frozen 3 has finally been announced by Disney's Bob Iger</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="article two">
+                        <div class="content">
+                            <a href="./pages/articles/news/story_of_a_mouse.html">
+                                <img draggable="false" src="./assets/preview/preview_2.webp" alt="sketch of mickey mouse">
+                                <p>The story of a Mouse's documentary</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="article three">
+                        <div class="content">
+                            <a href="./pages/articles/news/disney_plus.html">
+                                <img draggable="false" src="./assets/preview/preview_3.webp" alt="disney plus advertisement">
+                                <p>What's new on Disney Plus</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="article four">
+                        <div class="content">
+                            <a href="./pages/articles/news/wish.html">
+                                <img draggable="false" src="./assets/preview/preview_4.webp" alt="king magnifico with open arms">
+                                <p>Wish coming soon to Disney Plus</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="article five">
+                        <a target="_blank" href="https://roxaski.github.io/Brewbucks/">
+                            <img draggable="false" src="./assets/preview/sponsored.webp" alt="brewster the pigeon">
+                            <p>20% OFF AT BREWBUCKS</p>
+                        </a>
+                    </div>
+                    <div class="article six">
+                        <div class="content">
+                            <a href="./pages/articles/news/mando_movie.html">
+                                <img draggable="false" src="./assets/preview/preview_5.webp" alt="the mandalorian stylized poster">
+                                <p>Mando movie begins filming soon</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--NEWS ARTICLES-->
+            <section id="article-header" aria-label="news articles">
+                <div class="title">
+                    <div class="header news">
+                        <h1>news</h1>
+                        <img draggable="false" src="./assets/headers/graphic_icon.webp" alt="mickey heads">
+                    </div>
+                </div>
+                <div class="article-wrapper">
+                    <div class="articles">
+                        <img src="./assets/articles/kingdom_hearts.webp" alt="sora riding on baymax along with dark baymax">
+                        <div class="content">
+                            <h2>When can we expect kingdom hearts 4 release date</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod eum sint dicta id! Voluptates optio odio et sequi inventore necessitatibus libero impedit recusandae temporibus! Consequuntur accusamus iure consequatur?</p>
+                            <p><span>Date :</span> 6th September 2023</p>
+                            <p><span>Author :</span> Levi Taylor</p>
+                            <div class="tags">
+                                <i class="fa-solid fa-tag"></i>
+                                <p>kingdom hearts</p>
+                                <p>gaming</p>
+                                <p>coming soon</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles">
+                        <img draggable="false" src="./assets/articles/toy_story.webp" alt="toy's from toy story jumping for joy">
+                        <div class="content">
+                            <h2>Bob Iger announces Toy Story 5</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod eum sint dicta id! Voluptates optio odio et sequi inventore necessitatibus libero impedit recusandae temporibus! Consequuntur accusamus iure consequatur?</p>
+                            <p><span>Date :</span> 1st September 2023</p>
+                            <p><span>Author :</span> James Arthur Jr</p>
+                            <div class="tags">
+                                <i class="fa-solid fa-tag"></i>
+                                <p>toy story</p>
+                                <p>movie</p>
+                                <p>coming soon</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles">
+                        <img draggable="false" src="./assets/articles/dreamlight.webp" alt="disney dreamlight valley poster">
+                        <div class="content">
+                            <h2>Disney's Dreamlight Valley announces expansion pass</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod eum sint dicta id! Voluptates optio odio et sequi inventore necessitatibus libero impedit recusandae temporibus! Consequuntur accusamus iure consequatur?</p>
+                            <p><span>Date :</span> 28th August 2023</p>
+                            <p><span>Author :</span> Imani Juniper</p>
+                            <div class="tags">
+                                <i class="fa-solid fa-tag"></i>
+                                <p>dreamlight valley</p>
+                                <p>gaming</p>
+                                <p>out now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles">
+                        <img draggable="false" src="./assets/articles/simpsons.webp" alt="bart maggie and lisa from the simpsons on swings">
+                        <div class="content">
+                            <h2>Simpsons season 36 airing in the fall of 2024</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod eum sint dicta id! Voluptates optio odio et sequi inventore necessitatibus libero impedit recusandae temporibus! Consequuntur accusamus iure consequatur?</p>
+                            <p><span>Date :</span> 25th August 2023</p>
+                            <p><span>Author :</span> Bruno Orion</p>
+                            <div class="tags">
+                                <i class="fa-solid fa-tag"></i>
+                                <p>the simpsons</p>
+                                <p>TV show</p>
+                                <p>coming soon</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles">
+                        <img draggable="false" src="./assets/articles/andor.webp" alt="andor tv poster">
+                        <div class="content">
+                            <h2>Andor Season 2 pushed back into 2025</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod eum sint dicta id! Voluptates optio odio et sequi inventore necessitatibus libero impedit recusandae temporibus! Consequuntur accusamus iure consequatur?</p>
+                            <p><span>Date :</span> 21st August 2023</p>
+                            <p><span>Author :</span> Axel Bell</p>
+                            <div class="tags">
+                                <i class="fa-solid fa-tag"></i>
+                                <p>andor</p>
+                                <p>TV show</p>
+                                <p>coming soon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--MOVIES-->
+            <section aria-label="Films that are coming out soon">
+                <div class="title">
+                    <div class="header movies">
+                        <h1>movies</h1>
+                        <img draggable="false" src="./assets/headers/graphic_icon.webp" alt="mickey heads">
+                    </div>
+                </div>
+               <div class="poster-wrapper">
+                    <div class="movie-poster">
+                        <a href="./pages/movies/thor.html"><img src="./assets/posters/thor.webp" alt="thor love and thunder poster"></a>
+                    </div>
+                    <div class="movie-poster">
+                        <a href="./pages/movies/lightyear.html"><img src="./assets/posters/lightyear.webp" alt="lightyear movie poster"></a>
+                    </div>
+                    <div class="movie-poster">
+                        <a href="./pages/movies/hocus_pocus.html"><img src="./assets/posters/hocus_pocus.webp" alt="hocus pocus movie poster"></a>
+                    </div>
+                    <div class="movie-poster">
+                        <a href="./pages/movies/elemental.html"><img src="./assets/posters/elemental.webp" alt="elemental movie poster"></a>
+                    </div>
+               </div>
+            </section>
+            <!--ARCHIVE-->
+            <section aria-label="archive timeline of Disney's most popular films">
+                <div class="title">
+                    <div class="header archive">
+                        <h1>archive</h1>
+                        <img draggable="false" src="./assets/headers/graphic_icon.webp" alt="mickey heads">
+                    </div>
+                </div>
+                <div class="timeline-wrapper">
+                    <div class="timeline">
+                        <ul>
+                            <li>
+                                <div class="content">
+                                    <a href="./pages/archive.html"><img draggable="false" src="./assets/icons/snow_white.webp" alt="bitten apple"></a>
+                                    <h2>snow white</h2>
+                                    <h3>21st December 1937</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content">
+                                    <a href="./pages/archive.html"><img draggable="false" src="./assets/icons/alice.webp" alt="mushroom"></a>
+                                    <h2>alice in wonderland</h2>
+                                    <h3>26th July 1951</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content">
+                                    <a href="./pages/archive.html"><img draggable="false" src="./assets/icons/pooh_bear.webp" alt="pot of honey"></a>
+                                    <h2>winnie the pooh</h2>
+                                    <h3>25th February 1966</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content">
+                                    <a href="./pages/archive.html"><img draggable="false" src="./assets/icons/belle.webp" alt="rose"></a>
+                                    <h2>beauty & the beast</h2>
+                                    <h3>29th September 1991</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content">
+                                    <a href="./pages/archive.html"><img draggable="false" src="./assets/icons/frozen.webp" alt="snowflake"></a>
+                                    <h2>frozen</h2>
+                                    <h3>6th December 2013</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!--HISTORY-->
+            <section aria-label="article about Walter Disney's incredible legacy">
+                <div class="title">
+                    <div class="header history">
+                        <h1>history</h1>
+                        <img draggable="false" src="./assets/headers/graphic_icon.webp" alt="mickey heads">
+                    </div>
+                </div>
+                <div class="history-wrapper">
+                    <div class="history">
+                        <a href="./pages/history.html"><img draggable="false" src="./assets/history/walter_disney.webp" alt="profile picture of Walter Disney"></a>
+                        <div class="content">
+                            <h2>placeholder</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis minus, odio maiores est eveniet excepturi fuga a impedit tempora accusamus, ullam aperiam nesciunt molestias architecto?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum numquam, doloremque nesciunt perferendis necessitatibus quaerat temporibus asperiores culpa molestiae nam nemo officiis voluptatibus laudantium labore nihil et explicabo nulla sapiente soluta. Dolorem commodi, ut nesciunt recusandae reprehenderit optio eius laboriosam.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, expedita. Architecto vitae quae vero et, distinctio reiciendis possimus labore aspernatur! Cum quos deserunt eum magnam hic modi molestias odio! Sint harum tempora dolores, iusto rerum dolorum iure sequi. Assumenda quam aliquid asperiores recusandae commodi dolor neque error maiores, quod fugit.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit laudantium illo consequuntur, officiis, id sint ea voluptatum corporis quibusdam ad nostrum? Quam fuga adipisci reprehenderit saepe illum dolore ipsam? Voluptatum dicta aut, saepe, neque ducimus eligendi nihil nesciunt incidunt, impedit tempora harum optio alias? Facere tenetur</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--GALLERY-->
+            <section aria-label="collection of images from Disney's most popular films and characters">
+                <div class="title">
+                    <div class="header gallery">
+                        <h1>gallery</h1>
+                        <img draggable="false" src="./assets/headers/graphic_icon.webp" alt="mickey heads">
+                    </div>
+                </div>
+            </section>
+            <!--PARKS-->
+            <section aria-label="information for Disney Parks and Resorts">
+                <div class="title">
+                    <div class="header parks">
+                        <h1>parks</h1>
+                        <img draggable="false" src="./assets/headers/graphic_icon.webp" alt="mickey heads">
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 </body>
 </html>
