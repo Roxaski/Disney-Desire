@@ -38,8 +38,11 @@ body {
 }
 /*NAV*/
 .links {
+    position: fixed;
+    top: 0;
     width: 100%;
     overflow: hidden;
+    z-index: 1;
 }
 .links ul {
     display: flex;
@@ -104,6 +107,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     gap: 5px;
+    margin: 50px auto 0;
 }
 .hero-grid .article:nth-child(1) {
     grid-column: 1/3;
