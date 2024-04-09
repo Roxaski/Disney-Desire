@@ -435,18 +435,27 @@ body {
     background-color: var(--clr-indigo);
 }
 .gallery-wrapper {
-    padding: .75rem;
+    padding: 1rem;
 }
 .gallery .content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: .5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+.gallery .content .text {
+    width: 95%;
+}
+.gallery .content .text h2 {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.gallery .content .text p {
+    margin: 15px auto;
 }
 .gallery .content img {
     display: block;
     width: 100%;
     height: auto;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .7);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, .7);
 }
 /*PARKS*/
 .title .header.parks {
@@ -465,6 +474,10 @@ body {
     width: 100%;
     height: auto;
     box-shadow: 0 1px 6px rgba(0, 0, 0, .7);
+}
+.parks .content h2 {
+    font-weight: 500;
+    margin: 10px auto 0;
 }
 .parks .content p {
     margin: 15px auto;
@@ -660,7 +673,7 @@ footer p i {
         background-color: var(--clr-offWhite);
     }
     .gallery .content img {
-        border: solid 2px var(--clr-white);
+        border: 2px solid var(--clr-white);
     }
     .parks .content .img-container img {
         border: solid 2px var(--clr-white);
