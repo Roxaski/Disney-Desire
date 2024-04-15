@@ -42,7 +42,7 @@ body {
     top: 0;
     width: 100%;
     overflow: hidden;
-    z-index: 1;
+    z-index: 2;
 }
 .links ul {
     display: flex;
@@ -258,7 +258,7 @@ body {
 .articles img {
     width: 300px;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     margin: 10px 0;
     box-shadow: 0 1px 5px rgba(0, 0, 0, .6);
     border-radius: 5px;
@@ -296,6 +296,9 @@ body {
     padding: 0 .25rem;
     border-radius: 5px;
     text-transform: capitalize;
+}
+.article-wrapper .articles .mobile-article-preview p {
+    display: none;
 }
 /*UPCOMING FILMS*/
 .title .header.movies {
@@ -402,6 +405,9 @@ body {
 }
 .timeline .content p {
     font-size: .9rem;
+}
+.timeline-mobile {
+    display: none;  
 }
 /*HISTORY*/
 .title .header.history {
@@ -510,6 +516,85 @@ footer p i {
     padding-bottom: 2rem;
 }
 /*MEDIA QUERY'S*/
+@media screen and (max-width: 1255px) {
+    .article-wrapper .articles .article-preview {
+        display: none;
+    }
+    .article-wrapper .articles .content h2 {
+        line-height: 1.5;
+    }
+    .article-wrapper .articles .mobile-article-preview p {
+        display: inline-block;
+        font-size: clamp(1.1rem, 3vw, 1.2rem);
+        line-height: 1.5;
+        width: 90%;
+        line-height: 1.4;
+    }
+    .timeline {
+        display: none;
+    }
+    .timeline-mobile {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+    }
+    .timeline-mobile::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: var(--clr-violet);
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+        border-radius: 5px;
+    }
+    .timeline-mobile .container {
+        position: relative;
+        padding: .5rem 2rem;
+        width: 50%;
+    }
+    .timeline-mobile .container::after {
+        content: '';
+        position: absolute;
+        top: 15px;
+        right: -15px;
+        border: 3px solid var(--clr-violet);
+        width: 25px;
+        height: 25px;
+        background-color: var(--clr-white);
+        border-radius: 15px;
+        z-index: 1;
+    }
+    .timeline-mobile .container.left {
+        left: 0;
+    }
+    .timeline-mobile .container.right {
+        left: 50%;
+    }
+    .timeline-mobile .container.right::after {
+        left: -15px;
+    }
+    .timeline-mobile .container .content {
+        padding: 1rem;
+        border: solid 5px var(--clr-violet);
+        border-radius: 15px;
+        line-height: 1.7;
+        box-shadow: 0 5px 7px rgba(0, 0, 0, .7);
+    }
+    .timeline-mobile .container .content h2 {
+        text-transform: capitalize;
+    }
+    .timeline-mobile .container .content p {
+        font-size: clamp(1rem , 3vw, 1.2rem);
+    }
+    .timeline-mobile .container .content img {
+        display: block;
+        width: 75px;
+        height: auto;
+        float: right;
+    }
+}
 @media screen and (max-width: 1085px) {
     .no-scroll {
         overflow-y: hidden;
@@ -731,7 +816,46 @@ footer p i {
         border-top-left-radius: 7px;
         border-bottom-left-radius: 7px;
     }
+    .movie-poster img:hover {
+        transform: translateY(0);
+    }
 }
+@media screen and (max-width: 997px) {
+    .timeline-mobile::after {
+        left: -30px;
+    }
+    .timeline-mobile .container {
+        width: 90%;
+        padding-left: .25rem;
+    }
+    .timeline-mobile .container.right {
+        left: 0;
+    }
+    .timeline-mobile .container.left::after,
+    .timeline-mobile .container.right::after {
+        left: -45px;
+    }
+    .poster-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 850px) {
+    .article-wrapper .articles {
+        padding: 1rem 0;
+        border-bottom: solid 2px;
+        width: 95%;
+    }
+    .article-wrapper .articles:nth-last-child(1) {
+        border-bottom: none;
+    }
+    .article-wrapper .articles .content span {
+        font-weight: 600;
+    }
+    .article-wrapper .articles .content .tags {
+        display: none;
+    }
+}
+/*LANDSCAPE MEDIA QUERY'S*/
 @media screen and (orientation: landscape) and (max-width: 934px) {
     .links {
         overflow: auto;
