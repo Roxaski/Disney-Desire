@@ -91,9 +91,8 @@ body {
 .links ul li:hover:nth-child(7) {
     background-color: var(--clr-orange);
 }
-.hamburger_menu {
-    display: none;
-}
+.hamburger_menu,
+.hamburger_background img,
 .mobile_logo img {
     display: none;
 }
@@ -129,7 +128,7 @@ body {
         background-color: var(--clr-terracotta);
         transform: translateX(100%);
         transition: 250ms ease-in-out;
-        z-index: 2;
+        z-index: 4;
     }
     .links ul {
         height: 100%;
@@ -156,11 +155,11 @@ body {
         justify-content: center;
         align-items: center;
         position: absolute;
-        right: 1rem;
-        top: 1.5rem;
+        top: 2.2rem;
+        right: 2.3em;
         width: 1.1rem;
         height: 2rem;
-        z-index: 2;
+        z-index: 4;
     }
     .hamburger_menu .bars {
         position: relative;
@@ -169,6 +168,15 @@ body {
         border-radius: 10px;
         background-color: transparent;
         transition: 250ms all;
+    }
+    .hamburger_background img {
+        display: block;
+        position: absolute;
+        top: .5rem;
+        right: .5em;
+        width: 75px;
+        height: auto;
+        z-index: 2;
     }
     .bars::before,
     .bars::after {
@@ -193,11 +201,11 @@ body {
         opacity: 0;
         pointer-events: none;
         transition: 300ms;
-        z-index: 1;
+        z-index: 3;
     }
     .mobile_logo img {
         display: block;
-        width: 165px;
+        width: 250px;
         height: auto;
         position: absolute;
         left: 50%;
