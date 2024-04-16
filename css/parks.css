@@ -6,7 +6,7 @@
 }
 :root {
     --clr-blk: #212121;
-    --clr-white: #eae7e7;
+    --clr-white: #f0f0f0;
     --clr-offWhite: #c4c2c2;
     --clr-grey: #3e3b3b;
     --clr-red: #cc0e11;
@@ -97,7 +97,7 @@ body {
     display: none;
 }
 /*MEDIA QUERY'S*/
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1085px) {
     .no-scroll {
         overflow-y: hidden;
     }
@@ -139,7 +139,7 @@ body {
         display: none;
     }
     .links ul li {
-        margin: 1.3rem 1.5rem;
+        margin: 1.4rem 1.5rem;
         padding: 0;
     }
     .links ul li a {
