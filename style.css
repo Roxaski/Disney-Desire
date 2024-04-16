@@ -786,8 +786,9 @@ footer p i {
         left: -30px;
     }
     .timeline .container {
-        width: 90%;
-        padding-left: .25rem;
+        width: 100%;
+        padding: 0;
+        margin: 15px auto;
     }
     .timeline .container.right {
         left: 0;
@@ -806,11 +807,6 @@ footer p i {
     }
     .poster-wrapper img {
         margin: 5px auto;
-    }
-    .timeline .container {
-        min-width: 300px;
-        max-width: 100%;
-        padding-left: .25rem;
     }
     .timeline .container .content img {
         display: none;
@@ -879,9 +875,6 @@ footer p i {
         color: var(--clr-white);
     }
     .movie-poster img {
-        border: solid 2px var(--clr-offWhite);
-    }
-    .history-wrapper img {
         border: solid 2px var(--clr-offWhite);
     }
     .gallery .content img {
