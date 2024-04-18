@@ -173,7 +173,7 @@ body {
     position: fixed;
     bottom: 2rem;
     right: 4rem;
-    font-size: clamp(1.3rem, 3vw, 2.5rem);
+    font-size: clamp(2.5rem, 3vw, 3rem);
     color: var(--clr-violet);
     transition: 250ms ease-in-out;
     opacity: 0;
@@ -310,6 +310,9 @@ body {
     .title {
         top: 8rem;
     }
+    .scroll-top {
+        display: none;
+    }
 }
 @media screen and (max-width: 585px) {
     .title {
@@ -361,11 +364,33 @@ body {
 @media screen and (orientation: landscape) and (max-width: 934px) {
     .links {
         overflow: auto;
+        padding-bottom: 2rem;
     }
     .links ul li {
         position: relative;
         top: 1.5rem;
         line-height: .5;
+    }
+    .title {
+        text-align: left;
+        padding-left: 0;
+        margin-left: 2rem;
+    }
+    .timeline::after {
+        left: 35px;
+    }
+    .timeline .container {
+        width: 80%;
+        padding: 0;
+        margin: 15px auto;
+        margin-left: 4rem;
+    }
+    .timeline .container.right {
+        left: 0;
+    }
+    .timeline .container.left::after,
+    .timeline .container.right::after {
+        left: -45px;
     }
 }
 @media screen and (orientation: landscape) and (max-width: 675px) {

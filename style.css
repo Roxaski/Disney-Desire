@@ -840,6 +840,7 @@ footer p i {
 @media screen and (orientation: landscape) and (max-width: 934px) {
     .links {
         overflow: auto;
+        padding-bottom: 2rem;
     }
     .links ul li {
         position: relative;
