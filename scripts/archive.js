@@ -2,7 +2,7 @@
 const scrollToTop = document.querySelector('.scroll-top');
 
 window.addEventListener('scroll', () => {
-    if(window.scrollY > 100) {
+    if(window.scrollY > 1750) {
         scrollToTop.classList.add('active');
     } else {
         scrollToTop.classList.remove('active');
