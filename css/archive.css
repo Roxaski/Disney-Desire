@@ -105,13 +105,18 @@ body {
     text-align: center;
     padding-left: 2rem;
 }
+.title h1 {
+    font-weight: 400;
+}
 .title p {
-    font-weight: 500;
+    font-weight: 400;
+    font-size: clamp(1.1rem, 3vw, 1.2rem);
+    margin: 10px auto;
 }
 .timeline {
     position: relative;
-    margin: 200px auto;
-    max-width: 57rem;
+    margin: 150px auto 100px;
+    max-width: 60rem;
 }
 .timeline::after {
     content: '';
@@ -182,6 +187,32 @@ body {
 .scroll-top.active {
     pointer-events: auto;
     opacity: 1;
+}
+/*FOOTER*/
+footer {
+    margin: 50px auto;
+    text-align: center;
+    width: 90%;
+    line-height: 1.6;
+    padding-bottom: 2rem;
+}
+footer h2 {
+    font-size: clamp(1rem , 3vw, 1.1rem);
+    font-weight: 400;
+    letter-spacing: .25px;
+    text-transform: uppercase;
+}
+footer h2::before {
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 1rem;
+    border-top: solid 2px var(--clr-grey);
+    margin: 0 auto;
+    max-width: 60rem;
+}
+footer p i {
+    font-size: .9rem;
 }
 /*MEDIA QUERY'S*/
 @media screen and (max-width: 1085px) {
@@ -309,6 +340,9 @@ body {
     }
     .title {
         top: 8rem;
+    }
+    .timeline {
+        margin: 150px 0;
     }
     .scroll-top {
         display: none;

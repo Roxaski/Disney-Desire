@@ -105,14 +105,19 @@ body {
     text-align: center;
     padding-left: 2rem;
 }
+.title h1 {
+    font-weight: 400;
+}
 .title p {
-    font-weight: 500;
+    font-weight: 400;
+    font-size: clamp(1.1rem, 3vw, 1.2rem);
+    margin: 10px auto;
 }
 .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 65rem;
-    margin: 8rem auto;
+    margin: 150px auto 100px;
     gap: .5rem;
 }
 .grid-wrapper img {
@@ -120,8 +125,31 @@ body {
     width: 100%;
     height: auto;
 }
-.grid-wrapper .img-container.tall {
-    grid-column: span 1;
+/*FOOTER*/
+footer {
+    margin: 50px auto;
+    text-align: center;
+    width: 90%;
+    line-height: 1.6;
+    padding-bottom: 2rem;
+}
+footer h2 {
+    font-size: clamp(1rem , 3vw, 1.1rem);
+    font-weight: 400;
+    letter-spacing: .25px;
+    text-transform: uppercase;
+}
+footer h2::before {
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 1rem;
+    border-top: solid 2px var(--clr-grey);
+    margin: 0 auto;
+    max-width: 60rem;
+}
+footer p i {
+    font-size: .9rem;
 }
 /*MEDIA QUERY'S*/
 @media screen and (max-width: 1085px) {
@@ -246,6 +274,23 @@ body {
         left: 50%;
         transform: translate(-50%);
         top: .5rem;
+    }
+    .title {
+        top: 8rem;
+    }
+    .grid-wrapper {
+        padding: 2.5rem;
+        margin: 150px auto 0;
+    }
+}
+@media screen and (max-width: 585px) {
+    .title {
+        text-align: left;
+        padding-left: 0;
+    }
+    .grid-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1.5rem;
     }
 }
 @media screen and (max-width: 400px) {
