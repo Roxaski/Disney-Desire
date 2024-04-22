@@ -342,7 +342,7 @@ footer p i {
         top: 8rem;
     }
     .timeline {
-        margin: 150px 0;
+        margin: 150px auto 0;
     }
     .scroll-top {
         display: none;
