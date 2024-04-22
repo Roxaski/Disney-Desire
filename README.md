@@ -4,9 +4,10 @@
 
 # Image Gallery Credits
 Wall-E Render https://www.reddit.com/r/wallpaper/
-Kingdom Hearts Render https://www.deviantart.com/georgepg
-Epic Mickey Concept Art https://twitter.com/GenLosstwt
 Frozen Render https://www.reddit.com/r/Frozen/
+Rya https://www.deviantart.com/kahlanamnelle
+Epic Mickey Concept Art https://twitter.com/GenLosstwt
+Kingdom Hearts Render https://www.deviantart.com/georgepg
 Kermit the frog https://www.pinterest.co.uk/hashithestar/
 
 # Other Image Credits
