@@ -97,13 +97,13 @@ body {
     display: none;
 }
 /*MAIN*/
-.title {
+.wrapper {
     position: relative;
-    top: 4rem;
-    max-width: 90%;
-    margin: 0 auto;
+    top: 50px;
+}
+.title {
     text-align: center;
-    padding-left: 2rem;
+    width: 100%;
 }
 .title h1 {
     font-weight: 400;
@@ -111,11 +111,10 @@ body {
 .title p {
     font-weight: 400;
     font-size: clamp(1.1rem, 3vw, 1.2rem);
-    margin: 10px auto;
 }
 .timeline {
     position: relative;
-    margin: 150px auto 100px;
+    margin: 50px auto;
     max-width: 60rem;
 }
 .timeline::after {
@@ -338,11 +337,12 @@ footer p i {
         transform: translate(-50%);
         top: .5rem;
     }
-    .title {
-        top: 8rem;
+    .wrapper {
+        top: 100px;
     }
-    .timeline {
-        margin: 150px auto 0;
+    .title {
+        width: 90%;
+        margin: 0 auto;
     }
     .scroll-top {
         display: none;
@@ -351,7 +351,6 @@ footer p i {
 @media screen and (max-width: 585px) {
     .title {
         text-align: left;
-        padding-left: 0;
     }
     .timeline::after {
         left: 35px;
@@ -407,8 +406,7 @@ footer p i {
     }
     .title {
         text-align: left;
-        padding-left: 0;
-        margin-left: 2rem;
+        width: 90%;
     }
     .timeline::after {
         left: 35px;

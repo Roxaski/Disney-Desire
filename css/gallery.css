@@ -97,13 +97,13 @@ body {
     display: none;
 }
 /*GALLERY*/
-.title {
+.wrapper {
     position: relative;
-    top: 4rem;
-    max-width: 90%;
-    margin: 0 auto;
+    top: 50px;
+}
+.title {
     text-align: center;
-    padding-left: 2rem;
+    width: 100%;
 }
 .title h1 {
     font-weight: 400;
@@ -111,19 +111,44 @@ body {
 .title p {
     font-weight: 400;
     font-size: clamp(1.1rem, 3vw, 1.2rem);
-    margin: 10px auto;
 }
 .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 65rem;
-    margin: 150px auto 100px;
+    margin: 50px auto;
     gap: .5rem;
 }
-.grid-wrapper img {
+.grid-wrapper .img-container {
+    position: relative;
+}
+.grid-wrapper .img-container img {
     display: block;
     width: 100%;
     height: auto;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, .7);
+}
+.img-container .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    position: absolute;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    text-align: center;
+    font-weight: 400;
+    color: var(--clr-white);
+    background: rgba(0, 0, 0, .7);
+    opacity: 0;
+    cursor: pointer;
+}
+.img-container .content:hover {
+    opacity: 1;
+}
+.img-container img,
+.img-container .content,
+.img-container:hover img {
+    transition: 300ms ease-in-out;
 }
 /*FOOTER*/
 footer {
@@ -275,22 +300,26 @@ footer p i {
         transform: translate(-50%);
         top: .5rem;
     }
+    .wrapper {
+        top: 100px;
+    }
     .title {
-        top: 8rem;
+        width: 90%;
+        margin: 0 auto;
     }
     .grid-wrapper {
-        padding: 2.5rem;
-        margin: 150px auto 0;
+        padding: 0 2rem;
+    }
+    .img-container .content {
+        visibility: hidden;
     }
 }
 @media screen and (max-width: 585px) {
     .title {
         text-align: left;
-        padding-left: 0;
     }
     .grid-wrapper {
         grid-template-columns: repeat(1, 1fr);
-        padding: 1.5rem;
     }
 }
 @media screen and (max-width: 400px) {
@@ -314,6 +343,10 @@ footer p i {
         position: relative;
         top: 1.5rem;
         line-height: .5;
+    }
+    .title {
+        text-align: left;
+        width: 90%;
     }
 }
 @media screen and (orientation: landscape) and (max-width: 675px) {
