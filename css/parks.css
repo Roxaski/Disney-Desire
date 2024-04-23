@@ -96,6 +96,44 @@ body {
 .mobile_logo img {
     display: none;
 }
+/*PARKS AND RESORTS ARTICLE*/
+.wrapper {
+    padding: 3rem 1rem 0;
+    max-width: 67rem;
+    margin: 0 auto;
+}
+article h1 {
+    font-weight: 400;
+}
+article p {
+    margin: 25px auto;
+}
+/*FOOTER*/
+footer {
+    margin: 75px auto 0;
+    text-align: center;
+    width: 90%;
+    line-height: 1.6;
+    padding-bottom: 2rem;
+}
+footer h2 {
+    font-size: clamp(1rem , 3vw, 1.1rem);
+    font-weight: 400;
+    letter-spacing: .25px;
+    text-transform: uppercase;
+}
+footer h2::before {
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 1rem;
+    border-top: solid 2px var(--clr-grey);
+    margin: 0 auto;
+    max-width: 60rem;
+}
+footer p i {
+    font-size: .9rem;
+}
 /*MEDIA QUERY'S*/
 @media screen and (max-width: 1085px) {
     .no-scroll {
@@ -219,6 +257,9 @@ body {
         left: 50%;
         transform: translate(-50%);
         top: .5rem;
+    }
+    .wrapper {
+        padding: 8rem 1rem 0;
     }
 }
 @media screen and (max-width: 400px) {
