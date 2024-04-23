@@ -473,7 +473,7 @@ body {
 }
 /*FOOTER*/
 footer {
-    margin: 50px auto;
+    margin: 75px auto 0;
     text-align: center;
     width: 90%;
     line-height: 1.6;
@@ -492,7 +492,7 @@ footer h2::before {
     bottom: 1rem;
     border-top: solid 2px var(--clr-grey);
     margin: 0 auto;
-    width: 70%;
+    max-width: 60rem;
 }
 footer p i {
     font-size: .9rem;

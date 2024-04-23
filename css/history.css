@@ -98,7 +98,9 @@ body {
 }
 /*HISTORY ARTICLE*/
 .wrapper {
-    padding: 3rem 1rem;
+    padding: 3rem 1rem 0;
+    max-width: 67rem;
+    margin: 0 auto;
 }
 article h1 {
     font-weight: 400;
@@ -112,11 +114,14 @@ article img {
     box-shadow: 0 2px 5px rgba(0, 0, 0, .7);
 }
 article p {
-    margin: 25px auto ;
+    margin: 25px auto;
+}
+.memoriam {
+    display: none;
 }
 /*FOOTER*/
 footer {
-    margin: 125px auto 0;
+    margin: 75px auto 0;
     text-align: center;
     width: 90%;
     line-height: 1.6;
@@ -264,6 +269,34 @@ footer p i {
         transform: translate(-50%);
         top: .5rem;
     }
+    .wrapper {
+        padding: 8rem 1rem 0;
+    }
+}
+@media screen and (max-width: 435px) {
+    article img {
+        display: none;
+    }
+    .memoriam {
+        display: block;
+    }
+    .memoriam img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .memoriam .content {
+        text-align: center;
+        margin: 10px auto 0;
+    }
+    .memoriam .content h2:nth-child(1) {
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        font-weight: 400;
+    }
+    .memoriam .content h2 {
+        font-weight: 300;
+    }
 }
 @media screen and (max-width: 400px) {
     .mobile_logo img {
@@ -275,6 +308,32 @@ footer p i {
     .mobile_logo img {
         width: 200px;
         left: .5rem;
+    }
+}
+@media screen and (orientation: landscape) and (max-width: 940px) {
+    article img {
+        display: none;
+    }
+    .memoriam {
+        display: block;
+    }
+    .memoriam img {
+        display: block;
+        max-width: 450px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .memoriam .content {
+        text-align: center;
+        margin: 10px auto 0;
+    }
+    .memoriam .content h2:nth-child(1) {
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        font-weight: 400;
+    }
+    .memoriam .content h2 {
+        font-weight: 300;
     }
 }
 @media screen and (orientation: landscape) and (max-width: 934px) {
