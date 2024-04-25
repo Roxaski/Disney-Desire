@@ -108,6 +108,11 @@ article h1 {
 article p {
     margin: 25px auto;
 }
+article img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 /*FOOTER*/
 footer {
     margin: 75px auto 0;
