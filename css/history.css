@@ -294,8 +294,11 @@ footer p i {
         letter-spacing: .5px;
         font-weight: 400;
     }
-    .memoriam .content h2 {
+    .memoriam .content h2:nth-last-child(1) {
         font-weight: 300;
+        font-size: 1.3rem;
+        letter-spacing: .5px;
+        margin: 5px auto;
     }
 }
 @media screen and (max-width: 400px) {
