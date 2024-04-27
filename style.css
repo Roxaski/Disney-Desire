@@ -209,6 +209,11 @@ body {
     rgb(176, 34, 34) 100%,
     rgba(220,94,34,1) 10%);   
 }
+/*MAIN*/
+.wrapper {
+    max-width: 80rem;
+    margin: 0 auto;
+}
 /*IMAGE SLIDER*/
 .img-slider {
     display: none;

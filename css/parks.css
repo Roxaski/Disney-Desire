@@ -38,8 +38,11 @@ body {
 }
 /*NAV*/
 .links {
+    position: fixed;
+    top: 0;
     width: 100%;
     overflow: hidden;
+    z-index: 2;
 }
 .links ul {
     display: flex;
@@ -49,12 +52,9 @@ body {
 }
 .links ul img {
     display: block;
-    width: 215px;
+    max-width: 215px;
     height: auto;
     margin: auto 10px;
-}
-.links ul .logo .logo_light {
-    display: none;
 }
 .links ul .logo .logo_dark {
     display: block;
@@ -96,11 +96,13 @@ body {
 .mobile_logo img {
     display: none;
 }
-/*PARKS AND RESORTS ARTICLE*/
+/*MAIN*/
 .wrapper {
-    padding: 3rem 1rem 0;
+    position: relative;
+    top: 125px;
     max-width: 67rem;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 article h1 {
     font-weight: 400;
@@ -112,6 +114,7 @@ article img {
     display: block;
     width: 100%;
     height: auto;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, .7);
 }
 /*FOOTER*/
 footer {
@@ -225,7 +228,7 @@ footer p i {
         position: absolute;
         top: .5rem;
         right: .5em;
-        width: 75px;
+        max-width: 75px;
         height: auto;
         z-index: 2;
     }
@@ -263,9 +266,6 @@ footer p i {
         transform: translate(-50%);
         top: .5rem;
     }
-    .wrapper {
-        padding: 8rem 1rem 0;
-    }
 }
 @media screen and (max-width: 400px) {
     .mobile_logo img {
@@ -299,12 +299,13 @@ footer p i {
         padding-bottom: 1.3rem;
     }
 }
-/*DARK MODE MEDIA QUERY*/
+/*LIGHT MODE MEDIA QUERY*/
 @media screen and (prefers-color-scheme: light) {
     .mobile_logo .logo_dark {
         display: none;
     }
 }
+/*DARK MODE MEDIA QUERY*/
 @media screen and (prefers-color-scheme: dark) {
     body {
         color: var(--clr-white);
