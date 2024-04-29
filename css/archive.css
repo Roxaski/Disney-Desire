@@ -140,7 +140,7 @@ body {
     position: absolute;
     top: 15px;
     right: -15px;
-    border: 3px solid var(--clr-grey);
+    border: 3px solid var(--clr-violet);
     width: 25px;
     height: 25px;
     background-color: var(--clr-white);
@@ -456,5 +456,11 @@ footer p i {
     }
     .links ul li a {
         color: var(--clr-white);
+    }
+    .timeline .container::after {
+        border: 3px solid var(--clr-grey);
+    }
+    .scroll-top {
+        color: var(--clr-offWhite);
     }
 }
