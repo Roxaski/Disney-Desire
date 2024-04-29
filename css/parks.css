@@ -110,6 +110,11 @@ article h1 {
 article p {
     margin: 25px auto;
 }
+article span a {
+    color: var(--clr-orange);
+    text-decoration: underline;
+    letter-spacing: .5px;
+}
 article img {
     display: block;
     width: 100%;
