@@ -104,8 +104,14 @@ body {
     margin: 0 auto;
     padding: 0 1rem;
 }
-article h1 {
+article .title {
+    padding: .45rem;
+    border-radius: 5px;
+    background-color: var(--clr-green);
+}
+article .title h1 {
     font-weight: 400;
+    color: var(--clr-white);
 }
 article img {
     display: block;
@@ -379,5 +385,8 @@ footer p i {
     }
     .links ul li a {
         color: var(--clr-white);
+    }
+    article .title {
+        background-color: var(--clr-grey);
     }
 }

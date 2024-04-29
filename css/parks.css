@@ -104,8 +104,14 @@ body {
     margin: 0 auto;
     padding: 0 1rem;
 }
-article h1 {
+article .title {
+    padding: .45rem;
+    border-radius: 5px;
+    background-color: var(--clr-orange);
+}
+article .title h1 {
     font-weight: 400;
+    color: var(--clr-white);
 }
 article p {
     margin: 25px auto;
@@ -113,7 +119,7 @@ article p {
 article span a {
     color: var(--clr-orange);
     text-decoration: underline;
-    text-transform: capitalize;
+    font-weight: 500;
 }
 article img {
     display: block;
