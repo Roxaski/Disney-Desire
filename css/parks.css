@@ -113,7 +113,7 @@ article p {
 article span a {
     color: var(--clr-orange);
     text-decoration: underline;
-    letter-spacing: .5px;
+    text-transform: capitalize;
 }
 article img {
     display: block;
