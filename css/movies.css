@@ -166,6 +166,32 @@ body {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
     cursor: pointer;
 }
+/*FOOTER*/
+footer {
+    margin: 200px auto 0;
+    text-align: center;
+    width: 90%;
+    line-height: 1.6;
+    padding-bottom: 2rem;
+}
+footer h2 {
+    font-size: clamp(1rem , 3vw, 1.1rem);
+    font-weight: 400;
+    letter-spacing: .25px;
+    text-transform: uppercase;
+}
+footer h2::before {
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 1rem;
+    border-top: solid 2px var(--clr-grey);
+    margin: 0 auto;
+    max-width: 60rem;
+}
+footer p i {
+    font-size: .9rem;
+}
 /*MEDIA QUERY'S*/
 @media screen and (max-width: 1085px) {
     .no-scroll {
