@@ -370,6 +370,9 @@ footer p i {
     .links ul li a {
         color: var(--clr-white);
     }
+    .accordion ul li label {
+        background-color: var(--clr-grey);
+    }
     .accordion .content img {
         border: solid var(--clr-offWhite) 2px;
     }
