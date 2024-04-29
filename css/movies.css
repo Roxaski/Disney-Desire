@@ -98,8 +98,24 @@ body {
 }
 /*MAIN*/
 .wrapper {
-    max-width: 65rem;
-    margin: 150px auto;
+    position: relative;
+    top: 125px;
+    max-width: 67rem;
+    margin: 0 auto;
+}
+.title {
+    text-align: center;
+    width: 100%;
+}
+.title h1 {
+    font-weight: 400;
+}
+.title p {
+    font-weight: 400;
+    font-size: clamp(1.1rem, 3vw, 1.2rem);
+}
+.accordion {
+    margin: 50px auto;
 }
 .accordion ul li {
     position: relative;
@@ -108,6 +124,7 @@ body {
 .accordion ul li label {
     display: flex;
     align-items: center;
+    color: var(--clr-white);
     background-color: var(--clr-blue);
     border-radius: 5px;
     padding: .5rem;
@@ -145,8 +162,8 @@ body {
     display: inline-block;
     width: 300px;
     height: auto;
-    margin-left: .25rem;
-    border: solid var(--clr-offWhite) 2px;
+    margin-left: .5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
     cursor: pointer;
 }
 /*MEDIA QUERY'S*/
