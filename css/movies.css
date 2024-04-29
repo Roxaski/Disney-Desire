@@ -97,6 +97,44 @@ body {
     display: none;
 }
 /*MAIN*/
+.wrapper {
+    max-width: 65rem;
+    margin: 150px auto;
+}
+.accordion ul li {
+    list-style: none;
+}
+.accordion ul li label {
+    display: flex;
+    align-items: center;
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    font-weight: 500;
+    cursor: pointer;
+    border: red solid 2px;
+}
+.accordion ul li label::before {
+    content: '>';
+    margin-right: 10px;
+    font-size: clamp(1.5rem, 3vw , 1.7rem);
+    font-weight: 600;
+}
+.accordion ul li [type='radio'] {
+    display: none;
+}
+.accordion ul li input[type='radio']:checked + label + .content {
+    max-height: 100%;
+}
+.accordion .content {
+    margin: 20px auto;
+    width: 90%;
+    max-height: 0;
+    overflow: hidden;
+}
+.accordion .content img {
+    display: inline-block;
+    width: 300px;
+    height: auto;
+}
 /*MEDIA QUERY'S*/
 @media screen and (max-width: 1085px) {
     .no-scroll {
