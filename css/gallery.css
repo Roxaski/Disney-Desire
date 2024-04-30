@@ -100,7 +100,7 @@ body {
 .wrapper {
     position: relative;
     top: 125px;
-    max-width: 65rem;
+    max-width: 70rem;
     margin: 0 auto;
 }
 .title {
@@ -487,5 +487,8 @@ footer p i {
     .img-preview .img-box .slide {
         color: var(--clr-blk);
         background-color: var(--clr-white);
+    }
+    .img-focus {
+        background: var(--clr-grey);
     }
 }

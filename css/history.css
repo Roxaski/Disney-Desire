@@ -100,14 +100,14 @@ body {
 .wrapper {
     position: relative;
     top: 125px;
-    max-width: 67rem;
+    max-width: 70rem;
     margin: 0 auto;
-    padding: 0 1rem;
 }
 article .title {
     padding: .45rem;
     border-radius: 5px;
     background-color: var(--clr-green);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
 }
 article .title h1 {
     font-weight: 400;
