@@ -100,7 +100,7 @@ body {
 .wrapper {
     position: relative;
     top: 125px;
-    max-width: 70rem;
+    max-width: 65rem;
     margin: 0 auto;
 }
 .title {
@@ -135,12 +135,12 @@ body {
 }
 .accordion ul li label::before {
     content: '';
-    margin-right: 45px;
+    margin-right: 65px;
 }
 .accordion ul li label i {
     position: absolute;
     top: .8rem;
-    left: 1rem;
+    left: 2rem;
     font-size: clamp(1rem, 3vw, 1.2rem);
     transition: 125ms ease;
 }
@@ -155,15 +155,14 @@ body {
 }
 .accordion .content {
     margin: 20px auto;
-    width: 90%;
     max-height: 0;
+    text-align: center;
     overflow: hidden;
 }
 .accordion .content img {
     display: inline-block;
     width: 300px;
     height: auto;
-    margin-left: .5rem;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
     cursor: pointer;
 }
@@ -317,6 +316,15 @@ footer p i {
         transform: translate(-50%);
         top: .5rem;
     }
+    .title {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 585px) {
+    .title {
+        text-align: left;
+    }
 }
 @media screen and (max-width: 400px) {
     .mobile_logo img {
@@ -367,14 +375,6 @@ footer p i {
     }
     .links ul .logo .logo_dark {
         display: block;
-    }
-    .links ul li:hover:nth-child(1),
-    .links ul li:hover:nth-child(2),
-    .links ul li:hover:nth-child(3),
-    .links ul li:hover:nth-child(5),
-    .links ul li:hover:nth-child(6),
-    .links ul li:hover:nth-child(7) {
-        background-color: var(--clr-grey);
     }
     .links ul li a {
         color: var(--clr-white);
