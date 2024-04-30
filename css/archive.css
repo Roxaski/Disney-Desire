@@ -463,11 +463,23 @@ footer p i {
     .links ul .logo .logo_dark {
         display: block;
     }
+    .links ul li:hover:nth-child(1),
+    .links ul li:hover:nth-child(2),
+    .links ul li:hover:nth-child(3),
+    .links ul li:hover:nth-child(5),
+    .links ul li:hover:nth-child(6),
+    .links ul li:hover:nth-child(7) {
+        background-color: var(--clr-grey);
+    }
     .links ul li a {
         color: var(--clr-white);
     }
     .timeline .container::after {
-        border: 3px solid var(--clr-grey);
+        background: var(--clr-offWhite);
+    }
+    .timeline .container .content {
+        color: var(--clr-white);
+        background: var(--clr-grey);
     }
     .scroll-top {
         color: var(--clr-offWhite);

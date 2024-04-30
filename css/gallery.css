@@ -151,6 +151,7 @@ body {
 .img-container:hover img {
     transition: 250ms ease-in-out;
 }
+/*OPEN IMG*/
 .img-preview {
     position: fixed;
     height: auto;
@@ -473,22 +474,30 @@ footer p i {
     .links ul .logo .logo_dark {
         display: block;
     }
+    .links ul li:hover:nth-child(1),
+    .links ul li:hover:nth-child(2),
+    .links ul li:hover:nth-child(3),
+    .links ul li:hover:nth-child(5),
+    .links ul li:hover:nth-child(6),
+    .links ul li:hover:nth-child(7) {
+        background-color: var(--clr-grey);
+    }
     .links ul li a {
         color: var(--clr-white);
     }
     .img-preview {
-        background: var(--clr-white);
+        background: var(--clr-grey);
     }
     .img-preview .details i {
         color: var(--clr-offWhite);
-        background-color: var(--clr-blk);
+        background-color: var(--clr-grey);
         border: solid 2px var(--clr-offWhite);
     }
     .img-preview .img-box .slide {
-        color: var(--clr-blk);
-        background-color: var(--clr-white);
+        color: var(--clr-offWhite);
+        background-color: var(--clr-grey);
     }
     .img-focus {
-        background: var(--clr-grey);
+        background: var(--clr-blk);
     }
 }

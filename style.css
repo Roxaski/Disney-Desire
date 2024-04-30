@@ -868,6 +868,14 @@ footer p i {
     .links ul .logo .logo_dark {
         display: block;
     }
+    .links ul li:hover:nth-child(1),
+    .links ul li:hover:nth-child(2),
+    .links ul li:hover:nth-child(3),
+    .links ul li:hover:nth-child(5),
+    .links ul li:hover:nth-child(6),
+    .links ul li:hover:nth-child(7) {
+        background-color: var(--clr-grey);
+    }
     .links ul li a {
         color: var(--clr-white);
     }
@@ -876,11 +884,32 @@ footer p i {
         background-color: var(--clr-grey);
         color: var(--clr-white);
     }
+    .title .header.news,
+    .title .header.movies,
+    .title .header.history,
+    .title .header.archive,
+    .title .header.gallery,
+    .title .header.parks {
+        background-color: var(--clr-grey);
+    }
+    .title .header img {
+        filter: opacity(85%);
+    }
     .articles .content a {
         color: var(--clr-white);
     }
+    .articles .content .tags p {
+        background-color: var(--clr-grey);
+    }
     .movie-poster img {
         border: solid 2px var(--clr-offWhite);
+    }
+    .timeline .container::after {
+        background: var(--clr-offWhite);
+    }
+    .timeline .container .content {
+        color: var(--clr-white);
+        background: var(--clr-grey);
     }
     .gallery .content img {
         border: 2px solid var(--clr-white);
