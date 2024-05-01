@@ -22,10 +22,10 @@
         rgb(138, 24, 40) 0%, 
         rgb(180, 100, 109) 50%, 
         rgb(138, 24, 40) 100%); 
-    --red-peach: linear-gradient(135deg, 
-        rgb(146, 14, 66) 0%, 
-        rgb(212, 82, 70) 40%, 
-        rgb(116, 12, 54) 150%); 
+    --red-peach-skyBlue: linear-gradient(135deg, 
+        rgb(123, 1, 50) 0%, 
+        rgba(234,114,102,1) 35%, 
+        rgba(62,98,164,1) 100%); 
     --blue-Gradient: linear-gradient(90deg, 
         rgba(0,0,0,1) 0%, 
         rgba(32,86,168,1) 50%, 
@@ -118,8 +118,8 @@ body {
 .bg.purple-pacificBlue {
     background: var(--purple-pacificBlue-Gradient);
 }
-.bg.red-peach {
-    background: var(--red-peach);
+.bg.red-peach-skyBlue {
+    background: var(--red-peach-skyBlue);
 }
 .bg.orange {
     background: var(--orange-Gradient);
