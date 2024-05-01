@@ -9,6 +9,67 @@
     --clr-white: #f0f0f0;
     --clr-offWhite: #c4c2c2;
     --clr-grey: #3e3b3b;
+    --blk-white-Gradient: radial-gradient(circle, 
+        rgba(0,0,0,1) 0%, 
+        rgba(157,158,159,1) 15%, 
+        rgba(0,0,0,1) 100%); 
+    --red-Gradient: 
+        linear-gradient(90deg,
+        rgba(0,0,0,1) 0%, 
+        rgba(168,19,24,1) 50%, 
+        rgba(0,0,0,1) 100%);
+    --red-pink: linear-gradient(35deg, 
+        rgb(138, 24, 40) 0%, 
+        rgb(180, 100, 109) 50%, 
+        rgb(138, 24, 40) 100%); 
+    --red-peach: linear-gradient(135deg, 
+        rgb(146, 14, 66) 0%, 
+        rgb(212, 82, 70) 40%, 
+        rgb(116, 12, 54) 150%); 
+    --blue-Gradient: linear-gradient(90deg, 
+        rgba(0,0,0,1) 0%, 
+        rgba(32,86,168,1) 50%, 
+        rgba(0,0,0,1) 100%);
+    --darkBlue-Gradient: radial-gradient(circle, 
+        rgb(0, 0, 0) 0%, 
+        rgb(24, 77, 124) 35%, 
+        rgb(0, 0, 0) 100%);  
+    --orange-Gradient: linear-gradient(90deg, 
+        rgba(0,0,0,1) 0%, 
+        rgb(164, 78, 28) 50%, 
+        rgba(0,0,0,1) 100%);
+    --crimson-Gradient: linear-gradient(90deg, 
+        rgba(0,0,0,1) 0%, 
+        rgba(128,28,41,1) 50%, 
+        rgba(0,0,0,1) 100%);
+    --orange-blue-Gradient: linear-gradient(90deg, 
+        rgba(221,95,26,1) 0%,
+        rgba(128,28,41,1) 35%,
+        rgb(91, 99, 208) 100%);
+    --eggplant-aegean-Gradient: linear-gradient(115deg, 
+        rgba(54,31,46,1) 0%, 
+        rgba(52,61,67,1) 50%, 
+        rgba(54,31,46,1) 100%);   
+    --purple-pacificBlue-Gradient: linear-gradient(90deg, 
+        rgba(87, 21, 122,1) 0%, 
+        rgba(71,101,149,1) 45%, 
+        rgb(87, 21, 122) 100%); 
+    --purple-pink-green-Gradient:linear-gradient(35deg, 
+        rgba(82,83,168,1) 0%, 
+        rgba(230,108,145,1) 35%, 
+        rgba(142,190,107,1) 105%);
+    --yellow-blue-gradient: linear-gradient(40deg, 
+        rgba(41,61,95,1) 0%, 
+        rgba(117,125,99,1) 35%, 
+        rgba(248,162,57,1) 135%);
+    --gold-Gradient: linear-gradient(65deg, 
+        rgba(0,0,0,1) 0%, 
+        rgba(175,129,79,1) 50%,
+        rgba(0,0,0,1) 100%); 
+    --brown-Gradient: linear-gradient(120deg, 
+        rgba(0,0,0,1) 0%, 
+        rgba(128,96,79,1) 45%, 
+        rgba(0,0,0,1) 100%); 
 }
 ::-webkit-scrollbar {
     width: 8px;
@@ -25,17 +86,71 @@ body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
-    background: rgb(240, 237, 237);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(168,19,24,1) 50%, rgba(0,0,0,1) 100%);
+    color: var(--clr-blk);
+    background-color: var(--clr-white);
     cursor: default;
     overflow: hidden;
+}
+/*BACKGROUNDS*/
+.bg {
+    width: 100%;
+    height: 100vh;
+    background: rgb(0,0,0);
+}
+.bg.blk-white {
+    background: var(--blk-white-Gradient);
+}
+.bg.red {
+    background: var(--red-Gradient);
+}
+.bg.red-pink {
+    background: var(--red-pink);
+}
+.bg.crimson {
+    background: var(--crimson-Gradient);
+}
+.bg.blue {
+    background: var(--blue-Gradient);
+}
+.bg.darkBlue {
+    background: var(--darkBlue-Gradient);
+}
+.bg.purple-pacificBlue {
+    background: var(--purple-pacificBlue-Gradient);
+}
+.bg.red-peach {
+    background: var(--red-peach);
+}
+.bg.orange {
+    background: var(--orange-Gradient);
+}
+.bg.orange-blue {
+    background: var(--orange-blue-Gradient);
+}
+.bg.yellow-blue {
+    background: var(--yellow-blue-gradient);
+}
+.bg.gold {
+    background: var(--gold-Gradient);
+}
+.bg.brown {
+    background: var(--brown-Gradient);
+}
+.bg.eggplant-aegean {
+    background: var(--eggplant-aegean-Gradient);
+}
+.bg.purple-pink-green {
+    background: var(--purple-pink-green-Gradient);
 }
 /*POSTER INFORMATION*/
 .grid-container {
     display: flex;
     width: 50%;
-    margin: 75px auto;
     border: solid 2px var(--clr-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .grid-container .left img {
     display: block;
@@ -43,7 +158,6 @@ body {
     height: auto;
 }
 .grid-container .right .content {
-    padding: 1rem;
     color: var(--clr-blk);
     background-color: var(--clr-white);
     overflow-Y: scroll;
