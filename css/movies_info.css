@@ -10,43 +10,52 @@
     --clr-offWhite: #c4c2c2;
     --clr-grey: #3e3b3b;
 }
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--clr-white);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--clr-grey);
+}
 body {
     width: 100%;
     height: 100vh;
-    color: var(--clr-blk);
-    background-color: var(--clr-white);
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
+    background: rgb(240, 237, 237);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(168,19,24,1) 50%, rgba(0,0,0,1) 100%);
+    cursor: default;
+    overflow: hidden;
 }
-/*FOOTER*/
-footer {
-    margin: 200px auto 0;
-    text-align: center;
-    width: 90%;
-    line-height: 1.6;
-    padding-bottom: 2rem;
+/*POSTER INFORMATION*/
+.grid-container {
+    display: flex;
+    width: 50%;
+    margin: 75px auto;
+    border: solid 2px var(--clr-white);
 }
-footer h2 {
-    font-size: clamp(1rem , 3vw, 1.1rem);
-    font-weight: 400;
-    letter-spacing: .25px;
-    text-transform: uppercase;
-}
-footer h2::before {
-    content: '';
+.grid-container .left img {
     display: block;
-    position: relative;
-    bottom: 1rem;
-    border-top: solid 2px var(--clr-grey);
-    margin: 0 auto;
-    max-width: 60rem;
+    width: 300px;
+    height: auto;
 }
-footer p i {
-    font-size: .9rem;
+.grid-container .right .content {
+    padding: 1rem;
+    color: var(--clr-blk);
+    background-color: var(--clr-white);
+    overflow-Y: scroll;
+    height: 435px;
 }
 @media screen and (prefers-color-scheme: dark) {
     body {
         color: var(--clr-white);
+        background-color: var(--clr-blk);
+    }
+    .grid-container .right .content {
+        color: var(--clr-offWhite);
         background-color: var(--clr-blk);
     }
 }

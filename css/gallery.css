@@ -109,6 +109,7 @@ body {
 }
 .title h1 {
     font-weight: 400;
+    margin-bottom: 10px;
 }
 .title p {
     font-weight: 400;
