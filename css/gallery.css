@@ -10,7 +10,7 @@
     --clr-offWhite: #c4c2c2;
     --clr-grey: #3e3b3b;
     --clr-red: #cc0e11;
-    --clr-orange: #e07a05;
+    --clr-orange: #eb6207;
     --clr-green: #5d960e;
     --clr-blue: #1b5cdd;
     --clr-indigo: #6f29e1;
@@ -21,11 +21,11 @@
     width: 8px;
 }
 ::-webkit-scrollbar-track {
-    background-color: var(--clr-grey);
+    background-color: var(--clr-offWhite);
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: var(--clr-offWhite);
+    background-color: var(--clr-grey);
 }
 body {
     width: 100%;
@@ -465,6 +465,12 @@ footer p i {
 }
 /*DARK MODE MEDIA QUERY*/
 @media screen and (prefers-color-scheme: dark) {
+    ::-webkit-scrollbar-track {
+        background-color: var(--clr-grey);
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--clr-offWhite);
+    }
     body {
         color: var(--clr-white);
         background-color: var(--clr-blk);
