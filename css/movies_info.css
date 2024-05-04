@@ -176,7 +176,7 @@ body {
     width: 100%;
     padding-right: 2rem;
 }
-.grid-container .right .content .title h1 {
+.grid-container .right .content h1 {
     font-family: 'Outfit', sans-serif;
     font-size: clamp(1.2rem, 3vw, 1.5rem);
     text-transform: uppercase;
@@ -199,20 +199,19 @@ body {
 .grid-container .right .content p {
     padding-left: .35rem;
 }
-.grid-container .right .content .cast .img-wrapper {
+.grid-container .right .content .img-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
     text-transform: capitalize;
 }
-.grid-container .right .content .cast .img-wrapper .profile img {
+.grid-container .right .content .img-wrapper img {
     width: 100px;
     height: auto;
     border-radius: 50%;
     margin: 0 auto;
 }
-.grid-container .right .content .cast .img-wrapper .profile p {
-    font-size: 1rem;
+.grid-container .right .content .img-wrapper p {
     margin: 5px auto;
     line-height: 1.3;
 }
@@ -245,13 +244,13 @@ body {
     }
     .grid-container .right .content {
         padding: .15rem .75rem;
-        max-height: 20rem;
+        max-height: 15rem;
         overflow-y: auto;
     }
-    .grid-container .right .content .cast .img-wrapper {
+    .grid-container .right .content .img-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
-    .grid-container .right .content .cast .img-wrapper .profile img {
+    .grid-container .right .content .img-wrapper img {
         margin: 25px auto 0;
     }
 }
@@ -259,7 +258,7 @@ body {
     .grid-container {
         width: 85%;
     }
-    .grid-container .right .content .cast .img-wrapper {
+    .grid-container .right .content .img-wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
 }
