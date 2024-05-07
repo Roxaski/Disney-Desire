@@ -361,7 +361,7 @@ body {
         background: var(--dark-mode-Gradient);
     }
     .grid-container {
-        border: 2px solid var(--clr-blk);
+        border: none;
         color: var(--clr-offWhite);
         background-color: var(--clr-blk);
     }
