@@ -144,11 +144,7 @@ body {
     border: 3px solid var(--clr-blk);
     width: 25px;
     height: 25px;
-    background: rgb(2,0,36);
-    background: linear-gradient(165deg,
-                 rgba(2,0,36,1) 0%,
-                 rgba(162,4,194,1) 55%,
-                 rgba(0,0,0,1) 100%);
+    background: var(--clr-white);
     border-radius: 15px;
     z-index: 1;
 }
@@ -166,12 +162,9 @@ body {
     border-radius: 15px;
     line-height: 1.6;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, .6);
-    color: var(--clr-white);
-    background: rgb(2,0,36);
-    background: linear-gradient(165deg,
-                 rgba(2,0,36,1) 0%,
-                 rgba(162,4,194,1) 105%,
-                 rgba(0,0,0,1) 100%);
+    color: var(--clr-grey);
+    background: var(--clr-white);
+    border: solid 2px var(--clr-blk);
 }
 .timeline .container .content h2,
 .timeline .container .content h3 {
@@ -188,7 +181,7 @@ body {
 .scroll-top {
     position: fixed;
     bottom: 2rem;
-    right: 2.75rem;
+    right: 2.5rem;
     font-size: clamp(2.5rem, 3vw, 3rem);
     color: var(--clr-violet);
     transition: 250ms ease-in-out;
