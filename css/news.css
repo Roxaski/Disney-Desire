@@ -106,8 +106,11 @@ body {
 .articles {
     display: flex;
     margin-left: .75rem;
-    border-bottom: 2px solid var(--clr-grey);
+    border-top: 2px solid var(--clr-grey);
     margin: 0 auto;
+}
+.articles:nth-child(1) {
+    border-top: none;
 }
 .articles img {
     width: 350px;
