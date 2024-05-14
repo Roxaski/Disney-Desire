@@ -280,13 +280,11 @@ body {
     width: 97%;
     font-weight: 400;
 }
-.articles .content span {
-    font-weight: 500;
-}
 .articles .content .tags {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin: 3px auto;
 }
 .articles .content .tags p {
     color: var(--clr-white);
@@ -764,7 +762,6 @@ footer p i {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 96%;
     }
     .articles:nth-last-child(1) {
         border-bottom: 0;
