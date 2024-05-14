@@ -100,20 +100,20 @@ body {
 .wrapper {
     position: relative;
     top: 125px;
-    max-width: 65rem;
+    max-width: 70rem;
     margin: 0 auto;
 }
-.title {
-    text-align: center;
-    width: 100%;
+.wrapper .title {
+    padding: .45rem;
+    border-radius: 5px;
+    background-color: var(--clr-blue);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+    margin:  0 auto;
 }
-.title h1 {
+.wrapper .title h1 {
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
     font-weight: 400;
-    margin-bottom: 10px;
-}
-.title p {
-    font-weight: 400;
-    font-size: clamp(1.1rem, 3vw, 1.2rem);
+    color: var(--clr-white);
 }
 .accordion {
     margin: 50px auto;
@@ -136,12 +136,12 @@ body {
 }
 .accordion ul li label::before {
     content: '';
-    margin-right: 65px;
+    margin-right: 45px;
 }
 .accordion ul li label i {
     position: absolute;
     top: .8rem;
-    left: 2rem;
+    left: 1.1rem;
     font-size: clamp(1rem, 3vw, 1.2rem);
     transition: 125ms ease;
 }
@@ -320,11 +320,6 @@ footer p i {
     .title {
         width: 90%;
         margin: 0 auto;
-    }
-}
-@media screen and (max-width: 585px) {
-    .title {
-        text-align: left;
     }
 }
 @media screen and (max-width: 400px) {
