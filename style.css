@@ -262,7 +262,6 @@ body {
     object-fit: cover;
     margin: 10px 0;
     box-shadow: 0 1px 5px rgba(0, 0, 0, .6);
-    border-radius: 5px;
 }
 .articles .content {
     margin-left: .75rem;
@@ -314,7 +313,6 @@ body {
     width: 100%;
     height: auto;
     box-shadow: -2px 3px 5px rgba(0, 0, 0, .8);
-    border-radius: 5px;
     transition: 250ms ease-in-out;
 }
 /*ARCHIVE*/

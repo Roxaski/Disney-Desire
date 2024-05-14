@@ -97,6 +97,85 @@ body {
     display: none;
 }
 /*MAIN*/
+.wrapper {
+    position: relative;
+    top: 100px;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+.articles {
+    display: flex;
+    margin-left: .75rem;
+    border-bottom: 2px solid var(--clr-grey);
+    margin: 0 auto;
+}
+.articles img {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+    margin: 10px 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .6);
+}
+.articles .content {
+    margin-left: .75rem;
+    line-height: 1.75;
+}
+.articles .content h2 {
+    display: inline-block;
+    font-weight: 500;
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
+}
+.articles .content a {
+    color: var(--clr-blk);
+    text-decoration: none;
+}
+.articles .content .article-preview p {
+    width: 97%;
+    font-weight: 400;
+}
+.articles .content span {
+    font-weight: 500;
+}
+.articles .content .tags {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.articles .content .tags p {
+    color: var(--clr-white);
+    font-size: .9rem;
+    margin-left: .5rem;
+    background-color: var(--clr-red);
+    padding: 0 .25rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+/*FOOTER*/
+footer {
+    margin: 200px auto 0;
+    text-align: center;
+    width: 90%;
+    line-height: 1.6;
+    padding-bottom: 2rem;
+}
+footer h2 {
+    font-size: clamp(1rem , 3vw, 1.1rem);
+    font-weight: 400;
+    letter-spacing: .25px;
+    text-transform: uppercase;
+}
+footer h2::before {
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 1rem;
+    border-top: solid 2px var(--clr-grey);
+    margin: 0 auto;
+    max-width: 60rem;
+}
+footer p i {
+    font-size: .9rem;
+}
 /*MEDIA QUERY'S*/
 @media screen and (max-width: 1085px) {
     .no-scroll {
@@ -288,5 +367,14 @@ body {
     }
     .links ul li a {
         color: var(--clr-white);
+    }
+    .articles {
+        border-bottom: 2px solid var(--clr-offWhite);
+    }
+    .articles .content a {
+        color: var(--clr-white);
+    }
+    .articles .content .tags p {
+        background-color: var(--clr-grey);
     }
 }
