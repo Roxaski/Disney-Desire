@@ -14,6 +14,7 @@
     --clr-burntOrange:#a7441f;
     --clr-crimson: #801c29;
     --clr-darkBlue: #184d7c;
+    --clr-eggplant: #361f2e;;
     --clr-gold: #af814f;
     --clr-magenta: #a90243;
     --clr-navyBlue: #2d3d5a;
@@ -23,7 +24,7 @@
     --clr-redPink: #8a1828;
     --dark-mode-Gradient: radial-gradient(circle, 
         rgba(0,0,0,1) 0%, 
-        rgb(81, 81, 82) 45%,
+        rgb(81, 81, 82) 55%,
         rgba(0,0,0,1) 100%); 
     --blk-grey-Gradient: radial-gradient(circle, 
         rgba(0,0,0,1) 0%, 
@@ -224,8 +225,8 @@ body {
 .grid-container .right .content .darkBlue {
     background: var(--clr-darkBlue);
 }
-.grid-container .right .content .eggplant-aegean {
-    background: var(--eggplant-aegean-Gradient);
+.grid-container .right .content .eggplant {
+    background: var(--clr-eggplant);
 }
 .grid-container .right .content .gold {
     background: var(--clr-gold);
@@ -375,7 +376,7 @@ body {
     .grid-container .right .content .burntOrange,
     .grid-container .right .content .crimson,
     .grid-container .right .content .darkBlue,
-    .grid-container .right .content .eggplant-aegean,
+    .grid-container .right .content .eggplant,
     .grid-container .right .content .gold,
     .grid-container .right .content .magenta,
     .grid-container .right .content .navyBlue,

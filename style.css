@@ -264,6 +264,8 @@ body {
     box-shadow: 0 1px 5px rgba(0, 0, 0, .6);
 }
 .articles .content {
+    position: relative;
+    top: .25rem;
     margin-left: .75rem;
     line-height: 1.75;
 }
@@ -279,6 +281,10 @@ body {
 .articles .content .article-preview p {
     width: 97%;
     font-weight: 400;
+}
+.articles .content p {
+    font-weight: 500;
+    font-size: clamp(.8rem, 3vw, .9rem);
 }
 .articles .content .tags {
     display: flex;
