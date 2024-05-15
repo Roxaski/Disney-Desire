@@ -103,22 +103,10 @@ body {
     max-width: 70rem;
     margin: 0 auto;
 }
-.wrapper .title {
-    padding: .45rem;
-    border-radius: 5px;
-    background-color: var(--clr-indigo);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
-    margin: 0 auto;
-}
-.wrapper .title h1 {
-    font-size: clamp(1.2rem, 3vw, 1.4rem);
-    font-weight: 400;
-    color: var(--clr-white);
-}
 .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 25px auto;
+    margin: 0 auto;
     gap: .5rem;
 }
 .grid-wrapper .img-container {
@@ -386,10 +374,6 @@ footer p i {
     .wrapper {
         top: 100px;
     }
-    .title {
-        width: 90%;
-        margin: 0 auto;
-    }
     .grid-wrapper {
         padding: 0 2rem;
     }
@@ -435,10 +419,6 @@ footer p i {
         position: relative;
         top: 1.5rem;
         line-height: .5;
-    }
-    .title {
-        text-align: left;
-        width: 90%;
     }
     .img-preview {
         margin: 0 auto;
