@@ -150,6 +150,7 @@ body {
     width: 300px;
     height: auto;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+    margin: 5px 5px;
     cursor: pointer;
 }
 /*FOOTER*/
@@ -375,8 +376,5 @@ footer p i {
     }
     .accordion ul li label {
         background-color: var(--clr-grey);
-    }
-    .accordion .content img {
-        border: solid var(--clr-offWhite) 2px;
     }
 }
