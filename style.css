@@ -211,7 +211,7 @@ body {
 }
 /*MAIN*/
 .wrapper {
-    max-width: 80rem;
+    max-width: 70rem;
     margin: 0 auto;
 }
 /*IMAGE SLIDER*/
@@ -224,6 +224,7 @@ body {
 }
 .title {
     position: relative;
+    overflow: hidden;
 }
 .title .header {
     display: block;
@@ -757,9 +758,6 @@ footer p i {
     }
 }
 @media screen and (max-width: 805px) {
-    .title .header img {
-        max-width: 250px;
-    }
     .article-wrapper {
         margin: 0 auto;
     }

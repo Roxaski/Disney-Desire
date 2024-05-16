@@ -118,6 +118,7 @@ article p {
     margin: 25px auto;
 }
 article span a {
+    text-transform: capitalize;
     color: var(--clr-orange);
     text-decoration: underline;
     font-weight: 500;
@@ -155,7 +156,7 @@ footer p i {
     font-size: .9rem;
 }
 /*MEDIA QUERY'S*/
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1175px) {
     .no-scroll {
         overflow-y: hidden;
     }
@@ -277,6 +278,9 @@ footer p i {
         left: 50%;
         transform: translate(-50%);
         top: .5rem;
+    }
+    .wrapper {
+        padding: 0 1rem;
     }
 }
 @media screen and (max-width: 400px) {

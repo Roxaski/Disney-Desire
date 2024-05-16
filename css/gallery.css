@@ -248,7 +248,7 @@ footer p i {
     font-size: .9rem;
 }
 /*MEDIA QUERY'S*/
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1175px) {
     .no-scroll {
         overflow-y: hidden;
     }
@@ -372,10 +372,7 @@ footer p i {
         top: .5rem;
     }
     .wrapper {
-        top: 100px;
-    }
-    .grid-wrapper {
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
     .img-container .content {
         visibility: hidden;
