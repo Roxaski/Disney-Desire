@@ -103,16 +103,14 @@ body {
     max-width: 70rem;
     margin: 0 auto;
 }
-article .title {
+header h1,
+article .title h2  {
     padding: .45rem;
     border-radius: 5px;
-    background-color: var(--clr-green);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
-}
-article .title h1 {
-    font-size: clamp(1.2rem, 3vw, 1.4rem);
     font-weight: 400;
     color: var(--clr-white);
+    background-color: var(--clr-green);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
 }
 article img {
     display: block;
@@ -404,7 +402,10 @@ footer p i {
     .links ul li a {
         color: var(--clr-white);
     }
-    article .title {
+    header h1 {
+        background-color: var(--clr-grey);
+    }
+    article .title h2 {
         background-color: var(--clr-grey);
     }
 }
