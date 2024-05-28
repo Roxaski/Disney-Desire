@@ -14,3 +14,5 @@ Kermit the frog https://www.pinterest.co.uk/hashithestar/
 https://pixabay.com/
 https://www.pexels.com/
 https://unsplash.com/
+
+# MAKE A NOTE ABOUT FAIR USE ETC 
