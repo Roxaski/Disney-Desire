@@ -144,12 +144,12 @@ body {
     letter-spacing: 1px;
     margin-top: 3px;
 }
-.grid-container aside ul li {
+.grid-container ul li {
     list-style: none;
     margin: 15px auto 0;
     font-size: clamp(1rem, 3vw, 1.1rem);
 }
-.grid-container aside ul li p {
+.grid-container ul li p {
     margin: 3px 0;
 }
 .grid-container aside ul li img {
