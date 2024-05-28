@@ -134,6 +134,10 @@ body {
 .grid-container article p {
     margin: 25px auto;
 }
+.grid-container .embed-link {
+    width: 100%;
+    height: auto;
+}
 .grid-container .embed-link.dark {
     display: none;
 }
@@ -150,7 +154,7 @@ body {
     font-size: clamp(1rem, 3vw, 1.1rem);
 }
 .grid-container ul li p {
-    margin: 3px 0;
+    font-size: clamp(.95rem, 3vw, 1rem);
 }
 .grid-container aside ul li img {
     display: block;
