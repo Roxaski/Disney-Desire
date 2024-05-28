@@ -58,6 +58,8 @@ body {
 }
 .links ul .logo .logo_dark {
     display: block;
+    color: var(--clr-white);
+    text-align: center;
 }
 .links ul li {
     list-style: none;
@@ -119,6 +121,7 @@ article img {
     height: auto;
     margin-right: 1.5rem;
     margin-bottom: .5rem;
+    color: var(--clr-white);
     box-shadow: 0 2px 5px rgba(0, 0, 0, .7);
 }
 article p {
@@ -333,6 +336,7 @@ footer p i {
         max-width: 450px;
         height: auto;
         margin: 0 auto;
+        color: var(--clr-grey);
     }
     .memoriam .content {
         text-align: center;
@@ -407,5 +411,8 @@ footer p i {
     }
     article .title h2 {
         background-color: var(--clr-grey);
+    }
+    .memoriam img {
+        color: var(--clr-white);
     }
 }

@@ -177,6 +177,7 @@ body {
     display: block;
     width: 95%;
     height: 100%;
+    color: var(--clr-grey);
 }
 .grid-container .left #mobile-poster {
     display: none;
@@ -272,6 +273,7 @@ body {
     height: auto;
     border-radius: 50%;
     margin: 0 auto;
+    color: var(--clr-grey);
 }
 .grid-container .right .content .img-wrapper p {
     margin: 5px auto;
@@ -370,6 +372,9 @@ body {
         color: var(--clr-offWhite);
         background-color: var(--clr-blk);
     }
+    .grid-container .left img {
+        color: var(--clr-white);
+    }
     .grid-container .right .content .grey,
     .grid-container .right .content .blue,
     .grid-container .right .content .brown,
@@ -389,5 +394,8 @@ body {
     .grid-container .right .content .yellow-blue {
         color: var(--clr-offWhite);
         background: var(--clr-grey);
+    }
+    .grid-container .right .content .img-wrapper img {
+        color: var(--clr-white);
     }
 }

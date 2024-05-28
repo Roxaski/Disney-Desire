@@ -58,6 +58,8 @@ body {
 }
 .links ul .logo .logo_dark {
     display: block;
+    color: var(--clr-white);
+    text-align: center;
 }
 .links ul li {
     list-style: none;
@@ -125,6 +127,7 @@ article img {
     display: block;
     width: 100%;
     height: auto;
+    color: var(--clr-grey);
     box-shadow: 2px 3px 8px rgba(0, 0, 0, .7);
 }
 /*FOOTER*/
@@ -354,5 +357,8 @@ footer p i {
     article span a {
         color: var(--clr-white);
         font-weight: 600;
+    }
+    article img {
+        color: var(--clr-white);
     }
 }

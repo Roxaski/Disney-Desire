@@ -55,9 +55,12 @@ body {
     max-width: 215px;
     height: auto;
     margin: auto 10px;
+    color: var(--clr-grey);
 }
 .links ul .logo .logo_dark {
     display: block;
+    color: var(--clr-white);
+    text-align: center;
 }
 .links ul li {
     list-style: none;
@@ -123,6 +126,7 @@ body {
     width: 100%;
     height: auto;
     margin: 10px auto;
+    color: var(--clr-grey);
 }
 .grid-container article .information span {
     font-weight: 500;
@@ -159,6 +163,7 @@ body {
 .grid-container aside ul li img {
     display: block;
     width: 100%;
+    color: var(--clr-grey);
     height: auto;
     cursor: pointer;
 }
@@ -389,10 +394,16 @@ footer p i {
     .links ul li a {
         color: var(--clr-white);
     }
+    .grid-container article img {
+        color: var(--clr-white);
+    }
     .grid-container .embed-link.light {
         display: none;
     }
     .grid-container .embed-link.dark {
         display: block;
+    }
+    .grid-container aside ul li img {
+        color: var(--clr-white);
     }
 }

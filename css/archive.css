@@ -58,6 +58,8 @@ body {
 }
 .links ul .logo .logo_dark {
     display: block;
+    color: var(--clr-white);
+    text-align: center;
 }
 .links ul li {
     list-style: none;
