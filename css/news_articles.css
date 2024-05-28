@@ -134,6 +134,9 @@ body {
 .grid-container article p {
     margin: 25px auto;
 }
+.grid-container .embed-link.dark {
+    display: none;
+}
 .grid-container aside h2 {
     text-transform: uppercase;
     font-size: clamp(1.1rem, 3vw, 1.3rem);
@@ -381,5 +384,11 @@ footer p i {
     }
     .links ul li a {
         color: var(--clr-white);
+    }
+    .grid-container .embed-link.light {
+        display: none;
+    }
+    .grid-container .embed-link.dark {
+        display: block;
     }
 }
