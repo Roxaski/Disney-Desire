@@ -1,19 +1,22 @@
 # Disney-Desire
 
-## THIS IS JUST FOR MY REFERENCE RIGHT NOW WHILE IT'S PRIVATE - FORMAT PROPERLY BEFORE PUBLISHING PUBLICLY!!!!
+Created this website for my fiancé, and our shared passion for Disney!
+
+Any and All feedback is greatly appreciated, hope you enjoy browsing this website as much as i enjoyed making it 🫶
 
 # Image Gallery Credits
-Wall-E Render https://www.reddit.com/r/wallpaper/
-Frozen Render https://www.reddit.com/r/Frozen/
-Rya https://www.deviantart.com/kahlanamnelle
-Epic Mickey Concept Art https://twitter.com/GenLosstwt
-Kingdom Hearts Render https://www.deviantart.com/georgepg
-Kermit the frog https://www.pinterest.co.uk/hashithestar/
+- [Wall-E Render](https://www.reddit.com/r/wallpaper/)
+- [Frozen Render](https://www.reddit.com/r/Frozen/)
+- [Rya](https://www.deviantart.com/kahlanamnelle)
+- [Epic Mickey Concept Art](https://twitter.com/GenLosstwt)
+- [Kingdom Hearts Render](https://www.deviantart.com/georgepg)
+- [Kermit the frog](https://www.pinterest.co.uk/hashithestar/)
 
 # Other Image Credits
-https://pixabay.com/
-https://www.pexels.com/
-https://unsplash.com/
-https://www.reddit.com/
+- [pixabay](https://pixabay.com/)
+- [pexels](https://pexels.com/)
+- [unsplash](https://unsplash.com/)
 
-# MAKE A NOTE ABOUT FAIR USE ETC 
+# COPYRIGHT
+
+### All copyright material is the property of Disney, Pixar, Marvel, Nintendo and their respective owners.
