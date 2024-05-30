@@ -374,9 +374,6 @@ footer p i {
     .timeline .container.right::after {
         left: -40px;
     }
-    .timeline .container {
-        width: 70%;
-    }
 }
 @media screen and (max-width: 345px) {
     .mobile_logo img {
