@@ -106,7 +106,7 @@ body {
     max-width: 70rem;
     margin: 0 auto;
 }
-/*MAIN*/
+/*ARTICLE*/
 .grid-container {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -118,8 +118,7 @@ body {
 .grid-container header h1 {
     text-transform: uppercase;
     font-size: clamp(1.25rem, 3vw, 1.5rem);
-    letter-spacing: .5px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .grid-container article img {
     display: block;
@@ -138,26 +137,48 @@ body {
 .grid-container article p {
     margin: 25px auto;
 }
+.grid-container article p a {
+    color: var(--clr-red);
+    text-decoration: none;
+}
+.grid-container article p span {
+    font-weight: 500;
+}
 .grid-container .embed-link {
     width: 100%;
     height: auto;
 }
+.grid-container ul li {
+    list-style: none;
+    text-transform: capitalize;
+    font-size: clamp(1rem, 3vw, 1.1rem);
+    font-weight: 300;
+}
+.grid-container article ul li {
+    margin: 25px auto 0;
+}
+.grid-container article ul li span {
+    margin-left: 1rem;
+}
 .grid-container .embed-link.dark {
     display: none;
 }
+.grid-container article ul li::before {
+    content: '';
+    border-left: 5px solid var(--clr-red);
+    height: 100%;
+}
+/*ASIDE*/
 .grid-container aside h2 {
     text-transform: uppercase;
     font-size: clamp(1.1rem, 3vw, 1.3rem);
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-weight: 300;
     margin-top: 3px;
 }
-.grid-container ul li {
-    list-style: none;
+.grid-container aside ul li {
     margin: 15px auto 0;
-    font-size: clamp(1rem, 3vw, 1.1rem);
 }
-.grid-container ul li p {
+.grid-container aside ul li p {
     font-size: clamp(.95rem, 3vw, 1rem);
 }
 .grid-container aside ul li img {
