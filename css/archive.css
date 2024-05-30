@@ -269,6 +269,7 @@ footer p i {
         color: var(--clr-white);
         height: 0;
         padding: 0;
+        -webkit-tap-highlight-color: transparent;
     }
     .hamburger_menu {
         display: flex;
@@ -279,6 +280,8 @@ footer p i {
         right: 2.3em;
         width: 1.1rem;
         height: 2rem;
+        background-color: transparent;
+        -webkit-tap-highlight-color: transparent;
         z-index: 4;
     }
     .hamburger_menu .bars {

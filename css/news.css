@@ -134,6 +134,7 @@ header h1 {
 .articles .content h2 {
     display: inline-block;
     font-weight: 500;
+    line-height: 1.4;
     font-size: clamp(1.2rem, 3vw, 1.4rem);
 }
 .articles .content a {
@@ -250,6 +251,7 @@ footer p i {
         color: var(--clr-white);
         height: 0;
         padding: 0;
+        -webkit-tap-highlight-color: transparent;
     }
     .hamburger_menu {
         display: flex;
@@ -260,6 +262,8 @@ footer p i {
         right: 2.3em;
         width: 1.1rem;
         height: 2rem;
+        background-color: transparent;
+        -webkit-tap-highlight-color: transparent;
         z-index: 4;
     }
     .hamburger_menu .bars {
