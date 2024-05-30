@@ -217,6 +217,7 @@ footer p i {
 /*MEDIA QUERY'S*/
 @media screen and (max-width: 1175px) {
     .no-scroll {
+        position: fixed;
         overflow-y: hidden;
     }
     nav.active .links {
