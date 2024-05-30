@@ -214,6 +214,9 @@ body {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
+.img-preview .img-box .fa-chevron-right {
+    margin-left: .35rem;
+}
 .img-focus {
     display: none;
     position: fixed;
