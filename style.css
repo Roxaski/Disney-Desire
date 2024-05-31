@@ -804,7 +804,7 @@ footer p i {
         left: -30px;
     }
     .timeline .container {
-        width: 100%;
+        width: 70vw;
         padding: 0;
         margin: 15px auto;
     }
@@ -837,9 +837,6 @@ footer p i {
     }
     .articles .content .tags {
         display: none;
-    }
-    .timeline .container {
-        min-width: 190px;
     }
     .history-wrapper img {
         float: none;
