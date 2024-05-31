@@ -396,6 +396,10 @@ footer p i {
     .links ul::-webkit-scrollbar {
         display: none;
     }
+    .links ul li {
+        position: relative;
+        top: 2.5rem;
+    }
     .hamburger_menu {
         top: 18px;
         right: 27px;
@@ -405,22 +409,6 @@ footer p i {
         top: 0;
         right: 5px;
         max-width: 60px;
-    }
-    .timeline::after {
-        left: 35px;
-    }
-    .timeline .container {
-        width: 80%;
-        padding: 0;
-        margin: 15px auto;
-        margin-left: 4rem;
-    }
-    .timeline .container.right {
-        left: 0;
-    }
-    .timeline .container.left::after,
-    .timeline .container.right::after {
-        left: -45px;
     }
 }
 @media screen and (orientation: landscape) and (max-width: 675px) {

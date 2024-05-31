@@ -368,6 +368,10 @@ footer p i {
     .links ul::-webkit-scrollbar {
         display: none;
     }
+    .links ul li {
+        position: relative;
+        top: 2.5rem;
+    }
     .hamburger_menu {
         top: 18px;
         right: 27px;
