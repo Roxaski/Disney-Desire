@@ -418,15 +418,19 @@ footer p i {
     }
 }
 @media screen and (orientation: landscape) and (max-width: 934px) {
-    .links {
-        padding-bottom: 2rem;
-    }
     .links ul {
+        display: flex;
+        align-items: flex-start;
+        scrollbar-width: none;
+        width: 100%;
         overflow-y: auto;
+    }
+    .links ul::-webkit-scrollbar {
+        display: none;
     }
     .links ul li {
         position: relative;
-        top: 1.5rem;
+        top: 0;
         line-height: .5;
     }
     .hamburger_menu {
