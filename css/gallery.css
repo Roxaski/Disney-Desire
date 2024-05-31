@@ -430,8 +430,7 @@ footer p i {
     }
     .links ul li {
         position: relative;
-        top: 0;
-        line-height: .5;
+        top: 18px;
     }
     .hamburger_menu {
         top: 18px;

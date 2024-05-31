@@ -326,14 +326,29 @@ footer p i {
     }
 }
 @media screen and (orientation: landscape) and (max-width: 934px) {
-    .links {
-        overflow: auto;
-        padding-bottom: 2rem;
+    .links ul {
+        display: flex;
+        align-items: flex-start;
+        scrollbar-width: none;
+        width: 100%;
+        overflow-y: auto;
+    }
+    .links ul::-webkit-scrollbar {
+        display: none;
     }
     .links ul li {
         position: relative;
-        top: 1.5rem;
-        line-height: .5;
+        top: 18px;
+    }
+    .hamburger_menu {
+        top: 18px;
+        right: 27px;
+        width: 15px;
+    }
+    .hamburger_background img {
+        top: 0;
+        right: 5px;
+        max-width: 60px;
     }
 }
 @media screen and (orientation: landscape) and (max-width: 675px) {
