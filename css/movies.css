@@ -354,15 +354,6 @@ footer p i {
         max-width: 60px;
     }
 }
-@media screen and (orientation: landscape) and (max-width: 675px) {
-    .links ul li {
-        position: relative;
-        top: 7rem;
-    }
-    .links ul li:nth-last-child(1) {
-        padding-bottom: 1.3rem;
-    }
-}
 /*LIGHT MODE MEDIA QUERY*/
 @media screen and (prefers-color-scheme: light) {
     .mobile_logo .logo_dark {
