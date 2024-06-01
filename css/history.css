@@ -356,7 +356,7 @@ footer p i {
 }
 @media screen and (orientation: landscape) and (max-width: 934px) {
     .links {
-        padding: 2rem 0;
+        padding-bottom: 2rem;
     }
     .links ul {
         display: flex;
@@ -370,7 +370,7 @@ footer p i {
     }
     .links ul li {
         position: relative;
-        top: 2.5rem;
+        top: 7rem;
     }
     .hamburger_menu {
         top: 18px;
