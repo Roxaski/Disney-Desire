@@ -349,14 +349,12 @@ footer p i {
         transform: translate(0);
     }
 }
-@media screen and (max-width: 375px) {
-    .articles .content .tags {
-        display: none;
-    }
-}
 @media screen and (max-width: 374px) {
     .mobile_logo img {
         width: 200px;
+    }
+    .articles .content .tags {
+        display: none;
     }
 }
 @media screen and (max-width: 300px) {
