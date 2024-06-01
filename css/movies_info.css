@@ -317,7 +317,7 @@ body {
     }
     .grid-container .right .content {
         padding: .15rem .75rem;
-        max-height: 15rem;
+        max-height: 30vh;
         overflow-y: auto;
     }
     .grid-container .right .content .img-wrapper {
