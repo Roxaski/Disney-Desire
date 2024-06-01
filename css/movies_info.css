@@ -343,7 +343,7 @@ body {
     }
     .grid-container .left img {
         display: block;
-        width: 100%;
+        width: 90%;
     }
     .grid-container .left #mobile-poster {
         display: none;
