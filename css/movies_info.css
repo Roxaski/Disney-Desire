@@ -305,7 +305,8 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        max-width: 500px;
+        max-width: 350px;
+        line-height: 1.25;
         overflow: hidden;
     }
     .grid-container .left img {
@@ -339,7 +340,7 @@ body {
     .grid-container {
         display: flex;
         flex-direction: row;
-        max-width: 40rem;
+        max-width: 550px;
         height: auto;
     }
     .grid-container .left img {
