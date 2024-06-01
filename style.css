@@ -775,6 +775,9 @@ footer p i {
     }
 }
 @media screen and (max-width: 805px) {
+    .img-slider {
+        min-height: 400px;
+    }
     .poster-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -794,7 +797,15 @@ footer p i {
         left: -45px;
     }
 }
+@media screen and (max-width: 658px) {
+    .img-slider {
+        min-height: 350px;
+    }
+}
 @media screen and (max-width: 465px) {
+    .img-slider {
+        min-height: 300px;
+    }
     .title .header img {
         max-width: 225px;
     }
@@ -809,6 +820,9 @@ footer p i {
     }
 }
 @media screen and (max-width: 375px) {
+    .img-slider {
+        min-height: 200px;
+    }
     .title .header img {
         max-width: 180px;
         bottom: .35rem;
