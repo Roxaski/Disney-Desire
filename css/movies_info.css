@@ -340,7 +340,7 @@ body {
         display: flex;
         flex-direction: row;
         max-width: 40rem;
-        height: 90vh;
+        height: auto;
     }
     .grid-container .left img {
         display: block;
