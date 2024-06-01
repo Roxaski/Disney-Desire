@@ -116,7 +116,7 @@ header h1 {
 }
 .articles {
     display: flex;
-    margin: 25px auto;
+    margin: 15px auto;
 }
 .articles img {
     width: 335px;
@@ -343,19 +343,25 @@ footer p i {
         height: auto;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .mobile_logo img {
-        left: 1rem;
+        left: 2rem;
         transform: translate(0);
     }
+}
+@media screen and (max-width: 375px) {
     .articles .content .tags {
         display: none;
     }
 }
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 374px) {
     .mobile_logo img {
         width: 200px;
-        left: .5rem;
+    }
+}
+@media screen and (max-width: 300px) {
+    .mobile_logo img {
+        width: 165px;
     }
 }
 @media screen and (orientation: landscape) and (max-width: 934px) {
