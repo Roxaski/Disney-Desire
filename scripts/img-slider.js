@@ -18,7 +18,7 @@ let repeatAutoPlayImgs = () => {
         }
     
         imgSlides[imgSlideNumber].classList.add('active');
-    }, 8000);
+    }, 5000);
 };
 
 repeatAutoPlayImgs();
