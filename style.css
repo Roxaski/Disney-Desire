@@ -414,7 +414,7 @@ body {
 .history-wrapper img {
     display: block;
     float: left;
-    max-width: 225px;
+    width: 290px;
     height: auto;
     color: var(--clr-grey);
     box-shadow: 0 2px 5px rgba(0, 0, 0, .7);
@@ -800,6 +800,11 @@ footer p i {
 @media screen and (max-width: 658px) {
     .img-slider {
         min-height: 350px;
+    }
+}
+@media screen and (max-width: 489px) {
+    .history-wrapper img {
+        width: 100%;
     }
 }
 @media screen and (max-width: 465px) {
