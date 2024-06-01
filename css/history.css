@@ -292,8 +292,6 @@ footer p i {
         left: 2rem;
         transform: translate(0);
     }
-}
-@media screen and (max-width: 435px) {
     article img {
         display: none;
     }
