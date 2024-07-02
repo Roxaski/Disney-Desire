@@ -398,9 +398,14 @@ body {
 }
 .timeline .container .content h2,
 .timeline .container .content h3 {
-    font-size: clamp(1rem , 3vw, 1.1rem);
     font-weight: 500;
     text-transform: capitalize;
+}
+.timeline .container .content h2 {
+    font-size: clamp(1rem , 3vw, 1.4rem);
+}
+.timeline .container .content h3 {
+    font-size: clamp(.95rem , 3vw, 1rem);
 }
 .timeline .container .content p {
     font-weight: 400;
