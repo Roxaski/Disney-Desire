@@ -105,12 +105,12 @@ body {
     max-width: 70rem;
     margin: 0 auto;
 }
-.timeline {
+.archive {
     position: relative;
     margin: 0 auto;
     max-width: 60rem;
 }
-.timeline::after {
+.archive::after {
     content: '';
     position: absolute;
     width: 4px;
@@ -121,12 +121,12 @@ body {
     margin-left: -3px;
     border-radius: 5px;
 }
-.timeline .container {
+.archive .container {
     position: relative;
     padding: .5rem 2rem;
     width: 50%;
 }
-.timeline .container::after {
+.archive .container::after {
     content: '';
     position: absolute;
     top: 15px;
@@ -138,16 +138,16 @@ body {
     border-radius: 15px;
     z-index: 1;
 }
-.timeline .container.left {
+.archive .container.left {
     left: 0;
 }
-.timeline .container.right {
+.archive .container.right {
     left: 50%;
 }
-.timeline .container.right::after {
+.archive .container.right::after {
     left: -15px;
 }
-.timeline .container .content {
+.archive .container .content {
     padding: 1rem;
     border-radius: 15px;
     line-height: 1.6;
@@ -156,13 +156,13 @@ body {
     background: var(--clr-white);
     border: solid 2px var(--clr-blk);
 }
-.timeline .container .content h2,
-.timeline .container .content h3 {
+.archive .container .content h2,
+.archive .container .content h3 {
     font-size: clamp(1rem , 3vw, 1.1rem);
     font-weight: 500;
     text-transform: capitalize;
 }
-.timeline .container .content p {
+.archive .container .content p {
     font-weight: 400;
     font-size: clamp(1rem , 3vw, 1rem);
     margin: 5px auto;
@@ -343,20 +343,20 @@ footer p i {
     }
 }
 @media screen and (max-width: 585px) {
-    .timeline::after {
+    .archive::after {
         left: 35px;
     }
-    .timeline .container {
+    .archive .container {
         width: 80%;
         padding: 0;
         margin: 15px auto;
         margin-left: 4rem;
     }
-    .timeline .container.right {
+    .archive .container.right {
         left: 0;
     }
-    .timeline .container.left::after,
-    .timeline .container.right::after {
+    .archive .container.left::after,
+    .archive .container.right::after {
         left: -45px;
     }
 }
@@ -367,14 +367,14 @@ footer p i {
     }
 }
 @media screen and (max-width: 400px) {
-    .timeline::after {
+    .archive::after {
         left: 25px;
     }
-    .timeline .container {
+    .archive .container {
         margin-left: 3rem;
     }
-    .timeline .container.left::after,
-    .timeline .container.right::after {
+    .archive .container.left::after,
+    .archive .container.right::after {
         left: -40px;
     }
 }
@@ -452,10 +452,10 @@ footer p i {
     .links ul li a {
         color: var(--clr-white);
     }
-    .timeline .container::after {
+    .archive .container::after {
         background: var(--clr-offWhite);
     }
-    .timeline .container .content {
+    .archive .container .content {
         color: var(--clr-white);
         background: var(--clr-grey);
     }
