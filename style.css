@@ -287,12 +287,16 @@ body {
     text-decoration: none;
 }
 .articles .content .article-preview p {
+    font-size: 1.02rem;
     width: 97%;
     font-weight: 400;
 }
 .articles .content p {
     font-weight: 500;
-    font-size: clamp(.8rem, 3vw, .9rem);
+    font-size: 1rem;
+}
+.articles .content p span {
+    font-weight: 400;
 }
 .articles .content .tags {
     display: flex;

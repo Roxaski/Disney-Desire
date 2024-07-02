@@ -120,7 +120,7 @@ article p {
 article span a {
     text-transform: capitalize;
     color: var(--clr-orange);
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: 500;
 }
 article img {
@@ -373,6 +373,7 @@ footer p i {
     article span a {
         color: var(--clr-white);
         font-weight: 600;
+        text-decoration: underline;
     }
     article img {
         color: var(--clr-white);
