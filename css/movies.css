@@ -116,7 +116,7 @@ body {
     background-color: var(--clr-blue);
     border-radius: 5px;
     padding: .5rem;
-    font-size: clamp(1rem, 3vw, 1.3rem);
+    font-size: clamp(1rem, 3vw, 1.5rem);
     font-weight: 500;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
     cursor: pointer;

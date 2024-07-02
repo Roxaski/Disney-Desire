@@ -123,10 +123,9 @@ body {
 }
 .hero-grid .article p {
     position: absolute;
-    bottom: 0;
+    bottom: 7px;
     width: 100%;
     text-align: center;
-    margin: 5px auto;
     font-size: 1rem;
 }
 .hero-grid .article.one::before {
@@ -294,9 +293,6 @@ body {
 .articles .content p {
     font-weight: 500;
     font-size: 1rem;
-}
-.articles .content p span {
-    font-weight: 400;
 }
 .articles .content .tags {
     display: flex;

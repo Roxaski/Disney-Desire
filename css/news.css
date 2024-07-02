@@ -119,7 +119,7 @@ header h1 {
     margin: 15px auto;
 }
 .articles img {
-    width: 335px;
+    width: 350px;
     height: auto;
     object-fit: cover;
     color: var(--clr-grey);
@@ -148,6 +148,7 @@ header h1 {
 .articles .content p {
     font-weight: 500;
     font-size: clamp(.8rem, 3vw, .9rem);
+    font-size: 1rem;
 }
 .articles .content .tags {
     display: flex;
