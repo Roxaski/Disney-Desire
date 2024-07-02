@@ -337,7 +337,6 @@ body {
     margin: 15px auto;
 }
 .archive {
-    display: block;
     position: relative;
     margin: 0 auto;
 }
@@ -351,6 +350,7 @@ body {
     left: 50%;
     margin-left: -3px;
     border-radius: 5px;
+    z-index: -1;
 }
 .archive .container {
     position: relative;
@@ -362,10 +362,10 @@ body {
     position: absolute;
     top: 15px;
     right: -15px;
-    border: 3px solid var(--clr-grey);
+    border: 3px solid var(--clr-blk);
     width: 25px;
     height: 25px;
-    background-color: var(--clr-white);
+    background: var(--clr-white);
     border-radius: 15px;
     z-index: 1;
 }
@@ -379,22 +379,23 @@ body {
     left: -15px;
 }
 .archive .container a {
-    color: var(--clr-grey);
     text-decoration: none;
 }
 .archive .container .content {
     padding: 1rem;
-    border: solid 4px var(--clr-grey);
     border-radius: 15px;
     line-height: 1.6;
-    box-shadow: 0 5px 7px rgba(0, 0, 0, .7);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, .6);
+    color: var(--clr-grey);
+    background: var(--clr-white);
+    border: solid 2px var(--clr-blk);
 }
 .archive .container .content img {
     display: block;
-    max-width: 85px;
-    height: auto;
+    width: 75px;
+    height: 100%;
+    object-fit: contain;
     float: right;
-    color: var(--clr-grey);
 }
 .archive .container .content h2,
 .archive .container .content h3 {
@@ -402,15 +403,15 @@ body {
     text-transform: capitalize;
 }
 .archive .container .content h2 {
-    font-size: clamp(1rem , 3vw, 1.4rem);
+    font-size: clamp(1.1rem , 3vw, 1.3rem);
 }
 .archive .container .content h3 {
-    font-size: clamp(.95rem , 3vw, 1rem);
+    font-size: clamp(.85rem , 3vw, 1rem);
 }
 .archive .container .content p {
     font-weight: 400;
     font-size: clamp(1rem , 3vw, 1rem);
-    margin: 5px auto;
+    margin: 20px auto 0;
 }
 /*HISTORY*/
 .title .header.history {
@@ -796,27 +797,30 @@ footer p i {
         height: auto;
     }
 }
-@media screen and (max-width: 805px) {
-    .img-slider {
-        min-height: 400px;
-    }
-    .poster-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media screen and (max-width: 875px) {
     .archive::after {
-        left: -30px;
+        left: -15px;
     }
     .archive .container {
-        width: 70vw;
+        width: 100%;
         padding: 0;
         margin: 15px auto;
+        margin-left: 1rem;
     }
     .archive .container.right {
         left: 0;
     }
     .archive .container.left::after,
     .archive .container.right::after {
-        left: -45px;
+        left: -48px;
+    }
+}
+@media screen and (max-width: 805px) {
+    .img-slider {
+        min-height: 400px;
+    }
+    .poster-wrapper {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media screen and (max-width: 658px) {
@@ -838,7 +842,7 @@ footer p i {
         margin: 5px auto;
     }
     .archive .container .content img {
-        display: none;
+        width: 23%;
     }
 }
 @media screen and (max-width: 425px) {
@@ -860,6 +864,12 @@ footer p i {
     }
     .history h2 {
         margin: 10px auto;
+    }
+}
+@media screen and (max-width: 350px) {
+    .archive .container .content img {
+        float: none;
+        margin-bottom: 15px;
     }
 }
 /*LANDSCAPE MEDIA QUERY'S*/
