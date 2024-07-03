@@ -836,10 +836,7 @@ footer p i {
         max-width: 225px;
     }
     .poster-wrapper {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .poster-wrapper img {
-        margin: 5px auto;
+        grid-template-columns: repeat(2, 1fr);
     }
     .archive .container .content img {
         width: 23%;
@@ -849,6 +846,9 @@ footer p i {
     .history-wrapper img {
         float: none;
         width: 100%;
+    }
+    .history h2 {
+        margin: 10px auto;
     }
 }
 @media screen and (max-width: 375px) {
@@ -862,8 +862,8 @@ footer p i {
     .articles .content .tags {
         display: none;
     }
-    .history h2 {
-        margin: 10px auto;
+    .poster-wrapper {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 @media screen and (max-width: 350px) {
