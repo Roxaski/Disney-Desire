@@ -7,7 +7,9 @@
 :root {
     --clr-blk: #212121;
     --clr-white: #f0f0f0;
+    --clr-darkGrey: #292828;
     --clr-offWhite: #c4c2c2;
+    --clr-gold: #ffd903;
     --clr-grey: #3e3b3b;
     --clr-blue: #2056a8;
     --clr-brown: #80604f;
@@ -292,6 +294,31 @@ body {
     line-height: 1.8;
     padding-left: .35rem;
 }
+.grid-container .right .content .grid-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-container .right .content .grid-content .critics,
+.grid-container .right .content .grid-content .viewer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.grid-container .right .content .grid-content .critics i,
+.grid-container .right .content .grid-content .viewer i {
+    margin-left: .5rem;
+    font-size: 2.1rem;
+    color: var(--clr-darkGrey);
+}
+.grid-container .right .content .grid-content .critics #critics-score,
+.grid-container .right .content .grid-content .viewer #viewer-score {
+    position: relative;
+    font-size: 1.1rem;
+    right: 29.5px;
+    top: 2.5px;
+    font-weight: 600;
+    color: var(--clr-gold);
+}
 .grid-container .right .content .trailer iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -402,4 +429,8 @@ body {
     .grid-container .right .content .img-wrapper img {
         color: var(--clr-white);
     }
+    .grid-container .right .content .grid-content .critics i,
+    .grid-container .right .content .grid-content .viewer i {
+        color: var(--clr-grey);
+}
 }
