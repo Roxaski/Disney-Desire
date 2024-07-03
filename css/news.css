@@ -131,6 +131,17 @@ header h1 {
     margin-left: .75rem;
     line-height: 1.75;
 }
+.articles .content::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid var(--clr-offWhite);
+}
+.articles:nth-last-child(1) .content::after {
+    display: none;
+}
 .articles .content h2 {
     display: inline-block;
     font-weight: 500;
@@ -150,17 +161,13 @@ header h1 {
     font-size: clamp(.8rem, 3vw, .9rem);
     font-size: 1rem;
 }
-.articles .content .tags {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 3px auto;
-}
 .articles .content .tags p {
+    display: inline-block;
     color: var(--clr-white);
     font-size: .9rem;
     margin-left: .5rem;
     background-color: var(--clr-red);
+    margin: 0 auto;
     padding: 0 .25rem;
     border-radius: 5px;
     text-transform: capitalize;
@@ -335,6 +342,9 @@ footer p i {
         margin: .75rem 0 0 0;
         bottom: 0;
     }
+    .articles .content::after {
+        display: none;
+    }
     .articles .content .tags {
         margin-top: .5rem;
     }
@@ -353,9 +363,6 @@ footer p i {
 @media screen and (max-width: 374px) {
     .mobile_logo img {
         width: 200px;
-    }
-    .articles .content .tags {
-        display: none;
     }
 }
 @media screen and (max-width: 300px) {
