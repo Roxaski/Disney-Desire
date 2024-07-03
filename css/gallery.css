@@ -382,6 +382,7 @@ footer p i {
         top: .5rem;
     }
     .wrapper {
+        top: 115px;
         padding: 0 1rem;
     }
     .img-container .content {
@@ -398,10 +399,6 @@ footer p i {
         grid-template-columns: repeat(1, 1fr);
     }
     .img-preview .details i {
-        position: absolute;
-        top: .5rem;
-        right: .5rem;
-        border-radius: 50%;
         padding: 2px 4px;
     }
 }
