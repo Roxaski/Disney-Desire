@@ -853,7 +853,7 @@ footer p i {
         width: 23%;
     }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 415px) {
     .history-wrapper img {
         float: none;
         width: 100%;
