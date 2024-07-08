@@ -468,9 +468,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.gallery .content .text {
-    width: 95%;
-}
 .gallery .content .text a {
     text-decoration: none;
     color: var(--clr-indigo);
@@ -853,9 +850,9 @@ footer p i {
         width: 23%;
     }
 }
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 410px) {
     .history-wrapper img {
-        width: 45%;
+        width: 150px;
     }
 }
 @media screen and (max-width: 375px) {
