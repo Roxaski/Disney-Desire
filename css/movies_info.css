@@ -174,11 +174,9 @@ body {
     max-width: 60rem;
     width: 950px;
     color: var(--clr-grey);
-    border-radius: 5px;
     background-color: var(--clr-white);
 }
 .grid-container .left img {
-    border-radius: 5px;
     display: block;
     width: 95%;
     height: 100%;
@@ -278,7 +276,6 @@ body {
 .grid-container .right .content .img-wrapper img {
     width: 100px;
     height: auto;
-    border-radius: 50%;
     margin: 0 auto;
     color: var(--clr-grey);
 }
