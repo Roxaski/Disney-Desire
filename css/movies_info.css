@@ -441,7 +441,7 @@ body {
         color: var(--clr-grey);
     }
     .grid-container .right .content .grid-content .critics #critics-score,
-    .grid-container .right .content .grid-content .user #viewer-score {
+    .grid-container .right .content .grid-content .user #user-score {
         color: var(--clr-darkGold);
     }
 }
