@@ -218,6 +218,7 @@ footer p i {
         color: var(--clr-white);
         height: 0;
         padding: 0;
+        -webkit-tap-highlight-color: transparent;
     }
     .hamburger_menu {
         display: flex;
