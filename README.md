@@ -6,9 +6,6 @@ Any and All feedback is greatly appreciated, hope you enjoy browsing the website
 
 [roxaski.github.io/Disney-Desire/](https://roxaski.github.io/Disney-Desire/)
 
-# Archive Image Credits
-- [Flubber Render](https://www.deviantart.com/mikemoon1990)
-
 # Image Gallery Credits
 - [Wall-E Render](https://www.reddit.com/r/wallpaper/)
 - [Frozen Render](https://www.reddit.com/r/Frozen/)
