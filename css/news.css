@@ -154,14 +154,14 @@ header h1 {
 }
 .articles .content .article-preview p {
     width: 97%;
-    font-weight: 400;
+    font-weight: 300;
+    font-size: .95rem;
 }
 .articles .content .article-preview a {
     display: none;
 }
 .articles .content p {
-    font-weight: 500;
-    font-size: clamp(.8rem, 3vw, .9rem);
+    font-weight: 400;
     font-size: 1rem;
 }
 .articles .content .tags p {
