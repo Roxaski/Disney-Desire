@@ -367,7 +367,7 @@ footer p i {
 }
 @media screen and (max-width: 410px) {
     footer {
-        margin: 40px auto 0;
+        margin: 165px auto 0;
     }
 }
 @media screen and (max-width: 465px) {
@@ -392,7 +392,7 @@ footer p i {
 }
 @media screen and (max-width: 300px) {
     .mobile_logo img {
-        width: 165px;
+        width: 175px;
     }
 }
 @media screen and (orientation: landscape) and (max-width: 934px) {
