@@ -871,6 +871,9 @@ footer p i {
     .history-wrapper img {
         width: 150px;
     }
+    footer {
+        margin: 40px auto 0;
+    }
 }
 @media screen and (max-width: 375px) {
     .img-slider {

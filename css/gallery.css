@@ -409,6 +409,11 @@ footer p i {
         transform: translate(0);
     }
 }
+@media screen and (max-width: 410px) {
+    footer {
+        margin: 40px auto 0;
+    }
+}
 @media screen and (max-width: 374px) {
     .mobile_logo img {
         width: 200px;

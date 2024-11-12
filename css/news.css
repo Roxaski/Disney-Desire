@@ -365,6 +365,11 @@ footer p i {
         transform: translate(0);
     }
 }
+@media screen and (max-width: 410px) {
+    footer {
+        margin: 40px auto 0;
+    }
+}
 @media screen and (max-width: 465px) {
     .articles .content .article-preview p {
         --max-lines: 2;

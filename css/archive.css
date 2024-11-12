@@ -373,7 +373,7 @@ footer p i {
         transform: translate(0);
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 410px) {
     .archive::after {
         left: 25px;
     }
@@ -383,6 +383,9 @@ footer p i {
     .archive .container.left::after,
     .archive .container.right::after {
         left: -40px;
+    }
+    footer {
+        margin: 40px auto 0;
     }
 }
 @media screen and (max-width: 374px) {
