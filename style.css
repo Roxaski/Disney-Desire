@@ -297,15 +297,15 @@ body {
     text-decoration: none;
 }
 .articles .content .article-preview p {
-    font-size: 1.02rem;
+    font-size: .95rem;
     width: 97%;
-    font-weight: 400;
+    font-weight: 300;
 }
 .articles .content .article-preview a {
     display: none;
 }
 .articles .content p {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1rem;
 }
 .articles .content .tags p {
