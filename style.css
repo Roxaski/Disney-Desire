@@ -859,6 +859,9 @@ footer p i {
         text-decoration: none;
         font-weight: 500;
     }
+    .articles .content .tags {
+        margin-top: 0;
+    }
     .poster-wrapper {
         grid-template-columns: repeat(2, 1fr);
         margin: 0 auto;

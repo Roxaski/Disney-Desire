@@ -365,11 +365,6 @@ footer p i {
         transform: translate(0);
     }
 }
-@media screen and (max-width: 410px) {
-    footer {
-        margin: 165px auto 0;
-    }
-}
 @media screen and (max-width: 465px) {
     .articles .content .article-preview p {
         --max-lines: 2;
@@ -383,6 +378,14 @@ footer p i {
         text-transform: capitalize;
         text-decoration: none;
         font-weight: 500;
+    }
+    .articles .content .tags {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 410px) {
+    footer {
+        margin: 165px auto 0;
     }
 }
 @media screen and (max-width: 374px) {
