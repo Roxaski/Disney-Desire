@@ -402,7 +402,7 @@ body {
 }
 .archive .container .content img {
     display: block;
-    width: 75px;
+    width: 100px;
     height: 100%;
     object-fit: contain;
     float: right;
