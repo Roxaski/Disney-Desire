@@ -878,7 +878,7 @@ footer p i {
         margin: 40px auto 0;
     }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 374px) {
     .img-slider {
         min-height: 200px;
     }
@@ -887,8 +887,9 @@ footer p i {
         bottom: .35rem;
     }
     .archive .container .content img {
-        width: 100%;
-        margin-bottom: 25px;
+        width: 75%;
+        margin: 0 auto 25px;
+        float: none;
     }
 }
 @media screen and (max-width: 350px) {
