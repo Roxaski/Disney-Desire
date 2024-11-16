@@ -866,9 +866,6 @@ footer p i {
         grid-template-columns: repeat(2, 1fr);
         margin: 0 auto;
     }
-    .archive .container .content img {
-        width: 23%;
-    }
 }
 @media screen and (max-width: 410px) {
     .history-wrapper img {
@@ -895,10 +892,6 @@ footer p i {
 @media screen and (max-width: 350px) {
     .poster-wrapper {
         grid-template-columns: repeat(1, 1fr);
-    }
-    .archive .container .content img {
-        float: none;
-        margin-bottom: 15px;
     }
     .history img {
         float: none;
