@@ -9,6 +9,7 @@
     --clr-white: #f0f0f0;
     --clr-offWhite: #c4c2c2;
     --clr-grey: #3e3b3b;
+    --clr-lightGrey: #8b8888;
     --clr-red: #cc0e11;
     --clr-orange: #eb6207;
     --clr-green: #5d960e;
@@ -451,6 +452,15 @@ body {
     font-weight: 500;
     text-transform: capitalize;
 }
+.history .content a {
+    display: inline-block;
+    color: var(--clr-blk);
+    text-decoration: none;
+    transition: 250ms ease;
+}
+.history .content a:hover {
+    color: var(--clr-green);
+}
 .history .content p {
     margin: 13px auto 0;
 }
@@ -476,12 +486,21 @@ body {
     color: var(--clr-indigo);
     font-weight: 500;
 }
+.gallery .content a h2 {
+    display: inline-block;
+    color: var(--clr-blk);
+    text-decoration: none;
+    transition: 250ms ease;
+}
+.gallery .content a h2:hover {
+    color: var(--clr-indigo);
+}
 .gallery .content .text h2 {
     font-weight: 500;
     text-transform: capitalize;
 }
 .gallery .content .text p {
-    margin: 15px auto;
+    margin: 12px auto;
 }
 .gallery .content img {
     display: block;
@@ -508,6 +527,15 @@ body {
     height: auto;
     color: var(--clr-grey);
     box-shadow: 0 1px 6px rgba(0, 0, 0, .7);
+}
+.parks .content a h2 {
+    display: inline-block;
+    color: var(--clr-blk);
+    text-decoration: none;
+    transition: 250ms ease;
+}
+.parks .content a h2:hover {
+    color: var(--clr-orange);
 }
 .parks .content h2 {
     font-weight: 500;
@@ -1011,26 +1039,32 @@ footer p i {
     .archive .container .content img {
         color: var(--clr-white);
     }
+    .history .content a {
+        color: var(--clr-white);
+    }
+    .history .content a:hover {
+        color: var(--clr-lightGrey);
+    }
     .history-wrapper img {
         color: var(--clr-white);
     }
-    .history .content p a {
+    .gallery .content a h2 {
         color: var(--clr-white);
-        text-decoration: underline;
     }
-    .gallery .content .text a {
-        color: var(--clr-white);
-        text-decoration: underline;
+    .gallery .content a h2:hover {
+        color: var(--clr-lightGrey);
     }
     .gallery .content img {
         color: var(--clr-white);
     }
-    .parks .content .img-container img {
+    .parks .content a h2 {
         color: var(--clr-white);
     }
-    .parks .content a {
+    .parks .content a h2:hover {
+        color: var(--clr-lightGrey);
+    }
+    .parks .content .img-container img {
         color: var(--clr-white);
-        text-decoration: underline;
     }
     footer h3::before {
         border-top: solid 2px var(--clr-offWhite);
