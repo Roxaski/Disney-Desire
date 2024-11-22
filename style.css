@@ -453,7 +453,6 @@ body {
     text-transform: capitalize;
 }
 .history .content a {
-    display: inline-block;
     color: var(--clr-blk);
     text-decoration: none;
     transition: 250ms ease;
