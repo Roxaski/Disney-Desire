@@ -289,7 +289,7 @@ footer p i {
         padding: 0 1rem;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 630px) {
     .mobile_logo img {
         left: 2rem;
         transform: translate(0);
