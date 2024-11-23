@@ -109,6 +109,7 @@ header h1,
 article .title h2  {
     padding: .45rem;
     border-radius: 5px;
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
     font-weight: 400;
     color: var(--clr-white);
     background-color: var(--clr-green);
@@ -289,11 +290,7 @@ footer p i {
         padding: 0 1rem;
     }
 }
-@media screen and (max-width: 630px) {
-    .mobile_logo img {
-        left: 2rem;
-        transform: translate(0);
-    }
+@media screen and (max-width: 570px) {
     article img {
         display: none;
     }
@@ -302,23 +299,31 @@ footer p i {
     }
     .memoriam img {
         display: block;
-        width: 100%;
+        max-width: 300px;
         height: auto;
+        margin: 0 auto;
     }
     .memoriam .content {
         text-align: center;
         margin: 10px auto 0;
     }
     .memoriam .content h2:nth-child(1) {
+        font-size: 1.4rem;
+        font-weight: 400;
         text-transform: uppercase;
         letter-spacing: .5px;
-        font-weight: 400;
     }
     .memoriam .content h2:nth-last-child(1) {
+        font-size: 1.2rem;
         font-weight: 300;
-        font-size: 1.3rem;
         letter-spacing: .5px;
         margin: 5px auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    .mobile_logo img {
+        left: 2rem;
+        transform: translate(0);
     }
 }
 @media screen and (max-width: 410px) {
@@ -330,40 +335,16 @@ footer p i {
     .mobile_logo img {
         width: 200px;
     }
+    .memoriam img {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 300px) {
     .mobile_logo img {
         width: 175px;
     }
 }
-@media screen and (orientation: landscape) and (max-width: 940px) {
-    article img {
-        display: none;
-    }
-    .memoriam {
-        display: block;
-    }
-    .memoriam img {
-        display: block;
-        max-width: 450px;
-        height: auto;
-        margin: 0 auto;
-        color: var(--clr-grey);
-    }
-    .memoriam .content {
-        text-align: center;
-        margin: 10px auto 0;
-    }
-    .memoriam .content h2:nth-child(1) {
-        text-transform: uppercase;
-        letter-spacing: .5px;
-        font-weight: 400;
-    }
-    .memoriam .content h2 {
-        font-weight: 300;
-    }
-}
-@media screen and (orientation: landscape) and (max-width: 934px) {
+@media screen and (max-width: 934px) and (orientation: landscape) {
     .links {
         padding-bottom: 2rem;
     }
@@ -390,6 +371,31 @@ footer p i {
         top: 0;
         right: 5px;
         max-width: 60px;
+    }
+    article img {
+        display: none;
+    }
+    .memoriam {
+        display: block;
+    }
+    .memoriam img {
+        display: block;
+        max-width: 450px;
+        height: auto;
+        margin: 0 auto;
+        color: var(--clr-grey);
+    }
+    .memoriam .content {
+        text-align: center;
+        margin: 10px auto 0;
+    }
+    .memoriam .content h2:nth-child(1) {
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        font-weight: 400;
+    }
+    .memoriam .content h2 {
+        font-weight: 300;
     }
 }
 /*LIGHT MODE MEDIA QUERY*/
