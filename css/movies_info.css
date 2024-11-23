@@ -309,7 +309,7 @@ body {
 .grid-container .right .content .grid-content .user i {
     margin-left: .5rem;
     font-size: 2.1rem;
-    color: var(--clr-darkGrey);
+    color: var(--clr-gold);
 }
 .grid-container .right .content .grid-content .critics #critics-score,
 .grid-container .right .content .grid-content .user #user-score {
@@ -318,7 +318,7 @@ body {
     right: 29.5px;
     top: 2.5px;
     font-weight: 600;
-    color: var(--clr-lightGold);
+    color: var(--clr-white);
 }
 .grid-container .right .content .trailer iframe {
     width: 100%;
