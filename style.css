@@ -895,10 +895,13 @@ footer p i {
         margin: 0 auto;
     }
 }
-@media screen and (max-width: 410px) {
-    .history-wrapper img {
-        width: 150px;
+@media screen and (max-width: 455px) {
+    .history img {
+        float: none;
+        width: 100%;
     }
+}
+@media screen and (max-width: 410px) {
     footer {
         margin: 40px auto 0;
     }
@@ -920,10 +923,6 @@ footer p i {
 @media screen and (max-width: 350px) {
     .poster-wrapper {
         grid-template-columns: repeat(1, 1fr);
-    }
-    .history img {
-        float: none;
-        width: 100%;
     }
     .history h2 {
         margin: 10px auto;
