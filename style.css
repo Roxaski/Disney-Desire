@@ -450,7 +450,6 @@ body {
 }
 .history .content h2 {
     font-weight: 500;
-    text-transform: capitalize;
 }
 .history .content a {
     display: flex;
@@ -588,10 +587,6 @@ footer p i {
     }
     .history .content {
         margin-left: 0;
-    }
-    .history .content h2 {
-        font-weight: 500;
-        text-transform: capitalize;
     }
     .gallery .content {
         grid-template-columns: repeat(1, 1fr);
@@ -896,12 +891,21 @@ footer p i {
     }
 }
 @media screen and (max-width: 455px) {
+    .history .content p {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 410px) {
     .history img {
         float: none;
         width: 100%;
     }
-}
-@media screen and (max-width: 410px) {
+    .history .content h2 {
+        margin: 10px 0;
+    }
+    .history .content p {
+        margin: 10px auto;
+    }
     footer {
         margin: 40px auto 0;
     }
@@ -923,9 +927,6 @@ footer p i {
 @media screen and (max-width: 350px) {
     .poster-wrapper {
         grid-template-columns: repeat(1, 1fr);
-    }
-    .history h2 {
-        margin: 10px auto;
     }
 }
 /*LANDSCAPE MEDIA QUERY'S*/
