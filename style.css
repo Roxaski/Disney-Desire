@@ -889,7 +889,7 @@ footer p i {
         grid-template-columns: repeat(2, 1fr);
         margin: 0 auto;
     }
-    .history img {
+    .history-wrapper img {
         width: 165px;
     }
 }
@@ -911,7 +911,7 @@ footer p i {
         margin: 0 auto 25px;
         float: none;
     }
-    .history img {
+    .history-wrapper img {
         float: none;
         width: 100%;
     }
