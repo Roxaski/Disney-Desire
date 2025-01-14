@@ -889,23 +889,11 @@ footer p i {
         grid-template-columns: repeat(2, 1fr);
         margin: 0 auto;
     }
-}
-@media screen and (max-width: 455px) {
-    .history .content p {
-        margin: 0;
+    .history img {
+        width: 200px;
     }
 }
 @media screen and (max-width: 410px) {
-    .history img {
-        float: none;
-        width: 100%;
-    }
-    .history .content h2 {
-        margin: 10px 0;
-    }
-    .history .content p {
-        margin: 10px auto;
-    }
     footer {
         margin: 40px auto 0;
     }
@@ -922,6 +910,16 @@ footer p i {
         width: 75%;
         margin: 0 auto 25px;
         float: none;
+    }
+    .history img {
+        float: none;
+        width: 100%;
+    }
+    .history .content h2 {
+        margin: 10px 0;
+    }
+    .history .content p {
+        margin: 10px auto;
     }
 }
 @media screen and (max-width: 350px) {
