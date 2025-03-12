@@ -462,7 +462,8 @@ body {
     color: var(--clr-green);
 }
 .history .content p {
-    margin: 13px auto 0;
+    margin: 13px 0;
+    width: 98%;
 }
 .history .content p a {
     text-transform: capitalize;
@@ -542,7 +543,8 @@ body {
     margin: 10px auto 0;
 }
 .parks .content p {
-    margin: 15px auto;
+    margin: 15px 0;
+    width: 98%;
 }
 .parks .content a {
     color: var(--clr-orange);
