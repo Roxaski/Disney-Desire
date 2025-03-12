@@ -62,18 +62,19 @@ body {
     text-align: center;
 }
 .links ul li {
+    display: inline-block;
     list-style: none;
     font-size: clamp(1rem, 3vw, 1.1rem);
     font-weight: 500;
     transition: 150ms ease-in all;
-    padding: 1.3rem;
 }
 .links ul li a {
+    display: block;
     text-decoration: none;
     color: var(--clr-white);
     text-transform: capitalize;
     letter-spacing: 1px;
-    padding: 1.3rem;
+    padding: 1.6rem 2.6rem;
 }
 .links ul li:hover:nth-child(1) {
     background-color: var(--clr-red);
