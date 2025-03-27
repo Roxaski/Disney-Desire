@@ -214,7 +214,7 @@ body {
 }
 /*MAIN*/
 .wrapper {
-    max-width: 80rem;
+    max-width: 86rem;
     margin: 0 auto;
 }
 /*IMAGE SLIDER*/
@@ -280,7 +280,7 @@ body {
     content: '';
     position: absolute;
     bottom: 8px;
-    width: 95%;
+    width: 97%;
     height: auto;
     border-bottom: 2px solid var(--clr-offWhite);
 }
@@ -299,7 +299,7 @@ body {
 }
 .articles .content .article-preview p {
     font-size: .95rem;
-    width: 97%;
+    width: 96%;
     font-weight: 300;
 }
 .articles .content .article-preview a {
@@ -500,7 +500,8 @@ body {
     text-transform: capitalize;
 }
 .gallery .content .text p {
-    margin: 12px auto;
+    margin: 12px 0;
+    width: 96%;
 }
 .gallery .content img {
     display: block;
