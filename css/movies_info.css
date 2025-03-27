@@ -170,7 +170,7 @@ body {
     transform: translate(-50%, -50%);
     border: solid 4px var(--clr-white);
     height: auto;
-    max-width: 60rem;
+    max-width: 86rem;
     width: 950px;
     color: var(--clr-grey);
     background-color: var(--clr-white);
