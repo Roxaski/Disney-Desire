@@ -101,8 +101,8 @@ body {
 /*MAIN*/
 .wrapper {
     position: relative;
-    top: 125px;
-    max-width: 86rem;
+    top: 100px;
+    max-width: 70rem;
     margin: 0 auto;
 }
 header h1 {
