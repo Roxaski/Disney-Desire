@@ -197,7 +197,7 @@ body {
     text-align: center;
     font-weight: 400;
     width: 100%;
-    margin: 5px auto;
+    margin: 25px auto;
 }
 .grid-container .right .content h2 {
     font-size: clamp(1.1rem, 3vw, 1.2rem);
