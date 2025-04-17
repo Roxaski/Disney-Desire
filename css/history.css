@@ -56,7 +56,6 @@ body {
     margin: auto 10px;
 }
 .links ul .logo .logo_dark {
-    display: block;
     color: var(--clr-white);
     text-align: center;
 }
@@ -116,7 +115,6 @@ article .title h2  {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
 }
 article img {
-    display: block;
     float: left;
     max-width: 250px;
     height: auto;
@@ -334,7 +332,7 @@ footer p i {
 }
 @media screen and (max-width: 374px) {
     .mobile_logo img {
-        width: 200px;
+        width: 190px;
     }
     .memoriam img {
         width: 100%;
@@ -419,9 +417,6 @@ footer p i {
     }
     .links ul .logo .logo_light {
         display: none;
-    }
-    .links ul .logo .logo_dark {
-        display: block;
     }
     nav.active .links ul li:hover:nth-child(1),
     nav.active .links ul li:hover:nth-child(2),

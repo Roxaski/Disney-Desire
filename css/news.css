@@ -56,7 +56,6 @@ body {
     margin: auto 10px;
 }
 .links ul .logo .logo_dark {
-    display: block;
     color: var(--clr-white);
     text-align: center;
 }
@@ -354,7 +353,6 @@ footer p i {
         margin-top: .5rem;
     }
     .articles img {
-        display: block;
         width: 100%;
         height: auto;
     }
@@ -390,7 +388,7 @@ footer p i {
 }
 @media screen and (max-width: 374px) {
     .mobile_logo img {
-        width: 200px;
+        width: 190px;
     }
 }
 @media screen and (max-width: 300px) {
@@ -447,9 +445,6 @@ footer p i {
     }
     .links ul .logo .logo_light {
         display: none;
-    }
-    .links ul .logo .logo_dark {
-        display: block;
     }
     nav.active .links ul li:hover:nth-child(1),
     nav.active .links ul li:hover:nth-child(2),

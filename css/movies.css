@@ -56,7 +56,6 @@ body {
     margin: auto 10px;
 }
 .links ul .logo .logo_dark {
-    display: block;
     color: var(--clr-white);
     text-align: center;
 }
@@ -148,7 +147,6 @@ body {
     overflow: hidden;
 }
 .accordion .content img {
-    display: inline-block;
     width: 300px;
     height: auto;
     color: var(--clr-grey);
@@ -328,7 +326,7 @@ footer p i {
 }
 @media screen and (max-width: 374px) {
     .mobile_logo img {
-        width: 200px;
+        width: 190px;
     }
 }
 @media screen and (max-width: 300px) {
@@ -385,9 +383,6 @@ footer p i {
     }
     .links ul .logo .logo_light {
         display: none;
-    }
-    .links ul .logo .logo_dark {
-        display: block;
     }
     nav.active .links ul li:hover:nth-child(1),
     nav.active .links ul li:hover:nth-child(2),

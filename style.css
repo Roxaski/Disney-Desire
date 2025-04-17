@@ -57,7 +57,6 @@ body {
     margin: auto 10px;
 }
 .links ul .logo .logo_dark {
-    display: block;
     text-align: center;
     color: var(--clr-white);
 }
@@ -117,7 +116,6 @@ body {
     color: var(--clr-white);
 }
 .hero-grid .article img {
-    display: block;
     width: 100%;
     height: auto;
     color: var(--clr-grey);
@@ -210,7 +208,7 @@ body {
     radial-gradient(circle, 
     rgba(220,94,34,1) 70%, 
     rgb(176, 34, 34) 100%,
-    rgba(220,94,34,1) 10%);   
+    rgba(220,94,34,1) 10%);
 }
 /*MAIN*/
 .wrapper {
@@ -247,7 +245,6 @@ body {
     font-size: clamp(1.2rem, 3vw, 1.4rem);
 }
 .title .header img {
-    display: block;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -332,7 +329,6 @@ body {
     gap: .5rem;
 }
 .movie-poster img {
-    display: block;
     width: 100%;
     height: auto;
     color: var(--clr-grey);
@@ -402,7 +398,6 @@ body {
     border: solid 2px var(--clr-blk);
 }
 .archive .container .content img {
-    display: block;
     width: 100px;
     height: 100%;
     object-fit: contain;
@@ -433,7 +428,6 @@ body {
     margin: 5px auto;
 }
 .history-wrapper img {
-    display: block;
     float: left;
     width: 250px;
     height: auto;
@@ -504,7 +498,6 @@ body {
     width: 96%;
 }
 .gallery .content img {
-    display: block;
     width: 100%;
     height: auto;
     color: var(--clr-grey);
@@ -523,7 +516,6 @@ body {
     gap: 1rem;
 }
 .parks .content .img-container img {
-    display: block;
     width: 100%;
     height: auto;
     color: var(--clr-grey);
@@ -829,7 +821,6 @@ footer p i {
         margin-top: .5rem;
     }
     .articles img {
-        display: block;
         width: 100%;
         height: auto;
     }
@@ -977,9 +968,6 @@ footer p i {
     }
     .links ul .logo .logo_light {
         display: none;
-    }
-    .links ul .logo .logo_dark {
-        display: block;
     }
     nav.active .links ul li:hover:nth-child(1),
     nav.active .links ul li:hover:nth-child(2),

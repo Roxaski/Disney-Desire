@@ -56,7 +56,6 @@ body {
     margin: auto 10px;
 }
 .links ul .logo .logo_dark {
-    display: block;
     color: var(--clr-white);
     text-align: center;
 }
@@ -157,7 +156,6 @@ body {
     border: solid 2px var(--clr-blk);
 }
 .archive .container .content img {
-    display: block;
     width: 100px;
     height: 100%;
     object-fit: contain;
@@ -402,7 +400,7 @@ footer p i {
 }
 @media screen and (max-width: 374px) {
     .mobile_logo img {
-        width: 200px;
+        width: 190px;
     }
     .archive .container .content img {
         width: 75%;
@@ -464,9 +462,6 @@ footer p i {
     }
     .links ul .logo .logo_light {
         display: none;
-    }
-    .links ul .logo .logo_dark {
-        display: block;
     }
     nav.active .links ul li:hover:nth-child(1),
     nav.active .links ul li:hover:nth-child(2),

@@ -57,7 +57,6 @@ body {
     color: var(--clr-grey);
 }
 .links ul .logo .logo_dark {
-    display: block;
     color: var(--clr-white);
     text-align: center;
 }
@@ -121,7 +120,6 @@ body {
     font-weight: 500;
 }
 .grid-container article img {
-    display: block;
     width: 100%;
     height: auto;
     margin: 10px auto;
@@ -182,7 +180,6 @@ body {
     font-size: clamp(.95rem, 3vw, 1rem);
 }
 .grid-container aside ul li img {
-    display: block;
     width: 100%;
     color: var(--clr-grey);
     height: auto;
@@ -366,7 +363,7 @@ footer p i {
 }
 @media screen and (max-width: 374px) {
     .mobile_logo img {
-        width: 200px;
+        width: 190px;
     }
 }
 @media screen and (max-width: 315px) {
@@ -423,9 +420,6 @@ footer p i {
     }
     .links ul .logo .logo_light {
         display: none;
-    }
-    .links ul .logo .logo_dark {
-        display: block;
     }
     nav.active .links ul li:hover:nth-child(1),
     nav.active .links ul li:hover:nth-child(2),
