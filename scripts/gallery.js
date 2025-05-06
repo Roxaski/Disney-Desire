@@ -1,85 +1,112 @@
-const gallery = document.querySelectorAll('.wrapper .img-container');
-const previewBox = document.querySelector('.img-preview');
-const previewImg = previewBox.querySelector('img');
-const closeImg = previewBox.querySelector('.icon');
-const previousBtn = document.querySelector('.prev');
+const gallery = document.querySelectorAll('.gallery img');
+const lightbox = document.querySelector('.lightbox img');
+const previousBtn = document.querySelector('.previous');
 const nextBtn = document.querySelector('.next');
-const imgFocus = document.querySelector('.img-focus');
+const overlay = document.querySelector('.gallery-overlay');
 
-window.onload = () => {
-    //shows how many images there are inside gallery
-    for (let i = 0; i < gallery.length; i++) {
+// stores the value of the selected image
+let currentImage;
 
-        //putting the value of i into the newIndex variable
-        let newIndex = i;
-        let clickImgIndex;
+// loop through each image in the gallery
+gallery.forEach((img, index) => {
 
-        gallery[i].onclick = () => {
+    img.addEventListener('click', () => {
+        currentImage = index;
 
-            //passing the value of newIndex to the clickImgIndex variable
-            clickImgIndex = newIndex;
+        displayOverlay();
+        imagePreview();
+    });
+});
 
-            //getting the src of the selected image
-            function imgPreview() {
-                let selectedImg = gallery[newIndex].querySelector('img').src;
-                previewImg.src = selectedImg;
-            }
+// displays an overlay
+function displayOverlay() {
+    document.querySelector('body').style.overflow = 'hidden';
+    overlay.style.display = 'block';
+};
 
-            //when at the first image it changes the display to none
-            if (newIndex == 0) {
-                previousBtn.style.display = 'none';
-            }
-            if (newIndex >= gallery.length - 1) {
-                nextBtn.style.display = 'none';
-            }
+// displays image & buttons
+function imagePreview() {
+    lightbox.src = gallery[currentImage].src;
+    lightbox.classList.add('active');
 
-            //previous button
-            previousBtn.onclick = () => {
-            //decrements from the value in newIndex variable
-                newIndex --;
-                if (newIndex == 0) {
-                    imgPreview();
-                    previousBtn.style.display = 'none';
-                } else {
-                    nextBtn.style.display = 'block';
-                    imgPreview();
-                }
-            }
+    displayGalleryBtns();
+};
 
-            //next button
-            nextBtn.onclick = () => {
-                //increments from the value in newIndex variable
-                newIndex ++;
-                if (newIndex >= gallery.length - 1) {
-                    nextBtn.style.display = 'none'
-                    imgPreview();
-                } else {
-                    previousBtn.style.display = 'block';
-                    imgPreview();
-                }
-            }
+// removes the buttons from the first and last gallery img
+function displayGalleryBtns() {
+    if(currentImage == 0) {
+        previousBtn.style.display = 'none';
+    } else {
+        previousBtn.style.display = 'block';
+    };
 
-            //calling the function
-            imgPreview();
+    if(currentImage == gallery.length - 1) {
+        nextBtn.style.display = 'none';
+    } else {
+        nextBtn.style.display = 'block';
+    };
+};
 
-            //adds class to the imge preview
-            previewBox.classList.add('enhanced');
-            imgFocus.style.display = 'block';
-            document.querySelector('body').style.overflow = 'hidden';
+// displays next image
+nextBtn.addEventListener('click', () => {
+    currentImage ++;
+    imagePreview();
+});
 
-            closeImg.onclick = () => {
-                //assigns user's first click from newIndex to clickImgIndex variables
-                newIndex = clickImgIndex;
+// displays previous image
+previousBtn.addEventListener('click', () => {
+    currentImage --;
+    imagePreview();
+});
 
-                //removes class of the image preview
-                previewBox.classList.remove('enhanced');
+// removes overlay, image and buttons
+function closeOverlay() {
+    document.querySelector('body').style.overflow = 'auto';
+    lightbox.classList.remove('active');
+    overlay.style.display = 'none';
+    nextBtn.style.display = 'none';
+    previousBtn.style.display = 'none';
+};
 
-                //changes style of the previous / next buttons to block
-                previousBtn.style.display = 'block';
-                nextBtn.style.display = 'block';
-                imgFocus.style.display = 'none';
-                document.querySelector('body').style.overflow = 'auto';
-            }
-        }
-    }
-}
+overlay.addEventListener('click', () => {
+    closeOverlay();
+});
+
+lightbox.addEventListener('touchstart', (e) => {
+    // stops the default event from happening (swiping from the edge of the screenmakes the page go back)
+    e.preventDefault();
+    
+    // returns the location of where the touch started on the X-axis
+    touchStart = e.touches[0].clientX;
+});
+
+lightbox.addEventListener('touchend', (e) => {
+
+    // returns the location of where touch ended on the X-axis
+    touchEnd = e.changedTouches[0].clientX;
+
+    const minSwipe = 100;
+    const swipeToChangeImg = touchStart - touchEnd;
+
+    if(swipeToChangeImg > minSwipe && currentImage < gallery.length - 1) {
+        currentImage ++;
+        imagePreview();
+
+    } else if (swipeToChangeImg < -minSwipe && currentImage > 0) {
+        currentImage --;
+        imagePreview();
+    };
+});
+
+// displaying images using the arrow keys
+window.addEventListener('keydown', (e) => {
+    if(overlay.style.display == 'block' && e.key == 'ArrowRight' &&  currentImage < gallery.length - 1) {
+        currentImage ++;
+        imagePreview();
+    } else if (e.key == 'ArrowLeft' && currentImage > 0) {
+        currentImage --;
+        imagePreview();
+    } else if (e.key == 'Escape') {
+        closeOverlay();
+    };
+});
