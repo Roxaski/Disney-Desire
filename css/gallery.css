@@ -124,7 +124,7 @@ body {
     height: auto;
     width: 100%;
     max-width: 800px;
-    z-index: 3;
+    z-index: 7;
 }
 .lightbox img {
     display: none;
@@ -157,7 +157,7 @@ body {
     width: 100%;
     height: 100%;
     background: var(--clr-blk);
-    z-index: 2;
+    z-index: 6;
 }
 /*FOOTER*/
 footer {
