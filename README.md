@@ -67,10 +67,10 @@ I also wanted to give a thankyou to the posters of Reddit, Pinterest and Twitter
 
 | Disney Character Worlds | Artist |
 |:----------------------- | :----- |
-| Wall-E | [Reddit](https://www.reddit.com/r/wallpaper/) |
-| Frozen | [Reddit](https://www.reddit.com/r/Frozen/) |
 | Epic Mickey | [Twitter](https://twitter.com/GenLosstwt) |
-| Kermit the Frog | [Pinterest](https://www.pinterest.co.uk/hashithestar/)
+| Frozen | [Reddit](https://www.reddit.com/r/Frozen/) |
+| Kermit the Frog | [Pinterest](https://www.pinterest.co.uk/hashithestar/) |
+| Wall-E | [Reddit](https://www.reddit.com/r/wallpaper/) |
 
 ## Copyright
 
