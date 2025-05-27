@@ -14,45 +14,63 @@ If anyone has any feedback i would greatly appreciate it, as i'm currently learn
 
 A massive thankyou to all the Deviant Art designers who were kind enough to let me use their artwork. All of their Deviant Art profiles will be listed below.
 
-- [Wall-E & Eve by artistofthegeeks](https://www.deviantart.com/artistofthegeeks)
-- [Flubber by mikemoon1990](https://www.deviantart.com/mikemoon1990)
-- [Coco by adry53](https://www.deviantart.com/adry53)
-- [Monsters Inc by rgartland](https://www.deviantart.com/rgartland)
-- [Toy Story by jakeysamra](https://www.deviantart.com/jakeysamra)
-- [Lightyear by ritanchowchury](https://www.deviantart.com/ritanchowchury)
-- [Cinderella by alicewieckowska](https://www.deviantart.com/alicewieckowska)
-- [Kermit the Frog by renton1313](https://www.deviantart.com/renton1313)
-- [Kermit the Frog by boltun](https://www.deviantart.com/boltun)
-- [Mirabel Madrigal by penbensie](https://www.deviantart.com/penbensie)
-- [Winnie the Pooh by grayson256](https://www.deviantart.com/grayson256)
-- [Frozen by tigersnow66](https://www.deviantart.com/tigersnow66)
-- [Finding Nemo by joshuahooker](https://www.deviantart.com/joshuahooker)
-- [Bambi by georgegarza01](https://www.deviantart.com/georgegarza01)
-- [Jungle Book by keanny](https://www.deviantart.com/keanny)
-- [Pocahontas by aline9358](https://www.deviantart.com/aline9358)
-- [The Incredibles by reiva00](https://www.deviantart.com/reiva00)
-- [Beauty and the Beast by daekazu](https://www.deviantart.com/daekazu)
-- [Lion King by elanordraws](https://www.deviantart.com/elanordraws)
-- [Wish by britishchick09](https://www.deviantart.com/britishchick09)
-- [Inside Out by hinoki-pastry](https://www.deviantart.com/hinoki-pastry)
-- [Elemental by dymitr3](https://www.deviantart.com/dymitr3)
-- [Kingdom Hearts Render](https://www.deviantart.com/georgepg)
-- [Alice in Wonderland, Little Mermaid by sarahkm90](https://www.deviantart.com/sarahkm90)
-- [UP by ultimatemaverickx](https://www.deviantart.com/ultimatemaverickx)
-- [Pinocchio, Aladdin & Mary Poppins by midget525](https://www.deviantart.com/midget525)
-- [Rya Render](https://www.deviantart.com/kahlanamnelle)
-- [Zootopia, Bolt & Lady and the Tramp by spainfischer](https://www.deviantart.com/spainfischer)
-- [Nightmare Before Christmas & Fantasia by blackcyanide-fr](https://www.deviantart.com/blackcyanide-fr)
-- [Moana, Big Hero 6, Ratatouille & Wreck It Ralph by nonhovoglia](https://www.deviantart.com/nonhovoglia)
-- [Princess & The Frog by citron--vert](https://www.deviantart.com/citron--vert)
-- [Sword in the Stone, 101 Dalmatians, Tangled, Robin Hood, Peter Pan, Hercules & Dumbo by hiriwa](https://www.deviantart.com/hiriwa)
+| Disney Worlds | Artist |
+| :---------------- | :------ |
+| 101 Dalmatians | [Hiriwa](https://www.deviantart.com/hiriwa) |
+| Alice in Wonderland | [Sarahkm90](https://www.deviantart.com/sarahkm90) |
+| Aladdin | [Midget525](https://www.deviantart.com/midget525) |
+| Big Hero 6 | [Nonhovoglia](https://www.deviantart.com/nonhovoglia) |
+| Bambi | [Georgegarza01](https://www.deviantart.com/georgegarza01) |
+| Bolt | [Spainfischer](https://www.deviantart.com/spainfischer) |
+| Beauty and The Beast | [Daekazu](https://www.deviantart.com/daekazu) |
+| Cinderella | [Alicewieckowska](https://www.deviantart.com/alicewieckowska) |
+| Coco | [Adry53](https://www.deviantart.com/adry53) |
+| Dumbo |[Hiriwa](https://www.deviantart.com/hiriwa) |
+| Elemental | [Dymitr3](https://www.deviantart.com/dymitr3) |
+| Encanto | [Penbensie](https://www.deviantart.com/penbensie) |
+| Flubber | [Mikemoon1990](https://www.deviantart.com/mikemoon1990) |
+| Frozen | [Tigersnow66](https://www.deviantart.com/tigersnow66) |
+| Finding Nemo | [Joshuahooker](https://www.deviantart.com/joshuahooker) |
+| Hercules | [Hiriwa](https://www.deviantart.com/hiriwa) |
+| Inside Out | [Hinoki-pastry](https://www.deviantart.com/hinoki-pastry) |
+| Kingdom Hearts | [Georgepg](https://www.deviantart.com/georgepg) |
+| Lightyear | [Ritanchowchury](https://www.deviantart.com/ritanchowchury) |
+| Lady & The Tramp | [Spainfischer](https://www.deviantart.com/spainfischer) |
+| Monsters Inc | [Rgartland](https://www.deviantart.com/rgartland) |
+| Mary Poppins | [Midget525](https://www.deviantart.com/midget525) |
+| Moana | [Nonhovoglia](https://www.deviantart.com/nonhovoglia) |
+| Pinocchio | [Midget525](https://www.deviantart.com/midget525) |
+| Pocahontas | [Aline9358](https://www.deviantart.com/aline9358) |
+| Peter Pan | [Hiriwa](https://www.deviantart.com/hiriwa) |
+| Ratatouille | [Nonhovoglia](https://www.deviantart.com/nonhovoglia) |
+| Raya and The Last Dragon | [Kahlanamnelle](https://www.deviantart.com/kahlanamnelle) |
+| Robin Hood | [Hiriwa](https://www.deviantart.com/hiriwa) |
+| The Muppets | [Renton1313](https://www.deviantart.com/renton1313) |
+| The Jungle Book | [Keanny](https://www.deviantart.com/keanny) |
+| The Nightmare Before Christmas | [Blackcyanide-fr](https://www.deviantart.com/blackcyanide-fr) |
+| The Princess and The Frog | [Citron--vert](https://www.deviantart.com/citron--vert) |
+| The Lion King | [Elanordraws](https://www.deviantart.com/elanordraws) |
+| The Incredibles | [Reiva00](https://www.deviantart.com/reiva00) |
+| The Sword in the Stone | [Hiriwa](https://www.deviantart.com/hiriwa)
+| Toy Story | [Jakeysamra](https://www.deviantart.com/jakeysamra) |
+| Tangled | [Hiriwa](https://www.deviantart.com/hiriwa) |
+| The Little Mermaid | [Artistofthegeeks](https://www.deviantart.com/artistofthegeeks) |
+| UP | [Ultimatemaverickx](https://www.deviantart.com/ultimatemaverickx) |
+| Wall-E | [Artistofthegeeks](https://www.deviantart.com/artistofthegeeks) |
+| Wreck It Ralph | [Nonhovoglia](https://www.deviantart.com/nonhovoglia) |
+| Wish | [Britishchick09](https://www.deviantart.com/britishchick09) |
+| Winnie the Pooh | [Grayson256](https://www.deviantart.com/grayson256) |
+| Zootopia | [Spainfischer](https://www.deviantart.com/spainfischer) |
+
 
 I also wanted to give a thankyou to the posters of Reddit, Pinterest and Twitter for their awesome work on creating the images used below.
 
-- [Wall-E Render](https://www.reddit.com/r/wallpaper/)
-- [Frozen Render](https://www.reddit.com/r/Frozen/)
-- [Epic Mickey Concept Art](https://twitter.com/GenLosstwt)
-- [Kermit the frog](https://www.pinterest.co.uk/hashithestar/)
+| Disney Character Worlds | Artist |
+|:----------------------- | :----- |
+| Wall-E | [Reddit](https://www.reddit.com/r/wallpaper/) |
+| Frozen | [Reddit](https://www.reddit.com/r/Frozen/) |
+| Epic Mickey | [Twitter](https://twitter.com/GenLosstwt) |
+| Kermit the Frog | [Pinterest](https://www.pinterest.co.uk/hashithestar/)
 
 ## Copyright
 
