@@ -62,16 +62,6 @@ A massive thankyou to all the Deviant Art designers who were kind enough to let 
 | Winnie the Pooh | [Grayson256](https://www.deviantart.com/grayson256) |
 | Zootopia | [Spainfischer](https://www.deviantart.com/spainfischer) |
 
-
-I also wanted to give a thankyou to the posters of Reddit, Pinterest and Twitter for their awesome work on creating the images used below.
-
-| Disney Character Worlds | Artist |
-|:----------------------- | :----- |
-| Epic Mickey | [Twitter](https://twitter.com/GenLosstwt) |
-| Frozen | [Reddit](https://www.reddit.com/r/Frozen/) |
-| Kermit the Frog | [Pinterest](https://www.pinterest.co.uk/hashithestar/) |
-| Wall-E | [Reddit](https://www.reddit.com/r/wallpaper/) |
-
 ## Copyright
 
 I do not claim to own any of the copyright material. <br>
