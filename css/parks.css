@@ -104,7 +104,7 @@ body {
     max-width: 70rem;
     margin: 0 auto;
 }
-header h1 {
+header h2 {
     padding: .45rem;
     border-radius: 5px;
     background-color: var(--clr-orange);
@@ -377,7 +377,7 @@ footer p i {
     .links ul li a {
         color: var(--clr-white);
     }
-    header h1 {
+    header h2 {
         background-color: var(--clr-grey);
     }
     article span a {

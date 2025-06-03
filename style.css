@@ -236,7 +236,7 @@ body {
 .title .header.news {
     background-color: var(--clr-red);
 }
-.title .header h1 {
+.title .header h2 {
     color: var(--clr-white);
     text-transform: capitalize;
     margin-left: 1rem;
