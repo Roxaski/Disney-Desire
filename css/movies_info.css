@@ -341,6 +341,7 @@ body {
         display: none;
     }
     .grid-container .left #mobile-poster {
+        display: block;
         width: 100%;
     }
     .grid-container .right .content {
@@ -370,6 +371,7 @@ body {
         max-width: 600px;
     }
     .grid-container .left img {
+        display: block;
         width: 200px;
         height: 100%;
     }
