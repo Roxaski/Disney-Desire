@@ -52,26 +52,23 @@
         rgba(54,31,46,1) 0%, 
         rgba(52,61,67,1) 50%, 
         rgba(54,31,46,1) 100%);
-    --gold-Gradient: radial-gradient(circle, 
-        rgba(0,0,0,1) 0%, 
-        rgba(175,129,79,1) 35%, 
-        rgba(0,0,0,1) 100%); 
+    --bronze-Gradient: radial-gradient(circle, 
+        rgb(186, 132, 73) 0%, 
+        rgb(116, 66, 16) 100%);
     --orange-Gradient: radial-gradient(circle, 
         rgba(0,0,0,1) 0%, 
         rgba(187,100,43,1) 35%, 
         rgba(0,0,0,1) 100%); 
-    --orange-blue-Gradient: linear-gradient(90deg, 
+    --orange-blue-Gradient: linear-gradient(90deg,
         rgb(221, 95, 26) 0%,
-        rgb(128, 28, 41) 35%,
         rgb(91, 99, 208) 100%);
     --purple-pacificBlue-Gradient: linear-gradient(40deg, 
         rgba(87, 21, 122,1) 0%, 
         rgba(71,101,149,1) 45%, 
         rgb(87, 21, 122) 100%);
-    --purple-pink-green-Gradient:linear-gradient(35deg, 
-        rgba(82,83,168,1) 0%, 
-        rgba(230,108,145,1) 35%, 
-        rgba(142,190,107,1) 105%);
+    --purple-pink-Gradient:linear-gradient(90deg, 
+        rgba(82,83,168,1) 0%,
+        rgba(230,108,145,1) 100%);
     --red-Gradient: radial-gradient(circle, 
         rgba(0,0,0,1) 0%, 
         rgba(168,19,24,1) 65%, 
@@ -133,8 +130,8 @@ body {
 .bg.eggplant-aegean-gradient {
     background: var(--eggplant-aegean-Gradient);
 }
-.bg.gold-gradient {
-    background: var(--gold-Gradient);
+.bg.bronze-gradient {
+    background: var(--bronze-Gradient);
 }
 .bg.orange-gradient {
     background: var(--orange-Gradient);
@@ -142,8 +139,8 @@ body {
 .bg.orange-blue-gradient {
     background: var(--orange-blue-Gradient);
 }
-.bg.purple-pink-green-gradient {
-    background: var(--purple-pink-green-Gradient);
+.bg.purple-pink-gradient {
+    background: var(--purple-pink-Gradient);
 }
 .bg.purple-pacificBlue-gradient {
     background: var(--purple-pacificBlue-Gradient);
@@ -249,8 +246,8 @@ body {
 .grid-container .right .content .purple {
     background: var(--clr-purple);
 }
-.grid-container .right .content .purple-pink-green {
-    background: var(--purple-pink-green-Gradient);
+.grid-container .right .content .purple-pink {
+    background: var(--purple-pink-Gradient);
 }
 .grid-container .right .content .red {
     background: var(--clr-red);
@@ -360,6 +357,8 @@ body {
     .grid-container {
         width: 85%;
     }
+}
+@media screen and (max-width: 345px) {
     .grid-container .right .content .img-wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -418,7 +417,7 @@ body {
     .grid-container .right .content .orange,
     .grid-container .right .content .orange-blue,
     .grid-container .right .content .purple,
-    .grid-container .right .content .purple-pink-green,
+    .grid-container .right .content .purple-pink,
     .grid-container .right .content .red,
     .grid-container .right .content .red-pink,
     .grid-container .right .content .yellow-blue {
