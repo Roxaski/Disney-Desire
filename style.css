@@ -49,6 +49,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--clr-blk);
+    height: 75px;
 }
 .links ul img {
     display: block;
@@ -73,7 +74,7 @@ body {
     color: var(--clr-white);
     text-transform: capitalize;
     letter-spacing: 1px;
-    padding: 1.6rem 2.6rem;
+    padding: 1.6rem;
 }
 .links ul li:hover:nth-child(1) {
     background-color: var(--clr-red);
@@ -587,7 +588,7 @@ footer p i {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-@media screen and (max-width: 1175px) {
+@media screen and (max-width: 1135px) {
     .no-scroll {
         position: fixed;
         overflow-y: hidden;
@@ -939,16 +940,6 @@ footer p i {
     .links ul li {
         position: relative;
         top: 10rem;
-    }
-    .hamburger_menu {
-        top: 18px;
-        right: 27px;
-        width: 15px;
-    }
-    .hamburger_background img {
-        top: 0;
-        right: 5px;
-        max-width: 60px;
     }
     .img-slider {
         min-height: 100vh;
