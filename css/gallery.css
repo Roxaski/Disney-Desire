@@ -212,6 +212,11 @@ footer p i {
     font-size: .9rem;
 }
 /*MEDIA QUERY'S*/
+@media screen and (max-width: 1400px) and (hover: none) and (pointer: coarse) {
+    .gallery .img-container:hover .img-overlay {
+        opacity: 0;
+    }
+}
 @media screen and (max-width: 1135px) {
     .no-scroll {
         position: fixed;
@@ -345,9 +350,6 @@ footer p i {
         top: 0;
         padding: 0 1rem;
     }
-    .gallery .img-container:hover .img-overlay {
-        opacity: 0;
-    }
 }
 @media screen and (max-width: 865px) {
     .lightbox img {
@@ -389,7 +391,7 @@ footer p i {
 }
 @media screen and (max-width: 410px) {
     footer {
-        margin: 165px auto 0;
+        margin: 50px auto 0;
     }
 }
 @media screen and (max-width: 335px) {
