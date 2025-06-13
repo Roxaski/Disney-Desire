@@ -56,10 +56,7 @@ body {
     max-width: 215px;
     height: auto;
     margin: auto 10px;
-}
-.links ul .logo .logo_dark {
-    text-align: center;
-    color: var(--clr-white);
+    object-fit: contain;
 }
 .links ul li {
     display: inline-block;
