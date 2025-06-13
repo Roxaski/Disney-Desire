@@ -354,7 +354,7 @@ footer p i {
         right: .75rem;
     }
     .mobile_logo img {
-        width: 220px;
+        width: 210px;
     }
 }
 @media screen and (orientation: landscape) and (max-width: 934px) {
