@@ -16,6 +16,16 @@ gallery.forEach((img, index) => {
         displayOverlay();
         imagePreview();
     });
+
+    // opens the selected image when pressing enter on keyboard
+    img.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            currentImage = index;
+
+            displayOverlay();
+            imagePreview();
+        }
+    });
 });
 
 // displays an overlay
