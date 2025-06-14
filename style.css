@@ -291,6 +291,10 @@ body {
 .articles .content a {
     color: var(--clr-blk);
     text-decoration: none;
+    transition: 250ms ease;
+}
+.articles .content a:hover {
+    color: var(--clr-red);
 }
 .articles .content .article-preview p {
     font-size: .95rem;
@@ -331,7 +335,6 @@ body {
     height: auto;
     color: var(--clr-grey);
     box-shadow: -2px 3px 5px rgba(0, 0, 0, .8);
-    transition: 250ms ease-in-out;
 }
 /*ARCHIVE*/
 .title .header.archive {
@@ -444,7 +447,7 @@ body {
     font-weight: 500;
 }
 .history .content a {
-    display: flex;
+    display: inline-block;
     color: var(--clr-blk);
     text-decoration: none;
     transition: 250ms ease;
@@ -796,6 +799,12 @@ footer p i {
         font-weight: 500;
         letter-spacing: .5px;
     }
+    .articles .content a:hover,
+    .history .content a:hover,
+    .gallery .content a h2:hover,
+    .parks .content a h2:hover {
+        color: var(--clr-blk);
+}
     .article-wrapper {
         margin: 0 auto;
     }
@@ -852,6 +861,9 @@ footer p i {
 @media screen and (max-width: 658px) {
     .img-slider {
         min-height: 350px;
+    }
+    .history .content a {
+        display: flex;
     }
 }
 @media screen and (max-width: 465px) {
@@ -995,6 +1007,9 @@ footer p i {
     }
     .articles .content a {
         color: var(--clr-white);
+    }
+    .articles .content a:hover {
+        color: var(--clr-lightGrey);
     }
     .articles .content .article-preview a {
         color: var(--clr-white);
