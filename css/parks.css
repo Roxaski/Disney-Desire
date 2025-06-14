@@ -287,6 +287,11 @@ footer p i {
         padding: 0 1rem;
     }
 }
+@media screen and (max-width: 925px) {
+    article p {
+        margin: 25px 5px;
+    }
+}
 @media screen and (max-width: 550px) {
     .hamburger_menu {
         top: 3.2rem;

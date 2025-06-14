@@ -288,6 +288,11 @@ footer p i {
         padding: 0 1rem;
     }
 }
+@media screen and (max-width: 925px) {
+    article p {
+        margin: 25px 5px;
+    }
+}
 @media screen and (max-width: 570px) {
     article img {
         display: none;
