@@ -106,7 +106,7 @@ body {
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: .5rem;
+    column-gap: .5rem;
 }
 .gallery .img-container {
     position: relative;
