@@ -311,10 +311,9 @@ body {
 .articles .content .tags p {
     display: inline-block;
     color: var(--clr-white);
-    font-size: .9rem;
-    margin-left: .5rem;
+    font-size: clamp(.85rem, 3vw, .9rem);
     background-color: var(--clr-red);
-    margin: 0 auto;
+    margin: 5px auto;
     padding: 0 .25rem;
     border-radius: 5px;
     text-transform: capitalize;
