@@ -319,6 +319,9 @@ body {
     border-radius: 5px;
     text-transform: capitalize;
 }
+.articles .content .tags i {
+    margin-right: .25rem;
+}
 /*UPCOMING FILMS*/
 .title .header.movies {
     background-color: var(--clr-blue);
@@ -571,7 +574,7 @@ footer p i {
     font-size: .9rem;
 }
 /*MEDIA QUERY'S*/
-@media screen and (max-width: 1255px) {
+@media screen and (max-width: 1135px) {
     .articles {
         margin: 15px 15px;
     }
