@@ -204,6 +204,10 @@ footer p i {
         position: fixed;
         overflow-y: hidden;
     }
+    nav {
+        background: var(--clr-red);
+        margin-bottom: 1.5rem;
+    }
     nav.active .links {
         transform: translateX(40%);
     }
@@ -330,7 +334,7 @@ footer p i {
     }
     .wrapper {
         top: 0;
-        padding: 0 1rem;
+        padding: 0 .75rem;
     }
     .articles {
         display: flex;
@@ -440,7 +444,7 @@ footer p i {
 }
 /*LIGHT MODE MEDIA QUERY*/
 @media screen and (prefers-color-scheme: light) {
-    .mobile_logo .logo_dark {
+    .mobile_logo .logo_light {
         display: none;
     }
 }
