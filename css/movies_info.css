@@ -187,7 +187,6 @@ body {
     padding-right: 2rem;
 }
 .grid-container .right .content h1 {
-    font-family: "Open Sans", sans-serif;
     font-size: clamp(1.2rem, 3vw, 1.3rem);
     text-align: center;
     text-transform: uppercase;
