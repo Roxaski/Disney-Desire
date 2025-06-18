@@ -851,6 +851,9 @@ footer p i {
     .archive .container.right::after {
         left: -48px;
     }
+    footer {
+        margin: 50px auto 0;
+    }
 }
 @media screen and (max-width: 805px) {
     .img-slider {
@@ -897,11 +900,6 @@ footer p i {
     }
     .history-wrapper img {
         width: 165px;
-    }
-}
-@media screen and (max-width: 410px) {
-    footer {
-        margin: 50px auto 0;
     }
 }
 @media screen and (max-width: 374px) {
