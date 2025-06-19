@@ -51,7 +51,7 @@ A massive thankyou to all the Deviant Art designers who were kind enough to let 
 | The Princess and The Frog | [Citron--vert](https://www.deviantart.com/citron--vert) |
 | The Lion King | [Elanordraws](https://www.deviantart.com/elanordraws) |
 | The Incredibles | [Reiva00](https://www.deviantart.com/reiva00) |
-| The Good Dinosaur | [Reiva00](https://www.deviantart.com/mikemoon1990) |
+| The Good Dinosaur | [Mikemoon1990](https://www.deviantart.com/mikemoon1990) |
 | The Sword in the Stone | [MikeMoon1990](https://www.deviantart.com/mikemoon1990) |
 | Toy Story | [Jakeysamra](https://www.deviantart.com/jakeysamra) |
 | Tangled | [Hiriwa](https://www.deviantart.com/hiriwa) |
