@@ -442,9 +442,14 @@ footer p i {
         width: 80%;
     }
     .archive .container .content img {
-        width: 90%;
+        display: block;
+        width: 75%;
         margin: 0 auto 25px;
         float: none;
+    }
+    .archive .container .content h2,
+    .archive .container .content h3 {
+        text-align: center;
     }
 }
 @media screen and (orientation: landscape) and (max-width: 934px) {
