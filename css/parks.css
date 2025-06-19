@@ -329,6 +329,7 @@ footer p i {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        margin-left: .4rem;
     }
     .mobile_logo img {
         width: 225px;
