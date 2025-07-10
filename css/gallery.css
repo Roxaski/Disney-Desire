@@ -443,6 +443,14 @@ footer p i {
     }
 }
 /*DARK MODE MEDIA QUERY*/
+@media screen and (prefers-color-scheme: dark) and (max-width: 1135px) {
+    .links {
+        background: var(--clr-grey);
+    }
+    .links ul {
+        background: var(--clr-grey);
+    }
+}
 @media screen and (prefers-color-scheme: dark) {
     ::-webkit-scrollbar-track {
         background-color: var(--clr-grey);
