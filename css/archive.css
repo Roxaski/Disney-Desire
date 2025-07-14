@@ -174,7 +174,7 @@ body {
 }
 .archive .container .content p {
     font-weight: 400;
-    font-size: clamp(1rem , 3vw, 1rem);
+    font-size: 1rem;
     margin: 20px auto 0;
 }
 /*SCROLL BACK TO TOP OF PAGE BUTTON*/
