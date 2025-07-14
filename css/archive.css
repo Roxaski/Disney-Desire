@@ -447,10 +447,6 @@ footer p i {
         margin: 0 auto 25px;
         float: none;
     }
-    .archive .container .content h2,
-    .archive .container .content h3 {
-        text-align: center;
-    }
 }
 @media screen and (orientation: landscape) and (max-width: 934px) {
     .links {
