@@ -344,7 +344,7 @@ body {
     background-color: var(--clr-violet);
 }
 .archive-wrapper {
-    padding: 4rem;
+    padding: 2.5rem;
     margin: 15px auto;
 }
 .archive {
@@ -420,7 +420,7 @@ body {
 }
 .archive .container .content p {
     font-weight: 400;
-    font-size: clamp(1rem , 3vw, 1rem);
+    font-size: 1rem;
     margin: 20px auto 0;
 }
 /*HISTORY*/
@@ -912,9 +912,14 @@ footer p i {
         bottom: .35rem;
     }
     .archive .container .content img {
+        display: block;
         width: 75%;
         margin: 0 auto 25px;
         float: none;
+    }
+    .archive .container .content h2,
+    .archive .container .content h3 {
+        text-align: center;
     }
     .history-wrapper img {
         float: none;
