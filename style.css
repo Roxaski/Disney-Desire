@@ -903,6 +903,14 @@ footer p i {
         width: 165px;
     }
 }
+@media screen and (max-width: 385px) {
+    .archive .container .content img {
+        display: block;
+        width: 75%;
+        margin: 0 auto 25px;
+        float: none;
+    }
+}
 @media screen and (max-width: 374px) {
     .img-slider {
         min-height: 200px;
@@ -910,12 +918,6 @@ footer p i {
     .title .header img {
         max-width: 180px;
         bottom: .35rem;
-    }
-    .archive .container .content img {
-        display: block;
-        width: 75%;
-        margin: 0 auto 25px;
-        float: none;
     }
     .archive .container .content h2,
     .archive .container .content h3 {
