@@ -906,7 +906,7 @@ footer p i {
 @media screen and (max-width: 385px) {
     .archive .container .content img {
         display: block;
-        width: 75%;
+        width: 150px;
         margin: 0 auto 25px;
         float: none;
     }
