@@ -903,15 +903,7 @@ footer p i {
         width: 165px;
     }
 }
-@media screen and (max-width: 385px) {
-    .archive .container .content img {
-        display: block;
-        width: 150px;
-        margin: 0 auto 25px;
-        float: none;
-    }
-}
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 375px) {
     .img-slider {
         min-height: 200px;
     }
@@ -922,6 +914,12 @@ footer p i {
     .archive .container .content h2,
     .archive .container .content h3 {
         text-align: center;
+    }
+    .archive .container .content img {
+        display: block;
+        width: 150px;
+        margin: 0 auto 25px;
+        float: none;
     }
     .history-wrapper img {
         float: none;
