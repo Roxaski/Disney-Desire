@@ -300,18 +300,24 @@ body {
     justify-content: flex-start;
     align-items: center;
 }
+.grid-container .right .content .grid-content .critics .star-wrapper,
+.grid-container .right .content .grid-content .user .star-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-left: .5rem;
+}
 .grid-container .right .content .grid-content .critics i,
 .grid-container .right .content .grid-content .user i {
-    margin-left: .5rem;
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     color: var(--clr-gold);
 }
 .grid-container .right .content .grid-content .critics #critics-score,
 .grid-container .right .content .grid-content .user #user-score {
-    position: relative;
-    font-size: 1.1rem;
-    right: 29.5px;
-    top: 2.5px;
+    position: absolute;
+    top: 47%;
+    left: 41%;
+    transform: translate(-47%, -41%);
+    font-size: .95rem;
     font-weight: 600;
     color: var(--clr-white);
 }
@@ -357,9 +363,19 @@ body {
         width: 85%;
     }
 }
+@media screen and (max-width: 425px) {
+    .grid-container .right .content .grid-content .critics .star-wrapper,
+    .grid-container .right .content .grid-content .user .star-wrapper {
+        margin-right: 1.25rem;
+    }
+}
 @media screen and (max-width: 345px) {
     .grid-container .right .content .img-wrapper {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-container .right .content .grid-content .critics .star-wrapper,
+    .grid-container .right .content .grid-content .user .star-wrapper {
+        margin-right: .25rem;
     }
 }
 @media screen and (max-width: 995px) and (orientation: landscape) {
@@ -428,12 +444,6 @@ body {
     }
     .grid-container .right .content .grid-content .critics i,
     .grid-container .right .content .grid-content .user i {
-        color: var(--clr-grey);
-    }
-    .grid-container .right .content .grid-content .critics i,
-    .grid-container .right .content .grid-content .user i {
-        margin-left: .5rem;
-        font-size: 2.1rem;
         color: var(--clr-grey);
     }
     .grid-container .right .content .grid-content .critics #critics-score,
