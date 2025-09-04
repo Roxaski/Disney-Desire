@@ -314,9 +314,9 @@ body {
 .grid-container .right .content .grid-content .critics #critics-score,
 .grid-container .right .content .grid-content .user #user-score {
     position: absolute;
-    top: 47%;
-    left: 41%;
-    transform: translate(-47%, -41%);
+    top: 55%;
+    left: 40%;
+    transform: translate(-40%, -55%);
     font-size: .95rem;
     font-weight: 600;
     color: var(--clr-white);
@@ -367,6 +367,12 @@ body {
     .grid-container .right .content .grid-content .critics .star-wrapper,
     .grid-container .right .content .grid-content .user .star-wrapper {
         margin-right: 1.25rem;
+    }
+    .grid-container .right .content .grid-content .critics #critics-score,
+    .grid-container .right .content .grid-content .user #user-score {
+        top: 56%;
+        left: 40%;
+        transform: translate(-40%, -56%);
     }
 }
 @media screen and (max-width: 345px) {
