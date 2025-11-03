@@ -259,7 +259,7 @@ footer p {
         height: 2rem;
         background-color: transparent;
         -webkit-tap-highlight-color: transparent;
-        z-index: 6;
+        z-index: 5;
     }
     .hamburger_menu .bars {
         position: relative;
@@ -276,7 +276,7 @@ footer p {
         right: 1rem;
         max-width: 65px;
         height: auto;
-        z-index: 5;
+        z-index: 3;
     }
     .bars::before,
     .bars::after {
