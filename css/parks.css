@@ -322,11 +322,6 @@ footer p {
         margin: 50px auto 0;
     }
 }
-@media screen and (max-width: 925px) {
-    article p {
-        margin: 25px 5px;
-    }
-}
 @media screen and (max-width: 550px) {
     .hamburger_menu {
         top: 3rem;

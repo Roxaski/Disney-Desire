@@ -503,6 +503,10 @@ footer p {
     }
 }
 @media screen and (max-width: 375px) {
+    .archive .container .content h2,
+    .archive .container .content h3 {
+        text-align: center;
+    }
     .archive .container .content img {
         display: block;
         width: 150px;
