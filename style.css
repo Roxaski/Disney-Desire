@@ -616,7 +616,7 @@ body {
     background-color: var(--clr-orange);
 }
 .parks-wrapper {
-    padding: .75rem;
+    padding: 1rem;
 }
 .parks .content .img-container {
     display: grid;
