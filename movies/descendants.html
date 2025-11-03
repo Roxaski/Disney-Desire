@@ -3,129 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#801c29">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
-    <title>Disney Desire | The Descendants : The Rise of Red</title>
+    <title>Disney Desire | The Descendants: The Rise of Red</title>
     <meta name="description" content="The Descendants : The Rise of Red stars Kylie Cantrall and Rita Ora in a fantastic adventure through time. Check out cast info, ratings, trailer, and more">
     <meta property="og:locale" content="en_GB">
     <meta property="og:site_name" content="Disney Desire" />
-    <meta property="og:title" content="Disney Desire | The Descendants : The Rise of Red">
+    <meta property="og:title" content="Disney Desire | The Descendants: The Rise of Red">
     <meta property="og:description" content="The Descendants : The Rise of Red stars Kylie Cantrall and Rita Ora in a fantastic adventure through time. Check out cast info, ratings, trailer, and more">
     <meta property="og:image" content="https://roxaski.github.io/Disney-Desire/assets/open_graph/og_descendants.jpg">
-    <meta property="og:image:alt" content="Disney Desire | The Descendants : The Rise of Red">
+    <meta property="og:image:alt" content="The Descendants: The Rise of Red">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://roxaski.github.io/Disney-Desire/movies/.html"/>
-    <meta name="twitter:title" content="Disney Desire | The Descendants : The Rise of Red">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Disney Desire | The Descendants: The Rise of Red">
     <meta name="twitter:description" content="The Descendants : The Rise of Red stars Kylie Cantrall and Rita Ora in a fantastic adventure through time. Check out cast info, ratings, trailer, and more">
     <meta name="twitter:image" content="https://roxaski.github.io/Disney-Desire/assets/open_graph/og_descendants.jpg">
-    <meta name="twitter:image:alt" content="Disney Desire | The Descendants : The Rise of Red"> 
+    <meta name="twitter:image:alt" content="The Descendants: The Rise of Red">
     <meta property="og:type" content="website"/>
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="manifest" href="../site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="../css/movies_info.css">
+    <script async defer src="https://kit.fontawesome.com/2d21b2aa33.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/movie_contents.css">
+    <script defer src="../scripts/movie-contents.js"></script>
 </head>
 <body>
-    <!--MOVIE INFORMATION-->
     <main>
-        <div class="bg crimson-gradient dark-mode"></div>
-        <div class="grid-container">
-            <div class="left">
-                <img fetchpriority="high" src="../assets/posters/descendants.webp" width="1000" height="1450" alt="descendants poster">
-                <img fetchpriority="high" id="mobile-poster" src="../assets/posters/mobile/descendants_mobile.webp" width="500" height="625" alt="descendants poster">
+        <div class="movie-information">
+            <div class="poster">
+                <img width="1200" height="1800" fetchpriority="high" draggable="false"
+                src="../assets/posters/descendants_extra_large.webp" 
+                srcset="../assets/posters/descendants_small.webp 300w,
+                        ../assets/posters/descendants_medium.webp 500w,
+                        ../assets/posters/descendants_large.webp 800w,
+                        ../assets/posters/descendants_extra_large.webp 1200w"
+                sizes="(max-width: 775px) 60vw, 
+                    (max-width: 810px) 43vw, 
+                    (min-width: 1280px) 31vw, 
+                    40vw"
+                alt="the descendants rise of red poster">
+
+                <img id="mobile-bg" width="300" height="450" fetchpriority="high" draggable="false"
+                src="../assets/posters/descendants_small.webp"
+                alt="">
             </div>
-            <div class="right">
-                <div class="content">
-                    <h1>descendants the rise of red</h1>
+
+            <div class="content">
+                <h1>the descendants: the rise of red</h1> 
+
+                <div class="subheader">
+                    <h2>top cast</h2>
+                </div>
+
+                <div class="cast">
                     <div>
-                        <h2 class="crimson">top cast</h2>
-                        <div class="img-wrapper">
-                            <div>
-                                <img src="../assets/cast/kylie_cantrall.webp" width="360" height="360" alt="kylie cantrall profile">
-                                <p>kylie cantrall</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/rita_ora.webp" width="360" height="360" alt="rita ora profile">
-                                <p>rita ora</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/joshua_colley.webp" width="360" height="360" alt="joshua colley profile">
-                                <p>joshua colley</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/china_mcclain.webp" width="360" height="360" alt="china mcClain profile">
-                                <p>china mcClain</p>
-                            </div>
-                        </div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/descendants/kylie_cantrall.webp" 
+                        alt="kylie cantrall">
+
+                        <h3>kylie cantrall</h3>
                     </div>
-                    <div class="synopsis">
-                        <h2 class="crimson">synopsis</h2>
-                        <p>Follow Red in this thrilling adventure, where she must travel back in time against her mothers wishes with the help of an unlikely ally, in order to save Auradon from disaster.</p>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/descendants/rita_ora.webp" 
+                        alt="rita ora">
+
+                        <h3>rita ora</h3>
                     </div>
-                    <div class="information">
-                        <div>
-                            <h2 class="crimson">release date</h2>
-                            <p>12th July 2024</p>
-                        </div>
-                        <div>
-                            <h2 class="crimson">genre</h2>
-                            <ul>
-                                <li>Musical / Comedy</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h2 class="crimson">rating</h2>
-                            <p>TV-G</p>
-                        </div>
-                        <div>
-                            <h2 class="crimson">review scores</h2>
-                            <div class="grid-content">
-                                <div class="critics">
-                                    <p>Critics Score</p>
-                                    <div class="star-wrapper">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p id="critics-score">5</p>
-                                    </div>
-                                </div>
-                                <div class="user">
-                                    <p>User Score</p>
-                                    <div class="star-wrapper">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p id="user-score">3</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h2 class="crimson">director</h2>
-                            <p>Jennifer Phang</p>
-                        </div>
-                        <div>
-                            <h2 class="crimson">runtime</h2>
-                            <p><span>91 minutes</span></p>
-                        </div>
-                        <div>
-                            <h2 class="crimson">audio</h2>
-                            <ul>
-                                <li>Dolby Digital</li>
-                            </ul>
-                        </div>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/descendants/joshua_colley.webp" 
+                        alt="joshua colley">
+
+                        <h3>joshua colley</h3>
                     </div>
-                    <div class="trailer">
-                        <h2 class="crimson">trailer</h2>
-                        <iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/3Pk4-lzowDM?si=J_zIlSMiznn0vmLS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/descendants/morgan_dudley.webp" 
+                        alt="morgan dudley">
+
+                        <h3>morgan dudley</h3>
                     </div>
-                    <div class="copyright">
-                        <h2 class="crimson">copyright</h2>
-                        <p>All copyright material is the property of Disney and their respective owners</p>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/descendants/china_mcclain.webp" 
+                        alt="china mcclain">
+
+                        <h3>china mcclain</h3>
+                    </div>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/descendants/brandy_norwood.webp" 
+                        alt="brandy norwood">
+
+                        <h3>brandy norwood</h3>
                     </div>
                 </div>
+
+                <div class="subheader">
+                    <h2>synopsis</h2>
+                </div>
+
+                <div class="info">
+                    <p>When a dangerous threat emerges that could destroy Auradon, Red defies her mother's orders and travels back in time with an unexpected ally in order to prevent a catastrophe before it even begins.</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>release date</h2>
+                </div>
+
+                <div class="info">
+                    <p>12th July 2024</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>genre</h2>
+                </div>
+
+                <div class="info genre">
+                    <ul>
+                        <li>teen <span>/</span></li>
+                        <li>musical <span>/</span></li>
+                        <li>fantasy </li>
+                    </ul>
+                </div>
+
+                <div class="subheader">
+                    <h2>rating</h2>
+                </div>
+
+                <div class="info">
+                    <p>PG</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>review scores</h2>
+                </div>
+
+                <div class="info">
+                    <div class="reviews-container">
+                        <div class="reviews">
+                            <h3>critics</h3>
+                            <i class="fa-solid fa-star star"></i> 
+                            <span>5</span>
+                        </div>
+
+                        <div class="reviews">
+                            <h3>public</h3>
+                            <i class="fa-solid fa-star star"></i>
+                            <span>5</span>
+                        </div>
+
+                        <div class="reviews">
+                            <h3>rate it</h3>
+                            <i class="fa-solid fa-star star"></i>
+                            <span id="user-score"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subheader">
+                    <h2>runtime</h2>
+                </div>
+
+                <div class="info">
+                    <p>95 minutes</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>audio</h2>
+                </div>
+
+                <div class="info">
+                    <ul>
+                        <li>dolby digital</li>
+                    </ul>
+                </div>
+
+                <div class="subheader">
+                    <h2>trailer</h2>
+                </div>
+
+                <div class="trailer" data-videoId="3Pk4-lzowDM"></div>
+
+                <footer>
+                    <h2>copyright</h2>
+                    <p>
+                        <i class="fa-regular fa-copyright"></i> 
+                        All copyright material is the property of Disney and their respective owners
+                    </p>
+                </footer>
             </div>
         </div>
     </main>

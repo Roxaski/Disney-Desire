@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#184d7c">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
     <title>Disney Desire | Lightyear</title>
     <meta name="description" content="Lightyear stars Chris Evans and Keke Palmer in this Pixar adventure through the vastness of space. Check out cast info, ratings, trailer, and more">
     <meta property="og:locale" content="en_GB">
@@ -12,124 +10,197 @@
     <meta property="og:title" content="Disney Desire | Lightyear">
     <meta property="og:description" content="Lightyear stars Chris Evans and Keke Palmer in this Pixar adventure through the vastness of space. Check out cast info, ratings, trailer, and more">
     <meta property="og:image" content="https://roxaski.github.io/Disney-Desire/assets/open_graph/og_lightyear.jpg">
-    <meta property="og:image:alt" content="Disney Desire | Lightyear"> 
+    <meta property="og:image:alt" content="Lightyear">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://roxaski.github.io/Disney-Desire/movies/lightyear.html"/>
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Disney Desire | Lightyear">
     <meta name="twitter:description" content="Lightyear stars Chris Evans and Keke Palmer in this Pixar adventure through the vastness of space. Check out cast info, ratings, trailer, and more">
     <meta name="twitter:image" content="https://roxaski.github.io/Disney-Desire/assets/open_graph/og_lightyear.jpg">
-    <meta name="twitter:image:alt" content="Disney Desire | Lightyear">
+    <meta name="twitter:image:alt" content="Lightyear">
     <meta property="og:type" content="website"/>
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="manifest" href="../site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="../css/movies_info.css">
+    <script async defer src="https://kit.fontawesome.com/2d21b2aa33.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/movie_contents.css">
+    <script defer src="../scripts/movie-contents.js"></script>
 </head>
 <body>
-    <!--MOVIE INFORMATION-->
     <main>
-        <div class="bg darkBlue-gradient dark-mode"></div>
-        <div class="grid-container">
-            <div class="left">
-                <img fetchpriority="high" src="../assets/posters/lightyear.webp" width="1000" height="1450" alt="lightyear poster">
-                <img fetchpriority="high" id="mobile-poster" src="../assets/posters/mobile/lightyear_mobile.webp" width="500" height="625" alt="lightyear poster">
+        <div class="movie-information">
+            <div class="poster">
+                <img width="1200" height="1800" fetchpriority="high" draggable="false"
+                src="../assets/posters/lightyear_extra_large.webp" 
+                srcset="../assets/posters/lightyear_small.webp 300w,
+                        ../assets/posters/lightyear_medium.webp 500w,
+                        ../assets/posters/lightyear_large.webp 800w,
+                        ../assets/posters/lightyear_extra_large.webp 1200w"
+                sizes="(max-width: 775px) 60vw, 
+                    (max-width: 810px) 43vw, 
+                    (min-width: 1280px) 31vw, 
+                    40vw"
+                alt="lightyear poster">
+
+                <img id="mobile-bg" width="300" height="450" fetchpriority="high" draggable="false"
+                src="../assets/posters/lightyear_small.webp"
+                alt="">
             </div>
-            <div class="right">
-                <div class="content">
-                    <h1>lightyear</h1>
+
+            <div class="content">
+                <h1>lightyear</h1> 
+
+                <div class="subheader">
+                    <h2>top cast</h2>
+                </div>
+
+                <div class="cast">
                     <div>
-                        <h2 class="darkBlue">top cast</h2>
-                        <div class="img-wrapper">
-                            <div>
-                                <img src="../assets/cast/chris_evans.webp" width="360" height="360" alt="chris evans profile">
-                                <p>chris evans</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/keke_palmer.webp" width="360" height="360" alt="keke palmer profile">
-                                <p>keke palmer</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/uzo_aduba.webp" width="360" height="360" alt="uzo aduba profile">
-                                <p>uzo aduba</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/bill_hader.webp" width="360" height="360" alt="bill hader profile">
-                                <p>bill hader</p>
-                            </div>
-                        </div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/lightyear/chris_evans.webp" 
+                        alt="chris evans">
+
+                        <h3>chris evans</h3>
                     </div>
-                    <div class="synopsis">
-                        <h2 class="darkBlue">synopsis</h2>
-                        <p>Setting off on a new space adventure is Buzz Lightyear, along with his new crew and a trusty robot Sox, who must make haste in an attempt to escape the clutches of the evil Emperor Zurg.</p>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/lightyear/keke_palmer.webp" 
+                        alt="keke palmer">
+
+                        <h3>keke palmer</h3>
                     </div>
-                    <div class="information">
-                        <div>
-                            <h2 class="darkBlue">release date</h2>
-                            <p>17th June 2022</p>
-                        </div>
-                        <div>
-                            <h2 class="darkBlue">genre</h2>
-                            <ul>
-                                <li>Sci-fi / Adventure</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h2 class="darkBlue">rating</h2>
-                            <p>PG</p>
-                        </div>
-                        <div>
-                            <h2 class="darkBlue">review scores</h2>
-                            <div class="grid-content">
-                                <div class="critics">
-                                    <p>Critics Score</p>
-                                    <div class="star-wrapper">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p id="critics-score">6</p>
-                                    </div>
-                                </div>
-                                <div class="user">
-                                    <p>User Score</p>
-                                    <div class="star-wrapper">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p id="user-score">3</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h2 class="darkBlue">director</h2>
-                            <p>Angus MacLane</p>
-                        </div>
-                        <div>
-                            <h2 class="darkBlue">runtime</h2>
-                            <p>105 minutes</p>
-                        </div>
-                        <div>
-                            <h2 class="darkBlue">audio</h2>
-                            <ul>
-                                <li>Dolby Digital</li>
-                                <li>Dolby Atmos</li>
-                                <li>5.1 Dolby Surround Sound</li>
-                                <li>7.1 Dolby Surround Sound</li>
-                                <li>Descriptive Audio</li>
-                            </ul>
-                        </div>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/lightyear/james_brolin.webp" 
+                        alt="james brolin">
+
+                        <h3>james brolin</h3>
                     </div>
-                    <div class="trailer">
-                        <h2 class="darkBlue">trailer</h2>
-                        <iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/BwZs3H_UN3k?si=mCEhqC5aVj8t18N5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/shared/taika_waititi.webp" 
+                        alt="taika waititi">
+
+                        <h3>taika waititi</h3>
                     </div>
-                    <div class="copyright">
-                        <h2 class="darkBlue">copyright</h2>
-                        <p>All copyright material is the property of Disney, Pixar and their respective owners</p>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/lightyear/uzo_aduba.webp" 
+                        alt="uzo_aduba">
+
+                        <h3>uzo aduba</h3>
+                    </div>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/lightyear/bill_hader.webp" 
+                        alt="bill hader">
+
+                        <h3>bill hader</h3>
                     </div>
                 </div>
+
+                <div class="subheader">
+                    <h2>synopsis</h2>
+                </div>
+
+                <div class="info">
+                    <p>After a mission goes awry Buzz Lightyear becomes stranded on a hostile planet. With the help of his robotic companion Sox and a crew of rookie rangers, Buzz must overcome his past mistakes and master teamwork to defeat the menacing Emperor Zurg and find a way back home.</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>release date</h2>
+                </div>
+
+                <div class="info">
+                    <p>June 17th 2022</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>genre</h2>
+                </div>
+
+                <div class="info genre">
+                    <ul>
+                        <li>animation <span>/</span></li>
+                        <li>fantasy <span>/</span></li>
+                        <li>adventure </li>
+                    </ul>
+                </div>
+
+                <div class="subheader">
+                    <h2>rating</h2>
+                </div>
+
+                <div class="info">
+                    <p>PG</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>review scores</h2>
+                </div>
+
+                <div class="info">
+                    <div class="reviews-container">
+                        <div class="reviews">
+                            <h3>critics</h3>
+                            <i class="fa-solid fa-star star"></i> 
+                            <span>6</span>
+                        </div>
+
+                        <div class="reviews">
+                            <h3>public</h3>
+                            <i class="fa-solid fa-star star"></i>
+                            <span class="score-4">4</span>
+                        </div>
+
+                        <div class="reviews">
+                            <h3>rate it</h3>
+                            <i class="fa-solid fa-star star"></i>
+                            <span id="user-score"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subheader">
+                    <h2>runtime</h2>
+                </div>
+
+                <div class="info">
+                    <p>105 minutes</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>audio</h2>
+                </div>
+
+                <div class="info">
+                    <ul>
+                        <li>dolby atmos</li>
+                        <li>dolby digital</li>
+                        <li>dolby surround 7.1</li>
+                        <li>DTS</li>
+                    </ul>
+                </div>
+
+                <div class="subheader">
+                    <h2>trailer</h2>
+                </div>
+
+                <div class="trailer" data-videoId="oE9hXmmyoKQ"></div>
+
+                <footer>
+                    <h2>copyright</h2>
+                    <p>
+                        <i class="fa-regular fa-copyright"></i> 
+                        All copyright material is the property of Disney, Pixar and their respective owners
+                    </p>
+                </footer>
             </div>
         </div>
     </main>

@@ -3,132 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#a81318">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
-    <title>Disney Desire | Doctor Strange Into The Multiverse of Madness</title>
+    <title>Disney Desire | Doctor Strange in the Multiverse of Madness</title>
     <meta name="description" content="Doctor Strange in the Multiverse of Madness stars Benedict Cumberbatch and Elizabeth Olsen in a Marvel adventure through that has exploring multiple realities. Check out cast info, ratings, trailer, and more">
     <meta property="og:locale" content="en_GB">
     <meta property="og:site_name" content="Disney Desire" />
-    <meta property="og:title" content="Disney Desire | Doctor Strange into the Multiverse of Madness">
+    <meta property="og:title" content="Disney Desire | Doctor Strange in the Multiverse of Madness">
     <meta property="og:description" content="Doctor Strange in the Multiverse of Madness stars Benedict Cumberbatch and Elizabeth Olsen in a Marvel adventure through that has exploring multiple realities. Check out cast info, ratings, trailer, and more">
     <meta property="og:image" content="https://roxaski.github.io/Disney-Desire/assets/open_graph/og_doc_strange.jpg">
-    <meta property="og:image:alt" content="Disney Desire | Doctor Strange Into The Multiverse of Madness"> 
+    <meta property="og:image:alt" content="Doctor Strange in the Multiverse of Madness">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://roxaski.github.io/Disney-Desire/movies/doc_strange.html"/>
-    <meta name="twitter:title" content="Disney Desire | Doctor Strange Into The Multiverse of Madness">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Disney Desire | Doctor Strange in the Multiverse of Madness">
     <meta name="twitter:description" content="Doctor Strange in the Multiverse of Madness stars Benedict Cumberbatch and Elizabeth Olsen in a Marvel adventure through that has exploring multiple realities. Check out cast info, ratings, trailer, and more">
     <meta name="twitter:image" content="https://roxaski.github.io/Disney-Desire/assets/open_graph/og_doc_strange.jpg">
-    <meta name="twitter:image:alt" content="Disney Desire | Doctor Strange Into The Multiverse of Madness"> 
+    <meta name="twitter:image:alt" content="Doctor Strange in the Multiverse of Madness">
     <meta property="og:type" content="website"/>
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="manifest" href="../site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="../css/movies_info.css">
+    <script async defer src="https://kit.fontawesome.com/2d21b2aa33.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/movie_contents.css">
+    <script defer src="../scripts/movie-contents.js"></script>
 </head>
 <body>
-    <!--MOVIE POSTER-->
     <main>
-        <div class="bg red-gradient dark-mode"></div>
-        <div class="grid-container">
-            <div class="left">
-                <img fetchpriority="high" src="../assets/posters/doc_strange.webp" width="1000" height="1450" alt="doctor strange poster">
-                <img fetchpriority="high" id="mobile-poster" src="../assets/posters/mobile/doc_strange_mobile.webp"width="500" height="625" alt="doctor strange poster">
+        <div class="movie-information">
+            <div class="poster">
+                <img width="1200" height="1800" fetchpriority="high" draggable="false"
+                src="../assets/posters/doc_strange_extra_large.webp" 
+                srcset="../assets/posters/doc_strange_small.webp 300w,
+                        ../assets/posters/doc_strange_medium.webp 500w,
+                        ../assets/posters/doc_strange_large.webp 800w,
+                        ../assets/posters/doc_strange_extra_large.webp 1200w"
+                sizes="(max-width: 775px) 60vw, 
+                    (max-width: 810px) 43vw, 
+                    (min-width: 1280px) 31vw, 
+                    40vw"
+                alt="doctor strange in the multiverse of madness poster">
+
+                <img id="mobile-bg" width="300" height="450" fetchpriority="high" draggable="false"
+                src="../assets/posters/doc_strange_small.webp"
+                alt="">
             </div>
-            <div class="right">
-                <div class="content">
-                    <h1>doctor strange in the multiverse of madness</h1>
+
+            <div class="content">
+                <h1>doctor strange in the multiverse of madness</h1> 
+
+                <div class="subheader">
+                    <h2>top cast</h2>
+                </div>
+
+                <div class="cast">
                     <div>
-                        <h2 class="red">top cast</h2>
-                        <div class="img-wrapper">
-                            <div>
-                                <img src="../assets/cast/benedict_cumberbatch.webp" width="360" height="360" alt="benedict cumberbatch profile">
-                                <p>benedict cumberbatch</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/elizabeth_olsen.webp" width="360" height="360" alt="elizabeth olsen profile">
-                                <p>elizabeth olsen</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/xochitl_gomez.webp" width="360" height="360" alt="xochitl gomez profile">
-                                <p>xochitl gomez</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/benedict_wong.webp" width="360" height="360" alt="benedict wong profile">
-                                <p>benedict wong</p>
-                            </div>
-                        </div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/doc_strange/benedict_cumberbatch.webp" 
+                        alt="benedict cumberbatch">
+
+                        <h3>benedict cumberbatch</h3>
                     </div>
-                    <div class="synopsis">
-                        <h2 class="red">synopsis</h2>
-                        <p>After a mysterious girl stumbles into his reality, Doctor Strange must travel across the many worlds to put a stop to the mysterious darkness that is taking a hold across all the known worlds, battle foes new and old in an attempt to stop the spread of madness across the multiverses.</p>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/doc_strange/benedict_wong.webp" 
+                        alt="benedict wong">
+
+                        <h3>benedict wong</h3>
                     </div>
-                    <div class="information">
-                        <div>
-                            <h2 class="red">release date</h2>
-                            <p>5th May 2022</p>
-                        </div>
-                        <div>
-                            <h2 class="red">genre</h2>
-                            <ul>
-                                <li>Action / Adventure</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h2 class="red">rating</h2>
-                            <p>PG-13</p>
-                        </div>
-                        <div>
-                            <h2 class="red">review scores</h2>
-                            <div class="grid-content">
-                                <div class="critics">
-                                    <p>Critics Score</p>
-                                    <div class="star-wrapper">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p id="critics-score">6</p>
-                                    </div>
-                                </div>
-                                <div class="user">
-                                    <p>User Score</p>
-                                    <div class="star-wrapper">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p id="user-score">5</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h2 class="red">director</h2>
-                            <p>Sam Raimi</p>
-                        </div>
-                        <div>
-                            <h2 class="red">runtime</h2>
-                            <p>126 minutes</p>
-                        </div>
-                        <div>
-                            <h2 class="red">audio</h2>
-                            <ul>
-                                <li>Dolby True Sound</li>
-                                <li>Dolby Atmos</li>
-                                <li>7.1 Dolby Surround Sound</li>
-                                <li>Descriptive Audio</li>
-                            </ul>
-                        </div>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/doc_strange/elizabeth_olsen.webp" 
+                        alt="elizabeth olsen">
+
+                        <h3>elizabeth olsen</h3>
                     </div>
-                    <div class="trailer">
-                        <h2 class="red">trailer</h2>
-                        <iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/aWzlQ2N6qqg?si=Qb7QFGdc0_8HPYgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/doc_strange/rachel_mcadams.webp" 
+                        alt="rachel mcAdams">
+
+                        <h3>rachel mcAdams</h3>
                     </div>
-                    <div class="copyright">
-                        <h2 class="red">copyright</h2>
-                        <p>All copyright material is the property of Disney, Marvel and their respective owners</p>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/doc_strange/john_krasinski.webp" 
+                        alt="john krasinski">
+
+                        <h3>john krasinski</h3>
+                    </div>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/doc_strange/bruce_campbell.webp" 
+                        alt="bruce campbell">
+
+                        <h3>bruce campbell</h3>
                     </div>
                 </div>
+
+                <div class="subheader">
+                    <h2>synopsis</h2>
+                </div>
+
+                <div class="info">
+                    <p>When a young woman with reality bending powers crashes into his world, Doctor Strange discovers a terrifying threat that has been consuming alternate realities. Racing across the multiverse, he must confront allies turned enemies and face his greatest fear.</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>release date</h2>
+                </div>
+
+                <div class="info">
+                    <p>6th May 2022</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>genre</h2>
+                </div>
+
+                <div class="info genre">
+                    <ul>
+                        <li>action <span>/</span></li>
+                        <li>adventure <span>/</span></li>
+                        <li>super hero </li>
+                    </ul>
+                </div>
+
+                <div class="subheader">
+                    <h2>rating</h2>
+                </div>
+
+                <div class="info">
+                    <p>PG-13</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>review scores</h2>
+                </div>
+
+                <div class="info">
+                    <div class="reviews-container">
+                        <div class="reviews">
+                            <h3>critics</h3>
+                            <i class="fa-solid fa-star star"></i> 
+                            <span>6</span>
+                        </div>
+
+                        <div class="reviews">
+                            <h3>public</h3>
+                            <i class="fa-solid fa-star star"></i>
+                            <span>6</span>
+                        </div>
+
+                        <div class="reviews">
+                            <h3>rate it</h3>
+                            <i class="fa-solid fa-star star"></i>
+                            <span id="user-score"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subheader">
+                    <h2>runtime</h2>
+                </div>
+
+                <div class="info">
+                    <p>126 minutes</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>audio</h2>
+                </div>
+
+                <div class="info">
+                    <ul>
+                        <li>dolby atmos</li>
+                        <li>dolby digital</li>
+                        <li>dolby surround 7.1</li>
+                        <li>DTS</li>
+                    </ul>
+                </div>
+
+                <div class="subheader">
+                    <h2>trailer</h2>
+                </div>
+
+                <div class="trailer" data-videoId="aWzlQ2N6qqg"></div>
+
+                <footer>
+                    <h2>copyright</h2>
+                    <p>
+                        <i class="fa-regular fa-copyright"></i> 
+                        All copyright material is the property of Disney, Marvel and their respective owners
+                    </p>
+                </footer>
             </div>
         </div>
     </main>

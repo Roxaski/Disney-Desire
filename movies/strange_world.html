@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#8a1828">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
     <title>Disney Desire | Strange World</title>
     <meta name="description" content="Strange World stars Jake Gyllenhaal and Lucy Liu in this animated adventure through the mysterious island of Avalonia. Check out cast info, ratings, trailer, and more">
     <meta property="og:locale" content="en_GB">
@@ -12,124 +10,197 @@
     <meta property="og:title" content="Disney Desire | Strange World">
     <meta property="og:description" content="Strange World stars Jake Gyllenhaal and Lucy Liu in this animated adventure through the mysterious island of Avalonia. Check out cast info, ratings, trailer, and more">
     <meta property="og:image" content="https://roxaski.github.io/Disney-Desire/assets/open_graph/og_strange_world.jpg">
-    <meta property="og:image:alt" content="Disney Desire | Strange World">
+    <meta property="og:image:alt" content="Strange World">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://roxaski.github.io/Disney-Desire/movies/strange_world.html"/>
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Disney Desire | Strange World">
     <meta name="twitter:description" content="Strange World stars Jake Gyllenhaal and Lucy Liu in this animated adventure through the mysterious island of Avalonia. Check out cast info, ratings, trailer, and more">
     <meta name="twitter:image" content="https://roxaski.github.io/Disney-Desire/assets/open_graph/og_strange_world.jpg">
-    <meta name="twitter:image:alt" content="Disney Desire | Strange World">
+    <meta name="twitter:image:alt" content="Strange World">
     <meta property="og:type" content="website"/>
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="manifest" href="../site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="../css/movies_info.css">
+    <script async defer src="https://kit.fontawesome.com/2d21b2aa33.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/movie_contents.css">
+    <script defer src="../scripts/movie-contents.js"></script>
 </head>
 <body>
-    <!--MOVIE INFORMATION-->
     <main>
-        <div class="bg red-pink-gradient dark-mode"></div>
-        <div class="grid-container">
-            <div class="left">
-                <img fetchpriority="high" src="../assets/posters/strange_world.webp" width="1000" height="1450" alt="strange world poster">
-                <img fetchpriority="high" id="mobile-poster" src="../assets/posters/mobile/strange_world_mobile.webp" width="500" height="625" alt="strange world poster">
+        <div class="movie-information">
+            <div class="poster">
+                <img width="1200" height="1800" fetchpriority="high" draggable="false"
+                src="../assets/posters/strange_world_extra_large.webp" 
+                srcset="../assets/posters/strange_world_small.webp 300w,
+                        ../assets/posters/strange_world_medium.webp 500w,
+                        ../assets/posters/strange_world_large.webp 800w,
+                        ../assets/posters/strange_world_extra_large.webp 1200w"
+                sizes="(max-width: 775px) 60vw, 
+                    (max-width: 810px) 43vw, 
+                    (min-width: 1280px) 31vw, 
+                    40vw"
+                alt="strange world poster">
+
+                <img id="mobile-bg" width="300" height="450" fetchpriority="high" draggable="false"
+                src="../assets/posters/strange_world_small.webp"
+                alt="">
             </div>
-            <div class="right">
-                <div class="content">
-                    <h1>strange world</h1>
+
+            <div class="content">
+                <h1>strange world</h1> 
+
+                <div class="subheader">
+                    <h2>top cast</h2>
+                </div>
+
+                <div class="cast">
                     <div>
-                        <h2 class="red-pink">top cast</h2>
-                        <div class="img-wrapper">
-                            <div>
-                                <img src="../assets/cast/jake_gyllenhaal.webp" width="360" height="360" alt="jake gyellenhaal profile">
-                                <p>jake gyllenhaal</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/lucy_liu.webp" width="360" height="360" alt="lucy liu profile">
-                                <p>lucy liu</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/gabrielle_union.webp" width="360" height="360" alt="gabrielle union profile">
-                                <p>gabrielle union</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/alan_tudyk.webp" width="360" height="360" alt="alan tudyk profile">
-                                <p>alan tudyk</p>
-                            </div>
-                        </div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/strange_world/jake_gyllenhaal.webp" 
+                        alt="jake gyllenhaal">
+
+                        <h3>jake gyllenhaal</h3>
                     </div>
-                    <div class="synopsis">
-                        <h2 class="red-pink">synopsis</h2>
-                        <p>Following on from multiple generations, is a family of would be explorers. But unfortunately not everything is peachy, follow them as they explore uncharted and mysterious places while all the while patching up they're broken family.</p>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/shared/alan_tudyk.webp" 
+                        alt="alan tudyk">
+
+                        <h3>alan tudyk</h3>
                     </div>
-                    <div class="information">
-                        <div>
-                            <h2 class="red-pink">release date</h2>
-                            <p>25th November 2022</p>
-                        </div>
-                        <div>
-                            <h2 class="red-pink">genre</h2>
-                            <ul>
-                                <li>Family / Adventure</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h2 class="red-pink">rating</h2>
-                            <p>PG</p>
-                        </div>
-                        <div>
-                            <h2 class="red-pink">review scores</h2>
-                            <div class="grid-content">
-                                <div class="critics">
-                                    <p>Critics Score</p>
-                                    <div class="star-wrapper">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p id="critics-score">6</p>
-                                    </div>
-                                </div>
-                                <div class="user">
-                                    <p>User Score</p>
-                                    <div class="star-wrapper">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p id="user-score">3</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h2 class="red-pink">director</h2>
-                            <p>Don Hall & Qui Nguyen</p>
-                        </div>
-                        <div>
-                            <h2 class="red-pink">runtime</h2>
-                            <p>102 minutes</p>
-                        </div>
-                        <div>
-                            <h2 class="red-pink">audio</h2>
-                            <ul>
-                                <li>Dolby True Sound</li>
-                                <li>Dolby Digital</li>
-                                <li>Dolby Atmos</li>
-                                <li>7.1 Dolby Surround Sound</li>
-                                <li>Descriptive Audio</li>
-                            </ul>
-                        </div>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/strange_world/dennis_quaid.webp" 
+                        alt="dennis quaid">
+
+                        <h3>dennis quaid</h3>
                     </div>
-                    <div class="trailer">
-                        <h2 class="red-pink">trailer</h2>
-                        <iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/bKh2G73gCCs?si=wuqTjmQGjpmi4u--" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/strange_world/gabrielle_union.webp" 
+                        alt="gabrielle union">
+
+                        <h3>gabrielle union</h3>
                     </div>
-                    <div class="copyright">
-                        <h2 class="red-pink">copyright</h2>
-                        <p>All copyright material is the property of Disney, Pixar and their respective owners</p>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/strange_world/lucy_liu.webp" 
+                        alt="lucy liu">
+
+                        <h3>lucy liu</h3>
+                    </div>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/strange_world/jaboukie_young-white.webp" 
+                        alt="jaboukie young-white">
+
+                        <h3>jaboukie young-white</h3>
                     </div>
                 </div>
+
+                <div class="subheader">
+                    <h2>synopsis</h2>
+                </div>
+
+                <div class="info">
+                    <p>When a legendary family of explorers faces their most dangerous mission yet, they must venture into a strange world unlike anything they've seen before. Though their biggest challenge isn't the alien landscape, it's learning to understand and love each other through their conflicts.</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>release date</h2>
+                </div>
+
+                <div class="info">
+                    <p>23rd November 2023</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>genre</h2>
+                </div>
+
+                <div class="info genre">
+                    <ul>
+                        <li>animation <span>/</span></li>
+                        <li>fantasy <span>/</span></li>
+                        <li>adventure </li>
+                    </ul>
+                </div>
+
+                <div class="subheader">
+                    <h2>rating</h2>
+                </div>
+
+                <div class="info">
+                    <p>PG</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>review scores</h2>
+                </div>
+
+                <div class="info">
+                    <div class="reviews-container">
+                        <div class="reviews">
+                            <h3>critics</h3>
+                            <i class="fa-solid fa-star star"></i> 
+                            <span>6</span>
+                        </div>
+
+                        <div class="reviews">
+                            <h3>public</h3>
+                            <i class="fa-solid fa-star star"></i>
+                            <span>3</span>
+                        </div>
+
+                        <div class="reviews">
+                            <h3>rate it</h3>
+                            <i class="fa-solid fa-star star"></i>
+                            <span id="user-score"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subheader">
+                    <h2>runtime</h2>
+                </div>
+
+                <div class="info">
+                    <p>102 minutes</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>audio</h2>
+                </div>
+
+                <div class="info">
+                    <ul>
+                        <li>dolby atmos</li>
+                        <li>dolby digital</li>
+                        <li>dolby surround 7.1</li>
+                        <li>DTS</li>
+                    </ul>
+                </div>
+
+                <div class="subheader">
+                    <h2>trailer</h2>
+                </div>
+
+                <div class="trailer" data-videoId="T3avuSs45nI"></div>
+
+                <footer>
+                    <h2>copyright</h2>
+                    <p>
+                        <i class="fa-regular fa-copyright"></i> 
+                        All copyright material is the property of Disney and their respective owners
+                    </p>
+                </footer>
             </div>
         </div>
     </main>

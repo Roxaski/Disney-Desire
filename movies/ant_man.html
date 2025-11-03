@@ -3,134 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#2056a8">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
-    <title>Disney Desire | Ant-Man & The Wasp Quantumania</title>
+    <title>Disney Desire | Ant-Man and the Wasp: Quantumania</title>
     <meta name="description" content="Ant-Man & The Wasp: Quantumania stars Paul Rudd and Evangeline Lilly in a Marvel adventure through the Quantum Realm. Check out cast info, ratings, trailer, and more">
     <meta property="og:locale" content="en_GB">
     <meta property="og:site_name" content="Disney Desire" />
-    <meta property="og:title" content="Disney Desire | Ant-Man & The Wasp Quantumania">
+    <meta property="og:title" content="Disney Desire | Ant-Man and the Wasp: Quantumania">
     <meta property="og:description" content="Ant-Man & The Wasp: Quantumania stars Paul Rudd and Evangeline Lilly in a Marvel adventure through the Quantum Realm. Check out cast info, ratings, trailer, and more">
     <meta property="og:image" content="https://roxaski.github.io/Disney-Desire/assets/open_graph/og_ant_man.jpg">
-    <meta property="og:image:alt" content="Disney Desire | Ant-Man & The Wasp Quantumania">
+    <meta property="og:image:alt" content="Ant-Man & The Wasp Quantumania">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://roxaski.github.io/Disney-Desire/movies/ant_man.html"/>
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Disney Desire | Ant-Man & The Wasp Quantumania">
+    <meta name="twitter:title" content="Disney Desire | Ant-Man and the Wasp: Quantumania">
     <meta name="twitter:description" content="Ant-Man & The Wasp: Quantumania stars Paul Rudd and Evangeline Lilly in a Marvel adventure through the Quantum Realm. Check out cast info, ratings, trailer, and more">
     <meta name="twitter:image" content="https://roxaski.github.io/Disney-Desire/assets/open_graph/og_ant_man.jpg">
-    <meta name="twitter:image:alt" content="Disney Desire | Ant-Man & The Wasp Quantumania">
+    <meta name="twitter:image:alt" content="Ant-Man & The Wasp Quantumania">
     <meta property="og:type" content="website"/>
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="../css/movies_info.css">
+    <script async defer src="https://kit.fontawesome.com/2d21b2aa33.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/movie_contents.css">
+    <script defer src="../scripts/movie-contents.js"></script>
 </head>
 <body>
-    <!--MOVIE POSTER-->
     <main>
-        <div class="bg blue-gradient dark-mode"></div>
-        <div class="grid-container">
-            <div class="left">
-                <img fetchpriority="high" src="../assets/posters/ant_man.webp" width="1000" height="1450" alt="ant man poster">
-                <img fetchpriority="high" id="mobile-poster" src="../assets/posters/mobile/ant_man_mobile.webp" width="500" height="625" alt="ant man poster">
+        <div class="movie-information">
+            <div class="poster">
+                <img width="1200" height="1800" fetchpriority="high" draggable="false"
+                src="../assets/posters/ant_man_extra_large.webp" 
+                srcset="../assets/posters/ant_man_small.webp 300w,
+                        ../assets/posters/ant_man_medium.webp 500w,
+                        ../assets/posters/ant_man_large.webp 800w,
+                        ../assets/posters/ant_man_extra_large.webp 1200w"
+                sizes="(max-width: 775px) 60vw, 
+                    (max-width: 810px) 43vw, 
+                    (min-width: 1280px) 31vw, 
+                    40vw"
+                alt="ant-man and the wasp quantumania poster">
+
+                <img id="mobile-bg" width="300" height="450" fetchpriority="high" draggable="false"
+                src="../assets/posters/ant_man_small.webp"
+                alt="">
             </div>
-            <div class="right">
-                <div class="content">
-                    <h1>ant-man & the wasp quantumania</h1>
+
+            <div class="content">
+                <h1>ant-man and the wasp: quantumania</h1>
+
+                <div class="subheader">
+                    <h2>top cast</h2>
+                </div>
+
+                <div class="cast">
                     <div>
-                        <h2 class="blue">top cast</h2>
-                        <div class="img-wrapper">
-                            <div>
-                                <img src="../assets/cast/paul_rudd.webp" width="360" height="360" alt="paul rudd profile">
-                                <p>paul rudd</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/evangeline_lilly.webp" width="360" height="360" alt="evangeline lilly profile">
-                                <p>evangeline lilly</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/jonathan_majors.webp" width="360" height="360" alt="jonathan majors profile">
-                                <p>jonathan majors</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/kathryn_newton.webp" width="360" height="360" alt="kathryn newton profile">
-                                <p>kathryn newton</p>
-                            </div>
-                        </div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/ant_man/paul_rudd.webp" 
+                        alt="paull rudd">
+
+                        <h3>paul rudd</h3>
                     </div>
-                    <div class="synopsis">
-                        <h2 class="blue">synopsis</h2>
-                        <p>Join our cast of would be scientists turned heroes, has they are thrust into the Quantum Realm after an experiment goes awry, where they must fight to survive and overcome incredible odds of the likes they never thought possible before.</p>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/ant_man/evangeline_lilly.webp" 
+                        alt="evangeline lilly">
+
+                        <h3>evangeline lilly</h3>
                     </div>
-                    <div class="information">
-                        <div>
-                            <h2 class="blue">release date</h2>
-                            <p>17th February 2023</p>
-                        </div>
-                        <div>
-                            <h2 class="blue">genre</h2>
-                            <ul>
-                                <li>Action / Adventure</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h2 class="blue">rating</h2>
-                            <p>PG-13</p>
-                        </div>
-                        <div>
-                            <h2 class="blue">review scores</h2>
-                            <div class="grid-content">
-                                <div class="critics">
-                                    <p>Critics Score</p>
-                                    <div class="star-wrapper">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p id="critics-score">4</p>
-                                    </div>
-                                </div>
-                                <div class="user">
-                                    <p>User Score</p>
-                                    <div class="star-wrapper">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p id="user-score">5</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h2 class="blue">director</h2>
-                            <p>Peyton Reed</p>
-                        </div>
-                        <div>
-                            <h2 class="blue">runtime</h2>
-                            <p>125 minutes</p>
-                        </div>
-                        <div>
-                            <h2 class="blue">audio</h2>
-                            <ul>
-                                <li>Dolby True Sound</li>
-                                <li>Dolby Digital</li>
-                                <li>Dolby Atmos</li>
-                                <li>5.1 Dolby Surround Sound</li>
-                                <li>7.1 Dolby Surround Sound</li>
-                                <li>Descriptive Audio</li>
-                            </ul>
-                        </div>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/ant_man/kathryn_newton.webp" 
+                        alt="kathryn newton">
+
+                        <h3>kathryn newton</h3>
                     </div>
-                    <div class="trailer">
-                        <h2 class="blue">trailer</h2>
-                        <iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/ZlNFpri-Y40?si=f6ngQ4pY9bgJdQ2p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/ant_man/corey_stoll.webp" 
+                        alt="corey stoll">
+
+                        <h3>corey stoll</h3>
                     </div>
-                    <div class="copyright">
-                        <h2 class="blue">copyright</h2>
-                        <p>All copyright material is the property of Disney, Marvel and their respective owners</p>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/ant_man/jonathan_majors.webp" 
+                        alt="jonathan majors">
+
+                        <h3>jonathan majors</h3>
+                    </div>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/ant_man/william_harper.webp" 
+                        alt="william harper">
+
+                        <h3>william harper</h3>
                     </div>
                 </div>
+
+                <div class="subheader">
+                    <h2>synopsis</h2>
+                </div>
+
+                <div class="info">
+                    <p>When Ant-Man and his family are accidentally pulled into the Quantum Realm, they discover a hidden civilization. Now they must confront Kang the Conqueror, a time-traveling ruler seeking to escape his quantum prison and resume his conquest of the multiverse.</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>release date</h2>
+                </div>
+
+                <div class="info">
+                    <p>17th February 2023</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>genre</h2>
+                </div>
+
+                <div class="info genre">
+                    <ul>
+                        <li>action <span>/</span></li>
+                        <li>adventure <span>/</span></li>
+                        <li>super hero</li>
+                    </ul>
+                </div>
+
+                <div class="subheader">
+                    <h2>rating</h2>
+                </div>
+
+                <div class="info">
+                    <p>PG-13</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>review scores</h2>
+                </div>
+
+                <div class="info">
+                    <div class="reviews-container">
+                        <div class="reviews">
+                            <h3>critics</h3>
+                            <i class="fa-solid fa-star star"></i> 
+                            <span class="score-4">4</span>
+                        </div>
+
+                        <div class="reviews">
+                            <h3>public</h3>
+                            <i class="fa-solid fa-star star"></i>
+                            <span>5</span>
+                        </div>
+
+                        <div class="reviews">
+                            <h3>rate it</h3>
+                            <i class="fa-solid fa-star star"></i>
+                            <span id="user-score"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subheader">
+                    <h2>runtime</h2>
+                </div>
+
+                <div class="info">
+                    <p>124 minutes</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>audio</h2>
+                </div>
+
+                <div class="info">
+                    <ul>
+                        <li>dolby atmos</li>
+                        <li>dolby surround 7.1</li>
+                        <li>DTS</li>
+                    </ul>
+                </div>
+
+                <div class="subheader">
+                    <h2>trailer</h2>
+                </div>
+
+                <div class="trailer" data-videoId="ZlNFpri-Y40"></div>
+
+                <footer>
+                    <h2>copyright</h2>
+                    <p>
+                        <i class="fa-regular fa-copyright"></i> 
+                        All copyright material is the property of Disney, Marvel and their respective owners
+                    </p>
+                </footer>
             </div>
         </div>
     </main>

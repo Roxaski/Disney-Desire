@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#a44e1c">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
     <title>Disney Desire | Pinocchio</title>
     <meta name="description" content="Pinocchio stars Tom Hanks and Benjamin Ainsworth in this animated classic tale of the little wooden puppet. Check out cast info, ratings, trailer, and more">
     <meta property="og:locale" content="en_GB">
@@ -12,122 +10,195 @@
     <meta property="og:title" content="Disney Desire | Pinocchio">
     <meta property="og:description" content="Pinocchio stars Tom Hanks and Benjamin Ainsworth in this animated classic tale of the little wooden puppet. Check out cast info, ratings, trailer, and more">
     <meta property="og:image" content="https://roxaski.github.io/Disney-Desire/assets/open_graph/og_pinocchio.jpg">
-    <meta property="og:image:alt" content="Disney Desire | Pinocchio">
+    <meta property="og:image:alt" content="Pinocchio">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://roxaski.github.io/Disney-Desire/movies/pinocchio.html"/>
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Disney Desire | Pinocchio">
     <meta name="twitter:description" content="Pinocchio stars Tom Hanks and Benjamin Ainsworth in this animated classic tale of the little wooden puppet. Check out cast info, ratings, trailer, and more">
     <meta name="twitter:image" content="https://roxaski.github.io/Disney-Desire/assets/open_graph/og_pinocchio.jpg">
-    <meta name="twitter:image:alt" content="Disney Desire | Pinocchio">
+    <meta name="twitter:image:alt" content="Pinocchio">
     <meta property="og:type" content="website"/>
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="manifest" href="../site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="../css/movies_info.css">
+    <script async defer src="https://kit.fontawesome.com/2d21b2aa33.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/movie_contents.css">
+    <script defer src="../scripts/movie-contents.js"></script>
 </head>
 <body>
-    <!--MOVIE INFORMATION-->
     <main>
-        <div class="bg brown-gradient dark-mode"></div>
-        <div class="grid-container">
-            <div class="left">
-                <img fetchpriority="high" src="../assets/posters/pinocchio.webp" width="1000" height="1450" alt="pinocchio poster">
-                <img fetchpriority="high" id="mobile-poster" src="../assets/posters/mobile/pinocchio_mobile.webp" width="500" height="625" alt="pinocchio poster">
+        <div class="movie-information">
+            <div class="poster">
+                <img width="1200" height="1800" fetchpriority="high" draggable="false"
+                src="../assets/posters/pinocchio_extra_large.webp" 
+                srcset="../assets/posters/pinocchio_small.webp 300w,
+                        ../assets/posters/pinocchio_medium.webp 500w,
+                        ../assets/posters/pinocchio_large.webp 800w,
+                        ../assets/posters/pinocchio_extra_large.webp 1200w"
+                sizes="(max-width: 775px) 60vw, 
+                    (max-width: 810px) 43vw, 
+                    (min-width: 1280px) 31vw, 
+                    40vw"
+                alt="pinocchio poster">
+
+                <img id="mobile-bg" width="300" height="450" fetchpriority="high" draggable="false"
+                src="../assets/posters/pinocchio_small.webp"
+                alt="">
             </div>
-            <div class="right">
-                <div class="content">
-                    <h1>pinocchio</h1>
+
+            <div class="content">
+                <h1>pinocchio</h1> 
+
+                <div class="subheader">
+                    <h2>top cast</h2>
+                </div>
+
+                <div class="cast">
                     <div>
-                        <h2 class="brown">top cast</h2>
-                        <div class="img-wrapper">
-                            <div>
-                                <img src="../assets/cast/tom_hanks.webp" width="360" height="360" alt="tom hanks profile">
-                                <p>tom hanks</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/benjamin_ainsworth.webp" width="360" height="360" alt="benjamin ainsworth profile">
-                                <p>benjamin ainsworth </p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/joseph_gordon-levitt.webp" width="360" height="360" alt="joseph gordon levitt profile">
-                                <p>joseph gordon-levitt</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/cynthia_erivo.webp" width="360" height="360" alt="cynthia erivo profile">
-                                <p>cynthia erivo</p>
-                            </div>
-                        </div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/pinocchio/benjamin_ainsworth.webp" 
+                        alt="benjamin ainsworth">
+
+                        <h3>benjamin ainsworth</h3>
                     </div>
-                    <div class="synopsis">
-                        <h2 class="brown">synopsis</h2>
-                        <p>What happens when you lie? Your nose grows bigger of course, this is what happens to our would be puppet turned real life boy Pinocchio, as he sets out on an adventure of a lifetime, as he explores the consequences of right and wrong.</p>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/pinocchio/tom_hanks.webp" 
+                        alt="tom hanks">
+
+                        <h3>tom hanks</h3>
                     </div>
-                    <div class="information">
-                        <div>
-                            <h2 class="brown">release date</h2>
-                            <p>8th September 2022</p>
-                        </div>
-                        <div>
-                            <h2 class="brown">genre</h2>
-                            <ul>
-                                <li>Family / Musical</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h2 class="brown">rating</h2>
-                            <p>PG</p>
-                        </div>
-                        <div>
-                            <h2 class="brown">review scores</h2>
-                            <div class="grid-content">
-                                <div class="critics">
-                                    <p>Critics Score</p>
-                                    <div class="star-wrapper">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p id="critics-score">3</p>
-                                    </div>
-                                </div>
-                                <div class="user">
-                                    <p>User Score</p>
-                                    <div class="star-wrapper">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p id="user-score">2</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h2 class="brown">director</h2>
-                            <p>Robert Zemeckis</p>
-                        </div>
-                        <div>
-                            <h2 class="brown">runtime</h2>
-                            <p>105 minutes</p>
-                        </div>
-                        <div>
-                            <h2 class="brown">audio</h2>
-                            <ul>
-                                <li>Dolby Digital</li>
-                                <li>Dolby Atmos</li>
-                                <li>Descriptive Audio</li>
-                            </ul>
-                        </div>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/pinocchio/joseph_gordon-levitt.webp" 
+                        alt="joseph gordon-levitt">
+
+                        <h3>joseph gordon-levitt</h3>
                     </div>
-                    <div class="trailer">
-                        <h2 class="brown">trailer</h2>
-                        <iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/2vNVGZGlUok?si=PwJs2xkoQ3YV-UBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/pinocchio/cynthia_erivo.webp" 
+                        alt="cynthia erivo">
+
+                        <h3>cynthia erivo</h3>
                     </div>
-                    <div class="copyright">
-                        <h2 class="brown">copyright</h2>
-                        <p>All copyright material is the property of Disney and their respective owners</p>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/pinocchio/angus_wright.webp" 
+                        alt="angus wright">
+
+                        <h3>angus wright</h3>
+                    </div>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/pinocchio/sheila_atim.webp" 
+                        alt="sheila atim">
+
+                        <h3>sheila atim</h3>
                     </div>
                 </div>
+
+                <div class="subheader">
+                    <h2>synopsis</h2>
+                </div>
+
+                <div class="info">
+                    <p>A lonely woodcarver's puppet comes to life with one burning desire to become a real boy. With his conscience Jiminy Cricket as his guide, he faces the consequences of the choices he makes on his adventure, in a heartwarming tale about what it truly means to be human.</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>release date</h2>
+                </div>
+
+                <div class="info">
+                    <p>7th September 2022</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>genre</h2>
+                </div>
+
+                <div class="info genre">
+                    <ul>
+                        <li>adventure <span>/</span></li>
+                        <li>fantasy <span>/</span></li>
+                        <li>drama </li>
+                    </ul>
+                </div>
+
+                <div class="subheader">
+                    <h2>rating</h2>
+                </div>
+
+                <div class="info">
+                    <p>PG</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>review scores</h2>
+                </div>
+
+                <div class="info">
+                    <div class="reviews-container">
+                        <div class="reviews">
+                            <h3>critics</h3>
+                            <i class="fa-solid fa-star star"></i> 
+                            <span>3</span>
+                        </div>
+
+                        <div class="reviews">
+                            <h3>public</h3>
+                            <i class="fa-solid fa-star star"></i>
+                            <span>2</span>
+                        </div>
+
+                        <div class="reviews">
+                            <h3>rate it</h3>
+                            <i class="fa-solid fa-star star"></i>
+                            <span id="user-score"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subheader">
+                    <h2>runtime</h2>
+                </div>
+
+                <div class="info">
+                    <p>105 minutes</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>audio</h2>
+                </div>
+
+                <div class="info">
+                    <ul>
+                        <li>dolby atmos</li>
+                        <li>dolby digital</li>
+                    </ul>
+                </div>
+
+                <div class="subheader">
+                    <h2>trailer</h2>
+                </div>
+
+                <div class="trailer" data-videoId="gV_0pYoCssc"></div>
+                
+                <footer>
+                    <h2>copyright</h2>
+                    <p>
+                        <i class="fa-regular fa-copyright"></i> 
+                        All copyright material is the property of Disney and their respective owners
+                    </p>
+                </footer>
             </div>
         </div>
     </main>

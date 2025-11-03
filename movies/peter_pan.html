@@ -3,132 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#757d63">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
-    <title>Disney Desire | Peter & Wendy</title>
-    <meta name="description" content="Peter and Wendy stars Alexander Molony and Jude Law in this classic tale throughout Neverland. Check out cast info, ratings, trailer, and more">
+    <title>Disney Desire | Peter Pan & Wendy</title>
+    <meta name="description" content="Peter Pan and Wendy stars Alexander Molony and Jude Law in this classic tale throughout Neverland. Check out cast info, ratings, trailer, and more">
     <meta property="og:locale" content="en_GB">
     <meta property="og:site_name" content="Disney Desire" />
-    <meta property="og:title" content="Disney Desire | Peter & Wendy">
-    <meta property="og:description" content="Peter and Wendy stars Alexander Molony and Jude Law in this classic tale throughout Neverland. Check out cast info, ratings, trailer, and more">
+    <meta property="og:title" content="Disney Desire | Peter Pan & Wendy">
+    <meta property="og:description" content="Peter Pan and Wendy stars Alexander Molony and Jude Law in this classic tale throughout Neverland. Check out cast info, ratings, trailer, and more">
     <meta property="og:image" content="https://roxaski.github.io/Disney-Desire/assets/open_graph/og_peter_wendy.jpg">
-    <meta property="og:image:alt" content="Disney Desire | Peter & Wendy">
+    <meta property="og:image:alt" content="Peter Pan & Wendy">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://roxaski.github.io/Disney-Desire/movies/peter_pan.html"/>
-    <meta property="og:type" content="website"/>
-    <meta name="twitter:title" content="Disney Desire | Peter & Wendy">
-    <meta name="twitter:description" content="Peter and Wendy stars Alexander Molony and Jude Law in this classic tale throughout Neverland. Check out cast info, ratings, trailer, and more">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Disney Desire | Peter Pan & Wendy">
+    <meta name="twitter:description" content="Peter Pan and Wendy stars Alexander Molony and Jude Law in this classic tale throughout Neverland. Check out cast info, ratings, trailer, and more">
     <meta name="twitter:image" content="https://roxaski.github.io/Disney-Desire/assets/open_graph/og_peter_wendy.jpg">
-    <meta name="twitter:image:alt" content="Disney Desire | Peter & Wendy">
+    <meta name="twitter:image:alt" content="Peter Pan & Wendy">
+    <meta property="og:type" content="website"/>
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="manifest" href="../site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="../css/movies_info.css">
+    <script async defer src="https://kit.fontawesome.com/2d21b2aa33.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/movie_contents.css">
+    <script defer src="../scripts/movie-contents.js"></script>
 </head>
 <body>
-    <!--MOVIE INFORMATION-->
     <main>
-        <div class="bg yellow-blue-gradient dark-mode"></div>
-        <div class="grid-container">
-            <div class="left">
-                <img fetchpriority="high" src="../assets/posters/peter pan.webp" width="1000" height="1450" alt="peter pan poster">
-                <img fetchpriority="high" id="mobile-poster" src="../assets/posters/mobile/peter_pan_mobile.webp" width="500" height="625" alt="peter pan poster">
+        <div class="movie-information">
+            <div class="poster">
+                <img width="1200" height="1800" fetchpriority="high" draggable="false"
+                src="../assets/posters/peter_wendy_extra_large.webp" 
+                srcset="../assets/posters/peter_wendy_small.webp 300w,
+                        ../assets/posters/peter_wendy_medium.webp 500w,
+                        ../assets/posters/peter_wendy_large.webp 800w,
+                        ../assets/posters/peter_wendy_extra_large.webp 1200w"
+                sizes="(max-width: 775px) 60vw, 
+                    (max-width: 810px) 43vw, 
+                    (min-width: 1280px) 31vw, 
+                    40vw"
+                alt="peter pan and wendy poster">
+
+                <img id="mobile-bg" width="300" height="450" fetchpriority="high" draggable="false"
+                src="../assets/posters/peter_wendy_small.webp"
+                alt="">
             </div>
-            <div class="right">
-                <div class="content">
-                    <h1>peter pan & wendy</h1>
+
+            <div class="content">
+                <h1>peter pan & wendy</h1> 
+
+                <div class="subheader">
+                    <h2>top cast</h2>
+                </div>
+
+                <div class="cast">
                     <div>
-                        <h2 class="navyBlue">top cast</h2>
-                        <div class="img-wrapper">
-                            <div>
-                                <img src="../assets/cast/alexander_molony.webp" width="360" height="360" alt="alexander moloney profile">
-                                <p>alexander moloney</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/jude_law.webp" width="360" height="360" alt="jude law profile">
-                                <p>jude law</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/yara_shahidi.webp" width="360" height="360" alt="yara shahidi profile">
-                                <p>yara shahidi</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/ever_anderson.webp" width="360" height="360" alt="ever anderson profile">
-                                <p>ever anderson</p>
-                            </div>
-                        </div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/peter_pan/alexander_molony.webp" 
+                        alt="alexander molony">
+
+                        <h3>alexander molony</h3>
                     </div>
-                    <div class="synopsis">
-                        <h2 class="navyBlue">synopsis</h2>
-                        <p>Setting of on another adventure is the boy who never grows up and the orphans of London where they set of on an adventure of a lifetime, travelling to magical lands where anything can happen.</p>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/peter_pan/ever_anderson.webp" 
+                        alt="ever anderson">
+
+                        <h3>ever anderson</h3>
                     </div>
-                    <div class="information">
-                        <div>
-                            <h2 class="navyBlue">release date</h2>
-                            <p>28th April 2023</p>
-                        </div>
-                        <div>
-                            <h2 class="navyBlue">genre</h2>
-                            <ul>
-                                <li>Family / Adventure</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h2 class="navyBlue">rating</h2>
-                            <p>PG</p>
-                        </div>
-                        <div>
-                            <h2 class="navyBlue">review scores</h2>
-                            <div class="grid-content">
-                                <div class="critics">
-                                    <p>Critics Score</p>
-                                    <div class="star-wrapper">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p id="critics-score">6</p>
-                                    </div>
-                                </div>
-                                <div class="user">
-                                    <p>User Score</p>
-                                    <div class="star-wrapper">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p id="user-score">1</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h2 class="navyBlue">director</h2>
-                            <p>David Lowery</p>
-                        </div>
-                        <div>
-                            <h2 class="navyBlue">runtime</h2>
-                            <p>106 minutes</p>
-                        </div>
-                        <div>
-                            <h2 class="navyBlue">audio</h2>
-                            <ul>
-                                <li>Dolby Digital</li>
-                                <li>Dolby Atmos</li>
-                                <li>7.1 Dolby Surround Sound</li>
-                                <li>Descriptive Audio</li>
-                            </ul>
-                        </div>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/peter_pan/yara_shahidi.webp" 
+                        alt="yara shahidi">
+
+                        <h3>yara shahidi</h3>
                     </div>
-                    <div class="trailer">
-                        <h2 class="navyBlue">trailer</h2>
-                        <iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/9Ji5U2sTlLU?si=oiD8ZJGMkfpii_CH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/shared/alan_tudyk.webp" 
+                        alt="alan tudyk">
+
+                        <h3>alan tudyk</h3>
                     </div>
-                    <div class="copyright">
-                        <h2 class="navyBlue">copyright</h2>
-                        <p>All copyright material is the property of Disney and their respective owners</p>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/peter_pan/joshua_pickering.webp" 
+                        alt="joshua pickering">
+
+                        <h3>joshua pickering</h3>
+                    </div>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/peter_pan/alyssa_wapanatahk.webp" 
+                        alt="alyssa wapanatahk">
+
+                        <h3>alyssa wapanatahk</h3>
                     </div>
                 </div>
+
+                <div class="subheader">
+                    <h2>synopsis</h2>
+                </div>
+
+                <div class="info">
+                    <p>When Peter Pan arrives in London, he whisks Wendy and her brothers away to the magical world of Neverland. Together they face off against the vengeful Captain Hook in a fun filled adventure wrought with flying and fairy dust and the power of believing.</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>release date</h2>
+                </div>
+
+                <div class="info">
+                    <p>28th april 2023</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>genre</h2>
+                </div>
+
+                <div class="info genre">
+                    <ul>
+                        <li>adventure <span>/</span></li>
+                        <li>fantasy <span>/</span></li>
+                        <li>drama </li>
+                    </ul>
+                </div>
+
+                <div class="subheader">
+                    <h2>rating</h2>
+                </div>
+
+                <div class="info">
+                    <p>PG</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>review scores</h2>
+                </div>
+
+                <div class="info">
+                    <div class="reviews-container">
+                        <div class="reviews">
+                            <h3>critics</h3>
+                            <i class="fa-solid fa-star star"></i> 
+                            <span>6</span>
+                        </div>
+
+                        <div class="reviews">
+                            <h3>public</h3>
+                            <i class="fa-solid fa-star star"></i>
+                            <span>1</span>
+                        </div>
+
+                        <div class="reviews">
+                            <h3>rate it</h3>
+                            <i class="fa-solid fa-star star"></i>
+                            <span id="user-score"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subheader">
+                    <h2>runtime</h2>
+                </div>
+
+                <div class="info">
+                    <p>106 minutes</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>audio</h2>
+                </div>
+
+                <div class="info">
+                    <ul>
+                        <li>dolby atmos</li>
+                    </ul>
+                </div>
+
+                <div class="subheader">
+                    <h2>trailer</h2>
+                </div>
+
+                <div class="trailer" data-videoId="9Ji5U2sTlLU"></div>
+
+                <footer>
+                    <h2>copyright</h2>
+                    <p>
+                        <i class="fa-regular fa-copyright"></i> 
+                        All copyright material is the property of Disney and their respective owners
+                    </p>
+                </footer>
             </div>
         </div>
     </main>

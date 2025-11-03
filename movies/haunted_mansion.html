@@ -3,132 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#361f2e">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
     <title>Disney Desire | Haunted Mansion</title>
     <meta name="description" content="Haunted Mansion stars Lakeith Stanfield and Rosario Dawson in this spooky fun filled adventure. Check out cast info, ratings, trailer, and more">
+    <meta property="og:locale" content="en_GB">
     <meta property="og:site_name" content="Disney Desire" />
     <meta property="og:title" content="Disney Desire | Haunted Mansion">
     <meta property="og:description" content="Haunted Mansion stars Lakeith Stanfield and Rosario Dawson in this spooky fun filled adventure. Check out cast info, ratings, trailer, and more">
     <meta property="og:image" content="https://roxaski.github.io/Disney-Desire/assets/open_graph/og_haunted_mansion.jpg">
-    <meta property="og:image:alt" content="Disney Desire | Haunted Mansion">
+    <meta property="og:image:alt" content="Haunted Mansion">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://roxaski.github.io/Disney-Desire/movies/haunted_mansion.html"/>
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Disney Desire | Haunted Mansion">
     <meta name="twitter:description" content="Haunted Mansion stars Lakeith Stanfield and Rosario Dawson in this spooky fun filled adventure. Check out cast info, ratings, trailer, and more">
     <meta name="twitter:image" content="https://roxaski.github.io/Disney-Desire/assets/open_graph/og_haunted_mansion.jpg">
-    <meta name="twitter:image:alt" content="Disney Desire | Haunted Mansion">
+    <meta name="twitter:image:alt" content="Haunted Mansion">
     <meta property="og:type" content="website"/>
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="manifest" href="../site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="../css/movies_info.css">
+        <script async defer src="https://kit.fontawesome.com/2d21b2aa33.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/movie_contents.css">
+    <script defer src="../scripts/movie-contents.js"></script>
 </head>
 <body>
-    <!--MOVIE INFORMATION-->
     <main>
-        <div class="bg eggplant-aegean-gradient dark-mode"></div>
-        <div class="grid-container">
-            <div class="left">
-                <img fetchpriority="high" src="../assets/posters/haunted_mansion.webp" width="1000" height="1450" alt="haunted mansion poster">
-                <img fetchpriority="high" id="mobile-poster" src="../assets/posters/mobile/haunted_mansion_mobile.webp" width="500" height="625" alt="haunted mansion poster">
+        <div class="movie-information">
+            <div class="poster">
+                <img width="1200" height="1800" fetchpriority="high" draggable="false"
+                src="../assets/posters/haunted_mansion_extra_large.webp" 
+                srcset="../assets/posters/haunted_mansion_small.webp 300w,
+                        ../assets/posters/haunted_mansion_medium.webp 500w,
+                        ../assets/posters/haunted_mansion_large.webp 800w,
+                        ../assets/posters/haunted_mansion_extra_large.webp 1200w"
+                sizes="(max-width: 775px) 60vw, 
+                    (max-width: 810px) 43vw, 
+                    (min-width: 1280px) 31vw, 
+                    40vw"
+                alt="haunted mansion poster">
+
+                <img id="mobile-bg" width="300" height="450" fetchpriority="high" draggable="false"
+                src="../assets/posters/haunted_mansion_small.webp"
+                alt="">
             </div>
-            <div class="right">
-                <div class="content">
-                    <h1>haunted mansion</h1>
+
+            <div class="content">
+                <h1>haunted mansion</h1> 
+
+                <div class="subheader">
+                    <h2>top cast</h2>
+                </div>
+
+                <div class="cast">
                     <div>
-                        <h2 class="eggplant">top cast</h2>
-                        <div class="img-wrapper">
-                            <div>
-                                <img src="../assets/cast/lakeith_stanfield.webp" width="360" height="360" alt="lakeith stanfield profile">
-                                <p>lakeith stanfield</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/rosario_dawson.webp" width="360" height="360" alt="rosario dawson profile">
-                                <p>rosario dawson</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/jamie_lee_curtis.webp" width="360" height="360" alt="jamie lee curtis profile">
-                                <p>jamie lee curtis</p>
-                            </div>
-                            <div>
-                                <img src="../assets/cast/tiffany_haddish.webp" width="360" height="360" alt="tiffany haddish profile">
-                                <p>tiffany haddish</p>
-                            </div>
-                        </div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/shared/daveed_diggs.webp" 
+                        alt="daveed diggs">
+
+                        <h3>daveed diggs</h3>
                     </div>
-                    <div class="synopsis">
-                        <h2 class="eggplant">synopsis</h2>
-                        <p>Have a ghosts living in your newly purchased mansion? Then who you gonna call? A pshycic, historian preacher and tour guide of course. Can they escape with their lives, let's hope don't they all become inhabitants of the mansion for good.</p>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/haunted_mansion/rosario_dawson.webp" 
+                        alt="rosario dawson">
+
+                        <h3>rosario dawson</h3>
                     </div>
-                    <div class="information">
-                        <div>
-                            <h2 class="eggplant">release date</h2>
-                            <p>11th August 2023</p>
-                        </div>
-                        <div>
-                            <h2 class="eggplant">genre</h2>
-                            <ul>
-                                <li>Horror / Comedy</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h2 class="eggplant">rating</h2>
-                            <p>PG-13</p>
-                        </div>
-                        <div>
-                            <h2 class="eggplant">review scores</h2>
-                            <div class="grid-content">
-                                <div class="critics">
-                                    <p>Critics Score</p>
-                                    <div class="star-wrapper">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p id="critics-score">4</p>
-                                    </div>
-                                </div>
-                                <div class="user">
-                                    <p>User Score</p>
-                                    <div class="star-wrapper">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p id="user-score">4</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h2 class="eggplant">director</h2>
-                            <p>Justin Simien</p>
-                        </div>
-                        <div>
-                            <h2 class="eggplant">runtime</h2>
-                            <p>123 minutes</p>
-                        </div>
-                        <div>
-                            <h2 class="eggplant">audio</h2>
-                            <ul>
-                                <li>Dolby Digital</li>
-                                <li>Dolby Atmos</li>
-                                <li>Dolby Surround Sound 5.1</li>
-                                <li>Dolby Surround Sound 7.1</li>
-                                <li>Descriptive Audio</li>
-                            </ul>
-                        </div>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/haunted_mansion/danny_devito.webp" 
+                        alt="danny devito">
+
+                        <h3>danny devito</h3>
                     </div>
-                    <div class="trailer">
-                        <h2 class="eggplant">trailer</h2>
-                        <iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/AjLKTz81bj8?si=M5UhduMYDPKtHC02" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/haunted_mansion/tiffany_haddish.webp" 
+                        alt="tiffany haddish">
+
+                        <h3>tiffany haddish</h3>
                     </div>
-                    <div class="copyright">
-                        <h2 class="eggplant">copyright</h2>
-                        <p>All copyright material is the property of Disney and their respective owners</p>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/haunted_mansion/jared_leto.webp" 
+                        alt="jared leto">
+
+                        <h3>jared leto</h3>
+                    </div>
+
+                    <div>
+                        <img width="360" height="360" draggable="false"
+                        src="../assets/cast/haunted_mansion/jamie_lee_curtis.webp" 
+                        alt="jamie lee curtis">
+
+                        <h3>jamie lee curtis</h3>
                     </div>
                 </div>
+
+                <div class="subheader">
+                    <h2>synopsis</h2>
+                </div>
+
+                <div class="info">
+                    <p>When a recently widowed doctor and his son move into a New Orleans mansion, they discover it's been occupied by restless spirits. With the help of a psychic, a historian, and a tour guide, they must uncover the mansion's dark secrets before they turn into permanent residents themselves.</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>release date</h2>
+                </div>
+
+                <div class="info">
+                    <p>28th July 2023</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>genre</h2>
+                </div>
+
+                <div class="info genre">
+                    <ul>
+                        <li>supernatural <span>/</span></li>
+                        <li>comedy <span>/</span></li>
+                        <li>adventure </li>
+                    </ul>
+                </div>
+
+                <div class="subheader">
+                    <h2>rating</h2>
+                </div>
+
+                <div class="info">
+                    <p>PG-13</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>review scores</h2>
+                </div>
+
+                <div class="info">
+                    <div class="reviews-container">
+                        <div class="reviews">
+                            <h3>critics</h3>
+                            <i class="fa-solid fa-star star"></i> 
+                            <span class="score-4">4</span>
+                        </div>
+
+                        <div class="reviews">
+                            <h3>public</h3>
+                            <i class="fa-solid fa-star star"></i>
+                            <span class="score-4">4</span>
+                        </div>
+
+                        <div class="reviews">
+                            <h3>rate it</h3>
+                            <i class="fa-solid fa-star star"></i>
+                            <span id="user-score"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subheader">
+                    <h2>runtime</h2>
+                </div>
+
+                <div class="info">
+                    <p>123 minutes</p>
+                </div>
+
+                <div class="subheader">
+                    <h2>audio</h2>
+                </div>
+
+                <div class="info">
+                    <ul>
+                        <li>dolby atmos</li>
+                        <li>dolby digital</li>
+                        <li>dolby surround 7.1</li>
+                        <li>DTS</li>
+                    </ul>
+                </div>
+
+                <div class="subheader">
+                    <h2>trailer</h2>
+                </div>
+
+                <div class="trailer" data-videoId="AjLKTz81bj8"></div>
+
+                <footer>
+                    <h2>copyright</h2>
+                    <p>
+                        <i class="fa-regular fa-copyright"></i> 
+                        All copyright material is the property of Disney and their respective owners
+                    </p>
+                </footer>
             </div>
         </div>
     </main>
