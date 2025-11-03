@@ -231,6 +231,12 @@ footer p {
     body {
         overflow: auto;
     }
+    .movie-information {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'poster'
+        'content'
+    }
     .movie-information .poster {
         position: relative;
         padding: 2rem 0;
@@ -255,11 +261,6 @@ footer p {
         filter: blur(20px);
         transform: scale(1.1);
         z-index: 0;
-    }
-    .movie-information {
-        grid-template-areas: 
-        'poster poster'
-        'content content'
     }
     .movie-information .content {
         height: auto;
