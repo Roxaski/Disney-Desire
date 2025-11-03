@@ -1,12 +1,12 @@
 let nav = document.querySelector('nav');
 let mobileNav = document.querySelector('.hamburger_menu');
 
-//HAMBURGER MENU
+// toggles hamburger menu
 mobileNav.addEventListener('click', () => {
     nav.classList.toggle('active')
 });
 
-//DISABLE SCROLL WHEN NAV ACTIVE
+// disable scroll when hamburger menu is open
 mobileNav.addEventListener('click', () => {
     document.body.classList.toggle('no-scroll');
 });
