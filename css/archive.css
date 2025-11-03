@@ -1,3 +1,18 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/poppins-v23-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/poppins-v23-latin-500.woff2') format('woff2');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +52,6 @@ body {
     line-height: 1.5;
     cursor: default;
 }
-/*NAV*/
 .links {
     position: fixed;
     top: 0;
@@ -58,6 +72,8 @@ body {
     height: auto;
     margin: auto 10px;
     object-fit: contain;
+    color: var(--clr-white);
+    text-align: center;
 }
 .links ul li {
     display: inline-block;
@@ -97,7 +113,6 @@ body {
 .mobile_logo img {
     display: none;
 }
-/*MAIN*/
 .wrapper {
     position: relative;
     top: 100px;
@@ -150,10 +165,15 @@ body {
     padding: 1rem;
     border-radius: 15px;
     line-height: 1.6;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, .6);
     color: var(--clr-grey);
     background: var(--clr-white);
     border: solid 2px var(--clr-blk);
+}
+.archive .container:nth-child(odd) .content {
+    box-shadow: -1px 1px 4px rgba(0, 0, 0, .2);
+}
+.archive .container:nth-child(even) .content {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
 }
 .archive .container .content img {
     width: 100px;
@@ -177,22 +197,51 @@ body {
     font-size: 1rem;
     margin: 20px auto 0;
 }
-/*SCROLL BACK TO TOP OF PAGE BUTTON*/
 .scroll-top {
     position: fixed;
     bottom: 2rem;
     right: 2.5rem;
     font-size: clamp(2.5rem, 3vw, 3rem);
-    color: var(--clr-violet);
     transition: 250ms ease-in-out;
     opacity: 0;
     pointer-events: none;
 }
-.scroll-top.active {
+.scroll-top a {
+    color: var(--clr-violet);
+}
+.scroll-top-mobile {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    background: var(--clr-violet);
+    width: 100%;
+    height: 3.5rem;
+    transition: 250ms ease-in-out;
+    box-shadow: 2px 1px 6px rgba(0, 0, 0, .2);
+    z-index: 1;
+}
+.scroll-top-mobile a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    font-weight: 500;
+    height: 100%;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--clr-white);
+}
+.scroll-top-mobile i {
+    margin-right: 1rem;
+}
+.scroll-top.active,
+.scroll-top-mobile.active {
     pointer-events: auto;
     opacity: 1;
 }
-/*FOOTER*/
 footer {
     margin: 200px auto 0;
     text-align: center;
@@ -210,15 +259,17 @@ footer h2::before {
     content: '';
     display: block;
     position: relative;
-    bottom: 1rem;
+    bottom: 1.5rem;
     border-top: solid 2px var(--clr-grey);
     margin: 0 auto;
     max-width: 60rem;
 }
-footer p i {
+footer i {
     font-size: .9rem;
 }
-/*MEDIA QUERY'S*/
+footer p {
+    margin-top: .25rem;
+}
 @media screen and (max-width: 1135px) {
     .no-scroll {
         position: fixed;
@@ -227,7 +278,7 @@ footer p i {
     nav {
         background: var(--clr-violet);
         margin-bottom: 1.5rem;
-        box-shadow: 2px 1px 6px rgba(0, 0, 0, .5);
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
     }
     nav.active .links {
         transform: translateX(40%);
@@ -298,7 +349,7 @@ footer p i {
         height: 2rem;
         background-color: transparent;
         -webkit-tap-highlight-color: transparent;
-        z-index: 4;
+        z-index: 6;
     }
     .hamburger_menu .bars {
         position: relative;
@@ -315,7 +366,7 @@ footer p i {
         right: 1rem;
         max-width: 65px;
         height: auto;
-        z-index: 2;
+        z-index: 5;
     }
     .bars::before,
     .bars::after {
@@ -357,8 +408,17 @@ footer p i {
         top: 0;
         padding: 0 .75rem;
     }
+    .archive .container:nth-child(odd) .content,
+    .archive .container:nth-child(even) .content {
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+    }
     .scroll-top {
         display: none;
+    }
+    .scroll-top-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     footer {
         margin: 50px auto 0;
@@ -469,7 +529,6 @@ footer p i {
         top: 10rem;
     }
 }
-/*DARK MODE MEDIA QUERY*/
 @media screen and (prefers-color-scheme: dark) and (max-width: 1135px) {
     .links {
         background: var(--clr-grey);
@@ -519,7 +578,10 @@ footer p i {
         color: var(--clr-white);
         background: var(--clr-grey);
     }
-    .scroll-top {
+    .scroll-top a {
         color: var(--clr-offWhite);
+    }
+    .scroll-top-mobile {
+        background: var(--clr-grey);
     }
 }

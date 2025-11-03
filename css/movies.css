@@ -1,3 +1,18 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/poppins-v23-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/poppins-v23-latin-500.woff2') format('woff2');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +52,6 @@ body {
     line-height: 1.5;
     cursor: default;
 }
-/*NAV*/
 .links {
     position: fixed;
     top: 0;
@@ -58,6 +72,8 @@ body {
     height: auto;
     margin: auto 10px;
     object-fit: contain;
+    color: var(--clr-white);
+    text-align: center;
 }
 .links ul li {
     display: inline-block;
@@ -97,7 +113,6 @@ body {
 .mobile_logo img {
     display: none;
 }
-/*MAIN*/
 .wrapper {
     position: relative;
     top: 100px;
@@ -117,7 +132,7 @@ body {
     padding: .5rem;
     font-size: clamp(1.15rem, 3vw, 1.3rem);
     font-weight: 500;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
     cursor: pointer;
 }
 .accordion ul li label::before {
@@ -141,20 +156,24 @@ body {
     max-height: 100%;
 }
 .accordion .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 20px auto;
     max-height: 0;
-    text-align: center;
     overflow: hidden;
+}
+.accordion .content a {
+    text-decoration: none;
 }
 .accordion .content img {
     width: 300px;
     height: auto;
     color: var(--clr-grey);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
     margin: 5px 5px;
     cursor: pointer;
 }
-/*FOOTER*/
 footer {
     margin: 200px auto 0;
     text-align: center;
@@ -172,15 +191,17 @@ footer h2::before {
     content: '';
     display: block;
     position: relative;
-    bottom: 1rem;
+    bottom: 1.5rem;
     border-top: solid 2px var(--clr-grey);
     margin: 0 auto;
     max-width: 60rem;
 }
-footer p i {
+footer i {
     font-size: .9rem;
 }
-/*MEDIA QUERY'S*/
+footer p {
+    margin-top: .25rem;
+}
 @media screen and (max-width: 1135px) {
     .no-scroll {
         position: fixed;
@@ -189,7 +210,7 @@ footer p i {
     nav {
         background: var(--clr-blue);
         margin-bottom: 1.5rem;
-        box-shadow: 2px 1px 6px rgba(0, 0, 0, .5);
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
     }
     nav.active .links {
         transform: translateX(40%);
@@ -260,7 +281,7 @@ footer p i {
         height: 2rem;
         background-color: transparent;
         -webkit-tap-highlight-color: transparent;
-        z-index: 4;
+        z-index: 6;
     }
     .hamburger_menu .bars {
         position: relative;
@@ -277,7 +298,7 @@ footer p i {
         right: 1rem;
         max-width: 65px;
         height: auto;
-        z-index: 2;
+        z-index: 5;
     }
     .bars::before,
     .bars::after {
@@ -315,14 +336,11 @@ footer p i {
         width: 300px;
         height: auto;
     }
-    .accordion ul li label {
-        box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
-    }
     .wrapper {
         top: 0;
         padding: 0 .75rem;
     }
-        footer {
+    footer {
         margin: 50px auto 0;
     }
 }
@@ -387,7 +405,6 @@ footer p i {
         top: 10rem;
     }
 }
-/*DARK MODE MEDIA QUERY*/
 @media screen and (prefers-color-scheme: dark) and (max-width: 1135px) {
     .links {
         background: var(--clr-grey);

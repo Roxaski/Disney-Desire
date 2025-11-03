@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#cc0e11">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
     <title>Disney Desire | Coming soon to Disney Plus</title>
     <meta name="description" content="Take a look at what's coming soon to Disney Plus with your complete Disney+ content guide">
     <meta property="og:locale" content="en_GB">
@@ -26,62 +24,80 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     <link rel="manifest" href="../site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="../css/news_articles.css">
     <script defer src="../script.js"></script>
 </head>
 <body>
-    <!--NAVIGATION-->
     <nav>
         <header>
-            <!--LINKS-->
             <div class="links">
                 <ul>
                     <li><a href="../pages/news.html">news</a></li>
                     <li><a href="../pages/movies.html">movies</a></li>
                     <li><a href="../pages/archive.html">archive</a></li>
+
                     <div class="logo">
-                        <a href="../index.html"><img draggable="false" width="350" height="100" class="logo" src="../assets/logo/logo.webp" alt="logo"></a>
+                        <a href="../index.html">
+                            <img class="logo" width="350" height="100" draggable="false"
+                            src="../assets/logo/logo.webp" 
+                            alt="logo">
+                        </a>
                     </div>
+
                     <li><a href="../pages/history.html">history</a></li>
                     <li><a href="../pages/gallery.html">gallery</a></li>
                     <li><a href="../pages/parks.html">parks</a></li>
                 </ul>
             </div>
-            <!--HAMBURGER MENU-->
+
             <div aria-label="opens navigation menu" role="button" class="hamburger_menu">
                 <div class="bars"></div>
             </div>
+
             <div class="hamburger_background">
-                <img fetchpriority="high" draggable="false" width="250" height="250" src="../assets/icons/mickey_head.webp" alt="">
+                <img fetchpriority="high" width="250" height="250" draggable="false"
+                src="../assets/icons/mickey_head.webp" 
+                alt="">
             </div>
+
             <div class="overlay"></div>
-            <!--MOBILE LOGO-->
+
             <div class="mobile_logo">
-                <a aria-label="returns to homepage" href="../index.html"><img draggable="false" class="logo" src="../assets/logo/logo.webp" alt="logo"></a>
+                <a aria-label="returns to homepage" href="../index.html">
+                    <img class="logo" width="600" height="300" draggable="false" 
+                    src="../assets/logo/logo.webp" 
+                    alt="logo">
+                </a>
             </div>
         </header>
     </nav>
-    <!--ARTICLE-->
+
     <main>
         <div class="wrapper">
             <div class="grid-container">
                 <header>
                     <h1>Coming soon to Disney Plus</h1>
                 </header>
+
                 <article>
-                    <img fetchpriority="high" src="../assets/articles/disney_plus.webp" width="1920" height="1080" alt="disney plus advertisement">
-                    <div class="information">
-                        <p><span><i class="fa-solid fa-pen"></i> author : </span> Blake Anderson</p>
-                        <p><span><i class="fa-regular fa-calendar"></i> published : </span> 22nd September</p>
+                    <img width="1920" height="1080" draggable="false" 
+                    src="../assets/articles/disney_plus_extra_large.webp"
+                    srcset="../assets/articles/disney_plus_small.webp 480w,
+                            ../assets/articles/disney_plus_medium.webp 800w,
+                            ../assets/articles/disney_plus_large.webp 1200w,
+                            ../assets/articles/disney_plus_extra_large.webp 1920w"
+                    sizes="(max-width: 645px) 100vw, 
+                           75vw"
+                    alt="disney plus poster">
+
+                    <div class="author-publish">
+                        <p><span>author : </span> Blake Anderson</p>
+                        <p><span>published : </span> 22nd September</p>
                     </div>
 
                     <p>Let's take a look at some of the most popular shows coming to Disney Plus this September. We have seen so many great shows and movies being added to the service these last few months, so what can we expect this month.</p>
 
-                    <p>Amongst some of the most popular recent additions is the Ahsoka series, set in the Star Wars universe and starting next month we will finally experience the epic conclusion to this phenomenal story, here's hoping that Disney decides to renew the show for another season, but if not we can at least forward to another series set in the Star Wars universe in the form of <a class="red" href="https://www.youtube.com/watch?v=6tzur6JrUEA">The Acolyte</a>, we hope your as excited as we are for this new series!</p>
+                    <p>Amongst some of the most popular recent additions is the Ahsoka series, set in the Star Wars universe and starting next month we will finally experience the epic conclusion to this phenomenal story, here's hoping that Disney decides to renew the show for another season, but if not we can at least forward to another series set in the Star Wars universe in the form of <a target="_blank" class="red" href="https://www.youtube.com/watch?v=6tzur6JrUEA">The Acolyte</a>, we hope your as excited as we are for this new series!</p>
 
                     <ul>
                         <li><span>the little mermaid</span></li>
@@ -92,26 +108,58 @@
                         <li><span>marvel studio legends</span></li>
                     </ul>
 
-                    <p>Kicking off our September list is the critically aclaimed <a target="_blank" class="red" href="../movies_info/little_mermaid.html">The Little Mermaid</a>, which is being added to the service after releasing at box office 4 months prior, we highly recommend this epic retelling of this incredible Disney classic.</p>
+                    <p>Kicking off our September list is the critically aclaimed <a target="_blank" class="red" href="../movies/little_mermaid.html">The Little Mermaid</a>, which is being added to the service after releasing at box office 4 months prior, we highly recommend this epic retelling of this incredible Disney classic.</p>
 
-                    <p>Another wonderful film being added is the love story that will send sparks flying, <a target="_blank" class="red" href="../movies_info/elemental.html">Elemental</a> is Pixar's latest blockbuster hit, raking in just shy of $500 million dollars at the box office. Now if you were a fan of the Marvel films, you won't want to miss out on this. Revisiting the most incredible and heartfelt scenes across many of Marvel's incredible stories.</p>
+                    <p>Another wonderful film being added is the love story that will send sparks flying, <a target="_blank" class="red" href="../movies/elemental.html">Elemental</a> is Pixar's latest blockbuster hit, raking in just shy of $500 million dollars at the box office. Now if you were a fan of the Marvel films, you won't want to miss out on this. Revisiting the most incredible and heartfelt scenes across many of Marvel's incredible stories.</p>
 
                     <p>Last but not least, we have a variety of series ranging from the ever cuter 'I am Groot' to the awesome cartoon 'The Ghost & Molly McGee', and more in between. Unfortunately, Molly McGee's second season will be it's last. Thankfully the creators 'Bill Motz and Bob Roth' who are behind this incredible cartoon series, have been given the greenlight to wrap the series up with one final episode.</p>
-
                 </article>
+
                 <aside>
                     <h2>recommended articles</h2>
                     <ul>
                         <li>
-                            <a href="../articles/toy_story_5.html"><img width="1920" height="1080" src="../assets/articles/toy_story.webp" alt="toy's from toy story jumping for joy"></a>
+                            <a href="../articles/toy_story_5.html">
+                                <img width="1920" height="1080" draggable="false" 
+                                src="../assets/articles/toy_story_extra_large.webp"
+                                srcset="../assets/articles/toy_story_small.webp 480w,
+                                        ../assets/articles/toy_story_medium.webp 800w,
+                                        ../assets/articles/toy_story_large.webp 1200w,
+                                        ../assets/articles/toy_story_extra_large.webp 1920w"
+                                sizes="(max-width: 645px) 100vw, 
+                                       25vw"
+                                alt="the cast of toy story">
+                            </a>
                             <p>Bob Iger announces Toy Story 5</p>
                         </li>
+
                         <li>
-                            <a href="../articles/frozen_3.html"><img width="1920" height="1080" src="../assets/articles/frozen.webp" alt="the cast of frozen 2"></a>
+                            <a href="../articles/frozen_3.html">
+                                <img width="1920" height="1080" fetchpriority="high" draggable="false" 
+                                src="../assets/articles/frozen_extra_large.webp"
+                                srcset="../assets/articles/frozen_small.webp 480w,
+                                        ../assets/articles/frozen_medium.webp 800w,
+                                        ../assets/articles/frozen_large.webp 1200w,
+                                        ../assets/articles/frozen_extra_large.webp 1920w"
+                                sizes="(max-width: 645px) 100vw, 
+                                       25vw"
+                                alt="the cast of frozen 2">
+                            </a>
                             <p>Frozen 3 announced by Disney's Bob Iger</p>
                         </li>
+
                         <li>
-                            <a href="../articles/dreamlight_valley.html"><img width="1920" height="1080" src="../assets/articles/dreamlight.webp" alt="disney dreamlight valley poster"></a>
+                            <a href="../articles/dreamlight_valley.html">
+                                <img width="1920" height="1080" draggable="false" 
+                                src="../assets/articles/dreamlight_extra_large.webp"
+                                srcset="../assets/articles/dreamlight_small.webp 480w,
+                                        ../assets/articles/dreamlight_medium.webp 800w,
+                                        ../assets/articles/dreamlight_large.webp 1200w,
+                                        ../assets/articles/dreamlight_extra_large.webp 1920w"
+                                sizes="(max-width: 645px) 100vw, 
+                                       25vw"
+                                alt="disney dreamlight valley poster">
+                            </a>
                             <p>Dreamlight Valley announces Expansion Pass</p>
                         </li>
                     </ul>
@@ -119,10 +167,13 @@
             </div>
         </div>
     </main>
-    <!--FOOTER-->
+    
     <footer>
         <h2>copyright</h2>
-        <p><i class="fa-regular fa-copyright"></i> All copyright material is the property of Disney and their respective owners</p>
+        <p>
+            <i class="fa-regular fa-copyright"></i> 
+            All copyright material is the property of Disney and their respective owners
+        </p>
     </footer>
 </body>
 </html>

@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#6f29e1">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
     <title>Disney Desire | Gallery</title>
     <meta name="description" content="Discover memorable moments through our curated image gallery, explore iconic scenes and characters that define the magic of Disney">
     <meta property="og:locale" content="en_GB">
@@ -26,114 +24,303 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     <link rel="manifest" href="../site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script async defer src="https://kit.fontawesome.com/2d21b2aa33.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/gallery.css">
     <script defer src="../scripts/gallery.js"></script>
     <script defer src="../script.js"></script>
 </head>
 <body>
-    <!--NAVIGATION-->
     <header>
         <nav>
-            <!--LINKS-->
             <div class="links">
                 <ul>
                     <li><a href="../pages/news.html">news</a></li>
                     <li><a href="../pages/movies.html">movies</a></li>
                     <li><a href="../pages/archive.html">archive</a></li>
+
                     <div class="logo">
-                        <a href="../index.html"><img draggable="false" width="350" height="100" class="logo" src="../assets/logo/logo.webp" alt="logo"></a>
+                        <a href="../index.html">
+                            <img class="logo" width="350" height="100" draggable="false"
+                            src="../assets/logo/logo.webp" 
+                            alt="logo">
+                        </a>
                     </div>
+
                     <li><a href="../pages/history.html">history</a></li>
                     <li><a href="../pages/gallery.html">gallery</a></li>
                     <li><a href="../pages/parks.html">parks</a></li>
                 </ul>
             </div>
-            <!--HAMBURGER MENU-->
+
             <div aria-label="opens navigation menu" role="button" class="hamburger_menu">
                 <div class="bars"></div>
             </div>
+
             <div class="hamburger_background">
-                <img fetchpriority="high" draggable="false" width="250" height="250" draggable="false" src="../assets/icons/mickey_head.webp" alt="">
+                <img fetchpriority="high" width="250" height="250" draggable="false" 
+                src="../assets/icons/mickey_head.webp" 
+                alt="">
             </div>
+
             <div class="overlay"></div>
-            <!--MOBILE LOGO-->
+
             <div class="mobile_logo">
-                <a aria-label="returns to homepage" href="../index.html"><img draggable="false" class="logo" src="../assets/logo/logo.webp" alt="logo"></a>
+                <a aria-label="returns to homepage" href="../index.html">
+                    <img class="logo" width="600" height="300" draggable="false" 
+                    src="../assets/logo/logo.webp" 
+                    alt="logo">
+                </a>
             </div>
         </nav>
     </header>
+
     <main>
-        <!--GALLERY-->
         <div class="wrapper">
             <div class="gallery">
                 <div class="img-container">
-                    <img tabindex="0" fetchpriority="high" width="1920" height="1080" draggable="false" src="../assets/gallery/img_1.webp" alt="wall-e holding rubix cube">
+                    <img tabindex="0" fetchpriority="high" width="1920" height="1080" draggable="false" 
+                    src="../assets/gallery/img_1_extra_large.webp"
+                    srcset="../assets/gallery/img_1_small.webp 480w,
+                            ../assets/gallery/img_1_medium.webp 800w,
+                            ../assets/gallery/img_1_large.webp 1200w,
+                            ../assets/gallery/img_1_extra_large.webp 1920w"
+                    sizes="(max-width: 550px) 100vw, 
+                           50vw"
+                    alt="cast of frozen hugging olaf">
                     <div class="img-overlay">
-                        <p>Name? WALL-E</p>
+                        <div class="icon-container">
+                            <img class="icon frozen_icon" width="450" height="400"
+                            src="../assets/icons/frozen_silhouette.webp" 
+                            alt="">
+                        </div>
+                        <p>Hi, I'm Olaf, and I like warm hugs!</p>
                     </div>
                 </div>
+
                 <div class="img-container">
-                    <img tabindex="0" fetchpriority="high" width="1920" height="1080" draggable="false" src="../assets/gallery/img_2.webp" alt="cast of frozen hugging olaf">
+                    <img tabindex="0" fetchpriority="high" width="1920" height="1080" draggable="false" 
+                    src="../assets/gallery/img_2_extra_large.webp"
+                    srcset="../assets/gallery/img_2_small.webp 480w,
+                            ../assets/gallery/img_2_medium.webp 800w,
+                            ../assets/gallery/img_2_large.webp 1200w,
+                            ../assets/gallery/img_2_extra_large.webp 1920w"
+                    sizes="(max-width: 550px) 100vw, 
+                           50vw"
+                    alt="wall-e holding a rubix cube">
                     <div class="img-overlay">
-                        <p>Hi, I'm Olaf and i like warm hugs</p>
+                        <div class="icon-container">
+                            <img class="icon wall-e_icon" width="450" height="400" 
+                            src="../assets/icons/wall-E_silhouette.webp" 
+                            alt="">
+                        </div>
+                        <p>I don't want to survive ... I want to live!</p>
                     </div>
                 </div>
+
                 <div class="img-container">
-                    <img tabindex="0" width="1920" height="1080" draggable="false" src="../assets/gallery/img_3.webp" alt="raya">
+                    <img loading="lazy" tabindex="0" width="1920" height="1080" draggable="false"
+                    src="../assets/gallery/img_3_extra_large.webp"
+                    srcset="../assets/gallery/img_3_small.webp 480w,
+                            ../assets/gallery/img_3_medium.webp 800w,
+                            ../assets/gallery/img_3_large.webp 1200w,
+                            ../assets/gallery/img_3_extra_large.webp 1920w"
+                    sizes="(max-width: 550px) 100vw, 
+                           50vw"
+                    alt="raya and the last dragon">
                     <div class="img-overlay">
-                        <p>We were once united, but now we are divided</p>
+                        <div class="icon-container">
+                            <img class="icon raya_icon" width="450" height="400" 
+                            src="../assets/icons/raya_silhouette.webp" 
+                            alt="">
+                        </div>
+                        <p>We can tear each other apart or we can come together and build a better world</p>
                     </div>
                 </div>
+
                 <div class="img-container">
-                    <img tabindex="0" width="1920" height="1080" draggable="false" src="../assets/gallery/img_4.webp" alt="epic mickey concept art">
+                    <img loading="lazy" tabindex="0" width="1920" height="1080" draggable="false" 
+                    src="../assets/gallery/img_4_extra_large.webp"
+                    srcset="../assets/gallery/img_4_small.webp 480w,
+                            ../assets/gallery/img_4_medium.webp 800w,
+                            ../assets/gallery/img_4_large.webp 1200w,
+                            ../assets/gallery/img_4_extra_large.webp 1920w"
+                    sizes="(max-width: 550px) 100vw, 
+                           50vw"
+                    alt="epic mickey concept art">
                     <div class="img-overlay">
-                        <p>I hope they become friends, perhaps even brothers</p>
+                        <div class="icon-container">
+                            <img class="icon mickey_icon" width="450" height="400" 
+                            src="../assets/icons/mickey_silhouette.webp" 
+                            alt="">
+                        </div>
+                        <p>The funny thing about mirrors, our reflections prompt us to reflect</p>
                     </div>
                 </div>
+
                 <div class="img-container">
-                    <img tabindex="0" width="1920" height="1080" draggable="false" src="../assets/gallery/img_5.webp" alt="sora staring at roxas">
+                    <img loading="lazy" tabindex="0" width="1920" height="1080" draggable="false" 
+                    src="../assets/gallery/img_5_extra_large.webp"
+                    srcset="../assets/gallery/img_5_small.webp 480w,
+                            ../assets/gallery/img_5_medium.webp 800w,
+                            ../assets/gallery/img_5_large.webp 1200w,
+                            ../assets/gallery/img_5_extra_large.webp 1920w"
+                    sizes="(max-width: 550px) 100vw, 
+                           50vw"
+                    alt="sora and roxas">
                     <div class="img-overlay">
-                        <p>I am me, nobody else</p>
+                        <div class="icon-container">
+                            <img class="icon kingdom_hearts_icon" width="450" height="400" 
+                            src="../assets/icons/kingdom_hearts_silhouette.webp" 
+                            alt="">
+                        </div>
+                        <p>I am me, nobody else!</p>
                     </div>
                 </div>
+
                 <div class="img-container">
-                    <img tabindex="0" width="1920" height="1080" draggable="false" src="../assets/gallery/img_6.webp" alt="stained glass window of the fairies">
+                    <img loading="lazy" tabindex="0" width="1920" height="1080" draggable="false" 
+                    src="../assets/gallery/img_6_extra_large.webp"
+                    srcset="../assets/gallery/img_6_small.webp 480w,
+                            ../assets/gallery/img_6_medium.webp 800w,
+                            ../assets/gallery/img_6_large.webp 1200w,
+                            ../assets/gallery/img_6_extra_large.webp 1920w"
+                    sizes="(max-width: 550px) 100vw, 
+                           50vw"
+                    alt="moana and maui on a boat">
                     <div class="img-overlay">
-                        <p>My gift shall be the gift of song</p>
+                        <div class="icon-container">
+                            <img class="icon moana_icon" width="450" height="400" 
+                            src="../assets/icons/moana_silhouette.webp" 
+                            alt="">
+                        </div>
+                        <p>Our strengths lie beneath the surface</p>
                     </div>
                 </div>
+
                 <div class="img-container">
-                    <img tabindex="0" width="1920" height="1080" draggable="false" src="../assets/gallery/img_7.webp" alt="kermit watering flowers">
+                    <img loading="lazy" tabindex="0" width="1920" height="1080" draggable="false" 
+                    src="../assets/gallery/img_7_extra_large.webp"
+                    srcset="../assets/gallery/img_7_small.webp 480w,
+                            ../assets/gallery/img_7_medium.webp 800w,
+                            ../assets/gallery/img_7_large.webp 1200w,
+                            ../assets/gallery/img_7_extra_large.webp 1920w"
+                    sizes="(max-width: 550px) 100vw, 
+                           50vw"
+                    alt="kermit watering flowers">
                     <div class="img-overlay">
-                        <p>It's not easy being green</p>
+                        <div class="icon icon-container">
+                            <img class="muppets_icon" width="450" height="400" 
+                            src="../assets/icons/muppets_silhouette.webp" 
+                            alt="">
+                        </div>
+                        <p>Stay connected to your friends and most of all stay connected to your dreams</p>
                     </div>
                 </div>
+
                 <div class="img-container">
-                    <img tabindex="0" width="1920" height="1080" draggable="false" src="../assets/gallery/img_8.webp" alt="mickey pumpkin carving">
+                    <img loading="lazy" tabindex="0" width="1920" height="1080" draggable="false" 
+                    src="../assets/gallery/img_8_extra_large.webp"
+                    srcset="../assets/gallery/img_8_small.webp 480w,
+                            ../assets/gallery/img_8_medium.webp 800w,
+                            ../assets/gallery/img_8_large.webp 1200w,
+                            ../assets/gallery/img_8_extra_large.webp 1920w"
+                    sizes="(max-width: 550px) 100vw, 
+                           50vw"
+                    alt="elsa shrubbery">
                     <div class="img-overlay">
-                        <p>Mickey's not so scary, halloween party</p>
+                        <div class="icon icon-container">
+                            <img class="frozen_icon" width="450" height="400" 
+                            src="../assets/icons/frozen_silhouette.webp" 
+                            alt="">
+                        </div>
+                        <p>You said you believed in me, and this is what I was born to do</p>
                     </div>
                 </div>
+
                 <div class="img-container">
-                    <img tabindex="0" width="1920" height="1080" draggable="false" src="../assets/gallery/img_9.webp" alt="storm trooper lego figure">
+                    <img loading="lazy" tabindex="0" draggable="false" 
+                    src="../assets/gallery/img_9_extra_large.webp"
+                    srcset="../assets/gallery/img_9_small.webp 480w,
+                            ../assets/gallery/img_9_medium.webp 800w,
+                            ../assets/gallery/img_9_large.webp 1200w,
+                            ../assets/gallery/img_9_extra_large.webp 1920w"
+                    sizes="(max-width: 550px) 100vw, 
+                           50vw"
+                    alt="storm trooper lego figure">
                     <div class="img-overlay">
-                        <p>I'm sure glad i wasn't stationed here</p>
+                        <div class="icon icon-container">
+                            <img class="star_wars_icon" width="450" height="400" 
+                            src="../assets/icons/star_wars_silhouette.webp" 
+                            alt="">
+                        </div>
+                        <p>The belonging you seek is not behind you… it is ahead</p>
                     </div>
                 </div>
+
                 <div class="img-container">
-                    <img tabindex="0" width="1920" height="1080" draggable="false" src="../assets/gallery/img_10.webp" alt="disney castle">
+                    <img loading="lazy" tabindex="0" width="1920" height="1080" draggable="false" 
+                    src="../assets/gallery/img_10_extra_large.webp" 
+                    srcset="../assets/gallery/img_10_small.webp 480w,
+                            ../assets/gallery/img_10_medium.webp 800w,
+                            ../assets/gallery/img_10_large.webp 1200w,
+                            ../assets/gallery/img_10_extra_large.webp 1920w"
+                    sizes="(max-width: 550px) 100vw, 
+                           50vw"
+                    alt="statue of a film maker">
                     <div class="img-overlay">
-                        <p>If you can dream it, you can do it</p>
+                        <div class="icon icon-container">
+                            <img class="mickey_icon" width="450" height="400" 
+                            src="../assets/icons/mickey_silhouette.webp" 
+                            alt="">
+                        </div>
+                        <p>Laughter is timeless, imagination has no age and dreams are forever</p>
+                    </div>
+                </div>
+
+                <div class="img-container">
+                    <img loading="lazy" tabindex="0" width="1920" height="1080" draggable="false" 
+                    src="../assets/gallery/img_11_extra_large.webp"
+                    srcset="../assets/gallery/img_11_small.webp 480w,
+                            ../assets/gallery/img_11_medium.webp 800w,
+                            ../assets/gallery/img_11_large.webp 1200w,
+                            ../assets/gallery/img_11_extra_large.webp 1920w"
+                    sizes="(max-width: 550px) 100vw, 
+                           50vw"
+                    alt="disney castle">
+                    <div class="img-overlay">
+                        <div class="icon icon-container">
+                            <img class="mickey_icon" width="450" height="400" 
+                            src="../assets/icons/mickey_silhouette.webp" 
+                            alt="">
+                        </div>
+                        <p>The only way to achieve the impossible is to believe it is possible</p>
+                    </div>
+                </div>
+
+                <div class="img-container">
+                    <img loading="lazy" tabindex="0" width="1920" height="1080" draggable="false" 
+                    src="../assets/gallery/img_12_extra_large.webp"
+                    srcset="../assets/gallery/img_12_small.webp 480w,
+                            ../assets/gallery/img_12_medium.webp 800w,
+                            ../assets/gallery/img_12_large.webp 1200w,
+                            ../assets/gallery/img_12_extra_large.webp 1920w"
+                    sizes="(max-width: 550px) 100vw, 
+                           50vw"
+                    alt="disney rollercoaster">
+                    <div class="img-overlay">
+                        <div class="icon icon-container">
+                            <img class="mickey_icon" width="450" height="400" 
+                            src="../assets/icons/mickey_silhouette.webp" 
+                            alt="">
+                        </div>
+                        <p>All our dreams can come true, if we have the courage to persue them</p>
                     </div>
                 </div>
             </div>
+
             <div class="lightbox">
                 <img draggable="false" src="" alt="">
-    
+
                 <div role="button" aria-label="previous image" class="previous btn">
                     <i class="fa-solid fa-chevron-left"></i>
                 </div>
@@ -145,10 +332,13 @@
             <div class="gallery-overlay"></div>
         </div>
     </main>
-    <!--FOOTER-->
+
     <footer>
         <h2>copyright</h2>
-        <p><i class="fa-regular fa-copyright"></i> All copyright material is the property of Disney, Marvel, Pixar and their respective owners</p>
+        <p>
+            <i class="fa-regular fa-copyright"></i> 
+            All copyright material is the property of Disney, Pixar, Marvel and their respective owners
+        </p>
     </footer>
 </body>
 </html>
