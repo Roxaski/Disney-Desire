@@ -145,6 +145,7 @@ article span a {
     font-weight: 500;
 }
 article img {
+    display: block;
     width: 100%;
     height: auto;
     max-height: 535px;
