@@ -1,24 +1,19 @@
-const imgSlides = document.querySelectorAll('.slides');
-const numOfSlides = imgSlides.length;
-let imgSlideNumber = 0;
+const slides = document.querySelectorAll('.slides');
+let slideNumber = 0;
 
-//IMAGE SLIDER AUTOPLAY
-let autoPlayImgSlider;
+// this cycles through all the slides every five seconds
+const autoplay = setInterval(() => {
+    slides[slideNumber].classList.remove('active');
 
-let repeatAutoPlayImgs = () => {
-    autoPlayImgSlider = setInterval(function() {
-        imgSlides.forEach((slides) => {
-            slides.classList.remove('active');
-        });
-    
-        imgSlideNumber++;
-    
-        if(imgSlideNumber > (numOfSlides - 1)) {
-            imgSlideNumber = 0;
-        }
-    
-        imgSlides[imgSlideNumber].classList.add('active');
-    }, 5000);
-};
+    slideNumber++;
 
-repeatAutoPlayImgs();
+    /*
+        if the slide number is equal to or greater than the number of slides, 
+        then it resets back to the first slide
+    */ 
+    if (slideNumber >= slides.length) {
+        slideNumber = 0;
+    };
+    
+    slides[slideNumber].classList.add('active');
+}, 5000);
