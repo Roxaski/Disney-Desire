@@ -960,6 +960,27 @@ footer p {
         position: relative;
         top: 10rem;
     }
+    .history-wrapper img {
+        display: none;
+        float: none;
+    }
+    .history .content h2 {
+        margin: 10px 0 0 0;
+    }
+    .history .mobile-only {
+        display: block;
+        width: 100%;
+        height: auto;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+    }
+    .parks .content .img-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .parks .mobile-only {
+        display: none;
+    }
 }
 @media screen and (prefers-color-scheme: dark) and (max-width: 1135px) {
     .links {
