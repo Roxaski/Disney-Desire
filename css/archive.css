@@ -426,25 +426,21 @@ footer p {
 }
 @media screen and (max-width: 810px) {
     .archive::after {
-        left: 35px;
+        left: 31px;
     }
     .archive .container {
-        width: 88%;
-        padding: 0;
-        margin: 15px auto;
-        margin-left: 4rem;
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 1rem;
+        margin: 15px 0;
     }
+    .archive .container.left,
     .archive .container.right {
         left: 0;
     }
     .archive .container.left::after,
     .archive .container.right::after {
-        left: -45px;
-    }
-}
-@media screen and (max-width: 625px) {
-    .archive .container {
-        width: 85%;
+        left: 19px;
     }
 }
 @media screen and (max-width: 550px) {
@@ -479,12 +475,14 @@ footer p {
     .archive::after {
         left: 15px;
     }
+    
     .archive .container {
-        margin-left: 3.25rem;
+        padding-left: 50px;
     }
+    
     .archive .container.left::after,
     .archive .container.right::after {
-        left: -53px;
+        left: 3px;
     }
 }
 @media screen and (max-width: 385px) {
@@ -498,11 +496,8 @@ footer p {
     .mobile_logo img {
         width: 200px;
     }
-    .archive .container {
-        width: 80%;
-    }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 405px) {
     .archive .container .content h2,
     .archive .container .content h3 {
         text-align: center;
