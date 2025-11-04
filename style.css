@@ -888,7 +888,7 @@ footer p {
         display: flex;
     }
     .parks .content .img-container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
     .parks .mobile-only {
         display: none;
@@ -939,7 +939,7 @@ footer p {
 }
 @media screen and (max-width: 350px) {
     .poster-wrapper {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 @media screen and (orientation: landscape) and (max-width: 934px) {

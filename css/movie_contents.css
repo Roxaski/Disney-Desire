@@ -278,7 +278,7 @@ footer p {
 }
 @media screen and (max-width: 425px) {
     .movie-information .content .info .reviews-container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
     .movie-information .content .info .reviews-container .reviews {
         margin: 15px 0;
