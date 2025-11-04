@@ -2,6 +2,13 @@
   font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/poppins-v24-latin-300.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
   font-weight: 400;
   src: url('../assets/fonts/poppins-v23-latin-regular.woff2') format('woff2');
 }
@@ -11,13 +18,6 @@
   font-style: normal;
   font-weight: 500;
   src: url('../assets/fonts/poppins-v23-latin-500.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../assets/fonts/poppins-v23-latin-600.woff2') format('woff2');
 }
 
 * {
@@ -166,6 +166,7 @@ body {
 }
 .movie-information .content .info .reviews-container .reviews:nth-child(3) i {
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 .movie-information .content .info .reviews-container .reviews span {
     color: var(--clr-white);
@@ -231,6 +232,12 @@ footer p {
     body {
         overflow: auto;
     }
+    .movie-information {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'poster'
+        'content'
+    }
     .movie-information .poster {
         position: relative;
         padding: 2rem 0;
@@ -255,11 +262,6 @@ footer p {
         filter: blur(20px);
         transform: scale(1.1);
         z-index: 0;
-    }
-    .movie-information {
-        grid-template-areas: 
-        'poster poster'
-        'content content'
     }
     .movie-information .content {
         height: auto;
