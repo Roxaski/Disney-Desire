@@ -1,5 +1,3 @@
-# Disney-Desire
-
 <img width="1920" height="1080" alt="github_read me" src="https://github.com/user-attachments/assets/56da9a27-2330-4fbb-9187-e310c43a9dc1" />
 
 ## Welcome to Disney Desire
