@@ -6,11 +6,7 @@
 
 Welcome! I created this website as a passion a passion project for my love of all things Disney. You can find a big variety of things here, from a whole bunch of news to the story of Walter Disney and so much more in between. We have a whole page dedicated to Disney Parks and Resorts along with upcoming Disney movies, an archive of Disney's most popular movies and a small gallery with a whole bunch of Disney related images for you to check out.
 
-## Feedback
-
-If anyone has any feedback i would greatly appreciate it, as i'm currently learning web development and if anybody has any constructive notes for me to improve upon, that would be great! For anyone that checks it out i hope you enjoyed browsing it as much as i enjoyed building it.
-
-## Image Credits
+## Credits
 
 A massive thankyou to all the Deviant Art designers who were kind enough to let me use their artwork. All of their Deviant Art profiles will be listed below.
 
@@ -62,6 +58,11 @@ A massive thankyou to all the Deviant Art designers who were kind enough to let 
 | Wish | [Britishchick09](https://www.deviantart.com/britishchick09) |
 | Winnie the Pooh | [Grayson256](https://www.deviantart.com/grayson256) |
 | Zootopia | [Spainfischer](https://www.deviantart.com/spainfischer) |
+
+
+## Feedback
+
+If anyone has any feedback i would greatly appreciate it, as i'm currently learning web development and if anybody has any constructive notes for me to improve upon, that would be great! For anyone that checks it out i hope you enjoyed browsing it as much as i enjoyed building it.
 
 ## Copyright
 
