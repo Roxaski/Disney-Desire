@@ -466,6 +466,9 @@ footer p {
     .links ul {
         background: var(--clr-grey);
     }
+    .grid-container aside h2 {
+        text-decoration-color: var(--clr-white);
+    }
 }
 @media screen and (prefers-color-scheme: dark) {
     ::-webkit-scrollbar-track {
