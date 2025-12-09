@@ -392,6 +392,10 @@ footer p {
     .grid-container aside {
         grid-column: span 3;
     }
+    .grid-container aside h2 {
+        text-decoration: underline;
+        text-decoration-thickness: 1.5px;
+    }
 }
 @media screen and (max-width: 550px) {
     .hamburger_menu {
