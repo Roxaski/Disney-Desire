@@ -394,7 +394,8 @@ footer p {
     }
     .grid-container aside h2 {
         text-decoration: underline;
-        text-decoration-thickness: 1.5px;
+        text-decoration-thickness: 1px;
+        text-decoration-color: var(--clr-blk);
     }
 }
 @media screen and (max-width: 550px) {
