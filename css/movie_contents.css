@@ -154,37 +154,38 @@ body {
 .movie-information .content .info .reviews-container .reviews h3 {
     display: inline-block;
     position: relative;
-    bottom: .2rem;
+    bottom: .5rem;
     text-transform: capitalize;
     font-weight: 300;
 }
-.movie-information .content .info .reviews-container .reviews i {
+.movie-information .content .info .reviews-container .reviews .star {
     position: relative;
-    font-size: 2.25rem;
     margin-left: .5rem;
+    width: 2.3rem;
+    height: auto;
     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
 }
-.movie-information .content .info .reviews-container .reviews:nth-child(3) i {
+.movie-information .content .info .reviews-container .reviews:nth-child(3) .star {
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
 }
 .movie-information .content .info .reviews-container .reviews span {
     color: var(--clr-white);
     position: absolute;
-    top: 50%;
-    left: 82%;
+    top: 43%;
+    left: 83%;
     transform: translate(-50%, -50%);
 }
 .movie-information .content .info .reviews-container .reviews .score-4 {
     position: absolute;
-    top: 50%;
-    left: 81%;
+    top: 41%;
+    left: 82.5%;
     transform: translate(-50%, -50%);
 }
 .movie-information .content .info .reviews-container .reviews #user-score {
     position: absolute;
-    top: 51%;
-    left: 82.5%;
+    top: 43%;
+    left: 83.25%;
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
@@ -208,8 +209,12 @@ footer h2 {
     letter-spacing: .25px;
     text-transform: uppercase;
 }
-footer i {
-    font-size: .9rem;
+footer .copyright {
+    display: inline-block;
+    position: relative;
+    top: .115rem;
+    width: 16px;
+    height: auto;
 }
 footer p {
     margin-top: .25rem;
@@ -270,6 +275,18 @@ footer p {
     .movie-information .content .cast {
         grid-template-columns: repeat(3, 1fr);
     }
+    .movie-information .content .info .reviews-container .reviews span {
+        top: 44%;
+        left: 83%;
+    }
+    .movie-information .content .info .reviews-container .reviews .score-4 {
+        top: 44%;
+        left: 82.5%;
+    }
+    .movie-information .content .info .reviews-container .reviews #user-score {
+        top: 44%;
+        left: 83%;
+    }
 }
 @media screen and (max-width: 625px) {
     .movie-information .content .cast {
@@ -293,14 +310,15 @@ footer p {
         margin-right: .9rem;
     }
     .movie-information .content .info .reviews-container .reviews span {
-        left: 84%;
+        left: 85%;
     }
     .movie-information .content .info .reviews-container .reviews .score-4 {
-        left: 83.5%;
+        top: 42%;
+        left: 84.5%;
     }
     .movie-information .content .info .reviews-container .reviews #user-score {
-        top: 51%;
-        left: 83.5%;
+        top: 42%;
+        left: 85%;
     }
 }
 @media screen and (max-width: 335px) {
@@ -317,9 +335,19 @@ footer p {
     }
     ::-webkit-scrollbar-thumb {
         background-color: var(--clr-offWhite);
+        border: 2px solid var(--clr-offWhite);
     }
     body {
         color: var(--clr-offWhite);
         background-color: var(--clr-blk); 
+    }
+    footer {
+        color: var(--clr-white);
+    }
+    footer .copyright path {
+        stroke: #f0f0f0;
+    }
+    footer .copyright circle {
+        stroke: #f0f0f0;
     }
 }
