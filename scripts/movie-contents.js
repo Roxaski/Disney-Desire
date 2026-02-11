@@ -1,7 +1,7 @@
 // pageTitle is used for matching the movie page to their respective theme and user scores
 const pageTitle = document.title;
 
-// color schemes for the different movie pages
+// color scheme for the different movie pages
 const colorScheme = {
     'black' : '#212121',
     'blue' : '#2056a8',
@@ -20,7 +20,7 @@ const colorScheme = {
     'red' : '#970c0d',
 };
 
-// array containing the movie page titles
+// arrays containing the movie page titles
 const blueTheme = [
     'Ant-Man and the Wasp: Quantumania',
     'Lightyear',
@@ -79,70 +79,74 @@ function themeColor() {
     const keywords = [
         { 
             name: 'blue', 
-            keyword: blueTheme 
+            keyword: blueTheme,
         },
         {
             name: 'brown',
-            keyword: brownTheme
+            keyword: brownTheme,
         },
         {
             name: 'cool-red',
-            keyword: coolRedTheme
+            keyword: coolRedTheme,
         },
         {
             name: 'crimson', 
-            keyword: crimsonTheme
+            keyword: crimsonTheme,
         },
         {
             name: 'dark-blue',
-            keyword: darkBlueTheme
+            keyword: darkBlueTheme,
         },
         {   name: 'gold', 
-            keyword: goldTheme 
+            keyword: goldTheme,
         },
         {
             name: 'grey', 
-            keyword: greyTheme 
+            keyword: greyTheme,
         },
         {
             name: 'magenta',
-            keyword: magentaTheme
+            keyword: magentaTheme,
         },
         {
             name: 'mauve', 
-            keyword: mauveTheme
+            keyword: mauveTheme,
         },
         {
             name: 'navyBlue',
-            keyword: navyBlueTheme
+            keyword: navyBlueTheme,
         },
         { 
             name: 'orange', 
-            keyword: orangeTheme 
+            keyword: orangeTheme, 
         },
         {
             name: 'pink',
-            keyword: pinkTheme
+            keyword: pinkTheme,
         },
         {
             name: 'purple',
-            keyword: purpleTheme
+            keyword: purpleTheme,
         },
         { 
             name: 'red', 
-            keyword: redTheme 
+            keyword: redTheme, 
         },
     ];
 
-    // loops through all themes to find a matching keyword
+    // loops through each theme
     for (const theme of keywords) {
-        // checks if any of the keywords in the theme match the page title
-        if (theme.keyword.some(movieTitle => pageTitle.includes(movieTitle))) {
-            
+        /*
+            checks if any of the movie in the theme list matches the page title,
+            if it does then some() will return true
+        */
+        if (theme.keyword.some(function(movieTitle) {
+            return pageTitle.includes(movieTitle);
+        })) {
+            // if it returns true then it will return the name of the theme like blue red etc
             return theme.name;
         };
     };
-
 };
 
 function setThemeColor() {
@@ -156,8 +160,10 @@ function setThemeColor() {
         theme = 'black';
     };
 
+    // loops through each star and changes the fill and stroke color of the svg's
     document.querySelectorAll('.star').forEach(star => {
-        star.style.color = colorScheme[theme];
+        star.style.fill = colorScheme[theme];
+        star.style.stroke = colorScheme[theme];
     });
 
     document.querySelectorAll('.subheader').forEach(subheader => {
