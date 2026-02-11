@@ -5,6 +5,7 @@ const lightboxSizes = '(max-width: 550px) 90vw, 600px';
 const previousBtn = document.querySelector('.previous');
 const nextBtn = document.querySelector('.next');
 const overlay = document.querySelector('.gallery-overlay');
+const navElements = document.querySelectorAll('nav a, nav button');
 
 // returns the value as false if the image contains 'icon' in its class name
 function filterImages(img) {
@@ -51,8 +52,18 @@ function preload(imageIndex) {
 
 // displays an overlay
 function displayOverlay() {
-    document.body.style.overflow = 'hidden';
     overlay.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+
+    // prevents the nav from being focused while the lightbox is open
+    navElements.forEach(element => {
+        element.setAttribute('tabindex', '-1');
+    });
+
+    // prevents the gallery images from being focused while the lightbox is open
+    galleryImg.forEach(img => {
+        img.setAttribute('tabindex', '-1');
+    });
 };
 
 // displays image & buttons
@@ -68,15 +79,15 @@ function imagePreview() {
 // removes the buttons from the first and last gallery img
 function displayGalleryBtns() {
     if(currentImage == 0) {
-        previousBtn.style.display = 'none';
+        previousBtn.classList.remove('visible');
     } else {
-        previousBtn.style.display = 'block';
+        previousBtn.classList.add('visible');
     };
 
     if(currentImage == filteredGallery.length - 1) {
-        nextBtn.style.display = 'none';
+        nextBtn.classList.remove('visible');
     } else {
-        nextBtn.style.display = 'block';
+        nextBtn.classList.add('visible');
     };
 };
 
@@ -99,8 +110,18 @@ function closeOverlay() {
     document.body.style.overflow = 'auto';
     lightbox.classList.remove('active');
     overlay.style.display = 'none';
-    nextBtn.style.display = 'none';
-    previousBtn.style.display = 'none';
+    nextBtn.classList.remove('visible');
+    previousBtn.classList.remove('visible');
+
+    // allows the nav to be focused
+    navElements.forEach(element => {
+        element.removeAttribute('tabindex');
+    });
+
+    // allows the gallery images to be focused
+    galleryImg.forEach(img => {
+        img.setAttribute('tabindex', '0');
+    });
 };
 
 overlay.addEventListener('click', () => {
