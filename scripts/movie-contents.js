@@ -152,7 +152,7 @@ function themeColor() {
 function setThemeColor() {
     /*
         the theme variable holds the color from the above function,
-        which then loops through both stars and subheaders and sets the colors accordingly
+        which then loops through both stars and subheader's and sets the colors accordingly
     */
     let theme =  themeColor();
 
