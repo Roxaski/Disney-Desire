@@ -181,6 +181,8 @@ function userInput() {
     const storageKey = `userReviewScore_${pageTitle}`;
 
     let currentScore = 0;
+
+    star.setAttribute('tabindex', '1');
     
     // fetches the user score from local storage for the specific movie page
     let savedScore = localStorage.getItem(storageKey);
@@ -191,24 +193,24 @@ function userInput() {
         span.textContent = currentScore;
     };
 
-    /*
-        listens out for a click on the last star element,
-        which then displays the numerical value whenever the star is clicked,
-        and it then stores the value in local storage
-    */
-    star.addEventListener('click', () => {
+    function incrementScore() {
         // Increment the score first, then display and save
         currentScore++;
 
         // if the score goes above 10 it will reset back to 1
-        if (currentScore > 10) {
-            currentScore = 1;
-        };
+        if (currentScore > 10) currentScore = 1;
 
         span.textContent = currentScore;
+
         // restores the user score from local storage for the specific movie page
         localStorage.setItem(storageKey, currentScore);
+    };
+
+    star.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') incrementScore();
     });
+
+    star.addEventListener('click', incrementScore);
 };
 
 // creates an embedded youtube video for the specific movie page
