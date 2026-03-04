@@ -60,15 +60,6 @@ body {
     line-height: 1.5;
     cursor: default;
 }
-body {
-    width: 100%;
-    height: 100vh;
-    color: var(--clr-blk);
-    background-color: var(--clr-white);
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.5;
-    cursor: default;
-}
 .hamburger_menu,
 .hamburger_background img,
 .mobile_logo {
