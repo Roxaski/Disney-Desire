@@ -28,31 +28,19 @@
     <script defer src="../script.js"></script>
 </head>
 <body>
-    <nav>
-        <header>
-            <div class="links">
-                <ul>
-                    <li><a href="../pages/news.html">news</a></li>
-                    <li><a href="../pages/movies.html">movies</a></li>
-                    <li><a href="../pages/archive.html">archive</a></li>
-
-                    <div class="logo">
-                        <a href="../index.html">
-                            <img class="logo" width="350" height="100" draggable="false"
-                            src="../assets/logo/logo.webp" 
-                            alt="logo">
-                        </a>
-                    </div>
-
-                    <li><a href="../pages/history.html">history</a></li>
-                    <li><a href="../pages/gallery.html">gallery</a></li>
-                    <li><a href="../pages/parks.html">parks</a></li>
-                </ul>
+    <header>
+        <nav>
+            <div class="mobile_logo">
+                <a aria-label="returns to homepage" href="../index.html">
+                    <img class="logo" width="280" height="130" draggable="false" 
+                    src="../assets/logo/logo.webp" 
+                    alt="logo">
+                </a>
             </div>
 
-            <div aria-label="opens navigation menu" role="button" class="hamburger_menu">
+            <button class="hamburger_menu" aria-label="opens navigation menu">
                 <div class="bars"></div>
-            </div>
+            </button>
 
             <div class="hamburger_background">
                 <img fetchpriority="high" width="250" height="250" draggable="false" 
@@ -62,15 +50,27 @@
 
             <div class="overlay"></div>
 
-            <div class="mobile_logo">
-                <a aria-label="returns to homepage" href="../index.html">
-                    <img class="logo" width="600" height="300" draggable="false" 
-                    src="../assets/logo/logo.webp" 
-                    alt="logo">
-                </a>
+            <div class="links">
+                <ul>
+                    <li><a href="../pages/news.html">news</a></li>
+                    <li><a href="../pages/movies.html">movies</a></li>
+                    <li><a href="../pages/archive.html">archive</a></li>
+
+                    <div class="logo">
+                        <a width="350" height="100" href="../index.html">
+                            <img class="logo" width="215" height="100" draggable="false"
+                            src="../assets/logo/logo.webp" 
+                            alt="logo">
+                        </a>
+                    </div>
+                    
+                    <li><a href="../pages/history.html">history</a></li>
+                    <li><a href="../pages/gallery.html">gallery</a></li>
+                    <li><a href="../pages/parks.html">parks</a></li>
+                </ul>
             </div>
-        </header>
-    </nav>
+        </nav>
+    </header>
 
     <main>
         <div class="wrapper">
@@ -97,7 +97,7 @@
 
                     <p>Frozen, one of Disney most prolific movies to have released in the past decade. This movies was in my personal opinion to be one of Disney's best works ever.</p>
 
-                    <p>The first frozen movie is arguably one of Disney's most profitable releases amassing a staggering $1.2 billion dollars at the box office way back in 2013, it was a culteral phenomenon. Everyone and their grandma was enthralled with this film, the songs and everything that went along with it.</p>
+                    <p>The first frozen movie is arguably one of Disney's most profitable releases amassing a staggering $1.2 billion dollars at the box office way back in 2013, it was a cultural phenomenon. Everyone and their grandma was enthralled with this film, the songs and everything that went along with it.</p>
 
                     <p>So it was likely no surprise that Disney's Animation Studios would be working on a sequel to the first film, which captured the hearts of many all around the world, but question is could they really do it again? Would they be able to once again capture the proverbial lightning in a bottle twice. Well the answer is ... YES!</p>
 
@@ -174,7 +174,11 @@
     <footer>
         <h2>copyright</h2>
         <p>
-            <i class="fa-regular fa-copyright"></i> 
+            <svg class="copyright" draggable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M14.83 14.83a4 4 0 1 1 0-5.66"/>
+            </svg>
+
             All copyright material is the property of Disney and their respective owners
         </p>
     </footer>

@@ -28,31 +28,19 @@
     <script defer src="../script.js"></script>
 </head>
 <body>
-    <nav>
-        <header>
-            <div class="links">
-                <ul>
-                    <li><a href="../pages/news.html">news</a></li>
-                    <li><a href="../pages/movies.html">movies</a></li>
-                    <li><a href="../pages/archive.html">archive</a></li>
-
-                    <div class="logo">
-                        <a href="../index.html">
-                            <img class="logo" width="350" height="100" draggable="false"
-                            src="../assets/logo/logo.webp" 
-                            alt="logo">
-                        </a>
-                    </div>
-
-                    <li><a href="../pages/history.html">history</a></li>
-                    <li><a href="../pages/gallery.html">gallery</a></li>
-                    <li><a href="../pages/parks.html">parks</a></li>
-                </ul>
+    <header>
+        <nav>
+            <div class="mobile_logo">
+                <a aria-label="returns to homepage" href="../index.html">
+                    <img class="logo" width="280" height="130" draggable="false" 
+                    src="../assets/logo/logo.webp" 
+                    alt="logo">
+                </a>
             </div>
 
-            <div aria-label="opens navigation menu" role="button" class="hamburger_menu">
+            <button class="hamburger_menu" aria-label="opens navigation menu">
                 <div class="bars"></div>
-            </div>
+            </button>
 
             <div class="hamburger_background">
                 <img fetchpriority="high" width="250" height="250" draggable="false" 
@@ -62,15 +50,27 @@
 
             <div class="overlay"></div>
 
-            <div class="mobile_logo">
-                <a aria-label="returns to homepage" href="../index.html">
-                    <img class="logo" width="600" height="300" draggable="false" 
-                    src="../assets/logo/logo.webp" 
-                    alt="logo">
-                </a>
+            <div class="links">
+                <ul>
+                    <li><a href="../pages/news.html">news</a></li>
+                    <li><a href="../pages/movies.html">movies</a></li>
+                    <li><a href="../pages/archive.html">archive</a></li>
+
+                    <div class="logo">
+                        <a width="350" height="100" href="../index.html">
+                            <img class="logo" width="215" height="100" draggable="false"
+                            src="../assets/logo/logo.webp" 
+                            alt="logo">
+                        </a>
+                    </div>
+                    
+                    <li><a href="../pages/history.html">history</a></li>
+                    <li><a href="../pages/gallery.html">gallery</a></li>
+                    <li><a href="../pages/parks.html">parks</a></li>
+                </ul>
             </div>
-        </header>
-    </nav>
+        </nav>
+    </header>
 
     <main>
         <div class="wrapper">
@@ -97,7 +97,7 @@
 
                     <p>Toy Story fans everywhere, rejoice!</p> Disney's CEO has announced that we're getting another film in the long running Toy Story franchise.
 
-                    <p>These films have some of the most loveable characters from any Disney animated film, from the brave little cowboy Woody, to the interplanetary space cadet Buzz Lightyear and who can forget the cutest couple of Mr and Mrs Puppet Potatoe Head, and so many more like slinky and Rex, and if that wasn't enough we met even more cool and colorful characters as the films went, like the two you can see in the image below.</p>
+                    <p>These films have some of the most loveable characters from any Disney animated film, from the brave little cowboy Woody, to the interplanetary space cadet Buzz Lightyear and who can forget the cutest couple of Mr and Mrs Puppet Potato Head, and so many more like slinky and Rex, and if that wasn't enough we met even more cool and colourful characters as the films went, like the two you can see in the image below.</p>
 
                     <p>Toy Story follows the story of a merry little band of toys who belonged to Andy, a young boy who had no idea that his came to life when nobody was around. This was somewhat the premise of the first couple of Toy Story films, where everyone's favourite toys would get into crazy adventures against evil neighbours who would mutilate their toys and go up against the evil Emperor Zurg, as he sights on conquering on the universe.</p>
 
@@ -115,7 +115,7 @@
 
                     <p>The Toy Story films are beloved and so popular that we recently even got to see a spin-off film of everyone's favourite space cadet Buzz <a target="_blank" class="red" href="../movies/lightyear.html">Lightyear</a> and his crew of space cadets, going up against the evil Emperor Zurg once more.</p>
 
-                    <p>The movies were so popular that they made literal billions for Disney, the original toy story being a particular stand having made over $3 billion dollars at the box office, and with each subsequent film having fared quite well but none have manged to surpass the profits of the first film.</p>
+                    <p>The movies were so popular that they made literal billions for Disney, the original toy story being a particular stand having made over $3 billion dollars at the box office, and with each subsequent film having fared quite well but none have managed to surpass the profits of the first film.</p>
 
                     <p>What can we expect from a fifth entry in the franchise? Well, that's anybody's guess. No matter where our Toys go next and where they're adventures will take them, it will be a journey worth experiencing and i for one can't wait.</p>
                 </article>
@@ -176,7 +176,11 @@
     <footer>
         <h2>copyright</h2>
         <p>
-            <i class="fa-regular fa-copyright"></i> 
+            <svg class="copyright" draggable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M14.83 14.83a4 4 0 1 1 0-5.66"/>
+            </svg>
+
             All copyright material is the property of Disney, Pixar and their respective owners
         </p>
     </footer>
