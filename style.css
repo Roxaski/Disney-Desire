@@ -731,8 +731,9 @@ footer p {
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 2.75rem;
-        right: 3.05rem;
+        top: 2.995rem;
+        transform: translateY(-50%);
+        right: 2.995rem;
         width: 1.1rem;
         height: 2rem;
         background-color: transparent;
@@ -750,7 +751,7 @@ footer p {
     .hamburger_background img {
         display: block;
         position: absolute;
-        top: 1.25rem;
+        top: .5rem;
         right: 1em;
         max-width: 65px;
         height: auto;
