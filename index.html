@@ -8,7 +8,7 @@
     <meta property="og:locale" content="en_GB">
     <meta property="og:site_name" content="Disney Desire" />
     <meta property="og:title" content="Disney Desire | Your Ultimate Disney Fan Site">
-    <meta property="og:description" content="Your ultimate Disney fan destination. Providing you with the latest Disney news, park guides history, and so much more. Covering everything Disneye">
+    <meta property="og:description" content="Your ultimate Disney fan destination. Providing you with the latest Disney news, park guides history, and so much more. Covering everything Disney">
     <meta property="og:image" content="https://roxaski.github.io/Disney-Desire/assets/open_graph/og_index.jpg">
     <meta property="og:image:alt" content="Disney Desire | Your Ultimate Disney Fan Site">
     <meta property="og:image:width" content="1200">
@@ -24,7 +24,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <link rel="manifest" href="./site.webmanifest">
-    <script async defer src="https://kit.fontawesome.com/2d21b2aa33.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script defer src="./script.js"></script>
     <script defer src="./scripts/img-slider.js"></script>
@@ -32,6 +31,18 @@
 <body>
     <header>
         <nav>
+            <button class="hamburger_menu" aria-label="opens navigation menu">
+                <div class="bars"></div>
+            </button>
+
+            <div class="hamburger_background">
+                <img fetchpriority="high" width="250" height="250" draggable="false" 
+                src="./assets/icons/mickey_head.webp" 
+                alt="">
+            </div>
+
+            <div class="overlay"></div>
+
             <div class="links">
                 <ul>
                     <li><a href="./pages/news.html">news</a></li>
@@ -40,7 +51,7 @@
 
                     <div class="logo">
                         <a width="350" height="100" href="./index.html">
-                            <img class="logo" width="350" height="100" draggable="false"
+                            <img class="logo" width="215" height="100" draggable="false"
                             src="./assets/logo/logo.webp" 
                             alt="logo">
                         </a>
@@ -51,24 +62,12 @@
                     <li><a href="./pages/parks.html">parks</a></li>
                 </ul>
             </div>
-            
-            <div aria-label="opens navigation menu" role="button" class="hamburger_menu">
-                <div class="bars"></div>
-            </div>
-
-            <div class="hamburger_background">
-                <img fetchpriority="high" width="250" height="250" draggable="false" 
-                src="./assets/icons/mickey_head.webp" 
-                alt="">
-            </div>
-
-            <div class="overlay"></div>
         </nav>
     </header>
 
     <main>
         <div class="wrapper">
-            <section aria-label="highlight of various articles">
+            <section aria-label="highlight of various Disney articles">
                 <div class="hero-grid">
                     <div class="article one">
                         <div class="content">
@@ -280,7 +279,10 @@
                             </div>
 
                             <div class="tags">
-                                <i class="fa-solid fa-tag"></i>
+                                <img class="tag" loading="lazy" width="15" height="15" draggable="false"
+                                src="./assets/icons/tag.svg" 
+                                alt="">
+
                                 <p>square enix</p>
                                 <p>game</p>
                                 <p>coming soon</p>
@@ -316,7 +318,10 @@
                             </div>
 
                             <div class="tags">
-                                <i class="fa-solid fa-tag"></i>
+                                <img class="tag" loading="lazy" width="15" height="15" draggable="false"
+                                src="./assets/icons/tag.svg" 
+                                alt="">
+
                                 <p>pixar</p>
                                 <p>movie</p>
                                 <p>coming soon</p>
@@ -352,7 +357,10 @@
                             </div>
 
                             <div class="tags">
-                                <i class="fa-solid fa-tag"></i>
+                                <img class="tag" loading="lazy" width="15" height="15" draggable="false"
+                                src="./assets/icons/tag.svg" 
+                                alt="">
+
                                 <p>gameloft</p>
                                 <p>game</p>
                                 <p>out now</p>
@@ -362,7 +370,7 @@
                 </div>
             </section>
 
-            <section aria-label="Films that are coming out soon">
+            <section aria-label="films coming out soon">
                 <div class="title">
                     <div class="header movies">
                         <h2>movies</h2>
@@ -451,13 +459,13 @@
                             <a href="./pages/archive.html">
                                 <div class="content">
                                     <img loading="lazy" width="450" height="400"  draggable="false"
-                                    src="./assets/icons/wall-E.webp" 
+                                    src="./assets/archive/wall-E.webp" 
                                     alt="wall-e & eve">
 
                                     <h2>wall-e</h2>
                                     <h3>27th june 2008</h3>
 
-                                    <p>Wall-E is a little cleaner robot, left on earth to clean up the planet but when he meets the robot EVE his curiousity gets the better of him, as he follows her across the universe to untold adventures</p>
+                                    <p>Wall-E is a little cleaner robot, left on earth to clean up the planet but when he meets the robot EVE his curiosity gets the better of him, as he follows her across the universe to untold adventures</p>
                                 </div>
                             </a>
                         </div>
@@ -466,7 +474,7 @@
                             <a href="./pages/archive.html">
                                 <div class="content">
                                     <img loading="lazy" width="450" height="400" draggable="false" 
-                                    src="./assets/icons/monsters_inc.webp" 
+                                    src="./assets/archive/monsters_inc.webp" 
                                     alt="mike & sully">
 
                                     <h2>monsters inc</h2>
@@ -481,7 +489,7 @@
                             <a href="./pages/archive.html">
                                 <div class="content">
                                     <img loading="lazy" width="450" height="400" draggable="false" 
-                                    src="./assets/icons/little_mermaid.webp" 
+                                    src="./assets/archive/little_mermaid.webp" 
                                     alt="ariel">
 
                                     <h2>the little mermaid</h2>
@@ -495,7 +503,7 @@
                 </div>
             </section>
 
-            <section aria-label="article about Walter Disney's incredible legacy">
+            <section aria-label="article about Walter Disney's legacy">
                 <div class="title">
                     <div class="header history">
                         <h2>history</h2>
@@ -517,7 +525,7 @@
                                 ./assets/history/walt_mickeys_medium.webp 800w,
                                 ./assets/history/walt_mickeys_large.webp 1200w"
                         sizes="100vw"
-                        alt="walter disney surrounded by mickey plushies">
+                        alt="walter disney surrounded by mickey plushes">
                         
                         <div class="content">
                             <a href="./pages/history.html">
@@ -530,7 +538,7 @@
 
                             <p>This leads him to join the prestigious Chicago Academy of Fine Arts, where he would attend evening classes learning the art of cartooning.</p>
 
-                            <p>When he turned 16 though he decided that it would be best to drop out of school, and instead he decided that he would like to join the army for which he was prompty rejected due to him being underage.</p>
+                            <p>When he turned 16 though he decided that it would be best to drop out of school, and instead he decided that he would like to join the army for which he was promptly rejected due to him being underage.</p>
 
                             <p>This would not deter him, instead he attempted to join the Red Cross for which he promptly lied about his age so he would not once again be rejected like he did prior, Walt was then able to serve at the tail end of World War One</p>
                         </div>
@@ -538,7 +546,7 @@
                 </div>
             </section>
 
-            <section aria-label="collection of images from Disney's most popular films and characters">
+            <section aria-label="collection of images from popular Disney films and parks">
                 <div class="title">
                     <div class="header gallery">
                         <h2>gallery</h2>
@@ -634,7 +642,11 @@
     <footer>
         <h2>copyright</h2>
         <p>
-            <i class="fa-regular fa-copyright"></i> 
+            <svg class="copyright" draggable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M14.83 14.83a4 4 0 1 1 0-5.66"/>
+            </svg>
+
             All copyright material is the property of Disney, Pixar, Marvel, Nintendo and their respective owners
         </p>
     </footer>
