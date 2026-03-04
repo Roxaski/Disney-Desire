@@ -110,6 +110,7 @@ body {
     width: 100px;
     height: auto;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+    border-radius: 50px;
 }
 .movie-information .content .cast h3 {
     display: flex;
@@ -143,40 +144,43 @@ body {
 .movie-information .content .info.genre ul li {
     margin: .15rem;
 }
-.movie-information .content .info .reviews-container {
+.reviews-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: start;
 }
-.movie-information .content .info .reviews-container .reviews {
+.reviews-container .reviews {
     position: relative;
 }
-.movie-information .content .info .reviews-container .reviews h3 {
+.reviews-container .reviews h3 {
     display: inline-block;
     position: relative;
-    bottom: .5rem;
+    bottom: .7rem;
     text-transform: capitalize;
     font-weight: 300;
 }
-.movie-information .content .info .reviews-container .reviews .star {
+.reviews-container .reviews .star {
     position: relative;
     margin-left: .5rem;
     width: 2.3rem;
     height: auto;
     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
 }
-.movie-information .content .info .reviews-container .reviews:nth-child(3) .star {
+.reviews-container .reviews:nth-child(3) .star {
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
 }
-.movie-information .content .info .reviews-container .reviews span {
+.reviews-container .reviews:nth-child(3) .star:focus:not(:focus-visible) {
+    outline: none;
+}
+.reviews-container .reviews span {
     color: var(--clr-white);
     position: absolute;
     top: 43%;
     left: 83%;
     transform: translate(-50%, -50%);
 }
-.movie-information .content .info .reviews-container .reviews .score-4 {
+.reviews-container .reviews .score-4 {
     position: absolute;
     top: 41%;
     left: 82.5%;
