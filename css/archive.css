@@ -374,6 +374,7 @@ footer p {
     nav.active .links {
         transform: translateX(40%);
         visibility: visible;
+        transition: transform 250ms ease-in-out, visibility 0s;
     }
     .links {
         display: flex;
@@ -384,7 +385,7 @@ footer p {
         height: 100%;
         background-color: var(--clr-terracotta);
         transform: translateX(100%);
-        transition: transform 250ms ease-in-out;
+        transition: transform 250ms ease-in-out, visibility 0s 250ms;
         visibility: hidden;
         z-index: 4;
     }
