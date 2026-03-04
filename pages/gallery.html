@@ -24,7 +24,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     <link rel="manifest" href="../site.webmanifest">
-    <script async defer src="https://kit.fontawesome.com/2d21b2aa33.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/gallery.css">
     <script defer src="../scripts/gallery.js"></script>
     <script defer src="../script.js"></script>
@@ -32,29 +31,17 @@
 <body>
     <header>
         <nav>
-            <div class="links">
-                <ul>
-                    <li><a href="../pages/news.html">news</a></li>
-                    <li><a href="../pages/movies.html">movies</a></li>
-                    <li><a href="../pages/archive.html">archive</a></li>
-
-                    <div class="logo">
-                        <a href="../index.html">
-                            <img class="logo" width="350" height="100" draggable="false"
-                            src="../assets/logo/logo.webp" 
-                            alt="logo">
-                        </a>
-                    </div>
-
-                    <li><a href="../pages/history.html">history</a></li>
-                    <li><a href="../pages/gallery.html">gallery</a></li>
-                    <li><a href="../pages/parks.html">parks</a></li>
-                </ul>
+            <div class="mobile_logo">
+                <a aria-label="returns to homepage" href="../index.html">
+                    <img class="logo" width="280" height="130" draggable="false"  
+                    src="../assets/logo/logo.webp" 
+                    alt="logo">
+                </a>
             </div>
 
-            <div aria-label="opens navigation menu" role="button" class="hamburger_menu">
+            <button class="hamburger_menu" aria-label="opens navigation menu">
                 <div class="bars"></div>
-            </div>
+            </button>
 
             <div class="hamburger_background">
                 <img fetchpriority="high" width="250" height="250" draggable="false" 
@@ -64,12 +51,24 @@
 
             <div class="overlay"></div>
 
-            <div class="mobile_logo">
-                <a aria-label="returns to homepage" href="../index.html">
-                    <img class="logo" width="600" height="300" draggable="false" 
-                    src="../assets/logo/logo.webp" 
-                    alt="logo">
-                </a>
+            <div class="links">
+                <ul>
+                    <li><a href="../pages/news.html">news</a></li>
+                    <li><a href="../pages/movies.html">movies</a></li>
+                    <li><a href="../pages/archive.html">archive</a></li>
+
+                    <div class="logo">
+                        <a width="350" height="100" href="../index.html">
+                            <img class="logo" width="215" height="100" draggable="false"
+                            src="../assets/logo/logo.webp" 
+                            alt="logo">
+                        </a>
+                    </div>
+                    
+                    <li><a href="../pages/history.html">history</a></li>
+                    <li><a href="../pages/gallery.html">gallery</a></li>
+                    <li><a href="../pages/parks.html">parks</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -106,7 +105,7 @@
                             ../assets/gallery/img_2_extra_large.webp 1920w"
                     sizes="(max-width: 550px) 100vw, 
                            50vw"
-                    alt="wall-e holding a rubix cube">
+                    alt="wall-e holding a rubik cube">
                     <div class="img-overlay">
                         <div class="icon-container">
                             <img class="icon wall-e_icon" width="450" height="400" 
@@ -238,7 +237,7 @@
                 </div>
 
                 <div class="img-container">
-                    <img loading="lazy" tabindex="0" draggable="false" 
+                    <img loading="lazy" tabindex="0" width="1920" height="1080" draggable="false" 
                     src="../assets/gallery/img_9_extra_large.webp"
                     srcset="../assets/gallery/img_9_small.webp 480w,
                             ../assets/gallery/img_9_medium.webp 800w,
@@ -306,29 +305,34 @@
                             ../assets/gallery/img_12_extra_large.webp 1920w"
                     sizes="(max-width: 550px) 100vw, 
                            50vw"
-                    alt="disney rollercoaster">
+                    alt="disney roller-coaster">
                     <div class="img-overlay">
                         <div class="icon icon-container">
-                            <img class="mickey_icon" width="450" height="400" 
+                            <img class="mickey_icon" width="450" height="400" draggable="false"
                             src="../assets/icons/mickey_silhouette.webp" 
                             alt="">
                         </div>
-                        <p>All our dreams can come true, if we have the courage to persue them</p>
+                        <p>All our dreams can come true, if we have the courage to pursue them</p>
                     </div>
                 </div>
             </div>
 
             <div class="lightbox">
                 <img draggable="false" src="" alt="">
+                    <button class="previous btn" aria-label="previous image">
+                        <img class="chevron" width="48" height="48" draggable="false"
+                        src="../assets/icons/chevron-left.svg" 
+                        alt="">
+                    </button>
 
-                <div role="button" aria-label="previous image" class="previous btn">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </div>
-    
-                <div role="button" aria-label="next image" class="next btn">
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <button class="next btn" aria-label="next image">
+                        <img class="chevron" width="48" height="48" draggable="false" 
+                        src="../assets/icons/chevron-right.svg"
+                        alt="">
+                    </button>
                 </div>
             </div>
+
             <div class="gallery-overlay"></div>
         </div>
     </main>
@@ -336,7 +340,11 @@
     <footer>
         <h2>copyright</h2>
         <p>
-            <i class="fa-regular fa-copyright"></i> 
+            <svg class="copyright" draggable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M14.83 14.83a4 4 0 1 1 0-5.66"/>
+            </svg>
+
             All copyright material is the property of Disney, Pixar, Marvel and their respective owners
         </p>
     </footer>

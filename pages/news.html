@@ -24,36 +24,23 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     <link rel="manifest" href="../site.webmanifest">
-    <script async defer src="https://kit.fontawesome.com/2d21b2aa33.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/news.css">
     <script defer src="../script.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <div class="links">
-                <ul>
-                    <li><a href="../pages/news.html">news</a></li>
-                    <li><a href="../pages/movies.html">movies</a></li>
-                    <li><a href="../pages/archive.html">archive</a></li>
-
-                    <div class="logo">
-                        <a href="../index.html">
-                            <img class="logo" width="350" height="100" draggable="false"
-                            src="../assets/logo/logo.webp" 
-                            alt="logo">
-                        </a>
-                    </div>
-
-                    <li><a href="../pages/history.html">history</a></li>
-                    <li><a href="../pages/gallery.html">gallery</a></li>
-                    <li><a href="../pages/parks.html">parks</a></li>
-                </ul>
+            <div class="mobile_logo">
+                <a aria-label="returns to homepage" href="../index.html">
+                    <img class="logo" width="280" height="130" draggable="false" 
+                    src="../assets/logo/logo.webp" 
+                    alt="logo">
+                </a>
             </div>
 
-            <div aria-label="opens navigation menu" role="button" class="hamburger_menu">
+            <button class="hamburger_menu" aria-label="opens navigation menu">
                 <div class="bars"></div>
-            </div>
+            </button>
 
             <div class="hamburger_background">
                 <img fetchpriority="high" width="250" height="250" draggable="false" 
@@ -63,15 +50,28 @@
 
             <div class="overlay"></div>
 
-            <div class="mobile_logo">
-                <a aria-label="returns to homepage" href="../index.html">
-                    <img class="logo" width="600" height="300" draggable="false" 
-                    src="../assets/logo/logo.webp" 
-                    alt="logo">
-                </a>
+            <div class="links">
+                <ul>
+                    <li><a href="../pages/news.html">news</a></li>
+                    <li><a href="../pages/movies.html">movies</a></li>
+                    <li><a href="../pages/archive.html">archive</a></li>
+
+                    <div class="logo">
+                        <a width="350" height="100" href="../index.html">
+                            <img class="logo" width="215" height="100" draggable="false"
+                            src="../assets/logo/logo.webp" 
+                            alt="logo">
+                        </a>
+                    </div>
+                    
+                    <li><a href="../pages/history.html">history</a></li>
+                    <li><a href="../pages/gallery.html">gallery</a></li>
+                    <li><a href="../pages/parks.html">parks</a></li>
+                </ul>
             </div>
         </nav>
     </header>
+    
     <main>
         <div class="wrapper">
             <header>
@@ -106,7 +106,10 @@
                     </div>
 
                     <div class="tags">
-                        <i class="fa-solid fa-tag"></i>
+                        <img class="tag" loading="lazy" width="15" height="15" draggable="false"
+                        src="../assets/icons/tag.svg" 
+                        alt="">
+                        
                         <p>disney</p>
                         <p>movie</p>
                         <p>coming soon</p>
@@ -142,7 +145,10 @@
                     </div>
 
                     <div class="tags">
-                        <i class="fa-solid fa-tag"></i>
+                        <img class="tag" loading="lazy" width="15" height="15" draggable="false"
+                        src="../assets/icons/tag.svg" 
+                        alt="">
+                        
                         <p>mickey</p>
                         <p>documentary</p>
                         <p>out now</p>
@@ -178,7 +184,10 @@
                     </div>
 
                     <div class="tags">
-                        <i class="fa-solid fa-tag"></i>
+                        <img class="tag" loading="lazy" width="15" height="15" draggable="false"
+                        src="../assets/icons/tag.svg" 
+                        alt="">
+
                         <p>disney plus</p>
                         <p>streaming</p>
                         <p>service</p>
@@ -210,11 +219,14 @@
                     </div>
 
                     <div class="article-preview">
-                        <p>The Mandalorian is one of Star Wars most successful recent outings, so it's no surprise that the hit franchise would be getting a feature film outing, but it's not beed without production issues</p>
+                        <p>The Mandalorian is one of Star Wars most successful recent outings, so it's no surprise that the hit franchise would be getting a feature film outing, but it's not been without production issues</p>
                     </div>
 
                     <div class="tags">
-                        <i class="fa-solid fa-tag"></i>
+                        <img class="tag" loading="lazy" width="15" height="15" draggable="false"
+                        src="../assets/icons/tag.svg" 
+                        alt="">
+
                         <p>star wars</p>
                         <p>movie</p>
                         <p>coming soon</p>
@@ -250,7 +262,10 @@
                     </div>
 
                     <div class="tags">
-                        <i class="fa-solid fa-tag"></i>
+                        <img class="tag" loading="lazy" width="15" height="15" draggable="false"
+                        src="../assets/icons/tag.svg" 
+                        alt="">
+
                         <p>disney</p>
                         <p>movie</p>
                         <p>coming soon</p>
@@ -286,7 +301,10 @@
                     </div>
 
                     <div class="tags">
-                        <i class="fa-solid fa-tag"></i>
+                        <img class="tag" loading="lazy" width="15" height="15" draggable="false"
+                        src="../assets/icons/tag.svg" 
+                        alt="">
+
                         <p>square enix</p>
                         <p>game</p>
                         <p>coming soon</p>
@@ -320,7 +338,10 @@
                     </div>
 
                     <div class="tags">
-                        <i class="fa-solid fa-tag"></i>
+                        <img class="tag" loading="lazy" width="15" height="15" draggable="false"
+                        src="../assets/icons/tag.svg" 
+                        alt="">
+
                         <p>pixar</p>
                         <p>movie</p>
                         <p>coming soon</p>
@@ -354,7 +375,10 @@
                     </div>
 
                     <div class="tags">
-                        <i class="fa-solid fa-tag"></i>
+                        <img class="tag" loading="lazy" width="15" height="15" draggable="false"
+                        src="../assets/icons/tag.svg" 
+                        alt="">
+
                         <p>gameloft</p>
                         <p>game</p>
                         <p>out now</p>
@@ -367,8 +391,12 @@
     <footer>
         <h2>copyright</h2>
         <p>
-            <i class="fa-regular fa-copyright"></i> 
-            All copyright material is the property of Disney, Pixar, Marvel, Nintendo and their respective owners
+            <svg class="copyright" draggable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M14.83 14.83a4 4 0 1 1 0-5.66"/>
+            </svg>
+
+            All copyright material is the property of Disney, Pixar and their respective owners
         </p>
     </footer>
 </body>

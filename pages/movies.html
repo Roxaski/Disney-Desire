@@ -24,13 +24,33 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     <link rel="manifest" href="../site.webmanifest">
-    <script async defer src="https://kit.fontawesome.com/2d21b2aa33.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/movies.css">
     <script defer src="../script.js"></script>
+    <script defer src="../scripts/movies.js"></script>
 </head>
 <body>
     <header>
         <nav>
+            <div class="mobile_logo">
+                <a aria-label="returns to homepage" href="../index.html">
+                    <img class="logo" width="280" height="130" draggable="false" 
+                    src="../assets/logo/logo.webp" 
+                    alt="logo">
+                </a>
+            </div>
+
+            <button class="hamburger_menu" aria-label="opens navigation menu">
+                <div class="bars"></div>
+            </button>
+
+            <div class="hamburger_background">
+                <img fetchpriority="high" width="250" height="250" draggable="false" 
+                src="../assets/icons/mickey_head.webp" 
+                alt="">
+            </div>
+
+            <div class="overlay"></div>
+
             <div class="links">
                 <ul>
                     <li><a href="../pages/news.html">news</a></li>
@@ -38,47 +58,34 @@
                     <li><a href="../pages/archive.html">archive</a></li>
 
                     <div class="logo">
-                        <a href="../index.html">
-                            <img class="logo" width="350" height="100" draggable="false"
+                        <a width="215" height="100" href="../index.html">
+                            <img class="logo" width="215" height="100" draggable="false"
                             src="../assets/logo/logo.webp" 
                             alt="logo">
                         </a>
                     </div>
-
+                    
                     <li><a href="../pages/history.html">history</a></li>
                     <li><a href="../pages/gallery.html">gallery</a></li>
                     <li><a href="../pages/parks.html">parks</a></li>
                 </ul>
             </div>
-
-            <div aria-label="opens navigation menu" role="button" class="hamburger_menu">
-                <div class="bars"></div>
-            </div>
-
-            <div class="hamburger_background">
-                <img fetchpriority="high" width="250" height="250" draggable="false"
-                src="../assets/icons/mickey_head.webp" 
-                alt="">
-            </div>
-
-            <div class="overlay"></div>
-
-            <div class="mobile_logo">
-                <a aria-label="returns to homepage" href="../index.html">
-                    <img class="logo" width="600" height="300" draggable="false" 
-                    src="../assets/logo/logo.webp" 
-                    alt="logo">
-                </a>
-            </div>
         </nav>
     </header>
+    
     <main>
         <div class="wrapper">
             <div class="accordion">
                 <ul>
                     <li>
                         <input type="checkbox" name="accordion" id="2022" checked>
-                        <label for="2022">2022<i class="fa-solid fa-chevron-right"></i></label>
+                        <label for="2022">
+                            2022
+                            <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#f0f0f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m9 18 6-6-6-6"/>
+                            </svg>
+                        </label>
+
                         <div class="content">
                             <a target="_blank" href="../movies/doc_strange.html">
                                 <img fetchpriority="high" draggable="false" width="500" height="750" 
@@ -137,7 +144,13 @@
 
                     <li>
                         <input type="checkbox" name="accordion" id="2023" checked>
-                        <label for="2023">2023<i class="fa-solid fa-chevron-right"></i></label>
+                        <label for="2023">
+                            2023
+                            <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#f0f0f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m9 18 6-6-6-6"/>
+                            </svg>
+                        </label>
+
                         <div class="content">
                             <a target="_blank" href="../movies/ant_man.html">
                                 <img loading="lazy" draggable="false" width="500" height="750" 
@@ -178,7 +191,13 @@
 
                     <li>
                         <input type="checkbox" name="accordion" id="2024" checked>
-                        <label for="2024">2024<i class="fa-solid fa-chevron-right"></i></label>
+                        <label for="2024">
+                            2024
+                            <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#f0f0f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m9 18 6-6-6-6"/>
+                            </svg>
+                        </label>
+
                         <div class="content">
                             <a target="_blank" href="../movies/inside_out.html">
                                 <img loading="lazy" draggable="false" width="500" height="750" 
@@ -207,8 +226,12 @@
     <footer>
         <h2>copyright</h2>
         <p>
-            <i class="fa-regular fa-copyright"></i> 
-            All copyright material is the property of Disney, Pixar, Marvel, Nintendo and their respective owners
+            <svg class="copyright" draggable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M14.83 14.83a4 4 0 1 1 0-5.66"/>
+            </svg>
+
+            All copyright material is the property of Disney, Pixar, Marvel and their respective owners
         </p>
     </footer>
 </body>
