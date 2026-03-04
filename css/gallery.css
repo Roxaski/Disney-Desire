@@ -262,6 +262,9 @@ body {
     background: var(--clr-blk);
     z-index: 6;
 }
+.gallery-overlay.active {
+    display: block;
+}
 footer {
     margin: 200px auto 0;
     text-align: center;

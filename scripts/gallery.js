@@ -1,4 +1,4 @@
-const gallery = document.querySelector('.gallery')
+const gallery = document.querySelector('.gallery');
 const galleryImg = document.querySelectorAll('.gallery img');
 const lightbox = document.querySelector('.lightbox img');
 const lightboxSizes = '(max-width: 550px) 90vw, 600px';
@@ -52,7 +52,7 @@ function preload(imageIndex) {
 
 // displays an overlay
 function displayOverlay() {
-    overlay.style.display = 'block';
+    overlay.classList.add('active')
     document.body.style.overflow = 'hidden';
 
     // prevents the nav from being focused while the lightbox is open
@@ -109,7 +109,7 @@ previousBtn.addEventListener('click', () => {
 function closeOverlay() {
     document.body.style.overflow = 'auto';
     lightbox.classList.remove('active');
-    overlay.style.display = 'none';
+    overlay.classList.remove('active');
     nextBtn.classList.remove('visible');
     previousBtn.classList.remove('visible');
 
@@ -157,12 +157,12 @@ lightbox.addEventListener('touchend', (e) => {
 
 // image navigation using the arrows keys
 window.addEventListener('keydown', (e) => {
-    if(overlay.style.display == 'block' && e.key == 'ArrowRight' &&  currentImage < filteredGallery.length - 1) {
+    if(overlay.classList.contains('active') && e.key == 'ArrowRight' &&  currentImage < filteredGallery.length - 1) {
         currentImage ++;
         imagePreview();
         preload(currentImage +1);
 
-    } else if (overlay.style.display == 'block' && e.key == 'ArrowLeft' && currentImage > 0) {
+    } else if (overlay.classList.contains('active') && e.key == 'ArrowLeft' && currentImage > 0) {
         currentImage --;
         imagePreview();
         preload(currentImage -1);
