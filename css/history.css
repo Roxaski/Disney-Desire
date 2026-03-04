@@ -214,7 +214,7 @@ footer p {
         position: relative;
         width: 100%;
         height: 120px;
-        background: var(--clr-blue);
+        background: var(--clr-green);
         margin-bottom: 1.5rem;
         box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
     }
