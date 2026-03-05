@@ -78,7 +78,7 @@ body {
     background-color: var(--clr-blk);
     height: 75px;
 }
-.links ul .logo {
+.links ul li .logo {
     display: block;
     max-width: 215px;
     height: auto;
@@ -86,7 +86,8 @@ body {
     color: var(--clr-white);
     text-align: center;
 }
-.links ul .logo a {
+.links ul li .logo a {
+    padding: 0;
     text-decoration: none;
 }
 .links ul li {
