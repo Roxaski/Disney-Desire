@@ -182,7 +182,7 @@ function userInput() {
 
     let currentScore = 0;
 
-    star.setAttribute('tabindex', '1');
+    star.setAttribute('tabindex', '0');
     
     // fetches the user score from local storage for the specific movie page
     let savedScore = localStorage.getItem(storageKey);
