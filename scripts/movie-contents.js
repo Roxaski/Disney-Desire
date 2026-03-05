@@ -160,14 +160,16 @@ function setThemeColor() {
         theme = 'black';
     };
 
+    const color = colorScheme[theme];
+
     // loops through each star and changes the fill and stroke color of the svg's
     document.querySelectorAll('.star').forEach(star => {
-        star.style.fill = colorScheme[theme];
-        star.style.stroke = colorScheme[theme];
+        star.style.fill = color;
+        star.style.stroke = color;
     });
 
     document.querySelectorAll('.subheader').forEach(subheader => {
-        subheader.style.background = colorScheme[theme];
+        subheader.style.background = color;
     });
 };
 

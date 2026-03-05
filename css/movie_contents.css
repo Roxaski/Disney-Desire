@@ -269,7 +269,6 @@ footer p {
         height: 100%;
         object-fit: cover;
         filter: blur(20px);
-        transform: scale(1.1);
         z-index: 0;
     }
     .movie-information .content {
