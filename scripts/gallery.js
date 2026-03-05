@@ -52,7 +52,7 @@ function preload(imageIndex) {
 
 // displays an overlay
 function displayOverlay() {
-    overlay.classList.add('active')
+    overlay.classList.add('active');
     document.body.style.overflow = 'hidden';
 
     // prevents the nav from being focused while the lightbox is open
