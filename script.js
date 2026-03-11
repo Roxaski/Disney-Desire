@@ -1,15 +1,10 @@
 const mobileNav = document.querySelector('nav');
-const mobileLogo = document.querySelector('.mobile_logo a');
+const logo = document.querySelector('.logo');
 const links = document.querySelector('.links');
 const menu = document.querySelector('.hamburger_menu');
+const main = document.querySelector('main');
 
 menu.addEventListener('click', toggleHamburgerMenu);
-document.addEventListener('keydown', handleEscape);
-
-// adds the focus event listener but only if the mobile logo exists
-if (mobileLogo) {
-    mobileLogo.addEventListener('focusin', removeLogoFocus);
-};
 
 // toggles the hamburger menu, along with disabling scroll when menu is open
 function toggleHamburgerMenu() {
@@ -17,23 +12,25 @@ function toggleHamburgerMenu() {
     document.body.classList.toggle('no-scroll');
 };
 
-// closes the hamburger menu
-function handleEscape(e) {
-    if (e.key !== 'Escape') return;
+// toggles the hamburger menu, along with disabling scroll when menu is open
+function toggleHamburgerMenu() {
+    mobileNav.classList.toggle('active');
+    const active = mobileNav.classList.contains('active');
+    document.body.classList.toggle('no-scroll');
+    main.inert = active;
+    logo.inert = active;
 
-    // hides the overlay
-    if (mobileNav.classList.contains('active')) {
-        mobileNav.classList.remove('active');
-        document.body.classList.remove('no-scroll');
+    // only listens for a key press when the hamburger menu is open
+    if (active) {
+        document.addEventListener('keydown', escapeKeyPress);
+    } else {
+        document.removeEventListener('keydown', escapeKeyPress);
     };
 };
 
-function removeLogoFocus(e) {
-    // checks if the nav contains the active class
-    if (mobileNav.classList.contains('active')) {
-        // removes the focus from the logo
-        e.currentTarget.blur();
-        // makes the hamburger menu be the focus when nav is active
-        menu.focus();
+// closes the hamburger menu with escape key
+function escapeKeyPress(e) {
+    if (e.key === 'Escape') {
+        toggleHamburgerMenu();
     };
 };
