@@ -1,240 +1,99 @@
-// pageTitle is used for matching the movie page to their respective theme and user scores
-const pageTitle = document.title;
-
-// color scheme for the different movie pages
-const colorScheme = {
-    'black' : '#212121',
-    'blue' : '#2056a8',
-    'brown' : '#80604f',
-    'cool-red' : '#a80444',
-    'crimson' : '#801c29',
-    'dark-blue' : '#1a1c5e',
-    'gold' : '#af814f',
-    'grey' : '#3e3b3b',
-    'magenta': '#c05266ff',
-    'mauve' : '#5b63d0ff',
-    'navyBlue' : '#2d3d5a',
-    'orange' : '#af5532',
-    'pink' : '#d45b82ff',
-    'purple': '#57157a',
-    'red' : '#970c0d',
+const themeColors = {
+    black: '#212121',
+    blue: '#2056a8',
+    brown: '#80604f',
+    coolRed: '#a80444',
+    crimson: '#801c29',
+    darkBlue: '#1a1c5e',
+    gold: '#af814f',
+    grey: '#3e3b3b',
+    magenta: '#c05266ff',
+    mauve: '#5b63d0ff',
+    navyBlue: '#2d3d5a',
+    orange: '#af5532',
+    pink: '#d45b82ff',
+    purple: '#57157a',
+    red: '#970c0d'
 };
 
-// arrays containing the movie page titles
-const blueTheme = [
-    'Ant-Man and the Wasp: Quantumania',
-    'Lightyear',
-    'The Little Mermaid',
-];
-const brownTheme = [
-    'Pinocchio',
-];
-const coolRedTheme = [
-    'Thor: Love and Thunder',
-]
-const crimsonTheme = [
-    'Disenchanted',
-];
-const darkBlueTheme = [
-    'Haunted Mansion',
-];
-const goldTheme = [
-    'Mufasa: The Lion King',
-];
-const greyTheme = [
-    'Black Panther: Wakanda Forever',
-];
-const magentaTheme = [
-    'Strange World',
-]
-const mauveTheme = [
-    'Elemental',
-];
-const navyBlueTheme = [
-    'Peter Pan & Wendy',
-];
-const orangeTheme = [
-    'Chip \'n Dale: Rescue Rangers',
-    'Indiana Jones and the Dial of Destiny',
-];
-const pinkTheme = [
-    'Inside Out 2',
-];
-const purpleTheme = [
-    'Hocus Pocus 2',
-];
-const redTheme = [
-    'Doctor Strange in the Multiverse of Madness',
-    'The Descendants: The Rise of Red',
-];
+const dataAttribute = document.body.getAttribute('data-theme');
+let theme = themeColors[dataAttribute];
+const subHeaderTheme = document.querySelectorAll('.subheader');
+const starTheme = document.querySelectorAll('.star');
+const starRating = document.querySelector('.reviews:last-child');
+let userScore = 0;
 
-function themeColor() {
-    const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+// checks if dark mode is active, and if so it applies the grey theme to all pages
+const darkModeTheme = window.matchMedia('(prefers-color-scheme: dark)');
 
-    if(darkMode) {
-        return 'grey';
-    };
-
-    // maps movie titles to their respective color schemes
-    const keywords = [
-        { 
-            name: 'blue', 
-            keyword: blueTheme,
-        },
-        {
-            name: 'brown',
-            keyword: brownTheme,
-        },
-        {
-            name: 'cool-red',
-            keyword: coolRedTheme,
-        },
-        {
-            name: 'crimson', 
-            keyword: crimsonTheme,
-        },
-        {
-            name: 'dark-blue',
-            keyword: darkBlueTheme,
-        },
-        {   name: 'gold', 
-            keyword: goldTheme,
-        },
-        {
-            name: 'grey', 
-            keyword: greyTheme,
-        },
-        {
-            name: 'magenta',
-            keyword: magentaTheme,
-        },
-        {
-            name: 'mauve', 
-            keyword: mauveTheme,
-        },
-        {
-            name: 'navyBlue',
-            keyword: navyBlueTheme,
-        },
-        { 
-            name: 'orange', 
-            keyword: orangeTheme, 
-        },
-        {
-            name: 'pink',
-            keyword: pinkTheme,
-        },
-        {
-            name: 'purple',
-            keyword: purpleTheme,
-        },
-        { 
-            name: 'red', 
-            keyword: redTheme, 
-        },
-    ];
-
-    // loops through each theme
-    for (const theme of keywords) {
-        /*
-            checks if any of the movie in the theme list matches the page title,
-            if it does then some() will return true
-        */
-        if (theme.keyword.some(function(movieTitle) {
-            return pageTitle.includes(movieTitle);
-        })) {
-            // if it returns true then it will return the name of the theme like blue red etc
-            return theme.name;
-        };
-    };
+if(darkModeTheme.matches) {
+    theme = themeColors['grey'];
 };
 
-function setThemeColor() {
-    /*
-        the theme variable holds the color from the above function,
-        which then loops through both stars and subheader's and sets the colors accordingly
-    */
-    let theme =  themeColor();
+// styling each pages subheaders and stars with the appropriate color theme
+subHeaderTheme.forEach((subheader) => {
+    subheader.style.backgroundColor = theme;
+});
 
-    if(colorScheme[theme] === undefined) {
-        theme = 'black';
-    };
+starTheme.forEach((stars) => {
+    stars.style.fill = theme;
+    stars.style.stroke = theme;
+});
 
-    const color = colorScheme[theme];
+// getting the elements from the reviews element's last child
+const star = starRating.querySelector('.star');
+const score = starRating.querySelector('#user-score');
 
-    // loops through each star and changes the fill and stroke color of the svg's
-    document.querySelectorAll('.star').forEach(star => {
-        star.style.fill = color;
-        star.style.stroke = color;
-    });
+// check if a user score is already stored in local storage
+const savedScore = localStorage.getItem(document.title);
 
-    document.querySelectorAll('.subheader').forEach(subheader => {
-        subheader.style.background = color;
-    });
+// if there's a saved score we take that and convert it to a number from a string, and set the inner text of the score
+if(savedScore) {
+    userScore = parseInt(savedScore);
+    score.innerText = userScore;
 };
 
-/*
-    displays a numerical value up to ten that gets reset to one if pressed again,
-    it also stores the numerical value in local storage for each movie page
-*/
-function userInput() {
-    const star = document.querySelector('.reviews:last-child .star');
-    const span = document.getElementById('user-score');
-    const storageKey = `userReviewScore_${pageTitle}`;
+// updates the user score and saves it to local storage
+function updateUserScore() {
+    userScore++;
 
-    let currentScore = 0;
-
-    star.setAttribute('tabindex', '0');
-    
-    // fetches the user score from local storage for the specific movie page
-    let savedScore = localStorage.getItem(storageKey);
-
-    // if there's a scored saved then it gets displayed and converted from a string to a number
-    if (savedScore) {
-        currentScore = parseInt(savedScore);
-        span.textContent = currentScore;
+    if(userScore > 10) {
+        userScore = 1;
     };
 
-    function incrementScore() {
-        // Increment the score first, then display and save
-        currentScore++;
+    score.innerText = userScore;
+    localStorage.setItem(document.title, userScore);
+};
 
-        // if the score goes above 10 it will reset back to 1
-        if (currentScore > 10) currentScore = 1;
+// runs the above function everytime the star is clicked
+star.addEventListener('click', () => {
+    updateUserScore();
+});
 
-        span.textContent = currentScore;
-
-        // restores the user score from local storage for the specific movie page
-        localStorage.setItem(storageKey, currentScore);
+// runs the above function everytime the star is focused and user presses enter or spave keys
+star.addEventListener('keydown', (e) => {
+    if(e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        updateUserScore();
     };
+});
 
-    star.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') incrementScore();
-    });
+const trailer = document.querySelector('.trailer');
+const button = document.querySelector('.trailer button');
+let videoID = trailer.getAttribute('data-videoId');
+let thumbnail = document.getElementById('thumbnail');
 
-    star.addEventListener('click', incrementScore);
-};
+// gets the youtube thumbnail and sets the video id to each designated trailer
+thumbnail.src = `https://img.youtube.com/vi/${videoID}/maxresdefault.jpg`;
 
-// creates an embedded youtube video for the specific movie page
-function youtubeTrailer() {
-    const trailer = document.querySelector('.trailer');
-    const movieTitle = pageTitle;
-
-    // Get the video id from the data attribute
-    const videoId = trailer.getAttribute('data-videoId');
-
-    // mapping out the iframe to the trailer div container
-    trailer.innerHTML = `
-        <iframe 
-            src="https://www.youtube-nocookie.com/embed/${videoId}?hd=1&rel=0" 
-            title="${movieTitle} Official Trailer"
-            allow="accelerometer; clipboard-write; encrypted-media; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-        </iframe>
-    `;
-};
-
-setThemeColor();
-userInput();
-youtubeTrailer();
+// plays the designated youtube trailer when clicking on the play button
+button.addEventListener('click', () => {
+    trailer.innerHTML =
+    `<iframe
+        src="https://www.youtube-nocookie.com/embed/${videoID}?hd=1&rel=0&autoplay=1"
+        title="${document.title} Official Trailer"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>`
+});
