@@ -1,6 +1,5 @@
 const mobileNav = document.querySelector('nav');
 const logo = document.querySelector('.logo');
-const links = document.querySelector('.links');
 const menu = document.querySelector('.hamburger_menu');
 const main = document.querySelector('main');
 
@@ -9,14 +8,9 @@ menu.addEventListener('click', toggleHamburgerMenu);
 // toggles the hamburger menu, along with disabling scroll when menu is open
 function toggleHamburgerMenu() {
     mobileNav.classList.toggle('active');
-    document.body.classList.toggle('no-scroll');
-};
-
-// toggles the hamburger menu, along with disabling scroll when menu is open
-function toggleHamburgerMenu() {
-    mobileNav.classList.toggle('active');
     const active = mobileNav.classList.contains('active');
     document.body.classList.toggle('no-scroll');
+    // prevents interaction with the main content and logo when the hamburger menu is open
     main.inert = active;
     logo.inert = active;
 
