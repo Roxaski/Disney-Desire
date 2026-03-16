@@ -1,15 +1,21 @@
-const scrollToTop = document.querySelector('.scroll-top');
-const scrollToTopMobile = document.querySelector('.scroll-top-mobile');
+const scrollTop = document.querySelector('.scroll-top');
+const scrollTopMobile = document.querySelector('.scroll-top-mobile');
 
-// displays the buttons for PC and mobile by toggling an active class when scrolling more than 5000px
+// array of both scroll elements to avoid code repition when adding classes and attributes
+const scrollElement = [scrollTop, scrollTopMobile];
+
+/*
+    when the window is scrolled more than a certain amount, 
+    it displays a button that scrolls back to top of page
+*/
 window.addEventListener('scroll', () => {
-    const displayButton = window.scrollY > 3000;
-
-    // displays the button that allows the user to scroll back to the top of the page
-    scrollToTop.classList.toggle('active', displayButton);
-    scrollToTopMobile.classList.toggle('active', displayButton);
-
-    // checks if the button is displaying and sets the attribute accordingly
-    scrollToTop.setAttribute('tabindex', displayButton ? '0' : '-1');
-    scrollToTopMobile.setAttribute('tabindex', displayButton ? '0' : '-1');
+    scrollElement.forEach(e => {
+        if(window.scrollY > 1000) {
+            e.classList.add('active');
+            e.setAttribute('tabIndex', '0');
+        } else {
+            e.classList.remove('active');
+            e.setAttribute('tabIndex', '-1');
+        };
+    });
 });
