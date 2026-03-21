@@ -286,7 +286,7 @@ footer p {
         position: relative;
         width: 100%;
         height: 90px;
-        background: var(--clr-red);
+        background: var(--clr-violet);
         margin-bottom: 1.5rem;
         box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
     }
