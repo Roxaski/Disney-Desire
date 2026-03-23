@@ -52,6 +52,9 @@ body {
     line-height: 1.5;
     cursor: default;
 }
+.no-scroll {
+    overflow-y: hidden;
+}
 .hamburger_menu,
 .hamburger_background img,
 .mobile_logo {
@@ -276,10 +279,6 @@ footer p {
     margin-top: .25rem;
 }
 @media screen and (max-width: 1135px) {
-    .no-scroll {
-        position: fixed;
-        overflow-y: hidden;
-    }
     nav {
         display: flex;
         align-items: center;
