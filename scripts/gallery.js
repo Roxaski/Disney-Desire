@@ -172,10 +172,25 @@ let screenTapEnd;
 
 // lightbox click event listeners for mobile
 lightboxImg.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+
+    // checks if multiple fingers are on the screen
+    if(e.touches.length > 1) {
+        return;
+    };
+
     screenTapStart = e.touches[0].clientX;
-});
+
+}), { passive: false }; // this is to allow e.preventDefault() to work on iOS / ipadOS Safari
 
 lightboxImg.addEventListener('touchend', (e) => {
+    e.preventDefault();
+
+    // checks if any fingers are still on the screen
+    if(e.touches.length > 0) {
+        return;
+    };
+
     screenTapEnd = e.changedTouches[0].clientX;
     
     if(screenTapEnd - screenTapStart <= -100 && lightboxImg.classList.contains('active')) {
@@ -199,4 +214,4 @@ lightboxImg.addEventListener('touchend', (e) => {
 
         preloadAdjacentImgs();
     };
-});
+}), { passive: false }; // this is to allow e.preventDefault() to work on iOS / ipadOS Safari
