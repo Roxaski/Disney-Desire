@@ -179,21 +179,21 @@ lightboxImg.addEventListener('touchend', (e) => {
     screenTapEnd = e.changedTouches[0].clientX;
     
     if(screenTapEnd - screenTapStart <= -100 && lightboxImg.classList.contains('active')) {
-        if(currentImg === 0) {
+        if(currentImg === filteredImgs.length - 1) {
             return;
         };
 
-        currentImg--;
+        currentImg++;
         lightboxImg.src = filteredImgs[currentImg].src;
         lightboxImg.srcset = filteredImgs[currentImg].srcset;
 
         preloadAdjacentImgs();
 
     } else if(screenTapEnd - screenTapStart >= 100 && lightboxImg.classList.contains('active')) {
-        if(currentImg === filteredImgs.length - 1) {
+        if(currentImg === 0) {
             return;
         };
-        currentImg++;
+        currentImg--;
         lightboxImg.src = filteredImgs[currentImg].src;
         lightboxImg.srcset = filteredImgs[currentImg].srcset;
 
