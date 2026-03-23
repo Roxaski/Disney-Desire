@@ -184,13 +184,6 @@ lightboxImg.addEventListener('touchstart', (e) => {
     screenTapStart = e.touches[0].clientX;
 });
 
-// prevents safari from vertically scrolling the page when using one finger
-galleryOverlay.addEventListener('touchmove', (e) => {
-    if(e.touches.length === 1) {
-        e.preventDefault();
-    };
-}, { passive: false });
-
 lightboxImg.addEventListener('touchend', (e) => {
     if(e.touches.length > 0 || imgZoom) {
         return;
