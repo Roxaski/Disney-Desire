@@ -53,6 +53,7 @@ body {
     cursor: default;
 }
 .no-scroll {
+    position: relative;
     overflow-y: hidden;
 }
 .hamburger_menu,
