@@ -10,7 +10,7 @@ const scrollElement = [scrollTop, scrollTopMobile];
 */
 window.addEventListener('scroll', () => {
     scrollElement.forEach(e => {
-        if(window.scrollY > 1000) {
+        if(window.scrollY > 3500) {
             e.classList.add('active');
             e.setAttribute('tabIndex', '0');
         } else {
