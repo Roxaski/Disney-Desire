@@ -166,33 +166,33 @@ gallery.addEventListener('keydown', (e) => {
     };
 });
 
-// keeps track of where the screen tapping starts and ends
+// keeps track of where the screen tapping starts and ends, along with setting img zoom to false
 let screenTapStart;
 let screenTapEnd;
+let imgZoom = false;
 
-// lightbox click event listeners for mobile
 lightboxImg.addEventListener('touchstart', (e) => {
-    // checks if multiple fingers are on the screen
+    // keeps track of whether more than one finger is on the screen
     if(e.touches.length > 1) {
+        imgZoom = true;
         return;
+    } else {
+        imgZoom = false;
     };
 
-    e.preventDefault();
-
+    // the position of the initial tap on the screen
     screenTapStart = e.touches[0].clientX;
-
-}, { passive: false }); // this is to allow e.preventDefault() to work on iOS / ipadOS Safari
+});
 
 lightboxImg.addEventListener('touchend', (e) => {
-    // checks if any fingers are still on the screen
-    if(e.touches.length > 0) {
+    if(e.touches.length > 0 || imgZoom) {
         return;
     };
 
-    e.preventDefault();
-
+    // the position of where the finger lifted off the screen
     screenTapEnd = e.changedTouches[0].clientX;
-    
+
+    // checks if the swipe moved at least 100px to the left
     if(screenTapEnd - screenTapStart <= -100 && lightboxImg.classList.contains('active')) {
         if(currentImg === filteredImgs.length - 1) {
             return;
@@ -204,14 +204,16 @@ lightboxImg.addEventListener('touchend', (e) => {
 
         preloadAdjacentImgs();
 
+    // checks if the swipe moved at least 100px to the right
     } else if(screenTapEnd - screenTapStart >= 100 && lightboxImg.classList.contains('active')) {
         if(currentImg === 0) {
             return;
         };
+
         currentImg--;
         lightboxImg.src = filteredImgs[currentImg].src;
         lightboxImg.srcset = filteredImgs[currentImg].srcset;
 
         preloadAdjacentImgs();
     };
-}, { passive: false }); // this is to allow e.preventDefault() to work on iOS / ipadOS Safari
+});
