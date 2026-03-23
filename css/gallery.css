@@ -52,6 +52,9 @@ body {
     line-height: 1.5;
     cursor: default;
 }
+.no-scroll {
+    overflow-y: hidden;
+}
 .hamburger_menu,
 .hamburger_background img,
 .mobile_logo {
@@ -241,18 +244,18 @@ body {
     pointer-events: none;
 }
 .lightbox .btn .chevron {
-    width: 3rem;
+    width: 5rem;
     height: auto;
 }
-.lightbox .btn.visible {
+.lightbox .btn.active {
     visibility: visible;
     pointer-events: auto;
 }
 .lightbox .previous {
-    left: -5rem;
+    left: -14rem;
 }
 .lightbox .next {
-    right: -5rem;
+    right: -14rem;
 }
 .gallery-overlay {
     display: none;
@@ -304,17 +307,13 @@ footer p {
     }
 }
 @media screen and (max-width: 1135px) {
-    .no-scroll {
-        position: fixed;
-        overflow-y: hidden;
-    }
     nav {
         display: flex;
         align-items: center;
         position: relative;
         width: 100%;
         height: 90px;
-        background: var(--clr-red);
+        background: var(--clr-indigo);
         margin-bottom: 1.5rem;
         box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
     }
@@ -455,9 +454,9 @@ footer p {
         margin: 50px auto 0;
     }
 }
-@media screen and (max-width: 865px) {
+@media screen and (max-width: 1060px) {
     .lightbox img {
-        max-width: 90%;
+        max-width: 90vw;
         margin: 0 auto;
     }
     .lightbox .btn {
@@ -471,7 +470,7 @@ footer p {
 }
 @media screen and (orientation: landscape) and (max-width: 960px) {
     .lightbox {
-        width: 80%;
+        width: 80vw;
     }
     .lightbox .btn i {
         display: none;
