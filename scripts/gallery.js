@@ -16,12 +16,19 @@ let preloadNextImg = new Image();
 // creates an array which then filters out the image icons from the gallery images
 const filteredImgs = Array.from(galleryImgs).filter(img => !img.classList.contains('icon'));
 
+// sets the lightbox image source to equal that of the image that is clicked, and setting the srcset accordingly
+function setLightboxImg() {
+    lightboxImg.src = '';
+    lightboxImg.srcset = '';
+    lightboxImg.src = filteredImgs[currentImg].src;
+    lightboxImg.srcset = filteredImgs[currentImg].srcset;
+};
+
 /*
     displays the lightbox along with disabling the scroll while it's open,
     along with disabling the respective buttons from the first and last lightbox image,
     and setting the tab index to -1 in order to prevent the gallery images from being tabbed
 */
-
 function openLightBox(e) {
     document.body.classList.add('no-scroll');
 
@@ -30,9 +37,7 @@ function openLightBox(e) {
     
     // checks if the target is an image within the gallery
     if(e.target.tagName === 'IMG') {
-        // sets the lightbox image source to equal that of the image that is clicked, and setting the srcset accordingly
-        lightboxImg.src = filteredImgs[currentImg].src;
-        lightboxImg.srcset = filteredImgs[currentImg].srcset;
+        setLightboxImg();
 
         galleryOverlay.classList.add('active');
         lightboxImg.classList.add('active');
@@ -80,7 +85,6 @@ function preloadAdjacentImgs() {
     closes the lightbox by removing the active classes and re-enabling scroll,
     while also setting the tab index back to 0 to allow the images in the gallery to be tabbed to
 */
-
 function closeLightbox () {
     document.body.classList.remove('no-scroll');
     galleryOverlay.classList.remove('active');
@@ -110,24 +114,26 @@ galleryOverlay.addEventListener('click', () => {
 
 previousBtn.addEventListener('click', () => {
     currentImg--;
-    lightboxImg.src = filteredImgs[currentImg].src;
-    lightboxImg.srcset = filteredImgs[currentImg].srcset;
 
+    setLightboxImg();
     lightboxBtns();
     preloadAdjacentImgs();
 });
 
 nextBtn.addEventListener('click', () => {
     currentImg++;
-    lightboxImg.src = filteredImgs[currentImg].src;
-    lightboxImg.srcset = filteredImgs[currentImg].srcset;
 
+    setLightboxImg();
     lightboxBtns();
     preloadAdjacentImgs();
 });
 
 // lightbox click event listeners for keyboard
-window.addEventListener('keydown', (e) => {
+document.addEventListener('keydown', (e) => {
+    if(!lightboxImg.classList.contains('active')) {
+        return;
+    };
+
     if(e.key === 'Escape' && lightboxImg.classList.contains('active')) {
         closeLightbox();
     };
@@ -138,9 +144,8 @@ window.addEventListener('keydown', (e) => {
         };
 
         currentImg--;
-        lightboxImg.src = filteredImgs[currentImg].src;
-        lightboxImg.srcset = filteredImgs[currentImg].srcset;
 
+        setLightboxImg();
         lightboxBtns();
         preloadAdjacentImgs();
 
@@ -150,9 +155,8 @@ window.addEventListener('keydown', (e) => {
         };
 
         currentImg++;
-        lightboxImg.src = filteredImgs[currentImg].src;
-        lightboxImg.srcset = filteredImgs[currentImg].srcset;
 
+        setLightboxImg();
         lightboxBtns();
         preloadAdjacentImgs();
     };
@@ -199,9 +203,8 @@ lightboxImg.addEventListener('touchend', (e) => {
         };
 
         currentImg++;
-        lightboxImg.src = filteredImgs[currentImg].src;
-        lightboxImg.srcset = filteredImgs[currentImg].srcset;
-
+        
+        setLightboxImg();
         preloadAdjacentImgs();
 
     // checks if the swipe moved at least 100px to the right
@@ -211,9 +214,8 @@ lightboxImg.addEventListener('touchend', (e) => {
         };
 
         currentImg--;
-        lightboxImg.src = filteredImgs[currentImg].src;
-        lightboxImg.srcset = filteredImgs[currentImg].srcset;
 
+        setLightboxImg();
         preloadAdjacentImgs();
     };
 });
