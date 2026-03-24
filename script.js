@@ -4,17 +4,15 @@ const menu = document.querySelector('.hamburger_menu');
 const main = document.querySelector('main');
 
 menu.addEventListener('click', toggleHamburgerMenu);
-
 // toggles the hamburger menu, along with disabling scroll when menu is open
 function toggleHamburgerMenu() {
     mobileNav.classList.toggle('active');
     const active = mobileNav.classList.contains('active');
     document.body.classList.toggle('no-scroll');
-    // prevents interaction with the main content and logo when the hamburger menu is open
+    // prevents these elements from being focused, clicked, or read by screen readers
     main.inert = active;
     logo.inert = active;
 
-    // only listens for a key press when the hamburger menu is open
     if (active) {
         document.addEventListener('keydown', escapeKeyPress);
     } else {
@@ -22,7 +20,6 @@ function toggleHamburgerMenu() {
     };
 };
 
-// closes the hamburger menu with escape key
 function escapeKeyPress(e) {
     if (e.key === 'Escape') {
         toggleHamburgerMenu();
