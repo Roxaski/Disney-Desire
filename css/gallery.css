@@ -301,11 +301,6 @@ footer .copyright {
 footer p {
     margin-top: .25rem;
 }
-@media screen and (max-width: 1400px) and (hover: none) and (pointer: coarse) {
-    .gallery .img-container:hover .img-overlay {
-        opacity: 0;
-    }
-}
 @media screen and (max-width: 1135px) {
     .no-scroll {
         position: fixed;
@@ -466,6 +461,9 @@ footer p {
     }
     .lightbox .btn {
         display: none;
+    }
+    .gallery .img-container:hover .img-overlay {
+        opacity: 0;
     }
 }
 @media screen and (max-width: 550px) {
