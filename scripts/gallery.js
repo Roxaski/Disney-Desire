@@ -16,7 +16,7 @@ let preloadNextImg = new Image();
 // creates an array which then filters out the image icons from the gallery images
 const filteredImgs = Array.from(galleryImgs).filter(img => !img.classList.contains('icon'));
 
-// sets the lightbox image source to equal that of the image that is clicked, and setting the srcset accordingly
+// clears lightbox image before setting it to the currently selected gallery image
 function setLightboxImg() {
     lightboxImg.src = '';
     lightboxImg.srcset = '';
