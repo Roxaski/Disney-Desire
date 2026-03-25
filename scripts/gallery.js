@@ -13,15 +13,16 @@ let currentImg = 0;
 let preloadPreviousImg = new Image();
 let preloadNextImg = new Image();
 
-// creates an array which then filters out the image icons from the gallery images
-const filteredImgs = Array.from(galleryImgs).filter(img => !img.classList.contains('icon'));
+// creates an array of the images within the gallery
+const galleryImgArray = Array.from(galleryImgs);
 
-// clears lightbox image before setting it to the currently selected gallery image
+/*
+    setting both src and srcset before clearing them with the close lightbox function, 
+    to prevent firefox from briefly flashing the previous clicked image
+*/
 function setLightboxImg() {
-    lightboxImg.src = '';
-    lightboxImg.srcset = '';
-    lightboxImg.src = filteredImgs[currentImg].src;
-    lightboxImg.srcset = filteredImgs[currentImg].srcset;
+    lightboxImg.src = galleryImgArray[currentImg].src;
+    lightboxImg.srcset = galleryImgArray[currentImg].srcset;
 };
 
 /*
@@ -32,13 +33,19 @@ function setLightboxImg() {
 function openLightBox(e) {
     // checks if the target is an image within the gallery
     if(e.target.tagName === 'IMG') {
+        // calculates the scrollbar width in order to prevent layout shifts when the scrollbar disappears
+        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+        document.body.style.paddingRight = `${scrollbarWidth}px`;
+
         document.body.classList.add('no-scroll');
 
         // stores the value of the current image that was clicked on from the array
-        currentImg = filteredImgs.indexOf(e.target);
+        currentImg = galleryImgArray.indexOf(e.target);
 
         setLightboxImg();
         
+        galleryOverlay.style.transition = 'opacity 150ms ease';
+
         galleryOverlay.classList.add('active');
         lightboxImg.classList.add('active');
 
@@ -47,7 +54,7 @@ function openLightBox(e) {
             link.setAttribute('tabIndex', '-1');
         });
 
-        filteredImgs.forEach(img => {
+        galleryImgArray.forEach(img => {
             img.setAttribute('tabIndex', '-1');
         });
 
@@ -63,7 +70,7 @@ function lightboxBtns() {
         previousBtn.classList.add('active');
     };
 
-    if(currentImg === filteredImgs.length - 1) {
+    if(currentImg === galleryImgArray.length - 1) {
         nextBtn.classList.remove('active');
     } else {
         nextBtn.classList.add('active');
@@ -73,11 +80,11 @@ function lightboxBtns() {
 // preloads the adjacent photos within the lightbox
 function preloadAdjacentImgs() {
     if (currentImg > 0) {
-        preloadPreviousImg.src = filteredImgs[currentImg - 1].src;
+        preloadPreviousImg.src = galleryImgArray[currentImg - 1].src;
     };
 
-    if (currentImg < filteredImgs.length - 1) {
-        preloadNextImg.src = filteredImgs[currentImg + 1].src;
+    if (currentImg < galleryImgArray.length - 1) {
+        preloadNextImg.src = galleryImgArray[currentImg + 1].src;
     };
 };
 
@@ -86,9 +93,13 @@ function preloadAdjacentImgs() {
     while also setting the tab index back to 0 to allow the images in the gallery to be tabbed to
 */
 function closeLightbox () {
+    document.body.style.paddingRight = '';
     document.body.classList.remove('no-scroll');
+    galleryOverlay.style.transition = 'none';
     galleryOverlay.classList.remove('active');
     lightboxImg.classList.remove('active');
+    lightboxImg.src = '';
+    lightboxImg.srcset = '';
     previousBtn.classList.remove('active');
     nextBtn.classList.remove('active');
 
@@ -97,7 +108,7 @@ function closeLightbox () {
         link.setAttribute('tabIndex', 0);
     });
 
-    filteredImgs.forEach(img => {
+    galleryImgArray.forEach(img => {
         img.setAttribute('tabIndex', 0);
     });
 };
@@ -129,11 +140,7 @@ nextBtn.addEventListener('click', () => {
 });
 
 // lightbox click event listeners for keyboard
-document.addEventListener('keydown', (e) => {
-    if(!lightboxImg.classList.contains('active')) {
-        return;
-    };
-
+window.addEventListener('keydown', (e) => {
     if(e.key === 'Escape' && lightboxImg.classList.contains('active')) {
         closeLightbox();
     };
@@ -150,7 +157,7 @@ document.addEventListener('keydown', (e) => {
         preloadAdjacentImgs();
 
     } else if (e.key === 'ArrowRight' && lightboxImg.classList.contains('active')) {
-        if(currentImg === filteredImgs.length - 1) {
+        if(currentImg === galleryImgArray.length - 1) {
             return;
         };
 
@@ -198,17 +205,19 @@ lightboxImg.addEventListener('touchend', (e) => {
 
     // checks if the swipe moved at least 100px to the left
     if(screenTapEnd - screenTapStart <= -100 && lightboxImg.classList.contains('active')) {
-        if(currentImg === filteredImgs.length - 1) {
+        
+        if(currentImg === galleryImgArray.length - 1) {
             return;
         };
 
         currentImg++;
-        
+
         setLightboxImg();
         preloadAdjacentImgs();
 
     // checks if the swipe moved at least 100px to the right
     } else if(screenTapEnd - screenTapStart >= 100 && lightboxImg.classList.contains('active')) {
+        
         if(currentImg === 0) {
             return;
         };
