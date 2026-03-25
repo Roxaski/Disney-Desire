@@ -236,7 +236,7 @@ body {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    background: var(--clr-blk);
+    background: transparent;
     border: none;
     color: var(--clr-white);
     cursor: pointer;
@@ -258,16 +258,18 @@ body {
     right: -14rem;
 }
 .gallery-overlay {
-    display: none;
+    opacity: 0;
     position: fixed;
+    pointer-events: none;
     inset: 0;
     width: 100%;
     height: 100%;
     background: var(--clr-blk);
-    z-index: 6;
+    z-index: 2;
 }
 .gallery-overlay.active {
-    display: block;
+    opacity: 1;
+    pointer-events: auto;
 }
 footer {
     margin: 200px auto 0;
@@ -480,7 +482,7 @@ footer p {
         width: 80vw;
         height: auto;
     }
-    .lightbox .btn i {
+    .lightbox .btn {
         display: none;
     }
 }
