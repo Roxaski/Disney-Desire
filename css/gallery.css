@@ -51,6 +51,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
     cursor: default;
+    scrollbar-gutter: stable;
 }
 .hamburger_menu,
 .hamburger_background img,
