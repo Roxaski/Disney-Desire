@@ -50,8 +50,8 @@ body {
     background-color: var(--clr-white);
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
-    cursor: default;
     scrollbar-gutter: stable;
+    cursor: default;
 }
 .hamburger_menu,
 .hamburger_background img,
