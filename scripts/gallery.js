@@ -33,10 +33,6 @@ function setLightboxImg() {
 function openLightBox(e) {
     // checks if the target is an image within the gallery
     if(e.target.tagName === 'IMG') {
-        // calculates the scrollbar width in order to prevent layout shifts when the scrollbar disappears
-        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-        document.body.style.paddingRight = `${scrollbarWidth}px`;
-
         document.body.classList.add('lightbox-no-scroll');
 
         // stores the value of the current image that was clicked on from the array
@@ -93,7 +89,6 @@ function preloadAdjacentImgs() {
     while also setting the tab index back to 0 to allow the images in the gallery to be tabbed to
 */
 function closeLightbox () {
-    document.body.style.paddingRight = '';
     document.body.classList.remove('lightbox-no-scroll');
     galleryOverlay.style.transition = 'none';
     galleryOverlay.classList.remove('active');
@@ -141,11 +136,11 @@ nextBtn.addEventListener('click', () => {
 
 // lightbox click event listeners for keyboard
 window.addEventListener('keydown', (e) => {
-    if(e.key === 'Escape' && lightbox.classList.contains('active')) {
+    if(e.key === 'Escape' && galleryOverlay.classList.contains('active')) {
         closeLightbox();
     };
 
-    if(e.key === 'ArrowLeft' && lightbox.classList.contains('active')) {
+    if(e.key === 'ArrowLeft' && galleryOverlay.classList.contains('active')) {
         if(currentImg === 0) {
             return;
         };
@@ -156,7 +151,7 @@ window.addEventListener('keydown', (e) => {
         lightboxBtns();
         preloadAdjacentImgs();
 
-    } else if (e.key === 'ArrowRight' && lightbox.classList.contains('active')) {
+    } else if (e.key === 'ArrowRight' && galleryOverlay.classList.contains('active')) {
         if(currentImg === filteredImgs.length - 1) {
             return;
         };
@@ -182,7 +177,7 @@ let screenTapStart;
 let screenTapEnd;
 let imgZoom = false;
 
-lightboxImg.addEventListener('touchstart', (e) => {
+galleryOverlay.addEventListener('touchstart', (e) => {
     // keeps track of whether more than one finger is on the screen
     if(e.touches.length > 1) {
         imgZoom = true;
@@ -195,7 +190,7 @@ lightboxImg.addEventListener('touchstart', (e) => {
     screenTapStart = e.touches[0].clientX;
 });
 
-lightboxImg.addEventListener('touchend', (e) => {
+galleryOverlay.addEventListener('touchend', (e) => {
     if(e.touches.length > 0 || imgZoom) {
         return;
     };
@@ -204,7 +199,7 @@ lightboxImg.addEventListener('touchend', (e) => {
     screenTapEnd = e.changedTouches[0].clientX;
 
     // checks if the swipe moved at least 100px to the left
-    if(screenTapEnd - screenTapStart <= -100 && lightboxImg.classList.contains('active')) {
+    if(screenTapEnd - screenTapStart <= -100 && galleryOverlay.classList.contains('active')) {
         
         if(currentImg === filteredImgs.length - 1) {
             return;
@@ -216,7 +211,7 @@ lightboxImg.addEventListener('touchend', (e) => {
         preloadAdjacentImgs();
 
     // checks if the swipe moved at least 100px to the right
-    } else if(screenTapEnd - screenTapStart >= 100 && lightboxImg.classList.contains('active')) {
+    } else if(screenTapEnd - screenTapStart >= 100 && galleryOverlay.classList.contains('active')) {
         
         if(currentImg === 0) {
             return;
