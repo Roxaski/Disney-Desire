@@ -17,12 +17,16 @@ let preloadNextImg = new Image();
 const filteredImgs = Array.from(galleryImgs).filter(img => !img.classList.contains('icon'));
 
 /*
-    setting both src and srcset before clearing them with the close lightbox function, 
-    to prevent firefox from briefly flashing the previous clicked image
+    waits for the image to be fully decoded before displaying it,
+    this is done to prevent firefox from briefly flashing the previous image if one was clicked on
 */
-function setLightboxImg() {
-    lightboxImg.src = filteredImgs[currentImg].src;
-    lightboxImg.srcset = filteredImgs[currentImg].srcset;
+async function setLightboxImg() {
+    const img = filteredImgs[currentImg];
+    
+    lightboxImg.src = img.src;
+    lightboxImg.srcset = img.srcset;
+    
+    await lightboxImg.decode();
 };
 
 /*
