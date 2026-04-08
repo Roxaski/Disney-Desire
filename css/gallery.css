@@ -201,7 +201,6 @@ body {
     opacity: 1;
 }
 .gallery .img-container img {
-    display: block;
     width: 100%;
     height: auto;
     contain: layout;
