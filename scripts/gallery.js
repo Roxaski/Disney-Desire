@@ -195,7 +195,13 @@ galleryOverlay.addEventListener('touchstart', (e) => {
 });
 
 galleryOverlay.addEventListener('touchend', (e) => {
-    if(e.touches.length > 0 || imgZoom) {
+    // if there no fingers on the screen then the variable is set to false
+    if (e.touches.length === 0) {
+        imgZoom = false;
+    };
+
+    // returns early if any fingers are still on the screen or if image zoom is active
+    if (e.touches.length > 0 || imgZoom) {
         return;
     };
 
@@ -226,7 +232,4 @@ galleryOverlay.addEventListener('touchend', (e) => {
         setLightboxImg();
         preloadAdjacentImgs();
     };
-
-    // reseting this back to false after the swipe is finished to prevent swipe issues
-    imgZoom = false;
 });
