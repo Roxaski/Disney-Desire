@@ -184,7 +184,7 @@ body {
 .gallery .img-container .mickey_icon {
     margin-top: 1rem;
 }
-.gallery.star_wars_icon {
+.gallery .img-container .star_wars_icon {
     margin-top: .25rem;
 }
 .gallery .img-container .img-overlay p {
@@ -203,7 +203,6 @@ body {
 .gallery .img-container img {
     width: 100%;
     height: auto;
-    contain: layout;
     cursor: pointer;
 }
 .lightbox {
@@ -240,7 +239,7 @@ body {
     transform: translateY(-50%);
     background: transparent;
     border: none;
-    color: var(--white);
+    color: var(--clr-white);
     cursor: pointer;
     visibility: hidden;
     pointer-events: none;
@@ -462,7 +461,7 @@ footer p {
     }
 }
 @media screen and (max-width: 1060px) {
-    .lightbox img {
+    .lightbox > img {
         max-width: 90vw;
         height: auto;
         margin: 0 auto;
