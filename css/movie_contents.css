@@ -99,29 +99,43 @@ body {
     font-weight: 400;
     margin-left: .4rem;
 }
-.movie-information .content .cast {
+.movie-information .cast-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    text-align: center;
-    margin: 40px auto 20px;
-    padding-inline: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    column-gap: 1.5rem;
 }
-.movie-information .content .cast img {
+.movie-information .cast-grid .cast img {
     width: 100px;
     height: auto;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
     border-radius: 50px;
 }
-.movie-information .content .cast h3 {
+.movie-information .cast-grid .cast {
     display: flex;
-    flex-wrap: wrap;
-    text-transform: capitalize;
-    font-size: clamp(1rem, 3vw, 1.025rem);
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    font-weight: 300;
-    margin: 5px auto;
-    max-width: 115px;
+    justify-content: flex-start;
+    padding: 1rem 0;
+}
+.movie-information .cast-grid .cast > div {
+    min-width: 0;
+}
+.movie-information .cast-grid .cast p {
+    text-transform: capitalize;
+    margin-left: .75rem;
+}
+.movie-information .cast-grid .cast span {
+    text-transform: lowercase;
+}
+.movie-information .cast-grid .cast p:first-child {
+    font-size: clamp(1rem, 3vw, 1.1rem);
+    font-weight: 500;
+}
+.movie-information .cast-grid .cast p {
+    color: var(--clr-grey);
+    font-size: clamp(.95rem, 3vw, 1rem);
+    font-weight: 400;
 }
 .movie-information .content .info {
     margin: 20px auto;
@@ -182,14 +196,14 @@ body {
 }
 .reviews-container .reviews .score-4 {
     position: absolute;
-    top: 41%;
+    top: 42%;
     left: 82.5%;
     transform: translate(-50%, -50%);
 }
 .movie-information .content .info .reviews-container .reviews #user-score {
     position: absolute;
     top: 43%;
-    left: 83.25%;
+    left: 88.25%;
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
@@ -243,17 +257,41 @@ footer p {
     margin-top: .25rem;
 }
 @media screen and (max-width: 1250px) {
-    .movie-information .content .cast {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .movie-information .content .cast > div {
-        margin: 1rem;
+    .movie-information .content .cast-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media screen and (max-width: 965px) {
-    .movie-information .content .cast {
-        grid-template-columns: repeat(2, 1fr);
+    .movie-information .content .cast-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 925px) {
+    .movie-information .content .info .reviews-container {
+        grid-template-columns: 1fr;
+    }
+    .movie-information .content .info .reviews-container .reviews {
+        margin: 15px 0;
+    }
+    .movie-information .content .info .reviews-container .reviews h3 {
+        margin-right: .9rem;
+    }
+    .movie-information .content .info .reviews-container .reviews:nth-child(2) h3 {
+        margin-right: 1rem;
+    }
+    .movie-information .content .info .reviews-container .reviews:last-child h3 {
+        margin-right: .9rem;
+    }
+    .movie-information .content .info .reviews-container .reviews span {
+        left: 85%;
+    }
+    .movie-information .content .info .reviews-container .reviews .score-4 {
+        top: 42%;
+        left: 84.5%;
+    }
+    .movie-information .content .info .reviews-container .reviews #user-score {
+        top: 42%;
+        left: 89%;
     }
 }
 @media screen and (max-width: 805px) {
@@ -294,53 +332,13 @@ footer p {
         height: auto;
         overflow-y: auto;
     }
-    .movie-information .content .cast {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .movie-information .content .info .reviews-container .reviews span {
-        top: 44%;
-        left: 83%;
-    }
-    .movie-information .content .info .reviews-container .reviews .score-4 {
-        top: 44%;
-        left: 82.5%;
-    }
-    .movie-information .content .info .reviews-container .reviews #user-score {
-        top: 44%;
-        left: 83%;
-    }
-}
-@media screen and (max-width: 625px) {
-    .movie-information .content .cast {
+    .movie-information .content .cast-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media screen and (max-width: 425px) {
-    .movie-information .content .info .reviews-container {
+@media screen and (max-width: 610px) {
+    .movie-information .content .cast-grid {
         grid-template-columns: 1fr;
-    }
-    .movie-information .content .info .reviews-container .reviews {
-        margin: 15px 0;
-    }
-    .movie-information .content .info .reviews-container .reviews h3 {
-        margin-right: .9rem;
-    }
-    .movie-information .content .info .reviews-container .reviews:nth-child(2) h3 {
-        margin-right: 1rem;
-    }
-    .movie-information .content .info .reviews-container .reviews:last-child h3 {
-        margin-right: .9rem;
-    }
-    .movie-information .content .info .reviews-container .reviews span {
-        left: 85%;
-    }
-    .movie-information .content .info .reviews-container .reviews .score-4 {
-        top: 42%;
-        left: 84.5%;
-    }
-    .movie-information .content .info .reviews-container .reviews #user-score {
-        top: 42%;
-        left: 85%;
     }
 }
 @media screen and (max-width: 335px) {
@@ -362,6 +360,9 @@ footer p {
     body {
         color: var(--clr-offWhite);
         background-color: var(--clr-blk); 
+    }
+    .movie-information .cast-grid .cast p {
+        color: var(--clr-offWhite);
     }
     footer {
         color: var(--clr-white);
