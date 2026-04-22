@@ -129,7 +129,7 @@ body {
     max-width: 70rem;
     margin: 0 auto;
 }
-header h2,
+header h1,
 article .title h2  {
     padding: .45rem;
     border-radius: 5px;
@@ -474,7 +474,7 @@ footer p {
     .links ul li a {
         color: var(--clr-white);
     }
-    header h2 {
+    header h1 {
         background-color: var(--clr-grey);
     }
     article .title h2 {
