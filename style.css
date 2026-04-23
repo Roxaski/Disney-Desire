@@ -32,7 +32,7 @@
     --clr-grey: #3e3b3b;
     --clr-lightGrey: #8b8888;
     --clr-red: #cc0e11;
-    --clr-orange: #eb6207;
+    --clr-orange: #df5900;
     --clr-green: #5d960e;
     --clr-blue: #1b5cdd;
     --clr-indigo: #6f29e1;
@@ -455,15 +455,15 @@ body {
     padding: .75rem;
     gap: 0 .5rem;
 }
+.poster-wrapper a {
+    text-decoration: none;
+}
 .movie-poster img {
     display: block;
     width: 100%;
     height: auto;
     color: var(--clr-grey);
     box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
-}
-.movie-poster a {
-    text-decoration: none;
 }
 .title .header.archive {
     background-color: var(--clr-violet);
@@ -564,7 +564,6 @@ body {
 }
 .history {
     display: flex;
-    justify-content: center;
     align-items: flex-start;
 }
 .history .mobile-only {
@@ -711,6 +710,11 @@ footer .copyright {
 }
 footer p {
     margin-top: .25rem;
+}
+@media screen and (max-width: 1265px) {
+    .history-wrapper img {
+        width: 290px;
+    }
 }
 @media screen and (max-width: 1135px) {
     .no-scroll {
