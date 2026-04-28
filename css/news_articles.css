@@ -487,7 +487,6 @@ footer p {
     }
     .grid-container article p a {
         color: var(--clr-white);
-        font-weight: 600;
         text-decoration: underline;
     }
     .grid-container .embed-link.light {

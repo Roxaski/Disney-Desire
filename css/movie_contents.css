@@ -93,7 +93,6 @@ body {
     color: var(--clr-white);
     background: var(--clr-blue);
     padding: .4rem;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
 }
 .movie-information .content .subheader h2 {
     font-weight: 400;

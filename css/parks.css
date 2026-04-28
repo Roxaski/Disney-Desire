@@ -133,7 +133,6 @@ header h1 {
     padding: .45rem;
     border-radius: 5px;
     background-color: var(--clr-orange);
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
     font-size: clamp(1.2rem, 3vw, 1.4rem);
     font-weight: 400;
     color: var(--clr-white);
@@ -142,7 +141,6 @@ article p {
     margin: 25px auto;
 }
 article span a {
-    text-transform: capitalize;
     color: var(--clr-orange);
     text-decoration: none;
     font-weight: 500;
@@ -406,7 +404,6 @@ footer p {
     }
     article span a {
         color: var(--clr-white);
-        font-weight: 600;
         text-decoration: underline;
     }
     article img {

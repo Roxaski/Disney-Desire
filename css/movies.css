@@ -141,7 +141,6 @@ body {
     padding: .5rem;
     font-size: clamp(1.15rem, 3vw, 1.3rem);
     font-weight: 500;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
     color: var(--clr-white);
     background-color: var(--clr-blue);
     -webkit-tap-highlight-color: transparent;
