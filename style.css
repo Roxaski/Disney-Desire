@@ -338,7 +338,6 @@ body {
 .title .header {
     position: relative;
     padding: .35rem 0;
-    text-transform: uppercase;
 }
 .title .header.news {
     background-color: var(--clr-red);
@@ -348,7 +347,6 @@ body {
     text-transform: capitalize;
     margin-left: 1rem;
     letter-spacing: .15px;
-    text-transform: uppercase;
     font-size: clamp(1.2rem, 3vw, 1.4rem);
     font-weight: 500;
 }
@@ -429,7 +427,7 @@ body {
 }
 .articles .tags .tag {
     position: relative;
-    top: 1px;
+    top: 2.5px;
     width: 1rem;
     height: auto;
 }
@@ -1115,5 +1113,18 @@ footer p {
     }
     footer .copyright circle {
         stroke: #f0f0f0;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    nav.active .links,
+    .links {
+        transition: none;
+    }
+    .bars::before,
+    .bars::after {
+        transition: none;
+    }
+    .overlay {
+        transition: none;
     }
 }

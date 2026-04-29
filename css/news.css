@@ -199,7 +199,7 @@ header h1 {
 }
 .articles .tags .tag {
     position: relative;
-    top: 1px;
+    top: 2.5px;
     width: 1rem;
     height: auto;
 }
@@ -512,5 +512,18 @@ footer p {
     }
     footer .copyright circle {
         stroke: #f0f0f0;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    nav.active .links,
+    .links {
+        transition: none;
+    }
+    .bars::before,
+    .bars::after {
+        transition: none;
+    }
+    .overlay {
+        transition: none;
     }
 }

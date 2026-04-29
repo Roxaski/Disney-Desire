@@ -416,3 +416,16 @@ footer p {
         stroke: #f0f0f0;
     }
 }
+@media (prefers-reduced-motion: reduce) {
+    nav.active .links,
+    .links {
+        transition: none;
+    }
+    .bars::before,
+    .bars::after {
+        transition: none;
+    }
+    .overlay {
+        transition: none;
+    }
+}
