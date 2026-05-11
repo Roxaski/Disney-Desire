@@ -207,21 +207,28 @@ body {
     font-weight: 300;
     margin-top: 3px;
 }
-.grid-container aside ul li {
+.grid-container aside .content ul li {
     margin: 15px auto 0;
 }
-.grid-container aside ul li a {
+.grid-container aside .content ul li a {
     text-decoration: none;
 }
-.grid-container aside ul li p {
+.grid-container aside .content ul li p {
     font-size: clamp(.95rem, 3vw, 1rem);
 }
-.grid-container aside ul li img {
+.grid-container aside .content ul li img {
     width: 100%;
     color: var(--clr-grey);
     height: auto;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
     cursor: pointer;
+}
+.grid-container aside .error-message {
+    font-size: clamp(1rem, 3vw, 1.05rem);
+    font-weight: 300;
+    margin-top: .5rem;
+    letter-spacing: .25px;
+    width: 97%;
 }
 footer {
     margin: 200px auto 0;
@@ -495,7 +502,7 @@ footer p {
     .grid-container .embed-link.dark {
         display: block;
     }
-    .grid-container aside ul li img {
+    .grid-container aside .content ul li img {
         color: var(--clr-offWhite);
     }
     .grid-container article ul li::before {
