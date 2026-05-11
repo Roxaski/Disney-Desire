@@ -1,0 +1,66 @@
+[
+    {
+        "name" : "Coming soon to Disney Plus",
+        "href" : "../articles/disney_plus.html",
+        "src" : "../assets/articles/article_disney_plus_extra_large.webp",
+        "srcset" : "../assets/articles/disney_plus_small.webp 480w, ../assets/articles/disney_plus_medium.webp 800w, ../assets/articles/article_disney_plus_large.webp 1200w, ../assets/articles/disney_plus_extra_large.webp 1920w",
+        "sizes" : "(max-width: 850px) 100vw, 25vw",
+        "alt" : "disney plus poster"
+    },
+    {
+        "name" : "Dreamlight Valley announces expansion",
+        "href" : "../articles/dreamlight_valley.html",
+        "src" : "../assets/articles/article_dreamlight_extra_large.webp",
+        "srcset" : "../assets/articles/article_dreamlight_small.webp 480w, ../assets/articles/article_dreamlight_medium.webp 800w, ../assets/articles/article_dreamlight_large.webp 1200w, ../assets/articles/article_dreamlight_extra_large.webp 1920w",
+        "sizes" : "(max-width: 850px) 100vw, 25vw",
+        "alt" : "dreamlight valley game poster"
+    },
+    {
+        "name" : "Frozen 3 announced by Bob Iger",
+        "href" : "../articles/frozen_3.html",
+        "src" : "../assets/articles/article_frozen_extra_large.webp",
+        "srcset" : "../assets/articles/article_frozen_small.webp 480w, ../assets/articles/article_frozen_medium.webp 800w, ../assets/articles/article_frozen_large.webp 1200w, ../assets/articles/article_frozen_extra_large.webp 1920w",
+        "sizes" : "(max-width: 850px) 100vw, 25vw",
+        "alt" : "the cast of frozen 2"
+    },
+    {
+        "name" : "Kingdom Hearts 4 : Overview",
+        "href" : "../articles/kingdom_hearts_4.html",
+        "src" : "../assets/articles/article_kingdom_hearts_extra_large.webp",
+        "srcset" : "../assets/articles/article_kingdom_hearts_small.webp 480w, ../assets/articles/article_kingdom_hearts_medium.webp 800w, ../assets/articles/article_kingdom_hearts_large.webp 1200w, ../assets/articles/article_kingdom_hearts_extra_large.webp 1920w",
+        "sizes" : "(max-width: 850px) 100vw, 25vw",
+        "alt" : "sora from kingdom hearts riding baymax from big hero 6"
+    },
+    {
+        "name" : "Mando movie begins filming soon",
+        "href" : "../articles/mando_movie.html",
+        "src" : "../assets/articles/article_mando_extra_large.webp",
+        "srcset" : "../assets/articles/article_mando_small.webp 480w, ../assets/articles/article_mando_medium.webp 800w, ../assets/articles/article_mando_large.webp 1200w, ../assets/articles/article_mando_extra_large.webp 1920w",
+        "sizes" : "(max-width: 850px) 100vw, 25vw",
+        "alt" : "the mandalorian stylized poster"
+    },
+    {
+        "name" : "The story of a Mouse's documentary",
+        "href" : "../articles/story_of_a_mouse.html",
+        "src" : "../assets/articles/article_documentary_extra_large.webp",
+        "srcset" : "../assets/articles/article_documentary_small.webp 480w, ../assets/articles/article_documentary_medium.webp 800w, ../assets/articles/article_documentary_large.webp 1200w, ../assets/articles/article_documentary_extra_large.webp 1920w",
+        "sizes" : "(max-width: 850px) 100vw, 25vw",
+        "alt" : "sketch of mickey mouse"
+    },
+    {
+        "name" : "Bob Iger announces Toy Story 5",
+        "href" : "../articles/toy_story_5.html",
+        "src" : "../assets/articles/article_toy_story_extra_large.webp",
+        "srcset" : "../assets/articles/article_toy_story_small.webp 480w, ../assets/articles/article_toy_story_medium.webp 800w, ../assets/articles/article_toy_story_large.webp 1200w, ../assets/articles/article_toy_story_extra_large.webp 1920w",
+        "sizes" : "(max-width: 850px) 100vw, 25vw",
+        "alt" : "the cast of toy story 5"
+    },
+    {
+        "name" : "Celebrating 100 years of Disney",
+        "href" : "../articles/wish.html",
+        "src" : "../assets/articles/article_wish_extra_large.webp",
+        "srcset" : "../assets/articles/article_wish_small.webp 480w, ../assets/articles/article_wish_medium.webp 800w, ../assets/articles/article_wish_large.webp 1200w, ../assets/articles/article_wish_extra_large.webp 1920w",
+        "sizes" : "(max-width: 850px) 100vw, 25vw",
+        "alt" : "king magnifico wish movie villain"
+    }
+]
