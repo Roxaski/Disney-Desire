@@ -334,14 +334,14 @@ footer p {
         width: clamp(200px, 50vw, 245px);
         height: auto;
     }
-    nav.active .hamburger_menu .bars::before,
-    nav.active .hamburger_menu .bars::after {
+    nav.menu-open .hamburger_menu .bars::before,
+    nav.menu-open .hamburger_menu .bars::after {
         background-color: var(--clr-white);
     }
-    nav.active .hamburger_menu .bars::before {
+    nav.menu-open .hamburger_menu .bars::before {
         transform: translateY(0) rotate(-45deg);
     }
-    nav.active .hamburger_menu .bars::after {
+    nav.menu-open .hamburger_menu .bars::after {
         transform: translateY(0) rotate(45deg);
     }
     .hamburger_menu {
@@ -391,7 +391,7 @@ footer p {
     .bars::after {
         transform: translateY(-4px);
     }
-    nav.active .overlay {
+    nav.menu-open .overlay {
         opacity: 1;
         pointer-events: all;
     }
@@ -405,7 +405,7 @@ footer p {
         transition: opacity 300ms;
         z-index: 3;
     }
-    nav.active .links {
+    nav.menu-open .links {
         transform: translateX(40%);
         visibility: visible;
         transition: transform 250ms ease-in-out, visibility 0s;
@@ -460,7 +460,7 @@ footer p {
         margin: 50px auto 0;
     }
 }
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1150px) {
     .lightbox > img {
         margin: 0 auto;
     }
@@ -531,12 +531,12 @@ footer p {
     nav {
         background: var(--clr-darkGrey);
     }
-    nav.active .links ul li:hover:nth-child(1),
-    nav.active .links ul li:hover:nth-child(2),
-    nav.active .links ul li:hover:nth-child(3),
-    nav.active .links ul li:hover:nth-child(5),
-    nav.active .links ul li:hover:nth-child(6),
-    nav.active .links ul li:hover:nth-child(7) {
+    nav.menu-open .links ul li:hover:nth-child(1),
+    nav.menu-open .links ul li:hover:nth-child(2),
+    nav.menu-open .links ul li:hover:nth-child(3),
+    nav.menu-open .links ul li:hover:nth-child(5),
+    nav.menu-open .links ul li:hover:nth-child(6),
+    nav.menu-open .links ul li:hover:nth-child(7) {
         background-color: transparent;
     }
     .links ul li:hover:nth-child(1),
@@ -561,7 +561,7 @@ footer p {
     }
 }
 @media (prefers-reduced-motion: reduce) {
-    nav.active .links,
+    nav.menu-open .links,
     .links {
         transition: none;
     }
