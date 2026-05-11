@@ -239,11 +239,20 @@ footer {
     padding-bottom: 2rem;
     margin: 25px auto 0;
 }
-footer h2 {
+footer h4 {
     font-size: clamp(1rem , 3vw, 1.1rem);
     font-weight: 400;
     letter-spacing: .25px;
     text-transform: uppercase;
+}
+footer h4::before {
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 1.5rem;
+    border-top: solid 2px var(--clr-grey);
+    margin: 0 auto;
+    max-width: 60rem;
 }
 footer .copyright {
     display: inline-block;
@@ -365,6 +374,9 @@ footer p {
     }
     footer {
         color: var(--clr-white);
+    }
+    footer h4::before {
+        border-top: solid 2px var(--clr-grey);
     }
     footer .copyright path {
         stroke: #f0f0f0;

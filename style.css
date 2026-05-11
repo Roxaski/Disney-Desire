@@ -666,13 +666,13 @@ footer {
     line-height: 1.6;
     padding-bottom: 2rem;
 }
-footer h2 {
+footer h4 {
     font-size: clamp(1rem , 3vw, 1.1rem);
     font-weight: 400;
     letter-spacing: .25px;
     text-transform: uppercase;
 }
-footer h2::before {
+footer h4::before {
     content: '';
     display: block;
     position: relative;
@@ -1105,8 +1105,8 @@ footer p {
     .parks .content .img-container img {
         color: var(--clr-white);
     }
-    footer h3::before {
-        border-top: solid 2px var(--clr-offWhite);
+    footer h4::before {
+        border-top: solid 2px var(--clr-grey);
     }
     footer .copyright path {
         stroke: #f0f0f0;

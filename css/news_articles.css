@@ -237,13 +237,13 @@ footer {
     line-height: 1.6;
     padding-bottom: 2rem;
 }
-footer h2 {
+footer h3 {
     font-size: clamp(1rem , 3vw, 1.1rem);
     font-weight: 400;
     letter-spacing: .25px;
     text-transform: uppercase;
 }
-footer h2::before {
+footer h3::before {
     content: '';
     display: block;
     position: relative;
