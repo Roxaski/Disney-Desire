@@ -2,8 +2,8 @@
     {
         "name" : "Coming soon to Disney Plus",
         "href" : "../articles/disney_plus.html",
-        "src" : "../assets/articles/article_disney_plus_extra_large.webp",
-        "srcset" : "../assets/articles/disney_plus_small.webp 480w, ../assets/articles/disney_plus_medium.webp 800w, ../assets/articles/article_disney_plus_large.webp 1200w, ../assets/articles/disney_plus_extra_large.webp 1920w",
+        "src" : "../assets/articles/disney_plus_extra_large.webp",
+        "srcset" : "../assets/articles/disney_plus_small.webp 480w, ../assets/articles/disney_plus_medium.webp 800w, ../assets/articles/disney_plus_large.webp 1200w, ../assets/articles/disney_plus_extra_large.webp 1920w",
         "sizes" : "(max-width: 850px) 100vw, 25vw",
         "alt" : "disney plus poster"
     },
