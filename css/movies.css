@@ -358,7 +358,7 @@ footer p {
         padding: 0;
         -webkit-tap-highlight-color: transparent;
     }
-    .wrapper {
+    main {
         top: 0;
         padding: 0 .75rem;
     }
