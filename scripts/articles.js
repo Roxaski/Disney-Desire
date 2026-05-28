@@ -35,7 +35,7 @@ fetch('../json/articles.json')
         return `
         <ul>
             <li>
-                <a ${article.href}>
+                <a href="${article.href}">
                     <img width="1920" height="1080" draggable="false"
                     src="${article.src}"
                     srcset="${article.srcset}"
