@@ -34,6 +34,7 @@
 }
 body {
     width: 100%;
+    max-width: 90rem;
     height: 100vh;
     color: var(--clr-blk);
     background-color: var(--clr-white);
@@ -105,7 +106,7 @@ body {
 .links ul li:hover:nth-child(7) {
     background-color: var(--clr-orange);
 }
-.wrapper {
+main {
     position: relative;
     top: 100px;
     max-width: 70rem;
@@ -260,6 +261,9 @@ footer p {
         -webkit-tap-highlight-color: transparent;
         border: none;
         z-index: 5;
+    }
+    .hamburger-menu:focus:not(:focus-visible) {
+        outline: none;
     }
     .hamburger_menu .bars {
         position: relative;

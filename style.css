@@ -41,6 +41,7 @@
 }
 body {
     width: 100%;
+    max-width: 90rem;
     height: 100vh;
     color: var(--clr-blk);
     background-color: var(--clr-white);
@@ -225,10 +226,6 @@ body {
     rgba(220,94,34,1) 70%, 
     rgb(176, 34, 34) 100%,
     rgba(220,94,34,1) 10%);
-}
-.wrapper {
-    max-width: 86rem;
-    margin: 0 auto;
 }
 .img-slider {
     display: none;
@@ -714,6 +711,9 @@ footer p {
         -webkit-tap-highlight-color: transparent;
         border: none;
         z-index: 5;
+    }
+    .hamburger-menu:focus:not(:focus-visible) {
+        outline: none;
     }
     .hamburger_menu .bars {
         position: relative;

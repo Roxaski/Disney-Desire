@@ -113,7 +113,7 @@ body {
 .links ul li:hover:nth-child(7) {
     background-color: var(--clr-orange);
 }
-.wrapper {
+main {
     position: relative;
     top: 100px;
     max-width: 70rem;
@@ -293,6 +293,9 @@ footer p {
         border: none;
         z-index: 5;
     }
+    .hamburger-menu:focus:not(:focus-visible) {
+        outline: none;
+    }
     .hamburger_menu .bars {
         position: relative;
         width: 100%;
@@ -386,7 +389,7 @@ footer p {
         padding: 0;
         -webkit-tap-highlight-color: transparent;
     }
-    .wrapper {
+    main {
         top: 0;
         padding: 0 .75rem;
     }
