@@ -33,6 +33,7 @@
 }
 body {
     width: 100%;
+    max-width: 90rem;
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
     color: var(--clr-blk);
@@ -46,7 +47,6 @@ body {
     grid-template-areas: 
     'poster content'
     'poster content';
-    max-width: 80rem;
 }
 .movie-information .poster {
     grid-area: poster;
@@ -350,6 +350,9 @@ footer p {
     body {
         color: var(--clr-offWhite);
         background-color: var(--clr-blk); 
+    }
+    .movie-information .content {
+        color-scheme: dark;
     }
     .movie-information .cast-grid .cast p {
         color: var(--clr-offWhite);
