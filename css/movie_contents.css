@@ -114,9 +114,8 @@ body {
 }
 .movie-information {
     display: grid;
-    grid-template-columns: 400px 1fr;
+    grid-template-columns:  350px 1fr;
     grid-template-areas: 
-    'poster content'
     'poster content';
     margin-top: 75px;
 }
@@ -131,7 +130,7 @@ body {
 .movie-information .poster img {
     display: block;
     width: 100%;
-    height: calc(100vh - 75px);
+    height: auto;
     object-fit: cover;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
 }
