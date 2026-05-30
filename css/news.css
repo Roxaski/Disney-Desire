@@ -261,8 +261,7 @@ footer p {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        margin-left: .25rem;
-        margin: .5rem .25rem 0 0;
+        margin: .5rem 0 0 .5rem;
     }
     .mobile_logo img {
         width: clamp(200px, 50vw, 245px);
