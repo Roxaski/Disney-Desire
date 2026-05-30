@@ -299,13 +299,13 @@ footer {
     padding-bottom: 2rem;
     margin: 25px auto 0;
 }
-footer h4 {
+footer h3 {
     font-size: clamp(1rem , 3vw, 1.1rem);
     font-weight: 400;
     letter-spacing: .25px;
     text-transform: uppercase;
 }
-footer h4::before {
+footer h3::before {
     content: '';
     display: block;
     position: relative;
@@ -632,7 +632,7 @@ footer p {
     footer {
         color: var(--clr-white);
     }
-    footer h4::before {
+    footer h3::before {
         border-top: solid 2px var(--clr-grey);
     }
     footer .copyright path {
