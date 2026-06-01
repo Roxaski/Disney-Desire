@@ -342,7 +342,6 @@ body {
     bottom: 0;
     width: clamp(180px, 25vw, 290px);
     height: 100%;
-    color: var(--clr-white);
     object-fit: contain;
     overflow: hidden;
 }
@@ -365,6 +364,7 @@ body {
 .articles a {
     text-decoration: none;
 }
+
 .articles .content {
     position: relative;
     display: flex;
@@ -582,6 +582,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     'text image';
+    gap: 1rem;
 }
 .gallery .content .text {
     grid-area: text;
@@ -601,7 +602,6 @@ body {
 }
 .gallery .content .text p {
     margin: 12px 0;
-    width: 96%;
 }
 .gallery .content img {
     grid-area: image;
