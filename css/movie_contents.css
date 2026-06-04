@@ -544,6 +544,9 @@ footer p {
         display: flex;
         flex-direction: column;
     }
+    .movie-information .reviews-container .user.reviews .star-wrapper .star {
+        left: 0;
+    }
     .movie-information .reviews-container .critics.reviews .star-wrapper .star,
     .movie-information .reviews-container .user.reviews .star-wrapper .star {
         margin: .65rem .65rem 0 0;
