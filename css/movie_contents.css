@@ -30,6 +30,8 @@
     --clr-white: #f0f0f0;
     --clr-offWhite: #c4c2c2;
     --clr-grey: #3e3b3b;
+    --clr-lightGrey: #cccccc;
+    --clr-charcoal: #7f7979;
     --clr-red: #cc0e11;
     --clr-orange: #df5900;
     --clr-green: #5d960e;
@@ -130,7 +132,7 @@ body {
 .movie-information .poster img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
 }
@@ -217,54 +219,34 @@ body {
 .movie-information .content .info.genre ul li {
     margin: .15rem;
 }
-.reviews-container {
+.movie-information .reviews-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: start;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.5rem 1rem;
 }
-.reviews-container .reviews {
-    position: relative;
+.movie-information .reviews-container .reviews {
+    display: flex;
+    flex-direction: row;
 }
-.reviews-container .reviews h3 {
-    display: inline-block;
-    position: relative;
-    bottom: .7rem;
+.movie-information .reviews-container .reviews h3 {
     text-transform: capitalize;
     font-weight: 300;
+    margin-top: .35rem;
 }
-.reviews-container .reviews .star {
-    position: relative;
-    margin-left: .5rem;
+.movie-information .reviews-container .reviews .star-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.movie-information .reviews-container .user.reviews .star-wrapper {
+    cursor: pointer;
+}
+.movie-information .reviews-container .reviews .star-wrapper .star {
     width: 2.3rem;
     height: auto;
+    fill: var(--clr-lightGrey);
     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
-}
-.reviews-container .reviews:nth-child(3) .star {
-    cursor: pointer;
     -webkit-tap-highlight-color: transparent;
-}
-.reviews-container .reviews:nth-child(3) .star:focus:not(:focus-visible) {
-    outline: none;
-}
-.reviews-container .reviews span {
-    color: var(--clr-white);
-    position: absolute;
-    top: 43%;
-    left: 83%;
-    transform: translate(-50%, -50%);
-}
-.reviews-container .reviews .score-4 {
-    position: absolute;
-    top: 42%;
-    left: 82.5%;
-    transform: translate(-50%, -50%);
-}
-.movie-information .content .info .reviews-container .reviews #user-score {
-    position: absolute;
-    top: 43%;
-    left: 88.25%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
+    margin-left: .85rem;
 }
 .movie-information .trailer {
     position: relative;
@@ -477,6 +459,22 @@ footer p {
     .movie-information {
         margin-top: 0;
     }
+    .movie-information .reviews-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .movie-information .reviews-container .critics.reviews {
+        margin-bottom: 1.5rem;
+    }
+    .movie-information .reviews-container .reviews .star-wrapper .star {
+        position: relative;
+    }
+    .movie-information .reviews-container .critics.reviews .star-wrapper .star {
+        left: .1rem;
+    }
+    .movie-information .reviews-container .user.reviews .star-wrapper .star {
+        left: .5rem;
+    }
 }
 @media screen and (max-width: 965px) {
     .movie-information .content .cast-grid {
@@ -492,23 +490,6 @@ footer p {
     }
     .movie-information .content .info .reviews-container .reviews h3 {
         margin-right: .9rem;
-    }
-    .movie-information .content .info .reviews-container .reviews:nth-child(2) h3 {
-        margin-right: 1rem;
-    }
-    .movie-information .content .info .reviews-container .reviews:last-child h3 {
-        margin-right: .9rem;
-    }
-    .movie-information .content .info .reviews-container .reviews span {
-        left: 85%;
-    }
-    .movie-information .content .info .reviews-container .reviews .score-4 {
-        top: 42%;
-        left: 84.5%;
-    }
-    .movie-information .content .info .reviews-container .reviews #user-score {
-        top: 42%;
-        left: 89%;
     }
 }
 @media screen and (max-width: 805px) {
@@ -556,6 +537,16 @@ footer p {
 @media screen and (max-width: 610px) {
     .movie-information .content .cast-grid {
         grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 435px) {
+    .movie-information .reviews-container .reviews {
+        display: flex;
+        flex-direction: column;
+    }
+    .movie-information .reviews-container .critics.reviews .star-wrapper .star,
+    .movie-information .reviews-container .user.reviews .star-wrapper .star {
+        margin: .65rem .65rem 0 0;
     }
 }
 @media screen and (max-width: 335px) {
@@ -628,6 +619,9 @@ footer p {
     }
     .movie-information .cast-grid .cast p {
         color: var(--clr-offWhite);
+    }
+    .movie-information .reviews-container .reviews .star-wrapper .star {
+        fill: var(--clr-grey);
     }
     footer {
         color: var(--clr-white);
