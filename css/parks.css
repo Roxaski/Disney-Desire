@@ -216,11 +216,11 @@ footer p {
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 53%;
+        top: 3rem;
         transform: translateY(-50%);
-        right: 3rem;
-        width: 1.1rem;
-        height: 2rem;
+        right: 2.215rem;
+        width: 2.75rem;
+        height: 2.75rem;
         background-color: transparent;
         -webkit-tap-highlight-color: transparent;
         border: none;
@@ -231,7 +231,7 @@ footer p {
     }
     .hamburger_menu .bars {
         position: relative;
-        width: 100%;
+        width: 1.1rem;
         height: 2px;
         border-radius: 10px;
         background-color: transparent;
