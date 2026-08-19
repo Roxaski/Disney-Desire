@@ -1,4 +1,7 @@
-<img width="1920" height="1080" alt="github_read me" src="https://github.com/user-attachments/assets/56da9a27-2330-4fbb-9187-e310c43a9dc1" />
+![Disney Desire](https://github.com/user-attachments/assets/9bd0f47c-91a6-4352-bdf6-09f9a3f28cb9#gh-light-mode-only)
+![Disney Desire](https://github.com/user-attachments/assets/065b222b-b636-412a-9805-1fa32ba5b2ab#gh-dark-mode-only)
+
+
 
 ## Welcome to Disney Desire
 
