@@ -123,7 +123,13 @@ main {
     position: relative;
     contain: layout;
 }
-.gallery .img-container > img {
+.gallery .img-container:hover .img-overlay {
+    opacity: 1;
+}
+.gallery .img-container img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
     aspect-ratio: 16 / 9;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
 }
@@ -191,14 +197,6 @@ main {
     color: var(--clr-white);
     text-align: center;
     width: 75%;
-}
-.gallery .img-container:hover .img-overlay {
-    opacity: 1;
-}
-.gallery .img-container img {
-    width: 100%;
-    height: auto;
-    cursor: pointer;
 }
 .lightbox {
     display: flex;
