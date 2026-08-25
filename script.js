@@ -17,11 +17,11 @@ function toggleHamburgerMenu() {
     main.inert = menuOpen;
     logo.inert = menuOpen;
 
-    // adds or removes the esc key event listener when the hamburger menu is open or closed
+    // adds or removes the event listener depending on wether the hamburger is open or not
     if (menuOpen) {
-        document.removeEventListener('keydown', escapeKeyPress);
-    } else {
         document.addEventListener('keydown', escapeKeyPress);
+    } else {
+        document.removeEventListener('keydown', escapeKeyPress);
     };
 };
 
