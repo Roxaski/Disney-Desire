@@ -42,6 +42,8 @@
 }
 body {
     width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
     height: 100vh;
     color: var(--clr-blk);
     background-color: var(--clr-white);
@@ -66,11 +68,11 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--clr-blk);
-    height: 75px;
+    height: 4.68rem;
 }
 .links ul li .logo {
     display: block;
-    max-width: 215px;
+    max-width: 13.43rem;
     height: auto;
     object-fit: contain;
     color: var(--clr-white);
@@ -115,7 +117,7 @@ body {
 }
 main {
     position: relative;
-    top: 100px;
+    top: 6.25rem;
     max-width: 70rem;
     margin: 0 auto;
 }
@@ -129,17 +131,17 @@ main h1 {
 }
 .articles {
     display: flex;
-    margin: 15px auto;
+    margin: .93rem auto;
 }
 .articles a {
     text-decoration: none;
 }
 .articles img {
-    width: 300px;
+    width: 18.75rem;
     height: auto;
     color: var(--clr-grey);
     box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
-    object-fit: cover;
+    aspect-ratio: 16 / 9;
 }
 .articles .content {
     position: relative;
@@ -184,12 +186,12 @@ main h1 {
     width: 1rem;
     height: auto;
     box-shadow: none;
-    margin-right: .45rem;
 }
 .articles .tags .tag {
     position: relative;
-    top: 2.5px;
-    width: 1rem;
+    top: .15rem;
+    right: .25rem;
+    width: 1.75rem;
     height: auto;
 }
 .articles .tags ul {
@@ -211,7 +213,7 @@ main h1 {
     width: 97%;
 }
 footer {
-    margin: 200px auto 0;
+    margin: 12.5rem auto 0;
     text-align: center;
     width: 90%;
     line-height: 1.6;
@@ -236,7 +238,7 @@ footer .copyright {
     display: inline-block;
     position: relative;
     top: .115rem;
-    width: 16px;
+    width: 1rem;
     height: auto;
 }
 footer p {
@@ -252,7 +254,7 @@ footer p {
         align-items: center;
         position: relative;
         width: 100%;
-        height: 90px;
+        height: 5.6rem;
         background: var(--clr-red);
         margin-bottom: 1.5rem;
         box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
@@ -264,7 +266,7 @@ footer p {
         margin: .5rem 0 0 .5rem;
     }
     .mobile_logo img {
-        width: clamp(200px, 50vw, 245px);
+        width: clamp(12.5rem, 50vw, 15.3rem);
         height: auto;
     }
     nav.menu-open .hamburger_menu .bars::before,
@@ -292,13 +294,13 @@ footer p {
         border: none;
         z-index: 5;
     }
-    .hamburger-menu:focus:not(:focus-visible) {
+    .hamburger_menu:focus:not(:focus-visible) {
         outline: none;
     }
     .hamburger_menu .bars {
         position: relative;
         width: 1.1rem;
-        height: 2px;
+        height: .125rem;
         border-radius: 10px;
         background-color: transparent;
     }
@@ -308,7 +310,7 @@ footer p {
         top: 44.5%;
         transform: translateY(-50%);
         right: 1rem;
-        max-width: 65px;
+        max-width: 4rem;
         height: auto;
         z-index: 3;
     }
@@ -322,10 +324,10 @@ footer p {
         transition: transform 250ms ease;
     }
     .bars::before {
-        transform: translateY(4px);
+        transform: translateY(.25rem);
     }
     .bars::after {
-        transform: translateY(-4px);
+        transform: translateY(-.25rem);
     }
     nav.menu-open .overlay {
         opacity: 1;
@@ -381,7 +383,7 @@ footer p {
     }
     .links ul li a {
         display: inline-block;
-        width: 115px;
+        width: 7.1rem;
         text-align: left;
         color: var(--clr-white);
         height: 0;
@@ -393,7 +395,7 @@ footer p {
         padding: 0 .75rem;
     }
     footer {
-        margin: 50px auto 0;
+        margin: 3.125rem auto 0;
     }
 }
 @media screen and (max-width: 765px) {
