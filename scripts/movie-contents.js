@@ -72,7 +72,7 @@ starWrapper.addEventListener('click', (e) => {
     const clickedStar = ratingsArray.indexOf(e.target.closest('.star'));
 
     /*
-        since -1 dosen't exist in the array it returns early,
+        since -1 doesn't exist in the array it returns early,
         this is to stop the user from removing the star rating when clicking outside the container
     */
     if(clickedStar === -1) {
