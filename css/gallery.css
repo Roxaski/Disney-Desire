@@ -476,11 +476,6 @@ footer p {
         margin: 3.125rem auto 0;
     }
 }
-@media screen and (max-width: 1150px) {
-    .lightbox > img {
-        margin: 0 auto;
-    }
-}
 @media screen and (max-width: 550px) {
     .gallery {
         grid-template-columns: 1fr;
