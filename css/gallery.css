@@ -184,6 +184,7 @@ main {
 }
 .gallery .img-container .img-overlay img {
     aspect-ratio: 9 / 8;
+    box-shadow: none;
 }
 .gallery .img-container .img-overlay p {
     position: absolute;
