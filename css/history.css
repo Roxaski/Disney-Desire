@@ -136,6 +136,7 @@ article #text-wrap {
     margin-right: 1.5rem;
     margin-bottom: .5rem;
     color: var(--clr-white);
+    cursor: pointer;
 }
 article .article-img {
     display: block;
@@ -146,12 +147,70 @@ article .article-img {
     object-fit: cover;
     aspect-ratio: 16 / 9;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+    cursor: pointer;
 }
 article p {
     margin: 1.25rem auto;
 }
 .memoriam {
     display: none;
+}
+.lightbox-no-scroll {
+    overflow: hidden;
+    pointer-events: auto;
+}
+.lightbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    touch-action: none;
+    width: fit-content;
+    height: auto;
+    z-index: 7;
+}
+.lightbox-no-scroll {
+    overflow: hidden;
+    pointer-events: auto;
+}
+.lightbox > img {
+    display: none;
+    max-width: 90vw;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    user-select: none;
+    aspect-ratio: 16 / 9;
+    transition: transform 300ms ease-in-out;
+    cursor: default;
+}
+.lightbox > img.active {
+    display: block;
+}
+.lightbox > img.zoom {
+    transform: scale(2);
+}
+.lightbox > img.drag {
+    transition: none;
+}
+.gallery-overlay {
+    opacity: 0;
+    position: fixed;
+    pointer-events: none;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+    background: var(--clr-blk);
+    z-index: 5;
+}
+.gallery-overlay.active {
+    opacity: .85;
+    pointer-events: auto;
 }
 footer {
     margin: 12.5rem auto 0;
@@ -184,6 +243,11 @@ footer .copyright {
 }
 footer p {
     margin-top: .25rem;
+}
+@media (hover: hover) {
+    .lightbox > img.zoom {
+        transform: scale(1.25);
+    }
 }
 @media screen and (max-width: 1135px) {
     .no-scroll {
@@ -380,6 +444,15 @@ footer p {
         width: 100%;
     }
 }
+@media screen and (orientation: landscape) and (max-width: 960px) {
+    .lightbox {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: auto;
+    }
+}
 @media screen and (max-width: 934px) and (orientation: landscape) {
     .links {
         padding-bottom: 2rem;
@@ -474,6 +547,9 @@ footer p {
     }
     .bars::before,
     .bars::after {
+        transition: none;
+    }
+    .lightbox > img {
         transition: none;
     }
     .overlay {
