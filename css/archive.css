@@ -409,6 +409,9 @@ footer p {
         top: 0;
         padding: 0 .75rem;
     }
+    .scroll-top .icon {
+        display: none;
+    }
     .scroll-top-mobile {
         display: flex;
         align-items: center;
@@ -416,6 +419,9 @@ footer p {
     }
     footer {
         margin: 3.125rem auto 0;
+    }
+    footer .copyright {
+        display: none;
     }
 }
 @media screen and (max-width: 810px) {
