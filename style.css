@@ -841,6 +841,9 @@ footer p {
     .gallery h3 {
         margin: .625rem auto 0;
     }
+    footer .copyright {
+        display: none;
+    }
 }
 @media screen and (max-width: 875px) {
     .poster-wrapper {

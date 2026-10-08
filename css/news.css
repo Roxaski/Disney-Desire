@@ -397,6 +397,9 @@ footer p {
     footer {
         margin: 3.125rem auto 0;
     }
+    footer .copyright {
+        display: none;
+    }
 }
 @media screen and (max-width: 765px) {
     .articles {

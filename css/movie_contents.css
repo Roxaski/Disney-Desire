@@ -478,6 +478,9 @@ footer p {
     .movie-information .reviews-container .user.reviews .star-wrapper .star {
         left: .5rem;
     }
+    footer .copyright {
+        display: none;
+    }
 }
 @media screen and (max-width: 965px) {
     .movie-information .content .cast-grid {
