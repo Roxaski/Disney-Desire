@@ -232,7 +232,7 @@ footer {
     text-align: center;
     width: 90%;
     line-height: 1.6;
-    padding-bottom: 5.75rem;
+    padding-bottom: 2rem;
 }
 footer h3 {
     font-size: clamp(1rem , 3vw, 1.1rem);
@@ -419,6 +419,7 @@ footer p {
     }
     footer {
         margin: 3.125rem auto 0;
+        padding: 5.75rem;
     }
     footer .copyright {
         display: none;
