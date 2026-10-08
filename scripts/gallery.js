@@ -224,27 +224,20 @@ let imgPositionX = 0;
 let imgPositionY = 0;
 let currentPositionX;
 let currentPositionY;
-let tapMovement = false;
 
 lightboxImg.addEventListener('touchstart', (e) => {
     // the position of the initial tap on the screen for both x and y axis
     screenTapStartX = e.touches[0].clientX;
     screenTapStartY = e.touches[0].clientY;
-
-    // sets the initial value of tap movement to false
-    tapMovement = false;
-
-    // adds a class to stop the image from having a transition while it's zoomed
-    lightboxImg.classList.add('drag');
 });
 
 lightboxImg.addEventListener('touchmove', (e) => {
-    // updates this to true if there's any finger movement
-    tapMovement = true;
-
     if(!lightboxImg.classList.contains('zoom')) {
         return;
     };
+
+    // adds a class to stop the image from having a transition while it's zoomed
+    lightboxImg.classList.add('drag');
 
     // gets the position of where the screen was tapped for both x and y axis
     currentPositionX = e.touches[0].clientX;
@@ -269,11 +262,8 @@ lightboxImg.addEventListener('touchend', (e) => {
     // stores the value of the current time in order to calculate the difference in between taps
     let currentTapTime = Date.now();
 
-    // tap movement is true the it sets the screen tap variable back to 0 in order to prevent tapping screen issues
-    if(tapMovement) {
-        screenTap = 0;
-    // checks if the difference in screen taps was equal to or less than 300 otherwise it just sets it to the current tap time
-    } else if (currentTapTime - screenTap <= 300) {
+    // checks if there's been 300 or less ms between taps, toggles zoom and sets the screen tap back to 0
+    if(currentTapTime - screenTap <= 300) {
         lightboxImg.classList.toggle('zoom');
         screenTap = 0;
     } else {
