@@ -242,8 +242,7 @@ main {
     display: none;
     max-width: 90vw;
     max-height: 85vh;
-    width: auto;
-    height: auto;
+    object-fit: cover;
     user-select: none;
     aspect-ratio: 16 / 9;
     transition: transform 300ms ease-in-out;
