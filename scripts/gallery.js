@@ -77,13 +77,11 @@ function lightboxBtns() {
 // preloads the adjacent photos within the lightbox
 function preloadAdjacentImgs() {
     if (currentImg > 0) {
-        preloadPreviousImg.sizes = lightboxImg.sizes;
         preloadPreviousImg.srcset = filteredImgs[currentImg - 1].srcset;
         preloadPreviousImg.src = filteredImgs[currentImg - 1].src;
     };
 
     if (currentImg < filteredImgs.length - 1) {
-        preloadNextImg.sizes = lightboxImg.sizes;
         preloadNextImg.srcset = filteredImgs[currentImg + 1].srcset;
         preloadNextImg.src = filteredImgs[currentImg + 1].src;
         
