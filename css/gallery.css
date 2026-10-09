@@ -217,7 +217,6 @@ main {
     display: none;
     max-width: 94vw;
     max-height: 85vh;
-    width: auto;
     height: auto;
     object-fit: contain;
     user-select: none;
