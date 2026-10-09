@@ -20,8 +20,8 @@ const filteredImgs = Array.from(galleryImgs).filter(img => !img.classList.contai
 function setLightboxImg() {
     const img = filteredImgs[currentImg];
 
-    lightboxImg.srcset = img.srcset;
     lightboxImg.src = img.src;
+    lightboxImg.srcset = img.srcset;
 };
 
 /*
@@ -77,13 +77,13 @@ function lightboxBtns() {
 // preloads the adjacent photos within the lightbox
 function preloadAdjacentImgs() {
     if (currentImg > 0) {
-        preloadPreviousImg.srcset = filteredImgs[currentImg - 1].srcset;
         preloadPreviousImg.src = filteredImgs[currentImg - 1].src;
+        preloadPreviousImg.srcset = filteredImgs[currentImg - 1].srcset;
     };
 
     if (currentImg < filteredImgs.length - 1) {
-        preloadNextImg.srcset = filteredImgs[currentImg + 1].srcset;
         preloadNextImg.src = filteredImgs[currentImg + 1].src;
+        preloadNextImg.srcset = filteredImgs[currentImg + 1].srcset;
         
     };
 };
