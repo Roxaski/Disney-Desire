@@ -84,8 +84,6 @@ function openLightBox(img) {
     galleryOverlay.style.transition = 'opacity 150ms ease';
     galleryOverlay.classList.add('active');
     lightboxImg.classList.add('active');
-    lightboxImg.sizes = '94vw';
-    lightboxImg.srcset = img.srcset;
     lightboxImg.src = img.src;
 
     /*
@@ -117,8 +115,6 @@ function closeLightbox() {
     lightboxImg.style.transform = '';
     lightboxImg.classList.remove('active');
     lightboxImg.style.aspectRatio = '';
-    lightboxImg.sizes = '';
-    lightboxImg.srcset = '';
     lightboxImg.src = '';
     imgPositionX = 0;
     imgPositionY = 0;
