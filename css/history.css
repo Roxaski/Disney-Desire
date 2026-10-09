@@ -404,11 +404,6 @@ footer p {
         display: none;
     }
 }
-@media screen and (max-width: 925px) {
-    article p {
-        margin: 1.5rem auto;
-    }
-}
 @media screen and (max-width: 570px) {
     article img {
         display: none;
@@ -425,7 +420,6 @@ footer p {
     }
     .memoriam .content {
         text-align: center;
-        margin: 1.5rem auto;
     }
     .memoriam .content p:nth-child(1) {
         font-size: 1.5rem;
@@ -437,7 +431,6 @@ footer p {
         font-size: 1.15rem;
         font-weight: 300;
         letter-spacing: 1px;
-        margin: .313rem auto;
     }
 }
 @media screen and (max-width: 385px) {
