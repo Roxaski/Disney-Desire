@@ -172,9 +172,8 @@ article img {
     display: none;
     max-width: 90vw;
     max-height: 85vh;
-    object-fit: cover;
+    object-fit: contain;
     user-select: none;
-    aspect-ratio: 16 / 9;
     transition: transform 300ms ease-in-out;
     cursor: default;
 }
