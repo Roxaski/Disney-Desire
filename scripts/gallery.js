@@ -16,12 +16,10 @@ let preloadNextImg = new Image();
 // creates an array of the images within the gallery
 const filteredImgs = Array.from(galleryImgs).filter(img => !img.classList.contains('icon'));
 
-// sets the lightbox images src and srcset in order to provide the appropriate image
+// sets the lightbox images src
 function setLightboxImg() {
     const img = filteredImgs[currentImg];
-
     lightboxImg.src = img.src;
-    lightboxImg.srcset = img.srcset;
 };
 
 /*
@@ -78,12 +76,10 @@ function lightboxBtns() {
 function preloadAdjacentImgs() {
     if (currentImg > 0) {
         preloadPreviousImg.src = filteredImgs[currentImg - 1].src;
-        preloadPreviousImg.srcset = filteredImgs[currentImg - 1].srcset;
     };
 
     if (currentImg < filteredImgs.length - 1) {
         preloadNextImg.src = filteredImgs[currentImg + 1].src;
-        preloadNextImg.srcset = filteredImgs[currentImg + 1].srcset;
         
     };
 };
@@ -101,7 +97,6 @@ function closeLightbox () {
     imgPositionX = 0;
     imgPositionY = 0;
     lightboxImg.classList.remove('active');
-    lightboxImg.srcset = '';
     lightboxImg.src = '';
     previousBtn.classList.remove('active');
     nextBtn.classList.remove('active');
