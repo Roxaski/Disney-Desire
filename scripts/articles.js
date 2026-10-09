@@ -84,7 +84,7 @@ function openLightBox(img) {
     galleryOverlay.style.transition = 'opacity 150ms ease';
     galleryOverlay.classList.add('active');
     lightboxImg.classList.add('active');
-    lightboxImg.sizes = '90vw';
+    lightboxImg.sizes = '94vw';
     lightboxImg.srcset = img.srcset;
     lightboxImg.src = img.src;
 

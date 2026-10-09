@@ -240,8 +240,9 @@ main {
 }
 .lightbox > img {
     display: none;
-    max-width: 90vw;
+    max-width: 94vw;
     max-height: 85vh;
+    height: auto;
     object-fit: contain;
     user-select: none;
     transition: transform 300ms ease-in-out;
