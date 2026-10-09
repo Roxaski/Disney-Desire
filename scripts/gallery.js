@@ -20,6 +20,7 @@ const filteredImgs = Array.from(galleryImgs).filter(img => !img.classList.contai
 function setLightboxImg() {
     const img = filteredImgs[currentImg];
     
+    lightboxImg.sizes = '90vw';
     lightboxImg.srcset = img.srcset;
     lightboxImg.src = img.src;
 };
@@ -103,6 +104,7 @@ function closeLightbox () {
     imgPositionX = 0;
     imgPositionY = 0;
     lightboxImg.classList.remove('active');
+    lightboxImg.sizes = '';
     lightboxImg.srcset = '';
     lightboxImg.src = '';
     previousBtn.classList.remove('active');
