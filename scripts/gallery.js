@@ -75,7 +75,7 @@ function lightboxBtns() {
 
 // preloads the adjacent photos within the lightbox
 function preloadAdjacentImgs() {
-    const sizes = '(max-width: 1135px) 90vw, 65vw';
+    const sizes="(max-width: 1135px) calc(100vw - 1.5rem), 65vw";
 
     if (currentImg > 0) {
         preloadPreviousImg.sizes = sizes;
