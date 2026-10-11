@@ -21,6 +21,7 @@ function setLightboxImg() {
     const img = filteredImgs[currentImg];
     lightboxImg.src = img.src;
     lightboxImg.srcset = img.srcset;
+    lightboxImg.alt = img.alt;
 };
 
 /*
@@ -38,9 +39,8 @@ function openLightBox(e) {
         currentImg = filteredImgs.indexOf(e.target);
 
         setLightboxImg();
+        preloadAdjacentImgs();
         
-        // overlay transition is set here to stop firefox from causing a brief flash from happening
-        galleryOverlay.style.transition = 'opacity 150ms ease';
         galleryOverlay.classList.add('active');
         lightboxImg.classList.add('active');
 
@@ -96,7 +96,6 @@ let btnTimer;
 // closes the lightbox, also resets values and remove classes
 function closeLightbox () {
     document.body.classList.remove('lightbox-no-scroll');
-    galleryOverlay.style.transition = 'none';
     galleryOverlay.classList.remove('active');
     lightboxImg.classList.remove('zoom');
     lightboxImg.style.transform = '';
@@ -105,6 +104,7 @@ function closeLightbox () {
     lightboxImg.classList.remove('active');
     lightboxImg.srcset = '';
     lightboxImg.src = '';
+    lightboxImg.alt = '';
     previousBtn.classList.remove('active');
     nextBtn.classList.remove('active');
 
@@ -116,6 +116,10 @@ function closeLightbox () {
     filteredImgs.forEach(img => {
         img.setAttribute('tabIndex', 0);
     });
+
+    // sets the focus back onto the gallery images
+    const img = filteredImgs[currentImg];
+    img.focus();
 
     // clears the timeout when the lightbox is closed
     clearTimeout(btnTimer);
@@ -143,7 +147,6 @@ lightboxImg.addEventListener('dblclick', () => {
 // lightbox click event listeners for mouse
 gallery.addEventListener('click', (e) => {
     openLightBox(e);
-    preloadAdjacentImgs();
 });
 
 galleryOverlay.addEventListener('click', () => {
@@ -212,7 +215,6 @@ gallery.addEventListener('keydown', (e) => {
     if(e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
         openLightBox(e);
-        preloadAdjacentImgs();
     };
 });
 
