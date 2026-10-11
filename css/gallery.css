@@ -121,7 +121,6 @@ main {
 }
 .gallery .img-container {
     position: relative;
-    contain: content;
 }
 .gallery .img-container img {
     width: 100%;
@@ -274,6 +273,7 @@ main {
 .gallery-overlay.active {
     opacity: 1;
     pointer-events: auto;
+    transition: opacity 150ms ease;
 }
 footer {
     margin: 12.5rem auto 0;
@@ -564,6 +564,15 @@ footer p {
     }
     .bars::before,
     .bars::after {
+        transition: none;
+    }
+    .gallery .img-container .img-overlay {
+        transition: none;
+    }
+    .lightbox > img {
+        transition: none;
+    }
+    .gallery-overlay.active {
         transition: none;
     }
     .overlay {
