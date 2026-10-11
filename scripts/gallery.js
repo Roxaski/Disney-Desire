@@ -117,9 +117,11 @@ function closeLightbox () {
         img.setAttribute('tabIndex', 0);
     });
 
-    // sets the focus back onto the gallery images
-    const img = filteredImgs[currentImg];
-    img.focus();
+    // checks if the user has a pointer device and if so then it adds focus onto the last clicked on image
+    if (window.matchMedia('(hover: hover)').matches) {
+        const img = filteredImgs[currentImg];
+        img.focus();
+    };
 
     // clears the timeout when the lightbox is closed
     clearTimeout(btnTimer);
