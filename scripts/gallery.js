@@ -20,6 +20,7 @@ const filteredImgs = Array.from(galleryImgs).filter(img => !img.classList.contai
 function setLightboxImg() {
     const img = filteredImgs[currentImg];
     lightboxImg.src = img.src;
+    lightboxImg.srcset = img.srcset;
 };
 
 /*
@@ -74,13 +75,18 @@ function lightboxBtns() {
 
 // preloads the adjacent photos within the lightbox
 function preloadAdjacentImgs() {
+    const sizes = '(max-width: 1135px) 85vw, 65vw';
+
     if (currentImg > 0) {
+        preloadPreviousImg.sizes = sizes;
+        preloadPreviousImg.srcset = filteredImgs[currentImg - 1].srcset;
         preloadPreviousImg.src = filteredImgs[currentImg - 1].src;
     };
 
     if (currentImg < filteredImgs.length - 1) {
+        preloadNextImg.sizes = sizes;
+        preloadNextImg.srcset = filteredImgs[currentImg + 1].srcset;
         preloadNextImg.src = filteredImgs[currentImg + 1].src;
-        
     };
 };
 
@@ -97,6 +103,7 @@ function closeLightbox () {
     imgPositionX = 0;
     imgPositionY = 0;
     lightboxImg.classList.remove('active');
+    lightboxImg.srcset = '';
     lightboxImg.src = '';
     previousBtn.classList.remove('active');
     nextBtn.classList.remove('active');
