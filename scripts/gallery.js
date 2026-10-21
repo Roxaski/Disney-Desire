@@ -117,7 +117,7 @@ function closeLightbox () {
         img.setAttribute('tabIndex', 0);
     });
 
-    // checks if the user has a pointer device and if so then it adds focus onto the last clicked on image
+    // checks if the user has a pointer device and if so then it adds focus onto the last image that it was on
     if (window.matchMedia('(hover: hover)').matches) {
         const img = filteredImgs[currentImg];
         img.focus();
