@@ -64,7 +64,6 @@ const nav = document.querySelectorAll('nav a');
 const articleLinks = document.querySelectorAll('article a');
 const lightboxImg = document.querySelector('.lightbox img');
 const articleImg = document.querySelectorAll('article img');
-const memoriamImg = document.querySelector('.memoriam img');
 const articleOverlay = document.querySelector('.article-overlay');
 
 // keeps track of which image was clicked
@@ -76,6 +75,7 @@ const imgArr = Array.from(articleImg);
 // sets the lightbox images src and alt
 function setLightboxImg() {
     const img = imgArr[currentImg];
+    
     lightboxImg.src = img.src;
     lightboxImg.srcset = img.srcset;
     lightboxImg.alt = img.alt;
