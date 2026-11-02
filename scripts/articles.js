@@ -1,4 +1,5 @@
-const recommendedArticles = document.querySelector('aside .content');
+const recommendedArticles = document.querySelector('aside .content ul');
+const asideContent = document.querySelector('aside .content');
 
 // checks if recommended articles exist, this is done so that pages that don't have them don't needlessly fetch the json data
 if(recommendedArticles) {
@@ -34,24 +35,23 @@ if(recommendedArticles) {
         // mapping out the data from the filtered array
         recommendedArticles.innerHTML = displayArticles.map(article => {
             return `
-            <ul>
-                <li>
-                    <a tabindex="0" href="${article.href}">
-                        <img loading="lazy" width="1920" height="1080" draggable="false"
-                        src="${article.src}"
-                        srcset="${article.srcset}"
-                        sizes="${article.sizes}"
-                        alt="${article.alt}">
-                    </a>
-                    <p>${article.name}</p>
-                </li>
-            </ul>
+            <li>
+                <a href="${article.href}">
+                    <img loading="lazy" width="1920" height="1080" draggable="false"
+                    src="${article.src}"
+                    srcset="${article.srcset}"
+                    sizes="${article.sizes}"
+                    alt="${article.alt}">
+                </a>
+
+                <p>${article.name}</p>
+            </li>
             `
         }).join(' '); // converts the array to a string
     })
     // catches any errors that may occur and displays them to the user
     .catch((err) => {
-        recommendedArticles.innerHTML = `
+        asideContent.innerHTML = `
         <p class="error-message">
             📰 Unable to Display Articles
         </p>
@@ -61,63 +61,84 @@ if(recommendedArticles) {
 };
 
 const nav = document.querySelectorAll('nav a');
+const articleLinks = document.querySelectorAll('article a');
 const lightboxImg = document.querySelector('.lightbox img');
 const articleImg = document.querySelectorAll('article img');
-const galleryOverlay = document.querySelector('.gallery-overlay');
+const memoriamImg = document.querySelector('.memoriam img');
+const articleOverlay = document.querySelector('.article-overlay');
+
+// keeps track of which image was clicked
+let currentImg = 0;
+
+// creates an array of the images within the article
+const imgArr = Array.from(articleImg);
+
+// sets the lightbox images src and alt
+function setLightboxImg() {
+    const img = imgArr[currentImg];
+    lightboxImg.src = img.src;
+    lightboxImg.srcset = img.srcset;
+    lightboxImg.alt = img.alt;
+    // toggles a class depending on the natural height and width of the image to determine if it's a portrait img
+    lightboxImg.classList.toggle('portrait', img.naturalHeight > img.naturalWidth);
+};
 
 function openLightBox(img) {
-    const mainLinks = document.querySelectorAll('main a');
+    document.body.classList.add('lightbox-no-scroll');
 
+    // stores the value of the current image that was clicked on from the array
+    currentImg = imgArr.indexOf(img);
+
+    setLightboxImg();
+    
+    articleOverlay.classList.add('active');
+    lightboxImg.classList.add('active');
+
+    // loops through each element and sets the tab index accordingly
     nav.forEach(link => {
-        link.setAttribute('tabIndex', '-1');
-    });
-
-    mainLinks.forEach(link => {
         link.setAttribute('tabIndex', '-1');
     });
 
     articleImg.forEach(img => {
         img.setAttribute('tabIndex', '-1');
     });
-    
-    document.body.classList.add('lightbox-no-scroll');
-    galleryOverlay.style.transition = 'opacity 150ms ease';
-    galleryOverlay.classList.add('active');
-    lightboxImg.classList.add('active');
-    lightboxImg.src = img.src;
 
-    /*
-        sets the lightbox images aspect ratio to match the clicked image's real size, 
-        this is in place to fix an image on history page that has a different aspect ratio to the rest
-    */
-    lightboxImg.style.aspectRatio = `${img.naturalWidth} / ${img.naturalHeight}`;
+    articleLinks.forEach(anchor => {
+        anchor.setAttribute('tabIndex', '-1');
+    });
 };
 
-function closeLightbox() {
-    const mainLinks = document.querySelectorAll('main a');
+// closes the lightbox, also resets values and remove classes
+function closeLightbox () {
+    document.body.classList.remove('lightbox-no-scroll');
+    articleOverlay.classList.remove('active');
+    lightboxImg.classList.remove('zoom');
+    lightboxImg.style.transform = '';
+    imgPositionX = 0;
+    imgPositionY = 0;
+    lightboxImg.classList.remove('active');
+    lightboxImg.srcset = '';
+    lightboxImg.src = '';
+    lightboxImg.alt = '';
 
+    // loops through each element and sets the tab index accordingly
     nav.forEach(link => {
         link.setAttribute('tabIndex', 0);
     });
 
-    mainLinks.forEach(link => {
-        link.setAttribute('tabIndex', 0);
+    articleLinks.forEach(anchor => {
+        anchor.setAttribute('tabIndex', 0);
     });
 
     articleImg.forEach(img => {
         img.setAttribute('tabIndex', 0);
     });
 
-    document.body.classList.remove('lightbox-no-scroll');
-    galleryOverlay.style.transition = 'none';
-    galleryOverlay.classList.remove('active');
-    lightboxImg.classList.remove('zoom');
-    lightboxImg.style.transform = '';
-    lightboxImg.classList.remove('active');
-    lightboxImg.style.aspectRatio = '';
-    lightboxImg.src = '';
-    imgPositionX = 0;
-    imgPositionY = 0;
+    // checks if the user has a pointer device and if so then it adds focus onto the last image that it was on
+    if (window.matchMedia('(hover: hover)').matches) {
+        const img = imgArr[currentImg];
+        img.focus();
+    };
 };
 
 articleImg.forEach(img => {
@@ -126,12 +147,12 @@ articleImg.forEach(img => {
     });
 });
 
-galleryOverlay.addEventListener('click', () => {
-    closeLightbox();
-});
-
 lightboxImg.addEventListener('dblclick', () => {
     lightboxImg.classList.toggle('zoom');
+});
+
+articleOverlay.addEventListener('click', () => {
+    closeLightbox();
 });
 
 articleImg.forEach(img => {
@@ -152,6 +173,7 @@ window.addEventListener('keydown', (e) => {
 let screenTapStartX;
 let screenTapStartY;
 let screenTap;
+let screenTapEnd;
 let imgPositionX = 0;
 let imgPositionY = 0;
 let currentPositionX;
@@ -168,6 +190,14 @@ lightboxImg.addEventListener('touchmove', (e) => {
         return;
     };
 
+    // sets the initial zoom scale to 2
+    let zoomScale = 2;
+
+    // sets the zoom to 1.25 if the image has the portrait class
+    if(lightboxImg.classList.contains('portrait')) {
+        zoomScale = 1.25;
+    };
+
     // adds a class to stop the image from having a transition while it's zoomed
     lightboxImg.classList.add('drag');
 
@@ -180,7 +210,7 @@ lightboxImg.addEventListener('touchmove', (e) => {
     let imgMovementY = currentPositionY - screenTapStartY;
 
     // sets transform and scale onto the lightbox image by calculating the position of the image plus how much it's moved from it's position
-    lightboxImg.style.transform = `translate(${imgPositionX + imgMovementX}px, ${imgPositionY + imgMovementY}px) scale(2)`;
+    lightboxImg.style.transform = `translate(${imgPositionX + imgMovementX}px, ${imgPositionY + imgMovementY}px) scale(${zoomScale})`;
 });
 
 lightboxImg.addEventListener('touchend', (e) => {
@@ -195,7 +225,7 @@ lightboxImg.addEventListener('touchend', (e) => {
     let currentTapTime = Date.now();
 
     // checks if there's been 300 or less ms between taps, toggles zoom and sets the screen tap back to 0
-    if (currentTapTime - screenTap <= 300) {
+    if(currentTapTime - screenTap <= 300) {
         lightboxImg.classList.toggle('zoom');
         screenTap = 0;
     } else {
@@ -212,4 +242,7 @@ lightboxImg.addEventListener('touchend', (e) => {
     else {
         return;
     };
+
+    // the position of where the finger lifted off the screen
+    screenTapEnd = e.changedTouches[0].clientX;
 });
