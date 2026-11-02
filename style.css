@@ -904,6 +904,7 @@ footer p {
         height: auto;
         aspect-ratio: 16 / 9;
         box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+        margin-right: 0;
     }
     .history .content p:nth-child(5),
     .history .content p:nth-child(6),
