@@ -160,26 +160,26 @@ article p {
     pointer-events: auto;
 }
 .lightbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65vw;
+    height: 85vh;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     touch-action: none;
-    width: fit-content;
-    height: auto;
+    pointer-events: none;
     z-index: 7;
-}
-.lightbox-no-scroll {
-    overflow: hidden;
-    pointer-events: auto;
 }
 .lightbox > img {
     display: none;
-    max-width: 94vw;
-    max-height: 85vh;
-    height: auto;
+    width: auto;
+    height: 100%;
     object-fit: contain;
     user-select: none;
+    pointer-events: auto;
     transition: transform 300ms ease-in-out;
     cursor: default;
 }
@@ -192,7 +192,7 @@ article p {
 .lightbox > img.drag {
     transition: none;
 }
-.gallery-overlay {
+.article-overlay {
     opacity: 0;
     position: fixed;
     pointer-events: none;
@@ -203,9 +203,10 @@ article p {
     background: var(--clr-blk);
     z-index: 5;
 }
-.gallery-overlay.active {
+.article-overlay.active {
     opacity: .85;
     pointer-events: auto;
+    transition: opacity 150ms ease;
 }
 footer {
     margin: 12.5rem auto 0;
@@ -228,13 +229,6 @@ footer h3::before {
     border-top: solid 2px var(--clr-grey);
     margin: 0 auto;
     max-width: 60rem;
-}
-footer .copyright {
-    display: inline-block;
-    position: relative;
-    top: .115rem;
-    width: 1rem;
-    height: auto;
 }
 footer p {
     margin-top: .25rem;
@@ -394,14 +388,28 @@ footer p {
         top: 0;
         padding: 0 .75rem;
     }
+    .lightbox {
+        width: calc(100vw - 1.5rem);
+        height: auto;
+    }
+    .lightbox > img {
+        width: 100%;
+        height: auto;
+    }
+    .lightbox > img.portrait {
+        height: auto;
+        width: auto;
+        max-height: 90dvh;
+        max-width: 100%;
+    }
+    .lightbox > img.portrait.zoom {
+        transform: scale(1.25);
+    }
     footer {
         margin: 3.125rem auto 0;
     }
-    footer .copyright {
-        display: none;
-    }
 }
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 960px) {
     article img {
         display: none;
     }
@@ -410,13 +418,16 @@ footer p {
     }
     .memoriam img {
         display: block;
-        max-width: 18.75rem;
+        width: auto;
         height: auto;
-        margin: 3.125rem auto 0;
+        max-width: 100%;
+        max-height: 90dvh;
+        margin: 2.5rem auto 0;
         box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
     }
     .memoriam .content {
         text-align: center;
+        line-height: 1;
     }
     .memoriam .content p:nth-child(1) {
         font-size: 1.5rem;
@@ -430,18 +441,15 @@ footer p {
         letter-spacing: 1px;
     }
 }
-@media screen and (max-width: 385px) {
-    .memoriam img {
-        width: 100%;
-    }
-}
 @media screen and (orientation: landscape) and (max-width: 960px) {
     .lightbox {
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        height: auto;
+        width: calc(95dvh * 16 / 9);
+        max-width: calc(100vw - 1.5rem);
+        max-height: 95vh;
     }
 }
 @media screen and (max-width: 934px) and (orientation: landscape) {
@@ -461,23 +469,6 @@ footer p {
     .links ul li {
         position: relative;
         top: 10rem;
-    }
-    article img {
-        display: none;
-    }
-    .memoriam {
-        display: block;
-    }
-    .memoriam img {
-        display: block;
-        max-width: 28.125rem;
-        height: auto;
-        margin: 0 auto;
-        color: var(--clr-grey);
-    }
-    .memoriam .content {
-        text-align: center;
-        margin: .625rem auto 0;
     }
 }
 @media screen and (prefers-color-scheme: dark) and (max-width: 1135px) {
@@ -524,12 +515,6 @@ footer p {
     .memoriam img {
         color: var(--clr-offWhite);
     }
-    footer .copyright path {
-        stroke: #f0f0f0;
-    }
-    footer .copyright circle {
-        stroke: #f0f0f0;
-    }
 }
 @media (prefers-reduced-motion: reduce) {
     nav.menu-open .links,
@@ -541,6 +526,9 @@ footer p {
         transition: none;
     }
     .lightbox > img {
+        transition: none;
+    }
+    .article-overlay.active {
         transition: none;
     }
     .overlay {

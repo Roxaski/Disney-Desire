@@ -297,13 +297,6 @@ footer h3::before {
     margin: 0 auto;
     max-width: 60rem;
 }
-footer .copyright {
-    display: inline-block;
-    position: relative;
-    top: .115rem;
-    width: 1rem;
-    height: auto;
-}
 footer p {
     margin-top: .25rem;
 }
@@ -477,9 +470,6 @@ footer p {
     footer {
         margin: 3.125rem auto 0;
     }
-    footer .copyright {
-        display: none;
-    }
 }
 @media screen and (max-width: 550px) {
     .gallery {
@@ -492,7 +482,7 @@ footer p {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: calc(90dvh * 16 / 9);
+        width: calc(95dvh * 16 / 9);
         max-width: calc(100vw - 1.5rem);
         height: auto;
     }
@@ -551,12 +541,6 @@ footer p {
     }
     .gallery .img-container img {
         color: var(--clr-offWhite);
-    }
-    footer .copyright path {
-        stroke: #f0f0f0;
-    }
-    footer .copyright circle {
-        stroke: #f0f0f0;
     }
 }
 @media (prefers-reduced-motion: reduce) {

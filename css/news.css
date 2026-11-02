@@ -234,13 +234,6 @@ footer h3::before {
     margin: 0 auto;
     max-width: 60rem;
 }
-footer .copyright {
-    display: inline-block;
-    position: relative;
-    top: .115rem;
-    width: 1rem;
-    height: auto;
-}
 footer p {
     margin-top: .25rem;
 }
@@ -397,9 +390,6 @@ footer p {
     footer {
         margin: 3.125rem auto 0;
     }
-    footer .copyright {
-        display: none;
-    }
 }
 @media screen and (max-width: 765px) {
     .articles {
@@ -493,12 +483,6 @@ footer p {
     }
     .articles .tags ul li {
         background: var(--clr-grey);
-    }
-    footer .copyright path {
-        stroke: #f0f0f0;
-    }
-    footer .copyright circle {
-        stroke: #f0f0f0;
     }
 }
 @media (prefers-reduced-motion: reduce) {

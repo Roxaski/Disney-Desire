@@ -23,13 +23,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 :root {
     --clr-blk: #212121;
     --clr-white: #f0f0f0;
     --clr-offWhite: #c4c2c2;
     --clr-grey: #3e3b3b;
+    --clr-darkGrey: #2c2c2c;
     --clr-lightGrey: #cccccc;
     --clr-charcoal: #7f7979;
     --clr-red: #cc0e11;
@@ -39,6 +40,7 @@
     --clr-indigo: #6f29e1;
     --clr-violet: #a204c2;
     --clr-terracotta: #a52a2a;
+    --theme: #212121;
 }
 body {
     width: 100%;
@@ -250,6 +252,10 @@ body {
     -webkit-tap-highlight-color: transparent;
     margin-left: .85rem;
 }
+.movie-information .reviews-container .user.reviews .star-wrapper .star.active,
+.movie-information .reviews-container .user.reviews .star-wrapper .star.hovered {
+    fill: var(--theme);
+}
 .movie-information .trailer {
     position: relative;
 }
@@ -274,6 +280,8 @@ body {
 .movie-information #thumbnail {
     width: 100%;
     height: auto;
+    object-fit: contain;
+    aspect-ratio: 5 / 3;
     padding: .75rem;
 }
 footer {
@@ -298,13 +306,6 @@ footer h3::before {
     margin: 0 auto;
     max-width: 60rem;
 }
-footer .copyright {
-    display: inline-block;
-    position: relative;
-    top: .115rem;
-    width: 1rem;
-    height: auto;
-}
 footer p {
     margin-top: .25rem;
 }
@@ -325,7 +326,6 @@ footer p {
         width: 100%;
         height: 5.6rem;
         background: var(--clr-red);
-        margin-bottom: 1.5rem;
         box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
     }
     .mobile_logo {
@@ -478,9 +478,6 @@ footer p {
     .movie-information .reviews-container .user.reviews .star-wrapper .star {
         left: .5rem;
     }
-    footer .copyright {
-        display: none;
-    }
 }
 @media screen and (max-width: 965px) {
     .movie-information .content .cast-grid {
@@ -488,13 +485,13 @@ footer p {
     }
 }
 @media screen and (max-width: 925px) {
-    .movie-information .content .info .reviews-container {
+    .movie-information .content .reviews-container {
         grid-template-columns: 1fr;
     }
-    .movie-information .content .info .reviews-container .reviews {
+    .movie-information .content .reviews-container .reviews {
         margin: .9rem 0;
     }
-    .movie-information .content .info .reviews-container .reviews h3 {
+    .movie-information .content .reviews-container .reviews h3 {
         margin-right: .9rem;
     }
 }
@@ -627,19 +624,18 @@ footer p {
     .movie-information .cast-grid .cast p {
         color: var(--clr-offWhite);
     }
-    .movie-information .reviews-container .reviews .star-wrapper .star {
+    .movie-information .reviews-container .user.reviews .star-wrapper .star,
+    .movie-information .reviews-container .critics.reviews .star-wrapper .star {
         fill: var(--clr-grey);
+    }
+    .movie-information .reviews-container .user.reviews .star-wrapper .star.active,
+    .movie-information .reviews-container .user.reviews .star-wrapper .star.hovered {
+        fill: var(--clr-charcoal);
     }
     footer {
         color: var(--clr-white);
     }
     footer h3::before {
         border-top: solid 2px var(--clr-grey);
-    }
-    footer .copyright path {
-        stroke: #f0f0f0;
-    }
-    footer .copyright circle {
-        stroke: #f0f0f0;
     }
 }
