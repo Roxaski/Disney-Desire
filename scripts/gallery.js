@@ -16,7 +16,7 @@ let preloadNextImg = new Image();
 // creates an array of the images within the gallery
 const filteredImgs = Array.from(galleryImgs).filter(img => !img.classList.contains('icon'));
 
-// sets the lightbox images src
+// sets the lightbox images src and alt
 function setLightboxImg() {
     const img = filteredImgs[currentImg];
     lightboxImg.src = img.src;
