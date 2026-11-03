@@ -161,9 +161,9 @@ main {
     overflow: visible;
 }
 .accordion .content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(0, 18.75rem));
     justify-content: center;
-    flex-wrap: wrap;
     gap: .5rem;
     margin: 1rem 0;
     max-height: 0;
