@@ -228,7 +228,7 @@ main {
     display: block;
 }
 .lightbox > img.zoom {
-    transform: scale(2);
+    transform: scale(1.5);
 }
 .lightbox > img.drag {
     transition: none;
