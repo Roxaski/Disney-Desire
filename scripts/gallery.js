@@ -325,7 +325,7 @@ lightboxImg.addEventListener('touchend', (e) => {
     // checks if the swipe moved at least 100px to the left
     if(screenTapEnd - screenTapStartX <= -100 && lightboxImg.classList.contains('active')) {
         
-        if(currentImg === galleryImgArray.length - 1) {
+        if(currentImg === filteredImgs.length - 1) {
             return;
         };
 
