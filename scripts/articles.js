@@ -56,7 +56,7 @@ if(recommendedArticles) {
             📰 Unable to Display Articles
         </p>
         `
-        console.log(err);
+        console.error(err);
     });
 };
 
