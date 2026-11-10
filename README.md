@@ -67,5 +67,6 @@ If anyone has any feedback i would greatly appreciate it, as i'm currently learn
 
 ## Copyright
 
-I do not claim to own any of the copyright material. <br>
+I do not claim to own any of the copyright material.
+
 Disney, Marvel, Star Wars, Pixar and Animal Crossing and all it's copyright materials are the property of Disney and Nintendo respectively.
